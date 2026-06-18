@@ -1,0 +1,54 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { TRAMITES_DESTACADOS } from '../data/navigation';
+const destacados = TRAMITES_DESTACADOS.filter((t) => t.live);
+---
+
+<BaseLayout
+  title="Página no encontrada"
+  description="La página que buscas no existe. Encuentra los trámites más buscados de México."
+  noindex={true}
+>
+  <section class="nf">
+    <div class="container container-narrow">
+      <p class="nf-code">404</p>
+      <h1>No encontramos esa página</h1>
+      <p class="lead">
+        Puede que el enlace esté roto o que aún no hayamos publicado esa guía. Prueba con uno
+        de los trámites más buscados:
+      </p>
+      <div class="nf-chips">
+        {destacados.map((t) => <a class="chip" href={`/${t.slug}/`}>{t.nombre}</a>)}
+      </div>
+      <div class="nf-actions">
+        <a href="/" class="btn btn-primary">Volver al inicio</a>
+        <a href="/tramites/" class="btn btn-ghost">Ver todos los trámites</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .nf { padding-block: var(--space-2xl); text-align: center; }
+  .nf-code {
+    font-family: var(--font-display);
+    font-size: clamp(4rem, 2rem + 12vw, 9rem);
+    font-weight: var(--weight-bold);
+    line-height: 1;
+    color: var(--color-primary-tint);
+  }
+  .nf h1 { margin-top: var(--space-sm); }
+  .lead { margin: var(--space-sm) auto 0; max-width: 50ch; color: var(--color-text-soft); font-size: var(--text-md); }
+  .nf-chips { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem; margin-top: var(--space-lg); }
+  .chip {
+    font-size: var(--text-sm);
+    padding: 0.4rem 0.9rem;
+    border-radius: var(--radius-pill);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border-strong);
+    color: var(--color-text-soft);
+    text-decoration: none;
+  }
+  .chip:hover { border-color: var(--color-primary); color: var(--color-primary-strong); }
+  .nf-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: var(--space-sm); margin-top: var(--space-lg); }
+</style>

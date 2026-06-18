@@ -1,0 +1,139 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import TramiteCard from '../../components/TramiteCard.astro';
+import { getCollection } from 'astro:content';
+import { CATEGORIAS } from '../../data/navigation';
+
+const tramites = await getCollection('tramites');
+const dataPorSlug = new Map(tramites.map((t) => [t.id, t.data]));
+---
+
+<BaseLayout
+  title="Todos los trámites de México"
+  description="Directorio de trámites en México: identidad, SAT, IMSS, vehiculares, registro civil y más. Requisitos, costos y enlaces oficiales de cada trámite."
+>
+  <section class="page-hero">
+    <div class="container">
+      <Breadcrumbs items={[{ nombre: 'Trámites' }]} />
+      <h1>Todos los trámites</h1>
+      <p class="lead">
+        Explora por categoría o busca el trámite que necesitas. Cada guía incluye requisitos,
+        costo, paso a paso y el enlace al portal oficial.
+      </p>
+      <form class="page-search" role="search" data-search-form>
+        <svg class="search-icon" width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><circle cx="9" cy="9" r="6" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="m14 14 3.5 3.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+        <input type="search" name="q" placeholder="Busca un trámite por nombre…" aria-label="Buscar trámite" data-search-input autocomplete="off" />
+      </form>
+      <p class="search-empty" data-search-empty hidden>
+        No encontramos trámites con ese nombre. Prueba con otra palabra o
+        <a href="/contacto/">sugiérenos uno</a>.
+      </p>
+    </div>
+  </section>
+
+  <div class="container section">
+    {
+      CATEGORIAS.map((cat) => (
+        <section class="cat-block" data-cat-block>
+          <h2 class="cat-title">
+            <span aria-hidden="true">{cat.icono}</span> {cat.titulo}
+          </h2>
+          <div class="cards-grid">
+            {cat.items.map((item) => {
+              const d = dataPorSlug.get(item.slug);
+              return (
+                <div data-card data-nombre={item.nombre.toLowerCase()} data-cat={cat.titulo.toLowerCase()}>
+                  <TramiteCard
+                    titulo={item.nombre}
+                    descripcion={d?.resumen ?? 'Guía en preparación. Pronto publicaremos requisitos, costo y paso a paso.'}
+                    slug={item.slug}
+                    costo={d?.costo}
+                    live={item.live}
+                  />
+                </div>
+              );
+            })}
+          </div>
+        </section>
+      ))
+    }
+  </div>
+</BaseLayout>
+
+<style>
+  .page-hero {
+    background: linear-gradient(180deg, var(--color-primary-soft), transparent);
+    border-bottom: 1px solid var(--color-border);
+    padding-block: var(--space-md) var(--space-xl);
+  }
+  .page-hero h1 { margin-top: var(--space-sm); font-size: var(--text-3xl); }
+  .lead { margin-top: var(--space-sm); max-width: 60ch; font-size: var(--text-md); color: var(--color-text-soft); }
+
+  .page-search {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: var(--space-lg);
+    max-width: 520px;
+    background: var(--color-surface);
+    border: 1.5px solid var(--color-border-strong);
+    border-radius: var(--radius-pill);
+    padding: 0.7rem 1.1rem;
+    box-shadow: var(--shadow-sm);
+  }
+  .page-search:focus-within { border-color: var(--color-primary); box-shadow: var(--shadow-md); }
+  .search-icon { color: var(--color-text-faint); flex-shrink: 0; }
+  .page-search input { flex: 1; border: none; background: none; outline: none; font-size: var(--text-base); min-width: 0; }
+  .search-empty { margin-top: var(--space-md); color: var(--color-text-soft); }
+
+  .cat-block { margin-bottom: var(--space-xl); }
+  .cat-block[hidden] { display: none; }
+  .cat-title { display: flex; align-items: center; gap: 0.5rem; font-size: var(--text-xl); margin-bottom: var(--space-md); }
+  .cards-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: var(--space-md); }
+  [data-card][hidden] { display: none; }
+</style>
+
+<script>
+  const input = document.querySelector('[data-search-input]') as HTMLInputElement | null;
+  const cards = Array.from(document.querySelectorAll('[data-card]')) as HTMLElement[];
+  const blocks = Array.from(document.querySelectorAll('[data-cat-block]')) as HTMLElement[];
+  const empty = document.querySelector('[data-search-empty]') as HTMLElement | null;
+  const form = document.querySelector('[data-search-form]') as HTMLFormElement | null;
+
+  form?.addEventListener('submit', (e) => e.preventDefault());
+
+  const normaliza = (s: string) =>
+    s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().trim();
+
+  function filtrar(query: string) {
+    const q = normaliza(query);
+    let visibles = 0;
+
+    cards.forEach((card) => {
+      const nombre = normaliza(card.dataset.nombre ?? '');
+      const cat = normaliza(card.dataset.cat ?? '');
+      const match = q === '' || nombre.includes(q) || cat.includes(q);
+      card.hidden = !match;
+      if (match) visibles++;
+    });
+
+    // Oculta categorías que se quedaron sin tarjetas visibles.
+    blocks.forEach((block) => {
+      const tieneVisibles = block.querySelector('[data-card]:not([hidden])');
+      block.hidden = !tieneVisibles;
+    });
+
+    if (empty) empty.hidden = visibles !== 0;
+  }
+
+  // Lee ?q= del hero al cargar.
+  const params = new URLSearchParams(window.location.search);
+  const initial = params.get('q') ?? '';
+  if (initial && input) {
+    input.value = initial;
+    filtrar(initial);
+  }
+
+  input?.addEventListener('input', () => filtrar(input.value));
+</script>

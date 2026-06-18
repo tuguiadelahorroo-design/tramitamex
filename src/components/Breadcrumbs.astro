@@ -1,0 +1,59 @@
+---
+// Migas de pan + JSON-LD BreadcrumbList.
+export interface Crumb {
+  nombre: string;
+  href?: string;
+}
+export interface Props {
+  items: Crumb[];
+}
+const { items } = Astro.props;
+const allItems = [{ nombre: 'Inicio', href: '/' }, ...items];
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: allItems.map((item, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    name: item.nombre,
+    ...(item.href ? { item: new URL(item.href, Astro.site).href } : {}),
+  })),
+};
+---
+
+<nav class="breadcrumbs" aria-label="Ruta de navegación">
+  <ol role="list">
+    {
+      allItems.map((item, i) => (
+        <li>
+          {item.href && i < allItems.length - 1 ? (
+            <a href={item.href}>{item.nombre}</a>
+          ) : (
+            <span aria-current="page">{item.nombre}</span>
+          )}
+          {i < allItems.length - 1 && <span class="sep" aria-hidden="true">›</span>}
+        </li>
+      ))
+    }
+  </ol>
+</nav>
+<script type="application/ld+json" set:html={JSON.stringify(jsonLd)} is:inline />
+
+<style>
+  .breadcrumbs ol {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.25rem 0.5rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: var(--text-sm);
+  }
+  .breadcrumbs li { display: inline-flex; align-items: center; gap: 0.5rem; }
+  .breadcrumbs a { color: var(--color-text-faint); text-decoration: none; }
+  .breadcrumbs a:hover { color: var(--color-primary-strong); text-decoration: underline; }
+  .breadcrumbs [aria-current='page'] { color: var(--color-text-soft); font-weight: var(--weight-medium); }
+  .sep { color: var(--color-text-faint); }
+</style>

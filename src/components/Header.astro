@@ -1,0 +1,349 @@
+---
+import { CATEGORIAS, NAV_PRINCIPAL } from '../data/navigation';
+import { ESTADOS } from '../data/estados';
+
+// Estados destacados que se muestran directamente en el menú móvil/escritorio.
+const estadosDestacados = [
+  'cdmx',
+  'estado-de-mexico',
+  'jalisco',
+  'nuevo-leon',
+  'puebla',
+  'veracruz',
+].map((s) => ESTADOS.find((e) => e.slug === s)!);
+---
+
+<header class="site-header" data-header>
+  <div class="container header-inner">
+    <a href="/" class="brand" aria-label="TramitaMex, inicio">
+      <svg class="brand-mark" width="34" height="34" viewBox="0 0 32 32" aria-hidden="true">
+        <rect width="32" height="32" rx="7" fill="var(--color-primary-strong)" />
+        <path d="M9 8.5h9.5l4.5 4.5V23a1.5 1.5 0 0 1-1.5 1.5H9A1.5 1.5 0 0 1 7.5 23V10A1.5 1.5 0 0 1 9 8.5Z" fill="var(--color-bg)" />
+        <path d="M11.5 18.5l2.6 2.6 5-5.4" fill="none" stroke="var(--color-accent)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+      <span class="brand-text">Tramita<strong>Mex</strong></span>
+    </a>
+
+    <nav class="nav-desktop" aria-label="Navegación principal">
+      <ul role="list">
+        <li class="has-mega" data-mega-root>
+          <button type="button" class="nav-link nav-trigger" aria-expanded="false" aria-controls="mega-tramites" data-mega-trigger>
+            Trámites
+            <svg class="chevron" width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M2.5 4.5 6 8l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+
+          <div id="mega-tramites" class="mega" data-mega-panel hidden>
+            <div class="container mega-grid">
+              {
+                CATEGORIAS.map((cat) => (
+                  <div class="mega-col">
+                    <p class="mega-col-title"><span aria-hidden="true">{cat.icono}</span> {cat.titulo}</p>
+                    <ul role="list">
+                      {cat.items.slice(0, 5).map((item) =>
+                        item.live ? (
+                          <li><a href={`/${item.slug}/`}>{item.nombre}</a></li>
+                        ) : (
+                          <li><span class="soon">{item.nombre}<em>pronto</em></span></li>
+                        )
+                      )}
+                    </ul>
+                  </div>
+                ))
+              }
+              <div class="mega-col mega-cta">
+                <p class="mega-col-title">¿No encuentras tu trámite?</p>
+                <p class="mega-cta-text">Estamos publicando guías nuevas cada semana, verificadas con fuentes oficiales.</p>
+                <a href="/tramites/" class="btn btn-accent">Ver todos los trámites</a>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        {NAV_PRINCIPAL.slice(1).map((item) => (
+          <li><a href={item.href} class="nav-link">{item.nombre}</a></li>
+        ))}
+      </ul>
+    </nav>
+
+    <a href="/tramites/" class="btn btn-accent header-cta">Buscar trámite</a>
+
+    <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="mobile-nav" data-mobile-toggle>
+      <span class="visually-hidden">Abrir menú</span>
+      <span class="bar" aria-hidden="true"></span>
+      <span class="bar" aria-hidden="true"></span>
+      <span class="bar" aria-hidden="true"></span>
+    </button>
+  </div>
+
+  <!-- Menú móvil -->
+  <div id="mobile-nav" class="mobile-nav" data-mobile-nav hidden>
+    <nav class="container" aria-label="Navegación móvil">
+      <p class="mobile-section-title">Trámites destacados</p>
+      <ul role="list" class="mobile-tramites">
+        {CATEGORIAS.flatMap((c) => c.items).filter((i) => i.live).map((item) => (
+          <li><a href={`/${item.slug}/`}>{item.nombre}</a></li>
+        ))}
+      </ul>
+
+      <p class="mobile-section-title">Secciones</p>
+      <ul role="list" class="mobile-links">
+        {NAV_PRINCIPAL.map((item) => (
+          <li><a href={item.href}>{item.nombre}</a></li>
+        ))}
+      </ul>
+
+      <p class="mobile-section-title">Estados populares</p>
+      <ul role="list" class="mobile-estados">
+        {estadosDestacados.map((e) => (
+          <li><a href={`/por-estado/${e.slug}/`}>{e.nombre}</a></li>
+        ))}
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<style>
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: var(--z-header);
+    background: oklch(98.6% 0.006 95 / 0.85);
+    backdrop-filter: saturate(180%) blur(12px);
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .header-inner {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    min-height: 4.5rem;
+  }
+
+  .brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.55rem;
+    text-decoration: none;
+    color: var(--color-text);
+    font-family: var(--font-display);
+    font-size: 1.35rem;
+    font-weight: var(--weight-semibold);
+    letter-spacing: -0.02em;
+    margin-right: auto;
+  }
+  .brand-text strong { color: var(--color-primary-strong); font-weight: var(--weight-bold); }
+  .brand-mark { flex-shrink: 0; }
+
+  .nav-desktop > ul {
+    display: none;
+    align-items: center;
+    gap: var(--space-2xs);
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0.55rem 0.85rem;
+    border-radius: var(--radius-sm);
+    color: var(--color-text-soft);
+    font-weight: var(--weight-medium);
+    text-decoration: none;
+    transition: background-color var(--duration-fast) var(--ease-out-expo), color var(--duration-fast) var(--ease-out-expo);
+  }
+  .nav-link:hover,
+  .nav-trigger[aria-expanded='true'] {
+    background: var(--color-primary-soft);
+    color: var(--color-primary-strong);
+  }
+  .chevron { transition: transform var(--duration-fast) var(--ease-out-expo); }
+  .nav-trigger[aria-expanded='true'] .chevron { transform: rotate(180deg); }
+
+  .has-mega { position: static; }
+
+  .mega {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    background: var(--color-surface);
+    border-bottom: 1px solid var(--color-border);
+    box-shadow: var(--shadow-lg);
+    animation: mega-in var(--duration-normal) var(--ease-out-expo);
+  }
+  .mega[hidden] { display: none; }
+
+  @keyframes mega-in {
+    from { opacity: 0; transform: translateY(-8px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .mega-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-lg) var(--space-md);
+    padding-block: var(--space-lg);
+  }
+  .mega-col-title {
+    font-weight: var(--weight-semibold);
+    font-size: var(--text-sm);
+    color: var(--color-text);
+    margin-bottom: var(--space-2xs);
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+  .mega-col ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 2px; }
+  .mega-col a {
+    display: block;
+    padding: 0.35rem 0.5rem;
+    margin-inline: -0.5rem;
+    border-radius: var(--radius-xs);
+    color: var(--color-text-soft);
+    text-decoration: none;
+    font-size: var(--text-sm);
+    transition: background-color var(--duration-fast) var(--ease-out-expo), color var(--duration-fast) var(--ease-out-expo);
+  }
+  .mega-col a:hover { background: var(--color-primary-soft); color: var(--color-primary-strong); }
+  .soon {
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+    padding: 0.35rem 0;
+    color: var(--color-text-faint);
+    font-size: var(--text-sm);
+  }
+  .soon em {
+    font-style: normal;
+    font-size: 0.62rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--color-accent-strong);
+    background: var(--color-accent-soft);
+    padding: 0.1rem 0.4rem;
+    border-radius: var(--radius-pill);
+  }
+  .mega-cta {
+    background: var(--color-primary-soft);
+    border-radius: var(--radius-md);
+    padding: var(--space-md);
+  }
+  .mega-cta-text { font-size: var(--text-sm); color: var(--color-text-soft); margin-block: 0.5rem 1rem; }
+
+  .header-cta { display: none; }
+
+  /* Botón hamburguesa */
+  .nav-toggle {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    width: 44px;
+    height: 44px;
+    padding: 0 10px;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--color-border-strong);
+    background: var(--color-surface);
+  }
+  .nav-toggle .bar {
+    height: 2px;
+    background: var(--color-text);
+    border-radius: 2px;
+    transition: transform var(--duration-fast) var(--ease-out-expo), opacity var(--duration-fast);
+  }
+  .nav-toggle[aria-expanded='true'] .bar:nth-child(2) { transform: translateY(7px) rotate(45deg); }
+  .nav-toggle[aria-expanded='true'] .bar:nth-child(3) { opacity: 0; }
+  .nav-toggle[aria-expanded='true'] .bar:nth-child(4) { transform: translateY(-7px) rotate(-45deg); }
+
+  /* Menú móvil */
+  .mobile-nav {
+    border-top: 1px solid var(--color-border);
+    background: var(--color-surface);
+    max-height: calc(100dvh - 4.5rem);
+    overflow-y: auto;
+    padding-block: var(--space-md);
+  }
+  .mobile-nav[hidden] { display: none; }
+  .mobile-section-title {
+    font-size: var(--text-xs);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-faint);
+    font-weight: var(--weight-semibold);
+    margin: var(--space-md) 0 var(--space-2xs);
+  }
+  .mobile-section-title:first-child { margin-top: 0; }
+  .mobile-nav ul { margin: 0; padding: 0; list-style: none; }
+  .mobile-tramites { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; }
+  .mobile-estados { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; }
+  .mobile-nav a {
+    display: block;
+    padding: 0.7rem 0.5rem;
+    margin-inline: -0.5rem;
+    border-radius: var(--radius-xs);
+    color: var(--color-text-soft);
+    text-decoration: none;
+  }
+  .mobile-links a { font-weight: var(--weight-medium); color: var(--color-text); }
+  .mobile-nav a:hover { background: var(--color-primary-soft); color: var(--color-primary-strong); }
+
+  @media (min-width: 1000px) {
+    .nav-desktop > ul { display: flex; }
+    .header-cta { display: inline-flex; }
+    .nav-toggle { display: none; }
+    .mobile-nav { display: none !important; }
+  }
+</style>
+
+<script>
+  // Mega-menú (escritorio) + menú móvil. Accesible y sin dependencias.
+  const header = document.querySelector('[data-header]');
+  if (header) {
+    const megaTrigger = header.querySelector('[data-mega-trigger]') as HTMLButtonElement | null;
+    const megaPanel = header.querySelector('[data-mega-panel]') as HTMLElement | null;
+    const megaRoot = header.querySelector('[data-mega-root]') as HTMLElement | null;
+    const mobileToggle = header.querySelector('[data-mobile-toggle]') as HTMLButtonElement | null;
+    const mobileNav = header.querySelector('[data-mobile-nav]') as HTMLElement | null;
+    const desktopQuery = window.matchMedia('(min-width: 1000px)');
+
+    const openMega = () => {
+      if (!megaPanel || !megaTrigger) return;
+      megaPanel.hidden = false;
+      megaTrigger.setAttribute('aria-expanded', 'true');
+    };
+    const closeMega = () => {
+      if (!megaPanel || !megaTrigger) return;
+      megaPanel.hidden = true;
+      megaTrigger.setAttribute('aria-expanded', 'false');
+    };
+    const megaIsOpen = () => megaTrigger?.getAttribute('aria-expanded') === 'true';
+
+    megaTrigger?.addEventListener('click', () => (megaIsOpen() ? closeMega() : openMega()));
+
+    // Hover en escritorio.
+    megaRoot?.addEventListener('pointerenter', () => desktopQuery.matches && openMega());
+    megaRoot?.addEventListener('pointerleave', () => desktopQuery.matches && closeMega());
+
+    // Cerrar con Escape o clic fuera.
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && megaIsOpen()) {
+        closeMega();
+        megaTrigger?.focus();
+      }
+    });
+    document.addEventListener('click', (e) => {
+      if (megaIsOpen() && megaRoot && !megaRoot.contains(e.target as Node)) closeMega();
+    });
+
+    // Menú móvil.
+    mobileToggle?.addEventListener('click', () => {
+      if (!mobileNav) return;
+      const isOpen = mobileToggle.getAttribute('aria-expanded') === 'true';
+      mobileToggle.setAttribute('aria-expanded', String(!isOpen));
+      mobileToggle.querySelector('.visually-hidden')!.textContent = isOpen ? 'Abrir menú' : 'Cerrar menú';
+      mobileNav.hidden = isOpen;
+    });
+  }
+</script>

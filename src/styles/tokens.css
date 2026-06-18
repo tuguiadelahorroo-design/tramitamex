@@ -1,0 +1,111 @@
+/* ==========================================================================
+   TramitaMex — Tokens de diseño
+   Dirección: "Confianza cívica moderna".
+   Verde pino institucional + ámbar cálido + guinda mexicano (acento puntual).
+   Color en OKLCH para contraste perceptual consistente.
+   ========================================================================== */
+
+:root {
+  /* ---- Marca ---- */
+  --color-primary: oklch(43% 0.088 162);
+  --color-primary-strong: oklch(33% 0.078 163);
+  --color-primary-deep: oklch(24% 0.055 164);
+  --color-primary-soft: oklch(95.5% 0.022 162);
+  --color-primary-tint: oklch(91% 0.04 162);
+
+  --color-accent: oklch(78% 0.135 76);
+  --color-accent-strong: oklch(70% 0.155 64);
+  --color-accent-soft: oklch(95% 0.045 80);
+
+  --color-guinda: oklch(40% 0.13 14);
+  --color-guinda-soft: oklch(95% 0.03 14);
+
+  /* ---- Neutros cálidos ---- */
+  --color-bg: oklch(98.6% 0.006 95);
+  --color-surface: oklch(100% 0 0);
+  --color-surface-2: oklch(97.2% 0.008 95);
+  --color-surface-3: oklch(95% 0.01 95);
+  --color-border: oklch(90.5% 0.009 95);
+  --color-border-strong: oklch(84% 0.012 95);
+
+  --color-text: oklch(26% 0.014 235);
+  --color-text-soft: oklch(44% 0.013 235);
+  --color-text-faint: oklch(57% 0.011 235);
+  --color-text-on-dark: oklch(97% 0.01 95);
+
+  /* ---- Semánticos ---- */
+  --color-success: oklch(56% 0.12 155);
+  --color-success-soft: oklch(95% 0.04 155);
+  --color-info: oklch(55% 0.1 240);
+  --color-info-soft: oklch(95% 0.03 240);
+  --color-warning: oklch(72% 0.14 70);
+  --color-warning-soft: oklch(95.5% 0.05 80);
+
+  /* ---- Tipografía ---- */
+  --font-display: 'Fraunces Variable', 'Fraunces', Georgia, 'Times New Roman', serif;
+  --font-sans: 'Inter Variable', 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+
+  --text-xs: 0.78rem;
+  --text-sm: 0.875rem;
+  --text-base: clamp(1rem, 0.96rem + 0.18vw, 1.0625rem);
+  --text-md: clamp(1.075rem, 1rem + 0.3vw, 1.2rem);
+  --text-lg: clamp(1.2rem, 1.08rem + 0.55vw, 1.5rem);
+  --text-xl: clamp(1.45rem, 1.2rem + 1vw, 2rem);
+  --text-2xl: clamp(1.8rem, 1.4rem + 1.7vw, 2.75rem);
+  --text-3xl: clamp(2.2rem, 1.5rem + 3vw, 3.75rem);
+  --text-hero: clamp(2.6rem, 1.5rem + 4.6vw, 5rem);
+
+  --leading-tight: 1.1;
+  --leading-snug: 1.28;
+  --leading-normal: 1.6;
+  --leading-relaxed: 1.75;
+
+  --weight-normal: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+
+  /* ---- Espaciado ---- */
+  --space-3xs: 0.25rem;
+  --space-2xs: 0.5rem;
+  --space-xs: 0.75rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2.25rem;
+  --space-xl: 3.5rem;
+  --space-2xl: 5rem;
+  --space-section: clamp(3.5rem, 2.5rem + 4.5vw, 7rem);
+
+  /* ---- Layout ---- */
+  --container: 1200px;
+  --container-narrow: 760px;
+  --container-wide: 1360px;
+  --gutter: clamp(1rem, 0.5rem + 2.5vw, 2.5rem);
+
+  /* ---- Radios ---- */
+  --radius-xs: 6px;
+  --radius-sm: 10px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+  --radius-pill: 999px;
+
+  /* ---- Sombras (cálidas, no negro puro) ---- */
+  --shadow-xs: 0 1px 2px oklch(30% 0.03 162 / 0.06);
+  --shadow-sm: 0 2px 6px oklch(30% 0.03 162 / 0.08), 0 1px 2px oklch(30% 0.03 162 / 0.05);
+  --shadow-md: 0 8px 24px oklch(30% 0.03 162 / 0.1), 0 2px 6px oklch(30% 0.03 162 / 0.06);
+  --shadow-lg: 0 18px 48px oklch(28% 0.04 162 / 0.14), 0 4px 12px oklch(28% 0.04 162 / 0.08);
+  --shadow-ring: 0 0 0 3px oklch(78% 0.135 76 / 0.45);
+
+  /* ---- Movimiento ---- */
+  --duration-fast: 140ms;
+  --duration-normal: 260ms;
+  --duration-slow: 420ms;
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-out-back: cubic-bezier(0.34, 1.4, 0.64, 1);
+
+  /* ---- Capas ---- */
+  --z-header: 50;
+  --z-megamenu: 60;
+  --z-overlay: 70;
+}

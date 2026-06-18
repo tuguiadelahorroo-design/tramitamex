@@ -1,0 +1,72 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+---
+
+<BaseLayout
+  title="Aviso legal"
+  description="Aviso legal de TramitaMex: sitio informativo independiente, no oficial, sobre trámites en México."
+>
+  <section class="page-hero">
+    <div class="container container-narrow">
+      <Breadcrumbs items={[{ nombre: 'Aviso legal' }]} />
+      <h1>Aviso legal</h1>
+    </div>
+  </section>
+
+  <div class="container container-narrow section">
+    <div class="prose">
+      <h2>Naturaleza del sitio</h2>
+      <p>
+        TramitaMex (tramitamex.com.mx) es un sitio <strong>informativo e independiente</strong>.
+        No es una página oficial del Gobierno de México ni de ninguna de sus dependencias,
+        ni está afiliado, patrocinado o avalado por ellas. Las referencias a instituciones
+        (SAT, IMSS, RENAPO, etc.) son únicamente informativas.
+      </p>
+
+      <h2>Sobre la información publicada</h2>
+      <p>
+        Procuramos que la información sea correcta y esté actualizada con base en fuentes
+        oficiales, pero los requisitos, costos y procedimientos pueden cambiar sin previo aviso.
+        La información se ofrece <strong>sin garantía</strong> de exactitud o vigencia. Antes de
+        iniciar cualquier trámite, verifica los datos directamente en el portal oficial
+        correspondiente.
+      </p>
+
+      <h2>Limitación de responsabilidad</h2>
+      <p>
+        TramitaMex no se hace responsable por decisiones tomadas con base en la información del
+        sitio, ni por daños derivados de su uso. El uso del sitio es bajo tu propia
+        responsabilidad.
+      </p>
+
+      <h2>Enlaces externos</h2>
+      <p>
+        Este sitio contiene enlaces a portales oficiales y de terceros. No controlamos su
+        contenido ni nos responsabilizamos de él. Te recomendamos revisar los avisos de
+        privacidad de cada sitio que visites.
+      </p>
+
+      <h2>Propiedad intelectual</h2>
+      <p>
+        Los nombres, logotipos y marcas de las instituciones mencionadas pertenecen a sus
+        respectivos titulares y se usan solo con fines informativos y de identificación.
+      </p>
+
+      <h2>Contacto</h2>
+      <p>
+        Para cualquier aclaración sobre este aviso, visita nuestra página de
+        <a href="/contacto/">contacto</a>.
+      </p>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .page-hero {
+    background: linear-gradient(180deg, var(--color-primary-soft), transparent);
+    border-bottom: 1px solid var(--color-border);
+    padding-block: var(--space-md) var(--space-lg);
+  }
+  .page-hero h1 { margin-top: var(--space-sm); }
+</style>

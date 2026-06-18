@@ -1,0 +1,68 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import { ESTADOS } from '../../data/estados';
+---
+
+<BaseLayout
+  title="Trámites por estado en México"
+  description="Trámites en los 32 estados de México: requisitos, costos y oficinas por entidad. Encuentra cómo hacer tus trámites en tu estado."
+>
+  <section class="page-hero">
+    <div class="container">
+      <Breadcrumbs items={[{ nombre: 'Por estado' }]} />
+      <h1>Trámites por estado</h1>
+      <p class="lead">
+        Selecciona tu entidad para ver los trámites disponibles, requisitos locales y enlaces
+        a las dependencias de tu estado.
+      </p>
+    </div>
+  </section>
+
+  <div class="container section">
+    <div class="estado-grid">
+      {
+        ESTADOS.map((e) => (
+          <a href={`/por-estado/${e.slug}/`} class="estado-card">
+            <span class="estado-name">{e.nombre}</span>
+            <span class="estado-cap">{e.capital}</span>
+          </a>
+        ))
+      }
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .page-hero {
+    background: linear-gradient(180deg, var(--color-primary-soft), transparent);
+    border-bottom: 1px solid var(--color-border);
+    padding-block: var(--space-md) var(--space-xl);
+  }
+  .page-hero h1 { margin-top: var(--space-sm); font-size: var(--text-3xl); }
+  .lead { margin-top: var(--space-sm); max-width: 60ch; font-size: var(--text-md); color: var(--color-text-soft); }
+
+  .estado-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: var(--space-sm);
+  }
+  .estado-card {
+    display: grid;
+    gap: 0.15rem;
+    padding: var(--space-md);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    text-decoration: none;
+    color: inherit;
+    transition: all var(--duration-fast) var(--ease-out-expo);
+  }
+  .estado-card:hover {
+    border-color: var(--color-primary);
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+  }
+  .estado-name { font-weight: var(--weight-semibold); color: var(--color-text); }
+  .estado-cap { font-size: var(--text-sm); color: var(--color-text-faint); }
+</style>

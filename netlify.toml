@@ -1,0 +1,25 @@
+# Configuración de deploy para Netlify.
+# (También compatible con Vercel y Cloudflare Pages usando los mismos valores:
+#  build command = "npm run build", publish/output directory = "dist".)
+
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+# Cabeceras de seguridad recomendadas.
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "DENY"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+
+# Cache largo para los assets con hash (JS/CSS/fuentes generados por Astro).
+[[headers]]
+  for = "/_astro/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"

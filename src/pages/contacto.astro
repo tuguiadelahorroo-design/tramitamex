@@ -1,0 +1,113 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+---
+
+<BaseLayout
+  title="Contacto"
+  description="Contacta a TramitaMex para sugerir un trámite, reportar información desactualizada o enviar comentarios."
+>
+  <section class="page-hero">
+    <div class="container container-narrow">
+      <Breadcrumbs items={[{ nombre: 'Contacto' }]} />
+      <h1>Contacto</h1>
+      <p class="lead">
+        ¿Quieres sugerir un trámite, reportar un dato desactualizado o dejarnos un comentario?
+        Escríbenos.
+      </p>
+    </div>
+  </section>
+
+  <div class="container container-narrow section">
+    <div class="contacto-grid">
+      <form class="contacto-form surface-card" action="#" method="post" data-contacto-form>
+        <div class="field">
+          <label for="nombre">Nombre</label>
+          <input id="nombre" name="nombre" type="text" autocomplete="name" required />
+        </div>
+        <div class="field">
+          <label for="email">Correo electrónico</label>
+          <input id="email" name="email" type="email" autocomplete="email" required />
+        </div>
+        <div class="field">
+          <label for="asunto">Asunto</label>
+          <select id="asunto" name="asunto">
+            <option>Sugerir un trámite</option>
+            <option>Reportar información desactualizada</option>
+            <option>Comentario general</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+        <p class="form-note" data-form-note hidden>
+          Gracias. El formulario aún no está conectado a un servidor; mientras tanto, escríbenos
+          por correo.
+        </p>
+      </form>
+
+      <aside class="contacto-aside">
+        <div class="surface-card aside-box">
+          <h2>Correo</h2>
+          <p>Pronto habilitaremos un correo de contacto público.</p>
+        </div>
+        <div class="surface-card aside-box">
+          <h2>Importante</h2>
+          <p>
+            TramitaMex es un sitio informativo independiente. No realizamos trámites ni damos
+            seguimiento a expedientes oficiales.
+          </p>
+        </div>
+      </aside>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .page-hero {
+    background: linear-gradient(180deg, var(--color-primary-soft), transparent);
+    border-bottom: 1px solid var(--color-border);
+    padding-block: var(--space-md) var(--space-lg);
+  }
+  .page-hero h1 { margin-top: var(--space-sm); }
+  .lead { margin-top: var(--space-sm); max-width: 56ch; color: var(--color-text-soft); font-size: var(--text-md); }
+
+  .contacto-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: var(--space-lg); align-items: start; }
+  .contacto-form { display: grid; gap: var(--space-md); padding: var(--space-lg); }
+  .field { display: grid; gap: 0.35rem; }
+  .field label { font-size: var(--text-sm); font-weight: var(--weight-semibold); }
+  .field input,
+  .field select,
+  .field textarea {
+    padding: 0.7rem 0.9rem;
+    border: 1.5px solid var(--color-border-strong);
+    border-radius: var(--radius-sm);
+    background: var(--color-surface);
+    font-size: var(--text-base);
+  }
+  .field input:focus,
+  .field select:focus,
+  .field textarea:focus { outline: none; border-color: var(--color-primary); }
+  .contacto-form .btn { justify-self: start; }
+  .form-note { font-size: var(--text-sm); color: var(--color-text-soft); margin: 0; }
+
+  .contacto-aside { display: grid; gap: var(--space-md); }
+  .aside-box { padding: var(--space-md); }
+  .aside-box h2 { font-size: var(--text-md); margin-bottom: 0.3rem; }
+  .aside-box p { font-size: var(--text-sm); color: var(--color-text-soft); margin: 0; }
+
+  @media (max-width: 760px) {
+    .contacto-grid { grid-template-columns: 1fr; }
+  }
+</style>
+
+<script>
+  const form = document.querySelector('[data-contacto-form]') as HTMLFormElement | null;
+  const note = document.querySelector('[data-form-note]') as HTMLElement | null;
+  form?.addEventListener('submit', (e) => {
+    e.preventDefault();
+    if (note) note.hidden = false;
+  });
+</script>

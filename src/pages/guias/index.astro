@@ -1,0 +1,80 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+
+const guias = [
+  { titulo: 'Trámites para empezar a trabajar', desc: 'CURP, RFC, NSS y constancia fiscal: el orden correcto para tu primer empleo.', icono: '💼' },
+  { titulo: 'Trámites para viajar al extranjero', desc: 'Pasaporte, visa y documentos que necesitas antes de salir del país.', icono: '✈️' },
+  { titulo: 'Trámites para comprar un auto usado', desc: 'Cambio de propietario, placas, tenencia y verificación.', icono: '🚗' },
+  { titulo: 'Documentos básicos en México', desc: 'Los documentos que todo adulto debería tener en regla.', icono: '📂' },
+  { titulo: 'Trámites para estudiantes', desc: 'Cédula, certificados, becas y revalidaciones.', icono: '🎓' },
+  { titulo: 'Trámites para adultos mayores', desc: 'Pensión Bienestar, INAPAM y apoyos disponibles.', icono: '👵' },
+];
+---
+
+<BaseLayout
+  title="Guías de trámites por situación de vida"
+  description="Guías prácticas que agrupan los trámites que necesitas según tu situación: empezar a trabajar, viajar, comprar auto, estudiar y más."
+>
+  <section class="page-hero">
+    <div class="container">
+      <Breadcrumbs items={[{ nombre: 'Guías' }]} />
+      <h1>Guías por situación de vida</h1>
+      <p class="lead">
+        En lugar de buscar trámite por trámite, te decimos exactamente qué necesitas según
+        tu momento de vida. Estamos publicando estas guías de forma gradual.
+      </p>
+    </div>
+  </section>
+
+  <div class="container section">
+    <div class="guias-grid">
+      {
+        guias.map((g) => (
+          <article class="guia-card">
+            <span class="guia-icon" aria-hidden="true">{g.icono}</span>
+            <h2>{g.titulo}</h2>
+            <p>{g.desc}</p>
+            <span class="guia-soon">Próximamente</span>
+          </article>
+        ))
+      }
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .page-hero {
+    background: linear-gradient(180deg, var(--color-primary-soft), transparent);
+    border-bottom: 1px solid var(--color-border);
+    padding-block: var(--space-md) var(--space-xl);
+  }
+  .page-hero h1 { margin-top: var(--space-sm); font-size: var(--text-3xl); }
+  .lead { margin-top: var(--space-sm); max-width: 62ch; font-size: var(--text-md); color: var(--color-text-soft); }
+
+  .guias-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: var(--space-md); }
+  .guia-card {
+    display: grid;
+    gap: 0.4rem;
+    padding: var(--space-lg);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    align-content: start;
+  }
+  .guia-icon { font-size: 1.8rem; }
+  .guia-card h2 { font-size: var(--text-lg); margin-top: 0.2rem; }
+  .guia-card p { font-size: var(--text-sm); color: var(--color-text-soft); margin: 0; }
+  .guia-soon {
+    justify-self: start;
+    margin-top: 0.5rem;
+    font-size: 0.62rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--color-accent-strong);
+    background: var(--color-accent-soft);
+    padding: 0.15rem 0.55rem;
+    border-radius: var(--radius-pill);
+    font-weight: var(--weight-semibold);
+  }
+</style>

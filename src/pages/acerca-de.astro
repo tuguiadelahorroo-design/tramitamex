@@ -1,0 +1,57 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+---
+
+<BaseLayout
+  title="Acerca de TramitaMex"
+  description="Qué es TramitaMex, cómo trabajamos y por qué somos un sitio informativo independiente sobre trámites en México."
+>
+  <section class="page-hero">
+    <div class="container container-narrow">
+      <Breadcrumbs items={[{ nombre: 'Acerca de' }]} />
+      <h1>Acerca de TramitaMex</h1>
+    </div>
+  </section>
+
+  <div class="container container-narrow section">
+    <div class="prose">
+      <p>
+        <strong>TramitaMex</strong> es una guía informativa independiente que reúne, organiza y
+        explica en lenguaje claro los trámites más buscados de México. Nuestro objetivo es que
+        cualquier persona entienda <em>qué necesita</em>, <em>cuánto cuesta</em> y
+        <em>cómo hacerlo</em>, sin perderse entre portales.
+      </p>
+
+      <h2>Cómo trabajamos</h2>
+      <ul>
+        <li>Cada guía se elabora consultando los portales oficiales del gobierno.</li>
+        <li>Mostramos siempre la <strong>fecha de actualización</strong> y las <strong>fuentes oficiales</strong>.</li>
+        <li>Te enviamos al sitio oficial para que hagas el trámite directamente; nunca tramitamos por ti.</li>
+        <li>No solicitamos tus datos personales para realizar trámites.</li>
+      </ul>
+
+      <h2>Lo que NO somos</h2>
+      <p>
+        No somos una dependencia del gobierno ni un gestor. No cobramos por trámites que son
+        gratuitos. Si alguna página te pide pago o datos sensibles a nombre de TramitaMex para
+        un trámite oficial, desconfía: no somos nosotros.
+      </p>
+
+      <h2>¿Encontraste algo desactualizado?</h2>
+      <p>
+        Los requisitos y costos cambian. Si ves información que ya no coincide con la fuente
+        oficial, <a href="/contacto/">avísanos</a> y lo corregimos.
+      </p>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .page-hero {
+    background: linear-gradient(180deg, var(--color-primary-soft), transparent);
+    border-bottom: 1px solid var(--color-border);
+    padding-block: var(--space-md) var(--space-lg);
+  }
+  .page-hero h1 { margin-top: var(--space-sm); }
+</style>

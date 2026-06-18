@@ -1,0 +1,126 @@
+// Taxonomía del mega-menú de Trámites.
+// `live: true`  -> existe una página publicada en /<slug>/
+// `live: false` -> está planeada; se muestra en el menú pero sin enlace (sin 404).
+
+export interface TramiteLink {
+  nombre: string;
+  slug: string;
+  live: boolean;
+}
+
+export interface TramiteCategoria {
+  id: string;
+  titulo: string;
+  /** Emoji decorativo (aria-hidden en el render). */
+  icono: string;
+  items: TramiteLink[];
+}
+
+export const CATEGORIAS: TramiteCategoria[] = [
+  {
+    id: 'identidad',
+    titulo: 'Identidad y documentos',
+    icono: '🪪',
+    items: [
+      { nombre: 'CURP', slug: 'curp', live: true },
+      { nombre: 'RFC', slug: 'rfc', live: true },
+      { nombre: 'Constancia de Situación Fiscal', slug: 'constancia-de-situacion-fiscal', live: true },
+      { nombre: 'NSS', slug: 'nss', live: true },
+      { nombre: 'Acta de nacimiento', slug: 'acta-de-nacimiento', live: false },
+      { nombre: 'INE', slug: 'ine', live: false },
+      { nombre: 'Pasaporte', slug: 'pasaporte', live: false },
+    ],
+  },
+  {
+    id: 'registro-civil',
+    titulo: 'Registro Civil',
+    icono: '📜',
+    items: [
+      { nombre: 'Acta de nacimiento', slug: 'acta-de-nacimiento', live: false },
+      { nombre: 'Acta de matrimonio', slug: 'acta-de-matrimonio', live: false },
+      { nombre: 'Acta de defunción', slug: 'acta-de-defuncion', live: false },
+      { nombre: 'Acta de divorcio', slug: 'acta-de-divorcio', live: false },
+      { nombre: 'Corrección de actas', slug: 'correccion-de-actas', live: false },
+    ],
+  },
+  {
+    id: 'sat',
+    titulo: 'SAT e impuestos',
+    icono: '🧾',
+    items: [
+      { nombre: 'RFC', slug: 'rfc', live: true },
+      { nombre: 'Constancia de Situación Fiscal', slug: 'constancia-de-situacion-fiscal', live: true },
+      { nombre: 'Firma electrónica (e.firma)', slug: 'firma-electronica', live: false },
+      { nombre: 'Declaración anual', slug: 'declaracion-anual', live: false },
+      { nombre: 'Opinión de cumplimiento', slug: 'opinion-de-cumplimiento', live: false },
+      { nombre: 'Buzón tributario', slug: 'buzon-tributario', live: false },
+    ],
+  },
+  {
+    id: 'imss-salud',
+    titulo: 'IMSS, ISSSTE y salud',
+    icono: '🏥',
+    items: [
+      { nombre: 'Número de Seguro Social (NSS)', slug: 'nss', live: true },
+      { nombre: 'Semanas cotizadas', slug: 'semanas-cotizadas-imss', live: false },
+      { nombre: 'Vigencia de derechos', slug: 'vigencia-de-derechos-imss', live: false },
+      { nombre: 'Cita médica IMSS', slug: 'cita-medica-imss', live: false },
+      { nombre: 'Pensión IMSS', slug: 'pension-imss', live: false },
+    ],
+  },
+  {
+    id: 'vehiculares',
+    titulo: 'Vehiculares',
+    icono: '🚗',
+    items: [
+      { nombre: 'Licencia de conducir', slug: 'licencia-de-conducir', live: false },
+      { nombre: 'Placas', slug: 'placas', live: false },
+      { nombre: 'Tenencia', slug: 'tenencia', live: false },
+      { nombre: 'Verificación vehicular', slug: 'verificacion-vehicular', live: false },
+      { nombre: 'Tarjeta de circulación', slug: 'tarjeta-de-circulacion', live: false },
+    ],
+  },
+  {
+    id: 'trabajo',
+    titulo: 'Trabajo y antecedentes',
+    icono: '💼',
+    items: [
+      { nombre: 'Antecedentes no penales', slug: 'antecedentes-no-penales', live: false },
+      { nombre: 'Afore', slug: 'afore', live: false },
+      { nombre: 'Infonavit', slug: 'infonavit', live: false },
+      { nombre: 'Fonacot', slug: 'fonacot', live: false },
+      { nombre: 'Cédula profesional', slug: 'cedula-profesional', live: false },
+    ],
+  },
+  {
+    id: 'programas-sociales',
+    titulo: 'Programas sociales',
+    icono: '🤝',
+    items: [
+      { nombre: 'Pensión Bienestar', slug: 'pension-bienestar', live: false },
+      { nombre: 'Becas Benito Juárez', slug: 'becas-benito-juarez', live: false },
+      { nombre: 'Mujeres con Bienestar', slug: 'mujeres-con-bienestar', live: false },
+      { nombre: 'Jóvenes Construyendo el Futuro', slug: 'jovenes-construyendo-el-futuro', live: false },
+    ],
+  },
+];
+
+/** Trámites destacados para el footer / accesos rápidos. */
+export const TRAMITES_DESTACADOS: TramiteLink[] = [
+  { nombre: 'CURP', slug: 'curp', live: true },
+  { nombre: 'RFC', slug: 'rfc', live: true },
+  { nombre: 'Constancia de Situación Fiscal', slug: 'constancia-de-situacion-fiscal', live: true },
+  { nombre: 'NSS', slug: 'nss', live: true },
+  { nombre: 'Acta de nacimiento', slug: 'acta-de-nacimiento', live: false },
+  { nombre: 'Pasaporte', slug: 'pasaporte', live: false },
+  { nombre: 'Licencia de conducir', slug: 'licencia-de-conducir', live: false },
+  { nombre: 'Antecedentes no penales', slug: 'antecedentes-no-penales', live: false },
+];
+
+/** Navegación principal (barra superior). */
+export const NAV_PRINCIPAL = [
+  { nombre: 'Trámites', href: '/tramites/' },
+  { nombre: 'Por estado', href: '/por-estado/' },
+  { nombre: 'Instituciones', href: '/instituciones/' },
+  { nombre: 'Guías', href: '/guias/' },
+];

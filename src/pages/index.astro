@@ -1,0 +1,407 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import TramiteCard from '../components/TramiteCard.astro';
+import { getCollection } from 'astro:content';
+import { ESTADOS } from '../data/estados';
+import { INSTITUCIONES } from '../data/instituciones';
+import { TRAMITES_DESTACADOS } from '../data/navigation';
+
+const tramites = (await getCollection('tramites')).sort(
+  (a, b) => a.data.orden - b.data.orden
+);
+
+const estadosDestacados = [
+  'cdmx',
+  'estado-de-mexico',
+  'jalisco',
+  'nuevo-leon',
+  'puebla',
+  'veracruz',
+  'guanajuato',
+  'queretaro',
+].map((s) => ESTADOS.find((e) => e.slug === s)!);
+
+const beneficios = [
+  {
+    icono: '✅',
+    titulo: 'Información verificada',
+    texto: 'Cada guía se contrasta con los portales oficiales del gobierno antes de publicarse.',
+  },
+  {
+    icono: '🔗',
+    titulo: 'Siempre te mandamos al sitio oficial',
+    texto: 'No tramitamos por ti ni pedimos tus datos: te llevamos al portal correcto, gratis.',
+  },
+  {
+    icono: '🗓️',
+    titulo: 'Actualizado',
+    texto: 'Revisamos requisitos y costos con regularidad y mostramos la fecha de actualización.',
+  },
+];
+---
+
+<BaseLayout
+  title="TramitaMex — Guía nacional de trámites en México"
+  description="Cómo hacer tus trámites en México: CURP, RFC, NSS, Constancia de Situación Fiscal y más. Requisitos, costos, paso a paso y enlaces oficiales. Sitio informativo independiente."
+>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow">Guía nacional de trámites · México</p>
+        <h1>Haz tus trámites <span class="hl">sin vueltas</span> ni intermediarios.</h1>
+        <p class="hero-lead">
+          Requisitos, costos y el paso a paso de los trámites más buscados de México —
+          explicados claro y con enlace directo al portal oficial.
+        </p>
+
+        <form class="hero-search" action="/tramites/" method="get" role="search">
+          <svg class="search-icon" width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><circle cx="9" cy="9" r="6" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="m14 14 3.5 3.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+          <input type="search" name="q" placeholder="Busca: CURP, RFC, pasaporte, NSS…" aria-label="Buscar un trámite" />
+          <button type="submit" class="btn btn-primary">Buscar</button>
+        </form>
+
+        <div class="hero-chips">
+          <span class="chips-label">Populares:</span>
+          {
+            TRAMITES_DESTACADOS.filter((t) => t.live).map((t) => (
+              <a class="chip" href={`/${t.slug}/`}>{t.nombre}</a>
+            ))
+          }
+        </div>
+      </div>
+
+      <div class="hero-aside" aria-hidden="true">
+        <div class="hero-card card-a">
+          <span class="hc-badge">Gratis</span>
+          <span class="hc-title">CURP</span>
+          <span class="hc-meta">En línea · Inmediato</span>
+        </div>
+        <div class="hero-card card-b">
+          <span class="hc-badge">Gratis</span>
+          <span class="hc-title">RFC</span>
+          <span class="hc-meta">SAT · Con tu CURP</span>
+        </div>
+        <div class="hero-card card-c">
+          <span class="hc-badge">Gratis</span>
+          <span class="hc-title">NSS</span>
+          <span class="hc-meta">IMSS · 11 dígitos</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRÁMITES DESTACADOS -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Lo más buscado</p>
+          <h2>Trámites destacados</h2>
+        </div>
+        <a href="/tramites/" class="btn btn-ghost">Ver todos</a>
+      </div>
+      <div class="cards-grid">
+        {
+          tramites.map((t) => (
+            <TramiteCard
+              titulo={t.data.titulo}
+              descripcion={t.data.resumen}
+              slug={t.id}
+              categoria={t.data.categoria}
+              costo={t.data.costo}
+              live={true}
+            />
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- BENEFICIOS -->
+  <section class="section beneficios-section">
+    <div class="container">
+      <div class="section-head centered">
+        <div>
+          <p class="eyebrow">Por qué TramitaMex</p>
+          <h2>Información en la que puedes confiar</h2>
+        </div>
+      </div>
+      <div class="beneficios-grid">
+        {
+          beneficios.map((b) => (
+            <div class="beneficio">
+              <span class="beneficio-icon" aria-hidden="true">{b.icono}</span>
+              <h3>{b.titulo}</h3>
+              <p>{b.texto}</p>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- POR ESTADO -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">SEO local</p>
+          <h2>Trámites por estado</h2>
+        </div>
+        <a href="/por-estado/" class="btn btn-ghost">Ver los 32 estados</a>
+      </div>
+      <div class="estado-grid">
+        {
+          estadosDestacados.map((e) => (
+            <a href={`/por-estado/${e.slug}/`} class="estado-pill">
+              {e.nombre}
+            </a>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- INSTITUCIONES -->
+  <section class="section instituciones-section">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Por dependencia</p>
+          <h2>Instituciones</h2>
+        </div>
+        <a href="/instituciones/" class="btn btn-ghost">Ver todas</a>
+      </div>
+      <div class="inst-grid">
+        {
+          INSTITUCIONES.map((i) => (
+            <a href={`/instituciones/${i.slug}/`} class="inst-card">
+              <span class="inst-abbr">{i.nombre}</span>
+              <span class="inst-name">{i.nombreCompleto}</span>
+            </a>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  /* HERO */
+  .hero {
+    position: relative;
+    overflow: hidden;
+    background:
+      radial-gradient(120% 100% at 85% -10%, var(--color-primary-soft), transparent 60%),
+      linear-gradient(180deg, var(--color-surface-2), var(--color-bg));
+    border-bottom: 1px solid var(--color-border);
+  }
+  .hero-inner {
+    display: grid;
+    grid-template-columns: 1.25fr 0.75fr;
+    gap: var(--space-xl);
+    align-items: center;
+    padding-block: clamp(3rem, 2rem + 6vw, 6.5rem);
+  }
+  .hero h1 {
+    font-size: var(--text-hero);
+    line-height: 1.02;
+    margin-top: var(--space-sm);
+    max-width: 16ch;
+  }
+  .hero h1 .hl {
+    color: var(--color-primary-strong);
+    position: relative;
+    white-space: nowrap;
+  }
+  .hero h1 .hl::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0.08em;
+    height: 0.3em;
+    background: var(--color-accent);
+    opacity: 0.4;
+    border-radius: 2px;
+    z-index: -1;
+  }
+  .hero-lead {
+    margin-top: var(--space-md);
+    max-width: 52ch;
+    font-size: var(--text-md);
+    color: var(--color-text-soft);
+  }
+
+  .hero-search {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: var(--space-lg);
+    max-width: 560px;
+    background: var(--color-surface);
+    border: 1.5px solid var(--color-border-strong);
+    border-radius: var(--radius-pill);
+    padding: 0.4rem 0.4rem 0.4rem 1rem;
+    box-shadow: var(--shadow-sm);
+    transition: border-color var(--duration-fast), box-shadow var(--duration-fast);
+  }
+  .hero-search:focus-within {
+    border-color: var(--color-primary);
+    box-shadow: var(--shadow-md);
+  }
+  .search-icon { color: var(--color-text-faint); flex-shrink: 0; }
+  .hero-search input {
+    flex: 1;
+    border: none;
+    background: none;
+    outline: none;
+    font-size: var(--text-base);
+    min-width: 0;
+  }
+  .hero-search .btn { flex-shrink: 0; }
+
+  .hero-chips {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: var(--space-md);
+  }
+  .chips-label { font-size: var(--text-sm); color: var(--color-text-faint); }
+  .chip {
+    font-size: var(--text-sm);
+    padding: 0.35rem 0.85rem;
+    border-radius: var(--radius-pill);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border-strong);
+    color: var(--color-text-soft);
+    text-decoration: none;
+    transition: all var(--duration-fast) var(--ease-out-expo);
+  }
+  .chip:hover {
+    border-color: var(--color-primary);
+    color: var(--color-primary-strong);
+    transform: translateY(-2px);
+  }
+
+  /* Hero aside (tarjetas flotantes decorativas) */
+  .hero-aside {
+    position: relative;
+    height: 320px;
+  }
+  .hero-card {
+    position: absolute;
+    display: grid;
+    gap: 0.2rem;
+    padding: var(--space-md);
+    width: 200px;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+  }
+  .hc-badge {
+    justify-self: start;
+    font-size: 0.65rem;
+    font-weight: var(--weight-bold);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-success);
+    background: var(--color-success-soft);
+    padding: 0.15rem 0.5rem;
+    border-radius: var(--radius-pill);
+  }
+  .hc-title { font-family: var(--font-display); font-size: 1.5rem; font-weight: var(--weight-semibold); }
+  .hc-meta { font-size: var(--text-sm); color: var(--color-text-faint); }
+  .card-a { top: 10px; right: 40px; transform: rotate(3deg); }
+  .card-b { top: 120px; right: 130px; transform: rotate(-4deg); z-index: 2; }
+  .card-c { top: 215px; right: 20px; transform: rotate(2deg); }
+
+  /* Section heads */
+  .section-head {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: var(--space-md);
+    margin-bottom: var(--space-lg);
+    flex-wrap: wrap;
+  }
+  .section-head.centered { justify-content: center; text-align: center; }
+
+  .cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: var(--space-md);
+  }
+
+  /* Beneficios */
+  .beneficios-section { background: var(--color-surface-2); border-block: 1px solid var(--color-border); }
+  .beneficios-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-md);
+  }
+  .beneficio {
+    padding: var(--space-lg);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+  }
+  .beneficio-icon { font-size: 1.8rem; }
+  .beneficio h3 { margin-block: var(--space-sm) var(--space-2xs); font-size: var(--text-lg); }
+  .beneficio p { color: var(--color-text-soft); font-size: var(--text-sm); }
+
+  /* Estados */
+  .estado-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 0.6rem;
+  }
+  .estado-pill {
+    display: block;
+    padding: 0.85rem 1rem;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    text-decoration: none;
+    color: var(--color-text);
+    font-weight: var(--weight-medium);
+    transition: all var(--duration-fast) var(--ease-out-expo);
+  }
+  .estado-pill:hover {
+    border-color: var(--color-primary);
+    color: var(--color-primary-strong);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-sm);
+  }
+
+  /* Instituciones */
+  .instituciones-section { background: var(--color-surface-2); border-top: 1px solid var(--color-border); }
+  .inst-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: var(--space-md);
+  }
+  .inst-card {
+    display: grid;
+    gap: 0.3rem;
+    padding: var(--space-md);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    text-decoration: none;
+    color: inherit;
+    transition: all var(--duration-fast) var(--ease-out-expo);
+  }
+  .inst-card:hover { border-color: var(--color-primary-tint); transform: translateY(-3px); box-shadow: var(--shadow-md); }
+  .inst-abbr { font-family: var(--font-display); font-size: 1.4rem; font-weight: var(--weight-bold); color: var(--color-primary-strong); }
+  .inst-name { font-size: var(--text-sm); color: var(--color-text-soft); }
+
+  @media (max-width: 920px) {
+    .hero-inner { grid-template-columns: 1fr; }
+    .hero-aside { display: none; }
+    .beneficios-grid { grid-template-columns: 1fr; }
+  }
+</style>

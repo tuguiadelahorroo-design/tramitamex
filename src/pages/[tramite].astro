@@ -1,0 +1,19 @@
+---
+import { getCollection, render } from 'astro:content';
+import TramiteLayout from '../layouts/TramiteLayout.astro';
+
+export async function getStaticPaths() {
+  const tramites = await getCollection('tramites');
+  return tramites.map((entry) => ({
+    params: { tramite: entry.id },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+---
+
+<TramiteLayout {...entry.data}>
+  <Content />
+</TramiteLayout>

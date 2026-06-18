@@ -1,0 +1,71 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+---
+
+<BaseLayout
+  title="Política de privacidad"
+  description="Política de privacidad de TramitaMex: qué datos tratamos y cómo cuidamos tu información."
+>
+  <section class="page-hero">
+    <div class="container container-narrow">
+      <Breadcrumbs items={[{ nombre: 'Privacidad' }]} />
+      <h1>Política de privacidad</h1>
+    </div>
+  </section>
+
+  <div class="container container-narrow section">
+    <div class="prose">
+      <p>
+        En TramitaMex respetamos tu privacidad. Este sitio es informativo y está diseñado para
+        funcionar sin pedirte datos personales para consultar trámites.
+      </p>
+
+      <h2>Datos que tratamos</h2>
+      <ul>
+        <li>
+          <strong>Formulario de contacto:</strong> si nos escribes, recibimos el nombre, correo
+          y mensaje que nos compartas, únicamente para responderte.
+        </li>
+        <li>
+          <strong>Datos de navegación:</strong> podemos usar herramientas de analítica para
+          entender de forma agregada y anónima cómo se usa el sitio y mejorarlo.
+        </li>
+      </ul>
+
+      <h2>Lo que no hacemos</h2>
+      <ul>
+        <li>No vendemos ni rentamos tus datos personales.</li>
+        <li>No solicitamos datos sensibles (CURP, RFC, NSS) para realizar trámites por ti.</li>
+        <li>No realizamos trámites oficiales ni almacenamos documentos oficiales.</li>
+      </ul>
+
+      <h2>Cookies</h2>
+      <p>
+        El sitio puede usar cookies o almacenamiento local para recordar preferencias y medir
+        el tráfico de forma anónima. Puedes desactivarlas desde la configuración de tu
+        navegador.
+      </p>
+
+      <h2>Tus derechos</h2>
+      <p>
+        Si nos compartiste datos a través del formulario de contacto y deseas que los
+        eliminemos, escríbenos desde la página de <a href="/contacto/">contacto</a>.
+      </p>
+
+      <h2>Cambios a esta política</h2>
+      <p>
+        Podemos actualizar esta política. Publicaremos cualquier cambio en esta misma página.
+      </p>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .page-hero {
+    background: linear-gradient(180deg, var(--color-primary-soft), transparent);
+    border-bottom: 1px solid var(--color-border);
+    padding-block: var(--space-md) var(--space-lg);
+  }
+  .page-hero h1 { margin-top: var(--space-sm); }
+</style>

@@ -1,0 +1,237 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import Faq from '../components/Faq.astro';
+import { getInstitucion } from '../data/instituciones';
+
+export interface Props {
+  titulo: string;
+  tituloLargo?: string;
+  descripcion: string;
+  resumen: string;
+  categoria: string;
+  institucion: string;
+  nivel: string;
+  costo: string;
+  modalidad: string;
+  tiempo: string;
+  vigencia?: string;
+  urlOficial: string;
+  urlOficialTexto: string;
+  actualizado: Date;
+  faq: { pregunta: string; respuesta: string }[];
+  fuentes: { titulo: string; url: string }[];
+}
+
+const p = Astro.props;
+const h1 = p.tituloLargo ?? p.titulo;
+const institucion = getInstitucion(p.institucion);
+
+const fmtFecha = new Intl.DateTimeFormat('es-MX', {
+  day: 'numeric',
+  month: 'long',
+  year: 'numeric',
+});
+const actualizadoTexto = fmtFecha.format(p.actualizado);
+
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: h1,
+  description: p.descripcion,
+  inLanguage: 'es-MX',
+  datePublished: p.actualizado.toISOString(),
+  dateModified: p.actualizado.toISOString(),
+  author: { '@type': 'Organization', name: 'Equipo editorial TramitaMex' },
+  publisher: { '@type': 'Organization', name: 'TramitaMex' },
+};
+
+const ficha = [
+  { etiqueta: 'Costo', valor: p.costo, destacado: true },
+  { etiqueta: 'Modalidad', valor: p.modalidad },
+  { etiqueta: 'Tiempo', valor: p.tiempo },
+  { etiqueta: 'Vigencia', valor: p.vigencia },
+  { etiqueta: 'Nivel', valor: p.nivel },
+  { etiqueta: 'Institución', valor: institucion?.nombre ?? p.institucion },
+].filter((f) => f.valor);
+---
+
+<BaseLayout title={h1} description={p.descripcion} ogType="article" jsonLd={[articleSchema]}>
+  <article class="tramite">
+    <div class="tramite-hero">
+      <div class="container">
+        <Breadcrumbs
+          items={[
+            { nombre: 'Trámites', href: '/tramites/' },
+            { nombre: p.titulo },
+          ]}
+        />
+        <p class="eyebrow">{p.categoria}</p>
+        <h1>{h1}</h1>
+        <p class="lead">{p.resumen}</p>
+        <div class="hero-actions">
+          <a href={p.urlOficial} class="btn btn-primary" target="_blank" rel="noopener noreferrer nofollow">
+            Ir al sitio oficial
+            <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3h7v7M13 3 6.5 9.5M11 9.5V13H3V5h3.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <span class="hero-updated">Actualizado el {actualizadoTexto}</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="container tramite-body">
+      <div class="tramite-content prose">
+        <slot />
+
+        <Faq items={p.faq} />
+
+        {
+          p.fuentes.length > 0 && (
+            <section class="fuentes" aria-labelledby="fuentes-title">
+              <h2 id="fuentes-title">Fuentes oficiales</h2>
+              <ul role="list">
+                {p.fuentes.map((f) => (
+                  <li>
+                    <a href={f.url} target="_blank" rel="noopener noreferrer nofollow">
+                      {f.titulo}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          )
+        }
+
+        <p class="actualizado-nota">
+          Información verificada en {actualizadoTexto} con base en fuentes oficiales. Los
+          requisitos y costos pueden cambiar; confirma siempre en el portal oficial antes de
+          iniciar tu trámite.
+        </p>
+      </div>
+
+      <aside class="tramite-aside">
+        <div class="ficha surface-card">
+          <p class="ficha-title">Ficha rápida</p>
+          <dl class="ficha-list">
+            {ficha.map((f) => (
+              <div class:list={['ficha-row', { 'is-highlight': f.destacado }]}>
+                <dt>{f.etiqueta}</dt>
+                <dd>{f.valor}</dd>
+              </div>
+            ))}
+          </dl>
+          <a href={p.urlOficial} class="btn btn-accent ficha-cta" target="_blank" rel="noopener noreferrer nofollow">
+            {p.urlOficialTexto}
+          </a>
+        </div>
+
+        {
+          institucion && (
+            <a class="aside-inst surface-card" href={`/instituciones/${institucion.slug}/`}>
+              <span class="aside-inst-label">Institución responsable</span>
+              <span class="aside-inst-name">{institucion.nombre}</span>
+              <span class="aside-inst-full">{institucion.nombreCompleto}</span>
+            </a>
+          )
+        }
+      </aside>
+    </div>
+  </article>
+</BaseLayout>
+
+<style>
+  .tramite-hero {
+    background: linear-gradient(180deg, var(--color-primary-soft), transparent);
+    border-bottom: 1px solid var(--color-border);
+    padding-block: var(--space-md) var(--space-xl);
+  }
+  .tramite-hero .eyebrow { margin-top: var(--space-md); }
+  .tramite-hero h1 {
+    font-size: var(--text-3xl);
+    margin-top: var(--space-2xs);
+    max-width: 18ch;
+  }
+  .lead {
+    margin-top: var(--space-sm);
+    max-width: 60ch;
+    font-size: var(--text-md);
+    color: var(--color-text-soft);
+  }
+  .hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-sm);
+    margin-top: var(--space-md);
+  }
+  .hero-updated { font-size: var(--text-sm); color: var(--color-text-faint); }
+
+  .tramite-body {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 320px;
+    gap: var(--space-xl);
+    padding-block: var(--space-xl);
+    align-items: start;
+  }
+
+  /* Aside pegajoso */
+  .tramite-aside {
+    position: sticky;
+    top: 5.5rem;
+    display: grid;
+    gap: var(--space-sm);
+  }
+  .ficha { padding: var(--space-md); }
+  .ficha-title {
+    font-family: var(--font-display);
+    font-weight: var(--weight-semibold);
+    font-size: var(--text-lg);
+    margin-bottom: var(--space-sm);
+  }
+  .ficha-list { margin: 0; display: grid; gap: 0; }
+  .ficha-row {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--space-sm);
+    padding-block: 0.65rem;
+    border-bottom: 1px dashed var(--color-border);
+  }
+  .ficha-row:last-of-type { border-bottom: none; }
+  .ficha-row dt { color: var(--color-text-faint); font-size: var(--text-sm); }
+  .ficha-row dd { margin: 0; font-weight: var(--weight-medium); text-align: right; font-size: var(--text-sm); }
+  .ficha-row.is-highlight dd { color: var(--color-success); font-weight: var(--weight-bold); }
+  .ficha-cta { width: 100%; margin-top: var(--space-md); }
+
+  .aside-inst {
+    display: grid;
+    gap: 0.15rem;
+    padding: var(--space-md);
+    text-decoration: none;
+    color: inherit;
+    transition: border-color var(--duration-fast), transform var(--duration-fast) var(--ease-out-expo);
+  }
+  .aside-inst:hover { border-color: var(--color-primary-tint); transform: translateY(-2px); }
+  .aside-inst-label { font-size: var(--text-xs); text-transform: uppercase; letter-spacing: 0.04em; color: var(--color-text-faint); }
+  .aside-inst-name { font-family: var(--font-display); font-size: var(--text-lg); color: var(--color-primary-strong); font-weight: var(--weight-semibold); }
+  .aside-inst-full { font-size: var(--text-sm); color: var(--color-text-soft); }
+
+  .fuentes { margin-top: var(--space-xl); padding: var(--space-md); background: var(--color-surface-2); border-radius: var(--radius-lg); border: 1px solid var(--color-border); }
+  .fuentes h2 { font-size: var(--text-lg); margin-bottom: var(--space-sm); }
+  .fuentes ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 0.5rem; }
+  .fuentes a { font-size: var(--text-sm); }
+
+  .actualizado-nota {
+    margin-top: var(--space-lg);
+    padding: var(--space-sm) var(--space-md);
+    border-left: 3px solid var(--color-accent);
+    background: var(--color-accent-soft);
+    border-radius: var(--radius-sm);
+    font-size: var(--text-sm);
+    color: var(--color-text-soft);
+  }
+
+  @media (max-width: 920px) {
+    .tramite-body { grid-template-columns: 1fr; gap: var(--space-lg); }
+    .tramite-aside { position: static; order: -1; }
+  }
+</style>

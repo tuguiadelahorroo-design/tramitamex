@@ -1,0 +1,142 @@
+---
+import { TRAMITES_DESTACADOS } from '../data/navigation';
+import { INSTITUCIONES } from '../data/instituciones';
+
+const year = 2026;
+---
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a href="/" class="brand" aria-label="TramitaMex, inicio">
+        <svg width="30" height="30" viewBox="0 0 32 32" aria-hidden="true">
+          <rect width="32" height="32" rx="7" fill="var(--color-accent)" />
+          <path d="M9 8.5h9.5l4.5 4.5V23a1.5 1.5 0 0 1-1.5 1.5H9A1.5 1.5 0 0 1 7.5 23V10A1.5 1.5 0 0 1 9 8.5Z" fill="var(--color-primary-deep)" />
+          <path d="M11.5 18.5l2.6 2.6 5-5.4" fill="none" stroke="var(--color-accent)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        <span class="brand-text">Tramita<strong>Mex</strong></span>
+      </a>
+      <p class="footer-tagline">
+        La guía nacional de trámites en México. Información clara, verificada con fuentes
+        oficiales y actualizada.
+      </p>
+    </div>
+
+    <nav class="footer-col" aria-label="Trámites más buscados">
+      <h2 class="footer-title">Trámites más buscados</h2>
+      <ul role="list">
+        {TRAMITES_DESTACADOS.map((t) =>
+          t.live ? (
+            <li><a href={`/${t.slug}/`}>{t.nombre}</a></li>
+          ) : (
+            <li><span class="footer-soon">{t.nombre}</span></li>
+          )
+        )}
+      </ul>
+    </nav>
+
+    <nav class="footer-col" aria-label="Instituciones">
+      <h2 class="footer-title">Por institución</h2>
+      <ul role="list">
+        {INSTITUCIONES.map((i) => (
+          <li><a href={`/instituciones/${i.slug}/`}>{i.nombre}</a></li>
+        ))}
+      </ul>
+    </nav>
+
+    <nav class="footer-col" aria-label="Sitio y legal">
+      <h2 class="footer-title">El sitio</h2>
+      <ul role="list">
+        <li><a href="/tramites/">Todos los trámites</a></li>
+        <li><a href="/por-estado/">Trámites por estado</a></li>
+        <li><a href="/guias/">Guías</a></li>
+        <li><a href="/acerca-de/">Acerca de</a></li>
+        <li><a href="/contacto/">Contacto</a></li>
+        <li><a href="/aviso-legal/">Aviso legal</a></li>
+        <li><a href="/privacidad/">Privacidad</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="footer-disclaimer">
+    <div class="container">
+      <p>
+        <strong>Sitio informativo independiente.</strong> TramitaMex no es una página oficial del
+        Gobierno de México ni está afiliado a ninguna dependencia. Reunimos y organizamos
+        información pública para orientarte; los trámites siempre se realizan en los portales
+        oficiales. Verifica requisitos y costos en la fuente oficial de cada trámite.
+      </p>
+      <p class="footer-copy">© {year} TramitaMex · tramitamex.com.mx</p>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    margin-top: var(--space-2xl);
+    background: var(--color-primary-deep);
+    color: oklch(88% 0.02 95);
+  }
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr 1fr;
+    gap: var(--space-lg);
+    padding-block: var(--space-xl) var(--space-lg);
+  }
+  .brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--color-text-on-dark);
+    text-decoration: none;
+    font-family: var(--font-display);
+    font-size: 1.3rem;
+    font-weight: var(--weight-semibold);
+  }
+  .brand-text strong { color: var(--color-accent); }
+  .footer-tagline {
+    margin-top: var(--space-sm);
+    max-width: 30ch;
+    font-size: var(--text-sm);
+    color: oklch(80% 0.02 95);
+    line-height: var(--leading-relaxed);
+  }
+  .footer-title {
+    font-family: var(--font-sans);
+    font-size: var(--text-sm);
+    font-weight: var(--weight-semibold);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-accent);
+    margin-bottom: var(--space-sm);
+  }
+  .footer-col ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 0.5rem; }
+  .footer-col a {
+    color: oklch(86% 0.02 95);
+    text-decoration: none;
+    font-size: var(--text-sm);
+    transition: color var(--duration-fast) var(--ease-out-expo);
+  }
+  .footer-col a:hover { color: var(--color-text-on-dark); text-decoration: underline; }
+  .footer-soon { color: oklch(64% 0.02 95); font-size: var(--text-sm); }
+
+  .footer-disclaimer {
+    border-top: 1px solid oklch(40% 0.04 164);
+    padding-block: var(--space-md);
+  }
+  .footer-disclaimer p {
+    font-size: var(--text-xs);
+    color: oklch(78% 0.02 95);
+    line-height: var(--leading-relaxed);
+    max-width: 95ch;
+  }
+  .footer-disclaimer strong { color: var(--color-text-on-dark); }
+  .footer-copy { margin-top: var(--space-2xs); color: oklch(68% 0.02 95) !important; }
+
+  @media (max-width: 860px) {
+    .footer-grid { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 520px) {
+    .footer-grid { grid-template-columns: 1fr; }
+  }
+</style>

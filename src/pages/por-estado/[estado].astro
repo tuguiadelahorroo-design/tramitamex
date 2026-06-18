@@ -1,0 +1,157 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import TramiteCard from '../../components/TramiteCard.astro';
+import { ESTADOS } from '../../data/estados';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  return ESTADOS.map((estado) => ({
+    params: { estado: estado.slug },
+    props: { estado },
+  }));
+}
+
+const { estado } = Astro.props;
+const tramites = (await getCollection('tramites')).sort(
+  (a, b) => a.data.orden - b.data.orden
+);
+
+// Trámites estatales típicos (aún en preparación).
+const tramitesEstatales = [
+  'Licencia de conducir',
+  'Placas',
+  'Refrendo vehicular',
+  'Verificación vehicular',
+  'Acta de nacimiento',
+  'Antecedentes no penales',
+  'Registro Civil',
+  'Predial',
+];
+
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name: `Trámites en ${estado.nombre}`,
+    description: `Trámites disponibles en ${estado.nombre}, México.`,
+  },
+];
+---
+
+<BaseLayout
+  title={`Trámites en ${estado.nombre}: requisitos, costos y oficinas`}
+  description={`Guía de trámites en ${estado.nombre}: CURP, RFC, NSS y trámites estatales. Requisitos, costos y enlaces oficiales para hacer tus trámites en ${estado.nombre}.`}
+  jsonLd={jsonLd}
+>
+  <section class="page-hero">
+    <div class="container">
+      <Breadcrumbs
+        items={[{ nombre: 'Por estado', href: '/por-estado/' }, { nombre: estado.nombre }]}
+      />
+      <p class="eyebrow">Estado · Capital: {estado.capital}</p>
+      <h1>Trámites en {estado.nombre}</h1>
+      <p class="lead">
+        Estos son los trámites que puedes hacer si vives en {estado.nombre}. Los trámites
+        federales se realizan igual en todo el país; los estatales dependen del gobierno de
+        {estado.nombre}.
+      </p>
+    </div>
+  </section>
+
+  <div class="container section">
+    <section class="block">
+      <h2>Trámites federales (válidos en {estado.nombre})</h2>
+      <p class="block-sub">
+        Se tramitan en línea o en oficinas federales y aplican en toda la República.
+      </p>
+      <div class="cards-grid">
+        {
+          tramites.map((t) => (
+            <TramiteCard
+              titulo={t.data.titulo}
+              descripcion={t.data.resumen}
+              slug={t.id}
+              categoria={t.data.categoria}
+              costo={t.data.costo}
+              live={true}
+            />
+          ))
+        }
+      </div>
+    </section>
+
+    <section class="block">
+      <h2>Trámites estatales en {estado.nombre}</h2>
+      <p class="block-sub">
+        Estamos preparando las guías locales de {estado.nombre} con requisitos, costos y
+        oficinas específicas.
+      </p>
+      <div class="estatal-grid">
+        {
+          tramitesEstatales.map((nombre) => (
+            <div class="estatal-pill">
+              {nombre}
+              <em>pronto</em>
+            </div>
+          ))
+        }
+      </div>
+    </section>
+
+    <aside class="estado-nota">
+      <p>
+        <strong>¿Eres de {estado.nombre}?</strong> Si conoces un trámite local que deberíamos
+        cubrir primero, <a href="/contacto/">escríbenos</a> y lo priorizamos.
+      </p>
+    </aside>
+  </div>
+</BaseLayout>
+
+<style>
+  .page-hero {
+    background: linear-gradient(180deg, var(--color-primary-soft), transparent);
+    border-bottom: 1px solid var(--color-border);
+    padding-block: var(--space-md) var(--space-xl);
+  }
+  .page-hero .eyebrow { margin-top: var(--space-md); }
+  .page-hero h1 { margin-top: var(--space-2xs); font-size: var(--text-3xl); }
+  .lead { margin-top: var(--space-sm); max-width: 62ch; font-size: var(--text-md); color: var(--color-text-soft); }
+
+  .block { margin-bottom: var(--space-xl); }
+  .block h2 { font-size: var(--text-xl); }
+  .block-sub { margin-block: 0.35rem var(--space-md); color: var(--color-text-soft); }
+  .cards-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: var(--space-md); }
+
+  .estatal-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 0.6rem; }
+  .estatal-pill {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    padding: 0.85rem 1rem;
+    background: var(--color-surface-2);
+    border: 1px dashed var(--color-border-strong);
+    border-radius: var(--radius-md);
+    color: var(--color-text-soft);
+  }
+  .estatal-pill em {
+    font-style: normal;
+    font-size: 0.62rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--color-accent-strong);
+    background: var(--color-accent-soft);
+    padding: 0.1rem 0.45rem;
+    border-radius: var(--radius-pill);
+    font-weight: var(--weight-semibold);
+  }
+
+  .estado-nota {
+    margin-top: var(--space-md);
+    padding: var(--space-md);
+    background: var(--color-primary-soft);
+    border-radius: var(--radius-lg);
+  }
+  .estado-nota p { margin: 0; color: var(--color-text-soft); }
+</style>
