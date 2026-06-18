@@ -26,9 +26,9 @@ export const CATEGORIAS: TramiteCategoria[] = [
       { nombre: 'RFC', slug: 'rfc', live: true },
       { nombre: 'Constancia de Situación Fiscal', slug: 'constancia-de-situacion-fiscal', live: true },
       { nombre: 'NSS', slug: 'nss', live: true },
-      { nombre: 'Acta de nacimiento', slug: 'acta-de-nacimiento', live: false },
+      { nombre: 'Acta de nacimiento', slug: 'acta-de-nacimiento', live: true },
       { nombre: 'INE', slug: 'ine', live: false },
-      { nombre: 'Pasaporte', slug: 'pasaporte', live: false },
+      { nombre: 'Pasaporte', slug: 'pasaporte', live: true },
     ],
   },
   {
@@ -36,7 +36,7 @@ export const CATEGORIAS: TramiteCategoria[] = [
     titulo: 'Registro Civil',
     icono: '📜',
     items: [
-      { nombre: 'Acta de nacimiento', slug: 'acta-de-nacimiento', live: false },
+      { nombre: 'Acta de nacimiento', slug: 'acta-de-nacimiento', live: true },
       { nombre: 'Acta de matrimonio', slug: 'acta-de-matrimonio', live: false },
       { nombre: 'Acta de defunción', slug: 'acta-de-defuncion', live: false },
       { nombre: 'Acta de divorcio', slug: 'acta-de-divorcio', live: false },
@@ -50,7 +50,7 @@ export const CATEGORIAS: TramiteCategoria[] = [
     items: [
       { nombre: 'RFC', slug: 'rfc', live: true },
       { nombre: 'Constancia de Situación Fiscal', slug: 'constancia-de-situacion-fiscal', live: true },
-      { nombre: 'Firma electrónica (e.firma)', slug: 'firma-electronica', live: false },
+      { nombre: 'Firma electrónica (e.firma)', slug: 'firma-electronica', live: true },
       { nombre: 'Declaración anual', slug: 'declaracion-anual', live: false },
       { nombre: 'Opinión de cumplimiento', slug: 'opinion-de-cumplimiento', live: false },
       { nombre: 'Buzón tributario', slug: 'buzon-tributario', live: false },
@@ -62,7 +62,7 @@ export const CATEGORIAS: TramiteCategoria[] = [
     icono: '🏥',
     items: [
       { nombre: 'Número de Seguro Social (NSS)', slug: 'nss', live: true },
-      { nombre: 'Semanas cotizadas', slug: 'semanas-cotizadas-imss', live: false },
+      { nombre: 'Semanas cotizadas', slug: 'semanas-cotizadas-imss', live: true },
       { nombre: 'Vigencia de derechos', slug: 'vigencia-de-derechos-imss', live: false },
       { nombre: 'Cita médica IMSS', slug: 'cita-medica-imss', live: false },
       { nombre: 'Pensión IMSS', slug: 'pension-imss', live: false },
@@ -89,7 +89,7 @@ export const CATEGORIAS: TramiteCategoria[] = [
       { nombre: 'Afore', slug: 'afore', live: false },
       { nombre: 'Infonavit', slug: 'infonavit', live: false },
       { nombre: 'Fonacot', slug: 'fonacot', live: false },
-      { nombre: 'Cédula profesional', slug: 'cedula-profesional', live: false },
+      { nombre: 'Cédula profesional', slug: 'cedula-profesional', live: true },
     ],
   },
   {
@@ -111,8 +111,8 @@ export const TRAMITES_DESTACADOS: TramiteLink[] = [
   { nombre: 'RFC', slug: 'rfc', live: true },
   { nombre: 'Constancia de Situación Fiscal', slug: 'constancia-de-situacion-fiscal', live: true },
   { nombre: 'NSS', slug: 'nss', live: true },
-  { nombre: 'Acta de nacimiento', slug: 'acta-de-nacimiento', live: false },
-  { nombre: 'Pasaporte', slug: 'pasaporte', live: false },
+  { nombre: 'Acta de nacimiento', slug: 'acta-de-nacimiento', live: true },
+  { nombre: 'Pasaporte', slug: 'pasaporte', live: true },
   { nombre: 'Licencia de conducir', slug: 'licencia-de-conducir', live: false },
   { nombre: 'Antecedentes no penales', slug: 'antecedentes-no-penales', live: false },
 ];
