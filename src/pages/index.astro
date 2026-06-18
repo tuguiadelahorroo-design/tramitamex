@@ -6,9 +6,12 @@ import { ESTADOS } from '../data/estados';
 import { INSTITUCIONES } from '../data/instituciones';
 import { TRAMITES_DESTACADOS } from '../data/navigation';
 
-const tramites = (await getCollection('tramites')).sort(
+const todosTramites = (await getCollection('tramites')).sort(
   (a, b) => a.data.orden - b.data.orden
 );
+// En la home mostramos solo los más buscados; el resto vive en /tramites/.
+const tramites = todosTramites.slice(0, 8);
+const totalTramites = todosTramites.length;
 
 const estadosDestacados = [
   'cdmx',
@@ -99,7 +102,7 @@ const beneficios = [
           <p class="eyebrow">Lo más buscado</p>
           <h2>Trámites destacados</h2>
         </div>
-        <a href="/tramites/" class="btn btn-ghost">Ver todos</a>
+        <a href="/tramites/" class="btn btn-ghost">Ver los {totalTramites} trámites</a>
       </div>
       <div class="cards-grid">
         {

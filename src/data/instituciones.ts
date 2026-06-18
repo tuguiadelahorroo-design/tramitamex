@@ -19,7 +19,7 @@ export const INSTITUCIONES: Institucion[] = [
     descripcion:
       'Autoridad fiscal de México. Administra el RFC, la facturación electrónica, la e.firma y las declaraciones de impuestos.',
     sitioOficial: 'https://www.sat.gob.mx/',
-    tramites: ['rfc', 'constancia-de-situacion-fiscal', 'firma-electronica'],
+    tramites: ['rfc', 'constancia-de-situacion-fiscal', 'firma-electronica', 'opinion-de-cumplimiento'],
   },
   {
     slug: 'imss',
@@ -28,7 +28,7 @@ export const INSTITUCIONES: Institucion[] = [
     descripcion:
       'Brinda seguridad social a los trabajadores: NSS, atención médica, semanas cotizadas, pensiones e incapacidades.',
     sitioOficial: 'https://www.imss.gob.mx/',
-    tramites: ['nss', 'semanas-cotizadas-imss'],
+    tramites: ['nss', 'semanas-cotizadas-imss', 'vigencia-de-derechos-imss'],
   },
   {
     slug: 'renapo',
@@ -62,6 +62,24 @@ export const INSTITUCIONES: Institucion[] = [
     descripcion: 'Atiende cédulas profesionales, certificados de estudios y revalidaciones.',
     sitioOficial: 'https://www.gob.mx/sep',
     tramites: ['cedula-profesional'],
+  },
+  {
+    slug: 'consar',
+    nombre: 'CONSAR',
+    nombreCompleto: 'Comisión Nacional del Sistema de Ahorro para el Retiro',
+    descripcion:
+      'Regula el sistema de ahorro para el retiro (Afores). Permite localizar tu Afore y consultar tu cuenta individual.',
+    sitioOficial: 'https://www.gob.mx/consar',
+    tramites: ['afore'],
+  },
+  {
+    slug: 'infonavit',
+    nombre: 'Infonavit',
+    nombreCompleto: 'Instituto del Fondo Nacional de la Vivienda para los Trabajadores',
+    descripcion:
+      'Administra el ahorro para vivienda de los trabajadores y otorga créditos hipotecarios. Aquí consultas tu saldo, puntos y precalificación.',
+    sitioOficial: 'https://www.infonavit.org.mx/',
+    tramites: ['infonavit'],
   },
 ];
 
