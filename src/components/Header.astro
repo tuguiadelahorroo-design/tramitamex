@@ -1,6 +1,7 @@
 ---
 import { CATEGORIAS, NAV_PRINCIPAL } from '../data/navigation';
 import { ESTADOS } from '../data/estados';
+import CategoryIcon from './CategoryIcon.astro';
 
 // Estados destacados que se muestran directamente en el menú móvil/escritorio.
 const estadosDestacados = [
@@ -37,7 +38,7 @@ const estadosDestacados = [
               {
                 CATEGORIAS.map((cat) => (
                   <div class="mega-col">
-                    <p class="mega-col-title"><span aria-hidden="true">{cat.icono}</span> {cat.titulo}</p>
+                    <p class="mega-col-title"><CategoryIcon id={cat.id} size={18} /> {cat.titulo}</p>
                     <ul role="list">
                       {cat.items.slice(0, 5).map((item) =>
                         item.live ? (
@@ -193,7 +194,11 @@ const estadosDestacados = [
     margin-bottom: var(--space-2xs);
     display: flex;
     align-items: center;
-    gap: 0.4rem;
+    gap: 0.5rem;
+  }
+  .mega-col-title :global(svg) {
+    color: var(--color-primary);
+    flex-shrink: 0;
   }
   .mega-col ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 2px; }
   .mega-col a {

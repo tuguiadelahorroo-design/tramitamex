@@ -1,0 +1,50 @@
+---
+// Íconos vectoriales (estilo línea) por categoría de trámite.
+// Usan currentColor, así que heredan el color del contexto (CSS).
+export interface Props {
+  id: string;
+  size?: number;
+  class?: string;
+}
+const { id, size = 20, class: className } = Astro.props;
+
+const ICONS: Record<string, string> = {
+  // Identidad y documentos → credencial con persona
+  identidad:
+    '<rect x="2" y="5" width="20" height="14" rx="2.5"/><circle cx="8" cy="11" r="2"/><path d="M5 16c.6-1.5 1.6-2.2 3-2.2s2.4.7 3 2.2"/><path d="M14.5 10.5h4"/><path d="M14.5 13.5h4"/>',
+  // Registro Civil → medalla/acta certificada con listón
+  'registro-civil':
+    '<circle cx="12" cy="9" r="5"/><path d="M8.5 13.5 7 21l5-2.5 5 2.5-1.5-7.5"/>',
+  // SAT e impuestos → recibo
+  sat:
+    '<path d="M5 21V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v17l-2.5-1.5L14 21l-2-1.5L10 21l-2.5-1.5L5 21z"/><path d="M9 7.5h6"/><path d="M9 11h6"/><path d="M9 14.5h4"/>',
+  // IMSS, ISSSTE y salud → corazón con pulso
+  'imss-salud':
+    '<path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/><path d="M3.22 12H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27"/>',
+  // Vehiculares → auto
+  vehiculares:
+    '<path d="M5 17H3c-.6 0-1-.4-1-1v-3.3c0-.5.1-1 .4-1.4l1.4-2.6c.3-.6.9-1 1.6-1h9.2c.6 0 1.2.2 1.6.7L19 11s2 .5 2.5.9c.3.3.5.7.5 1.1V16c0 .6-.4 1-1 1h-2"/><circle cx="7.5" cy="17" r="2"/><path d="M9.5 17h5"/><circle cx="16.5" cy="17" r="2"/>',
+  // Trabajo y antecedentes → portafolios
+  trabajo:
+    '<rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><path d="M2 13h20"/>',
+  // Programas sociales → grupo de personas
+  'programas-sociales':
+    '<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>',
+};
+
+const inner = ICONS[id] ?? '';
+---
+
+<svg
+  class={className}
+  width={size}
+  height={size}
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="1.6"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  aria-hidden="true"
+  set:html={inner}
+/>
