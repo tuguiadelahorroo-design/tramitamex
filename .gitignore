@@ -26,3 +26,6 @@ Thumbs.db
 # editor
 .vscode/
 .idea/
+
+# lanzador local de preview (ruta absoluta, no versionar)
+preview-dev.cmd
