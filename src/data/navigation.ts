@@ -30,6 +30,7 @@ export const CATEGORIAS: TramiteCategoria[] = [
       { nombre: 'INE', slug: 'ine', live: true },
       { nombre: 'Pasaporte', slug: 'pasaporte', live: true },
       { nombre: 'Cartilla militar (SMN)', slug: 'cartilla-militar', live: true },
+      { nombre: 'Visa americana', slug: 'visa-americana', live: true },
     ],
   },
   {
@@ -67,6 +68,7 @@ export const CATEGORIAS: TramiteCategoria[] = [
       { nombre: 'Vigencia de derechos', slug: 'vigencia-de-derechos-imss', live: true },
       { nombre: 'Cita médica IMSS', slug: 'cita-medica-imss', live: true },
       { nombre: 'Pensión IMSS', slug: 'pension-imss', live: true },
+      { nombre: 'ISSSTE', slug: 'issste', live: true },
     ],
   },
   {
@@ -75,6 +77,7 @@ export const CATEGORIAS: TramiteCategoria[] = [
     icono: '🚗',
     items: [
       { nombre: 'Licencia de conducir', slug: 'licencia-de-conducir', live: true },
+      { nombre: 'Licencia digital', slug: 'licencia-digital', live: true },
       { nombre: 'Placas (emplacamiento)', slug: 'placas', live: true },
       { nombre: 'Tarjeta de circulación', slug: 'tarjeta-de-circulacion', live: true },
       { nombre: 'Tenencia', slug: 'tenencia', live: true },
@@ -102,6 +105,7 @@ export const CATEGORIAS: TramiteCategoria[] = [
       { nombre: 'Becas Benito Juárez', slug: 'becas-benito-juarez', live: true },
       { nombre: 'Pensión Mujeres Bienestar', slug: 'mujeres-con-bienestar', live: true },
       { nombre: 'Jóvenes Construyendo el Futuro', slug: 'jovenes-construyendo-el-futuro', live: true },
+      { nombre: 'Credencial INAPAM', slug: 'inapam', live: true },
     ],
   },
 ];

@@ -97,7 +97,7 @@ export const INSTITUCIONES: Institucion[] = [
     descripcion:
       'Emiten trámites locales como la licencia de conducir, placas, tenencia, verificación vehicular y predial. Cada estado tiene su propia autoridad, requisitos y tarifas.',
     sitioOficial: 'https://www.gob.mx/tramites',
-    tramites: ['licencia-de-conducir', 'placas', 'tarjeta-de-circulacion', 'tenencia', 'verificacion-vehicular'],
+    tramites: ['licencia-de-conducir', 'licencia-digital', 'placas', 'tarjeta-de-circulacion', 'tenencia', 'verificacion-vehicular'],
   },
   {
     slug: 'sedena',
@@ -143,6 +143,33 @@ export const INSTITUCIONES: Institucion[] = [
       'Otorga créditos en efectivo a las personas que trabajan formalmente en empresas afiliadas, con descuento vía nómina.',
     sitioOficial: 'https://www.fonacot.gob.mx/',
     tramites: ['fonacot'],
+  },
+  {
+    slug: 'embajada-eua',
+    nombre: 'Embajada de EE. UU.',
+    nombreCompleto: 'Embajada y Consulados de Estados Unidos en México',
+    descripcion:
+      'Tramita las visas estadounidenses (como la B1/B2) para quienes viajan desde México a Estados Unidos.',
+    sitioOficial: 'https://mx.usembassy.gov/',
+    tramites: ['visa-americana'],
+  },
+  {
+    slug: 'inapam',
+    nombre: 'INAPAM',
+    nombreCompleto: 'Instituto Nacional de las Personas Adultas Mayores',
+    descripcion:
+      'Emite la credencial INAPAM y promueve los derechos y beneficios de las personas adultas mayores.',
+    sitioOficial: 'https://www.gob.mx/inapam',
+    tramites: ['inapam'],
+  },
+  {
+    slug: 'issste',
+    nombre: 'ISSSTE',
+    nombreCompleto: 'Instituto de Seguridad y Servicios Sociales de los Trabajadores del Estado',
+    descripcion:
+      'Brinda seguridad social a los trabajadores del Estado: atención médica, citas, derechohabiencia y pensiones.',
+    sitioOficial: 'https://www.gob.mx/issste',
+    tramites: ['issste'],
   },
 ];
 
