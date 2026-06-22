@@ -31,6 +31,8 @@ export const CATEGORIAS: TramiteCategoria[] = [
       { nombre: 'Pasaporte para menores', slug: 'pasaporte-menores', live: true },
       { nombre: 'Cartilla militar (SMN)', slug: 'cartilla-militar', live: true },
       { nombre: 'Visa americana', slug: 'visa-americana', live: true },
+      { nombre: 'Apostilla de documentos', slug: 'apostilla-de-documentos', live: true },
+      { nombre: 'Doble nacionalidad', slug: 'doble-nacionalidad', live: true },
     ],
   },
   {
@@ -59,6 +61,8 @@ export const CATEGORIAS: TramiteCategoria[] = [
       { nombre: 'Devolución de impuestos', slug: 'devolucion-impuestos-sat', live: true },
       { nombre: 'Facturar (CFDI 4.0)', slug: 'facturar-cfdi', live: true },
       { nombre: 'RESICO', slug: 'resico-sat', live: true },
+      { nombre: 'RFC para menores de edad', slug: 'rfc-menores-de-edad', live: true },
+      { nombre: 'Recibo de nómina (CFDI)', slug: 'cfdi-nomina', live: true },
     ],
   },
   {
@@ -91,6 +95,8 @@ export const CATEGORIAS: TramiteCategoria[] = [
       { nombre: 'REPUVE (consulta vehicular)', slug: 'repuve', live: true },
       { nombre: 'Holograma 00 y exención', slug: 'holograma-00', live: true },
       { nombre: 'Multas y fotomultas', slug: 'pagar-multa-transito', live: true },
+      { nombre: 'Baja de placas', slug: 'baja-de-placas', live: true },
+      { nombre: 'Cambio de propietario', slug: 'cambio-de-propietario-vehicular', live: true },
     ],
   },
   {
@@ -106,6 +112,8 @@ export const CATEGORIAS: TramiteCategoria[] = [
       { nombre: 'Fonacot', slug: 'fonacot', live: true },
       { nombre: 'Cédula profesional', slug: 'cedula-profesional', live: true },
       { nombre: 'Finiquito y liquidación', slug: 'finiquito-liquidacion', live: true },
+      { nombre: 'Precalificación Infonavit', slug: 'precalificacion-infonavit', live: true },
+      { nombre: 'Revalidación de estudios (SEP)', slug: 'revalidacion-estudios-sep', live: true },
     ],
   },
   {
@@ -118,6 +126,18 @@ export const CATEGORIAS: TramiteCategoria[] = [
       { nombre: 'Pensión Mujeres Bienestar', slug: 'mujeres-con-bienestar', live: true },
       { nombre: 'Jóvenes Construyendo el Futuro', slug: 'jovenes-construyendo-el-futuro', live: true },
       { nombre: 'Credencial INAPAM', slug: 'inapam', live: true },
+    ],
+  },
+  {
+    id: 'patrimonio',
+    titulo: 'Patrimonio y legal',
+    icono: '⚖️',
+    items: [
+      { nombre: 'Predial (impuesto predial)', slug: 'predial', live: true },
+      { nombre: 'Escrituración de una casa', slug: 'escrituracion', live: true },
+      { nombre: 'Testamento', slug: 'testamento', live: true },
+      { nombre: 'Pensión alimenticia', slug: 'pension-alimenticia', live: true },
+      { nombre: 'Divorcio', slug: 'divorcio', live: true },
     ],
   },
 ];

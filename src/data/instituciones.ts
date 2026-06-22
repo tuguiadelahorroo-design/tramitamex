@@ -19,7 +19,7 @@ export const INSTITUCIONES: Institucion[] = [
     descripcion:
       'Autoridad fiscal de México. Administra el RFC, la facturación electrónica, la e.firma y las declaraciones de impuestos.',
     sitioOficial: 'https://www.sat.gob.mx/',
-    tramites: ['rfc', 'constancia-de-situacion-fiscal', 'firma-electronica', 'opinion-de-cumplimiento', 'declaracion-anual', 'buzon-tributario', 'devolucion-impuestos-sat', 'facturar-cfdi', 'resico-sat'],
+    tramites: ['rfc', 'constancia-de-situacion-fiscal', 'firma-electronica', 'opinion-de-cumplimiento', 'declaracion-anual', 'buzon-tributario', 'devolucion-impuestos-sat', 'facturar-cfdi', 'resico-sat', 'rfc-menores-de-edad', 'cfdi-nomina'],
   },
   {
     slug: 'imss',
@@ -45,7 +45,7 @@ export const INSTITUCIONES: Institucion[] = [
     nombreCompleto: 'Secretaría de Relaciones Exteriores',
     descripcion: 'Emite el pasaporte mexicano y atiende trámites para mexicanos en el extranjero.',
     sitioOficial: 'https://www.gob.mx/sre',
-    tramites: ['pasaporte', 'pasaporte-menores'],
+    tramites: ['pasaporte', 'pasaporte-menores', 'doble-nacionalidad'],
   },
   {
     slug: 'ine',
@@ -61,7 +61,7 @@ export const INSTITUCIONES: Institucion[] = [
     nombreCompleto: 'Secretaría de Educación Pública',
     descripcion: 'Atiende cédulas profesionales, certificados de estudios y revalidaciones.',
     sitioOficial: 'https://www.gob.mx/sep',
-    tramites: ['cedula-profesional'],
+    tramites: ['cedula-profesional', 'revalidacion-estudios-sep'],
   },
   {
     slug: 'consar',
@@ -79,7 +79,7 @@ export const INSTITUCIONES: Institucion[] = [
     descripcion:
       'Administra el ahorro para vivienda de los trabajadores y otorga créditos hipotecarios. Aquí consultas tu saldo, puntos y precalificación.',
     sitioOficial: 'https://www.infonavit.org.mx/',
-    tramites: ['infonavit', 'devolucion-saldo-infonavit'],
+    tramites: ['infonavit', 'devolucion-saldo-infonavit', 'precalificacion-infonavit'],
   },
   {
     slug: 'sspc',
@@ -97,7 +97,7 @@ export const INSTITUCIONES: Institucion[] = [
     descripcion:
       'Emiten trámites locales como la licencia de conducir, placas, tenencia, verificación vehicular y predial. Cada estado tiene su propia autoridad, requisitos y tarifas.',
     sitioOficial: 'https://www.gob.mx/tramites',
-    tramites: ['licencia-de-conducir', 'licencia-digital', 'placas', 'tarjeta-de-circulacion', 'tenencia', 'verificacion-vehicular', 'holograma-00', 'pagar-multa-transito'],
+    tramites: ['licencia-de-conducir', 'licencia-digital', 'placas', 'tarjeta-de-circulacion', 'tenencia', 'verificacion-vehicular', 'holograma-00', 'pagar-multa-transito', 'baja-de-placas', 'apostilla-de-documentos', 'testamento', 'predial', 'cambio-de-propietario-vehicular', 'pension-alimenticia', 'escrituracion', 'divorcio'],
   },
   {
     slug: 'sedena',

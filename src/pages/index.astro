@@ -388,10 +388,20 @@ const categorias = CATEGORIAS.map((c) => ({
     gap: var(--space-md);
   }
   .beneficio {
+    position: relative;
     padding: var(--space-lg);
     background: var(--color-surface);
     border: 1px solid var(--color-border);
     border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-card);
+    overflow: hidden;
+  }
+  .beneficio::before {
+    content: '';
+    position: absolute;
+    inset: 0 0 auto 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--color-primary), var(--color-accent));
   }
   .beneficio-icon {
     display: inline-grid;
@@ -489,6 +499,7 @@ const categorias = CATEGORIAS.map((c) => ({
     background: var(--color-surface);
     border: 1px solid var(--color-border);
     border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-card);
     text-decoration: none;
     color: inherit;
     transition: all var(--duration-fast) var(--ease-out-expo);

@@ -6,13 +6,13 @@ resumen: 'El pasaporte lo expide la SRE solo con cita previa (gratuita) y de for
 categoria: 'Identidad y documentos'
 institucion: 'sre'
 nivel: 'Federal'
-costo: 'Desde $875 (según vigencia)'
+costo: 'De $1,795 a $4,280 (según vigencia)'
 modalidad: 'Presencial con cita'
 tiempo: 'Mismo día'
 vigencia: '3, 6 o 10 años'
 urlOficial: 'https://www.gob.mx/pasaporte/'
 urlOficialTexto: 'Portal del Pasaporte — gob.mx'
-actualizado: 2026-06-17
+actualizado: 2026-06-22
 revisadoPor: 'el equipo editorial de TramitaMex'
 destacado: true
 orden: 6
@@ -97,13 +97,13 @@ Para **menores de edad**: presencia del menor y de **ambos padres o tutores** co
 
 ## Costo
 
-El pasaporte **sí tiene costo**, fijado por la Ley Federal de Derechos. Montos aproximados vigentes en 2026:
+El pasaporte **sí tiene costo**, fijado por la Ley Federal de Derechos. Montos vigentes en 2026:
 
 | Vigencia | Costo 2026 | Con 50% de descuento |
 |---|---|---|
-| 3 años | $1,750 | $875 |
-| 6 años | $2,380 | $1,190 |
-| 10 años (solo mayores de edad) | $4,120 | $2,060 |
+| 3 años | $1,795 | $900 |
+| 6 años | $2,440 | $1,220 |
+| 10 años (solo mayores de edad) | $4,280 | $2,140 |
 | 1 año (solo menores de 3 años) | $920 | $460 |
 
 El descuento del 50% aplica a **personas de 60 años o más**, **personas con discapacidad** comprobable y **trabajadores agrícolas temporales** del programa con Canadá. Algunas oficinas ofrecen trámite urgente con un recargo aproximado del 30%.

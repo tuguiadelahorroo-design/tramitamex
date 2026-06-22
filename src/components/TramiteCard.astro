@@ -42,14 +42,15 @@ const Tag = live ? 'a' : 'div';
     border-radius: var(--radius-lg);
     text-decoration: none;
     color: inherit;
-    box-shadow: var(--shadow-xs);
+    box-shadow: var(--shadow-card);
     transition: transform var(--duration-normal) var(--ease-out-expo), box-shadow var(--duration-normal) var(--ease-out-expo), border-color var(--duration-fast);
   }
   a.tramite-card:hover {
     transform: translateY(-4px);
     box-shadow: var(--shadow-md);
-    border-color: var(--color-primary-tint);
+    border-color: var(--color-primary);
   }
+  a.tramite-card:hover .card-title { color: var(--color-primary-strong); }
   .is-soon { opacity: 0.72; }
   .card-top { display: flex; align-items: center; justify-content: space-between; gap: 0.5rem; }
   .card-cat {
@@ -57,7 +58,10 @@ const Tag = live ? 'a' : 'div';
     font-weight: var(--weight-semibold);
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--color-primary);
+    color: var(--color-primary-strong);
+    background: var(--color-primary-soft);
+    padding: 0.2rem 0.6rem;
+    border-radius: var(--radius-pill);
   }
   .card-soon {
     font-size: 0.62rem;
@@ -69,7 +73,7 @@ const Tag = live ? 'a' : 'div';
     border-radius: var(--radius-pill);
     font-weight: var(--weight-semibold);
   }
-  .card-title { font-size: var(--text-lg); margin: 0; }
+  .card-title { font-size: var(--text-lg); margin: 0; transition: color var(--duration-fast) var(--ease-out-expo); }
   .card-desc { font-size: var(--text-sm); color: var(--color-text-soft); margin: 0; flex-grow: 1; }
   .card-foot {
     display: flex;

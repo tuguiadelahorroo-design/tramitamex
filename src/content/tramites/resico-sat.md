@@ -176,3 +176,24 @@ A cambio, **no puedes deducir gastos**, hay un **tope de ingresos** y existen **
 
 > [!CONSEJO]
 > Antes de cambiarte al RESICO, haz números con tus ingresos y gastos reales: si tus deducciones son altas, otro régimen podría convenirte más. Verifica siempre las **tasas, topes y reglas vigentes** directamente en el [Portal del SAT](https://www.sat.gob.mx/), ya que pueden ajustarse cada año con la Resolución Miscelánea Fiscal.
+
+## ¿Qué régimen me conviene? RESICO vs Actividad Empresarial vs Honorarios
+
+Si eres **persona física** y vives de tu negocio o de tus servicios, normalmente eliges entre dos caminos: el **RESICO** o el **Régimen de Actividades Empresariales y Profesionales** (el régimen "general"). Aquí va una comparación rápida para ubicarte, antes de decidir con números.
+
+- **RESICO (Régimen Simplificado de Confianza).** Pagas ISR con tasas muy bajas, del **1% al 2.5%** directamente sobre tus **ingresos cobrados**, sin restar gastos. Tiene un **tope de 3.5 millones de pesos** de ingresos al año y **requisitos estrictos** (facturar todo, e.firma, no ser socio o accionista, etc.). Es el régimen que **sustituyó al RIF** para los nuevos contribuyentes: quien antes habría entrado al Régimen de Incorporación Fiscal hoy se da de alta en RESICO.
+- **Actividades Empresariales y Profesionales (régimen general).** Aquí **sí deduces tus gastos** (insumos, renta del local, herramientas, etc.) y pagas ISR sobre la **utilidad** (ingresos menos deducciones), con la **tarifa progresiva** del SAT, que sube por escalones y puede llegar hasta el **35%** en los ingresos más altos. No tiene tope de ingresos, pero implica más control contable.
+- **"Honorarios" = servicios profesionales.** Cuando alguien dice que factura "por honorarios", coloquialmente se refiere a **prestar servicios profesionales** (consultoría, diseño, medicina, asesoría, etc.). Eso **no es un régimen aparte**: cae dentro del mismo régimen general de Actividades Empresariales y **Profesionales**, solo que en su modalidad de servicios. También puedes prestar esos servicios bajo **RESICO** si cumples los requisitos.
+
+| | RESICO | Actividad Empresarial y Profesional | Honorarios (servicios profesionales) |
+|---|---|---|---|
+| **Tope de ingresos** | 3.5 mdp al año | Sin tope | Sin tope (es parte del régimen general) |
+| **Tasa / impuesto** | ISR del 1% al 2.5% sobre ingresos cobrados | ISR por tarifa progresiva sobre la utilidad (hasta 35%) | Igual que el régimen general: tarifa progresiva sobre la utilidad |
+| **Deducciones** | No se permiten | Sí, deduces gastos del negocio | Sí, deduces gastos relacionados con tus servicios |
+| **Obligaciones (declaraciones)** | Pagos mensuales; anual frecuentemente opcional según el año | Pagos provisionales mensuales **y** declaración anual obligatoria | Pagos provisionales mensuales **y** declaración anual obligatoria |
+| **Para quién conviene** | Ingresos bajos o medios, **pocos gastos** deducibles y dentro del tope | Quien tiene **muchos gastos** deducibles o **rebasa** el tope de RESICO | Profesionistas con gastos relevantes o ingresos por encima del tope |
+
+> [!AVISO]
+> Esta comparación es **orientativa**. El régimen que más te conviene depende de tu caso concreto: cuánto ganas, cuántos gastos deducibles tienes y a qué clientes les facturas. Antes de elegir o cambiarte, **confírmalo en el [Portal del SAT](https://www.sat.gob.mx/) o con un contador**, y haz el cálculo con tus números reales: a veces deducir gastos en el régimen general sale mejor que la tasa baja del RESICO, y a veces no.
+
+En todos los casos vas a necesitar tu [RFC](/rfc/) activo y emitir tus comprobantes; revisa cómo [facturar tus CFDI](/facturar-cfdi/) y, si el régimen lo exige, no olvides tu [declaración anual](/declaracion-anual/).

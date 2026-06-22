@@ -12,6 +12,7 @@
   --color-primary-deep: oklch(24% 0.055 164);
   --color-primary-soft: oklch(95.5% 0.022 162);
   --color-primary-tint: oklch(91% 0.04 162);
+  --gradient-primary: linear-gradient(168deg, var(--color-primary), var(--color-primary-deep));
 
   --color-accent: oklch(78% 0.135 76);
   --color-accent-strong: oklch(70% 0.155 64);
@@ -92,9 +93,10 @@
 
   /* ---- Sombras (cálidas, no negro puro) ---- */
   --shadow-xs: 0 1px 2px oklch(30% 0.03 162 / 0.06);
-  --shadow-sm: 0 2px 6px oklch(30% 0.03 162 / 0.08), 0 1px 2px oklch(30% 0.03 162 / 0.05);
-  --shadow-md: 0 8px 24px oklch(30% 0.03 162 / 0.1), 0 2px 6px oklch(30% 0.03 162 / 0.06);
-  --shadow-lg: 0 18px 48px oklch(28% 0.04 162 / 0.14), 0 4px 12px oklch(28% 0.04 162 / 0.08);
+  --shadow-card: 0 1px 2px oklch(30% 0.03 162 / 0.05), 0 6px 18px oklch(30% 0.04 162 / 0.07);
+  --shadow-sm: 0 2px 6px oklch(30% 0.03 162 / 0.09), 0 1px 2px oklch(30% 0.03 162 / 0.06);
+  --shadow-md: 0 12px 30px oklch(30% 0.04 162 / 0.13), 0 3px 8px oklch(30% 0.03 162 / 0.07);
+  --shadow-lg: 0 26px 60px oklch(28% 0.05 162 / 0.17), 0 6px 16px oklch(28% 0.04 162 / 0.09);
   --shadow-ring: 0 0 0 3px oklch(78% 0.135 76 / 0.45);
 
   /* ---- Movimiento ---- */

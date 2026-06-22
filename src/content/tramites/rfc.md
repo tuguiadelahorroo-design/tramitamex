@@ -133,3 +133,21 @@ El RFC **no caduca**. Una vez asignado, la clave es permanente y te acompaña de
 - **RFC ya registrado o CURP ya inscrita:** ocurre cuando un empleador o tú mismo ya hicieron la inscripción. No te inscribas de nuevo; solo recupera la clave y genera tu Constancia.
 - **Errores en la CURP:** si la CURP tiene datos incorrectos, el sistema rechaza el trámite. Primero corrige tu CURP antes de inscribirte.
 - **Saturación de citas:** la disponibilidad presencial se agota rápido; intenta a primera hora o usa la Oficina Virtual del SAT. Recuerda que la inscripción con CURP no requiere cita.
+
+## RFC vs CURP: ¿en qué se diferencian?
+
+Es muy común confundir el RFC con la [CURP](/curp/), e incluso pensar que son lo mismo, pero son dos claves distintas con propósitos diferentes. La **CURP** (Clave Única de Registro de Población) es un identificador general de **toda la población** en México: la emite el RENAPO (de la Secretaría de Gobernación), tiene **18 caracteres**, es **gratuita** y la necesita cualquier persona, tenga o no actividad económica. El **RFC** (Registro Federal de Contribuyentes), en cambio, es tu clave estrictamente **fiscal** ante el SAT: la usan quienes tienen obligaciones o actividad fiscal y, para personas físicas, se compone de **13 caracteres** (incluida la homoclave).
+
+Se parecen porque el RFC de una persona física se construye a partir de los mismos datos que también dan origen a la CURP (nombre, apellidos y fecha de nacimiento), por eso comparten varias letras y números al inicio. Sin embargo, **no son la misma clave ni se tramitan en el mismo lugar**: la CURP la obtienes ante el RENAPO y el RFC ante el SAT.
+
+| Concepto | CURP | RFC |
+| --- | --- | --- |
+| Para qué sirve | Identificar a la persona ante cualquier dependencia | Identificarte como contribuyente ante el SAT |
+| Quién la emite | RENAPO (Secretaría de Gobernación) | SAT (Servicio de Administración Tributaria) |
+| Cuántos caracteres | 18 caracteres | 13 caracteres (persona física, con homoclave) |
+| Quién la necesita | Toda la población | Quien tiene obligaciones o actividad fiscal |
+| Costo | Gratis | Gratis |
+| Dónde se tramita | Portal de la CURP / oficinas del RENAPO | Portal del SAT (en línea) u oficinas del SAT |
+
+> [!CONSEJO]
+> Necesitas tu CURP para poder sacar el RFC: el SAT permite inscribirte en línea usando solo tu CURP. Además, para muchos trámites (alta laboral, bancos, becas, apoyos) te pedirán **ambas** claves, así que conviene tenerlas a la mano. Si todavía no tienes la tuya, revisa cómo obtener tu [CURP](/curp/); y si ya tienes RFC, puedes descargar tu [Constancia de Situación Fiscal](/constancia-de-situacion-fiscal/) con tus datos completos.

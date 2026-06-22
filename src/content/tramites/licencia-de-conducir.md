@@ -140,3 +140,32 @@ La vigencia **varía por estado**: hay licencias de 1, 2, 3, 4 o 5 años, y vari
 
 > [!CONSEJO]
 > Si tu estado ofrece **licencia permanente** y planeas seguir manejando por años, suele convenir: pagas una sola vez y te olvidas de renovar. Y si ya tienes tu licencia física, activa la **licencia digital** en la app oficial de tu estado para traerla en el celular.
+
+## Licencia permanente vs licencia por vigencia: ¿cuál conviene?
+
+Una de las dudas más comunes al sacar la licencia es si conviene la **permanente** (un solo pago, sin renovación) o la **licencia por vigencia** (1, 3, 5 años). La respuesta depende sobre todo de **tu estado**: no todas las entidades ofrecen las dos opciones.
+
+Tras años en que casi todos los estados la habían eliminado, varias entidades **reintrodujeron la licencia permanente**. La **Ciudad de México** la recuperó en 2024 y la mantiene en 2026, y otros estados como **Tamaulipas, Oaxaca y San Luis Potosí** también la ofrecen. En cambio, muchas entidades solo expiden licencias **por vigencia** (de 3 o 5 años, por ejemplo). Por eso la disponibilidad y el costo **cambian según donde vivas**.
+
+### Licencia permanente
+
+- **A favor:** pagas una sola vez y no vuelves a renovar ni a hacer fila por años. A la larga suele salir más barata si manejas mucho tiempo.
+- **En contra:** el pago inicial es más alto que una sola emisión por vigencia; algunos estados exigen **examen** (teórico y a veces práctico) para tramitarla por primera vez, y puede haber **condiciones** (por ejemplo, no tener sentencias por delitos viales o sanciones por alcoholimetría). En la CDMX, quienes ya tienen licencia Tipo A local están exentos del examen, pero quien la saca por primera vez sí lo presenta.
+
+### Licencia por vigencia (temporal)
+
+- **A favor:** el costo por evento es **más bajo**, ideal si no quieres desembolsar mucho de una vez o si apenas empiezas a manejar. Es válida para conducir en **todo el país**.
+- **En contra:** tienes que **renovarla** cada cierto tiempo (con el trámite y el pago que eso implica), y sumando renovaciones puede costar más que una permanente a largo plazo.
+
+| Criterio | Licencia permanente | Licencia por vigencia |
+|---|---|---|
+| **Costo** | Pago único más alto (p. ej., ≈ $1,500 en CDMX) | Más bajo por evento, pero se repite en cada renovación |
+| **Renovación** | No se renueva | Cada 1 a 5 años, según el estado |
+| **Examen** | Puede exigirse en la primera vez (según estado) | Puede exigirse al tramitarla por primera vez |
+| **Disponibilidad por estado** | Solo en algunos estados (CDMX, Tamaulipas, Oaxaca, SLP, entre otros) | Disponible en prácticamente todos los estados |
+| **Para quién conviene** | Quien manejará por muchos años y quiere olvidarse del trámite | Quien empieza a manejar o prefiere pagar menos de inicio |
+
+> [!IMPORTANTE]
+> La licencia de conducir es **estatal**: que exista la permanente, su costo y sus requisitos **dependen de tu entidad** y cambian de un estado a otro. Antes de decidir, verifica en el **portal oficial de tu estado** si ofrece licencia permanente y cuál es el costo vigente; no te guíes por lo que aplica en otra entidad.
+
+Independientemente de cuál elijas, recuerda que en muchos estados puedes activar también la **licencia digital** (la versión electrónica en la app oficial) una vez que tienes tu licencia física vigente, para traerla siempre en el celular.
