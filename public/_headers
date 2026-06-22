@@ -1,0 +1,11 @@
+# Cabeceras para Cloudflare Pages (equivalente a netlify.toml, que Cloudflare no lee).
+
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+
+# Assets con hash generados por Astro: caché larga e inmutable.
+/_astro/*
+  Cache-Control: public, max-age=31536000, immutable
