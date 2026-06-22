@@ -13,8 +13,26 @@ vigencia: 'Desde su emisión'
 urlOficial: 'https://serviciosdigitales.imss.gob.mx/gestionAsegurados-web-externo/vigencia'
 urlOficialTexto: 'Vigencia de derechos — IMSS'
 actualizado: 2026-06-17
+revisadoPor: 'el equipo editorial de TramitaMex'
 destacado: true
 orden: 11
+relacionados:
+  - nss
+  - semanas-cotizadas-imss
+  - afore
+pasos:
+  - titulo: 'Entra al portal de Vigencia de Derechos'
+    detalle: 'Abre el portal oficial de Vigencia de Derechos del IMSS (Servicios Digitales).'
+  - titulo: 'Captura tu CURP y tu NSS'
+    detalle: 'Hay enlaces para consultarlos si no los recuerdas.'
+  - titulo: 'Confirma tu correo'
+    detalle: 'Escribe y confirma tu correo electrónico, resuelve el captcha y da Continuar.'
+  - titulo: 'Revisa tu correo'
+    detalle: 'El sistema envía un enlace de confirmación a tu correo electrónico.'
+  - titulo: 'Descarga la constancia'
+    detalle: 'Abre el correo, sigue el enlace y descarga la constancia en PDF.'
+  - titulo: 'Guárdala o imprímela'
+    detalle: 'Consérvala según la necesites; refleja tu estatus a la fecha de emisión.'
 faq:
   - pregunta: '¿Cuánto cuesta sacar la constancia de vigencia de derechos?'
     respuesta: 'Es totalmente gratuita, en línea, por la app o presencial. El IMSS no cobra por este documento.'
@@ -43,7 +61,7 @@ fuentes:
     url: 'https://www.imss.gob.mx/imssdigital'
 ---
 
-## Qué es
+## Qué es la constancia de vigencia de derechos
 
 La **Constancia de Vigencia de Derechos** es un documento oficial del IMSS que indica si una persona tiene derecho activo a los servicios médicos del Instituto y desde qué fecha. Permite verificar tu condición de derechohabiente sin importar el estado donde vivas, e incluye datos como la Unidad de Medicina Familiar (UMF) que te corresponde y tu último patrón registrado.
 
@@ -57,7 +75,7 @@ La **Constancia de Vigencia de Derechos** es un documento oficial del IMSS que i
 ## Requisitos
 
 - **CURP**.
-- **NSS** (Número de Seguridad Social).
+- **[NSS](/nss/)** (Número de Seguridad Social).
 - **Correo electrónico** personal (necesario para el trámite en línea).
 
 ## Documentos necesarios
@@ -79,16 +97,6 @@ El trámite es **totalmente gratuito**, tanto en línea como presencial. El IMSS
 
 **No se requiere cita.** El trámite es 100% en línea e inmediato a través del portal de Servicios Digitales o la app. Presencialmente tampoco necesitas cita: el personal de la UMF te entrega la constancia impresa en el momento.
 
-## Paso a paso
-
-1. Entra al portal oficial de *Vigencia de Derechos* del IMSS.
-2. **Paso 1:** captura tu **CURP** y tu **NSS** (hay enlaces para consultarlos si no los recuerdas).
-3. Escribe y **confirma tu correo electrónico**.
-4. Resuelve el **captcha** y da clic en *Continuar*.
-5. **Paso 2:** el sistema envía un enlace de confirmación a tu correo.
-6. Abre el correo, sigue el enlace y **descarga la constancia en PDF**.
-7. Guárdala o imprímela según la necesites.
-
 ## Tiempo de respuesta
 
 **Inmediato.** La constancia se genera y descarga en minutos. De forma presencial, el personal de la UMF la entrega al momento.
@@ -97,11 +105,16 @@ El trámite es **totalmente gratuito**, tanto en línea como presencial. El IMSS
 
 La vigencia se cuenta **a partir del día de su emisión**. La constancia refleja tu estatus al día en que se genera, por lo que se recomienda **emitir una nueva cada vez que la necesites** para que muestre tu situación actualizada.
 
+> [!DATO]
+> Si dejas de trabajar **no pierdes tus derechos de inmediato**: existe un periodo de **conservación de derechos de 8 semanas (56 días)** posteriores a tu baja para seguir recibiendo atención médica.
+
 ## Problemas comunes
 
 - **Aparece "sin vigencia" aunque trabajas:** si acabas de iniciar un empleo, el alta puede tardar; el patrón tiene hasta **5 días hábiles** para registrarte.
 - **Omisión patronal:** el empleador no dio de alta tu relación laboral. Verifica con Recursos Humanos.
 - **Datos que no coinciden / NSS confundido:** el sistema da error si tu CURP o NSS no empatan; captura los datos exactos.
-- **Período de gracia tras la baja:** si dejaste de trabajar, conservas derechos **8 semanas (56 días)** posteriores a tu baja.
 - **No llega el correo de confirmación:** revisa spam y confirma que escribiste bien la dirección.
 - **Tu UMF no es la correcta:** si no corresponde a tu domicilio actual, actualiza tu Unidad de Medicina Familiar.
+
+> [!AVISO]
+> Si acabas de entrar a trabajar y apareces **sin vigencia**, dale tiempo a tu patrón: tiene hasta **5 días hábiles** para registrar tu alta. Si pasado ese plazo sigues igual, confirma con Recursos Humanos que te hayan dado de alta.

@@ -13,8 +13,26 @@ vigencia: 'No caduca'
 urlOficial: 'https://www.sat.gob.mx/nuevos-contribuyentes/tramites-del-rfc'
 urlOficialTexto: 'Trámites del RFC — Portal del SAT'
 actualizado: 2026-06-17
+revisadoPor: 'el equipo editorial de TramitaMex'
 destacado: true
 orden: 2
+relacionados:
+  - curp
+  - constancia-de-situacion-fiscal
+  - firma-electronica
+pasos:
+  - titulo: 'Entra a Trámites del RFC'
+    detalle: 'Ingresa al Portal del SAT y abre la sección Trámites del RFC, en el apartado de Personas.'
+  - titulo: 'Elige la inscripción con CURP'
+    detalle: 'Selecciona la opción de obtención del RFC con CURP y da clic en Ejecutar en línea.'
+  - titulo: 'Captura tu CURP y tus datos'
+    detalle: 'Escribe tu CURP y los datos que pida el formulario: domicilio y, si aplica, tu actividad económica.'
+  - titulo: 'Verifica y agrega tu correo'
+    detalle: 'Revisa que toda la información sea correcta y proporciona un correo electrónico vigente.'
+  - titulo: 'Envía el trámite al SAT'
+    detalle: 'Confirma y envía tu solicitud de inscripción para que el sistema asigne tu clave.'
+  - titulo: 'Descarga tu Acuse Único de Inscripción'
+    detalle: 'Guarda o imprime el acuse: incluye tu RFC, la Cédula de Identificación Fiscal y el código QR.'
 faq:
   - pregunta: '¿Cuánto cuesta sacar el RFC?'
     respuesta: 'Es totalmente gratuito, en línea o en oficina del SAT. No necesitas intermediarios.'
@@ -43,9 +61,12 @@ fuentes:
     url: 'https://citas.sat.gob.mx/'
 ---
 
-## Qué es
+## Qué es el RFC
 
 El **RFC** (Registro Federal de Contribuyentes) es la clave alfanumérica única que el SAT (Servicio de Administración Tributaria) asigna a toda persona física o moral que realiza actividades económicas en México. Funciona como tu identificador fiscal ante el gobierno y te vincula con tus obligaciones y derechos tributarios. La clave de persona física se compone de **13 caracteres**, incluida la homoclave.
+
+> [!DATO]
+> Si ya tienes [CURP](/curp/), prácticamente ya puedes tener tu RFC: el SAT permite inscribirte en línea usando solo tu CURP, de forma gratuita y sin acudir a una oficina.
 
 ## Para qué sirve
 
@@ -53,7 +74,7 @@ El **RFC** (Registro Federal de Contribuyentes) es la clave alfanumérica única
 - Emitir y recibir facturas electrónicas (CFDI).
 - Iniciar una relación laboral formal (es requisito para tu alta en el IMSS y en nómina).
 - Abrir cuentas bancarias, solicitar créditos y contratar servicios financieros.
-- Tramitar la e.firma y la Constancia de Situación Fiscal.
+- Tramitar la [e.firma](/firma-electronica/) y la [Constancia de Situación Fiscal](/constancia-de-situacion-fiscal/).
 
 ## Requisitos
 
@@ -76,6 +97,9 @@ El **RFC** (Registro Federal de Contribuyentes) es la clave alfanumérica única
 
 La inscripción al RFC es **gratis**, ya sea en línea o de forma presencial en las oficinas del SAT. El trámite es directo ante la autoridad y no requiere intermediarios.
 
+> [!IMPORTANTE]
+> El SAT nunca cobra por inscribir tu RFC. Si una página o un gestor te pide un pago, no es un canal oficial: realiza siempre el trámite directamente en sat.gob.mx.
+
 ## Dónde se hace
 
 - **En línea (con CURP), recomendado:** desde el Portal del SAT, sección Personas, apartado Trámites del RFC. Llenas el formulario electrónico y obtienes el acuse de inscripción con la Cédula de Identificación Fiscal.
@@ -91,16 +115,8 @@ La cita para acudir a una oficina del SAT se agenda **gratis** en el portal ofic
 4. Elige fecha y hora disponibles y confirma.
 5. Recibirás el comprobante en tu correo.
 
-> **Tip:** la disponibilidad suele liberarse alrededor de las 7:00 a.m. (hora del centro). Para la inscripción con CURP **no necesitas cita**, porque el trámite es 100% en línea.
-
-## Paso a paso
-
-1. Ingresa al Portal del SAT y entra a *Trámites del RFC*.
-2. Selecciona la opción de inscripción u obtención del RFC con CURP y da clic en *Ejecutar en línea*.
-3. Captura tu CURP y los datos que solicite el formulario (domicilio y, si aplica, actividad económica).
-4. Verifica que la información sea correcta y proporciona un correo electrónico vigente.
-5. Envía el trámite al SAT.
-6. Descarga, guarda o imprime tu **Acuse Único de Inscripción**, que incluye tu RFC, la Cédula de Identificación Fiscal y el código QR.
+> [!CONSEJO]
+> La disponibilidad de citas suele liberarse alrededor de las 7:00 a.m. (hora del centro). Recuerda que para la inscripción con CURP **no necesitas cita**, porque el trámite es 100% en línea.
 
 ## Tiempo de respuesta
 
@@ -112,7 +128,7 @@ El RFC **no caduca**. Una vez asignado, la clave es permanente y te acompaña de
 
 ## Problemas comunes
 
-- **RFC sin homoclave (10 posiciones):** la consulta por CURP a veces arroja el RFC genérico sin homoclave. Para facturar necesitas el RFC completo de 13 caracteres, que obtienes al concluir la inscripción y descargar tu Constancia de Situación Fiscal.
+- **RFC sin homoclave (10 posiciones):** la consulta por CURP a veces arroja el RFC genérico sin homoclave. Para facturar necesitas el RFC completo de 13 caracteres, que obtienes al concluir la inscripción y descargar tu [Constancia de Situación Fiscal](/constancia-de-situacion-fiscal/).
 - **Recuperar un RFC olvidado:** usa la herramienta *Consulta tu clave de RFC mediante CURP* en el portal del SAT.
 - **RFC ya registrado o CURP ya inscrita:** ocurre cuando un empleador o tú mismo ya hicieron la inscripción. No te inscribas de nuevo; solo recupera la clave y genera tu Constancia.
 - **Errores en la CURP:** si la CURP tiene datos incorrectos, el sistema rechaza el trámite. Primero corrige tu CURP antes de inscribirte.

@@ -13,8 +13,28 @@ vigencia: '10 años'
 urlOficial: 'https://www.ine.mx/credencial/'
 urlOficialTexto: 'Credencial para Votar — INE'
 actualizado: 2026-06-17
+revisadoPor: 'el equipo editorial de TramitaMex'
 destacado: true
 orden: 10
+relacionados:
+  - acta-de-nacimiento
+  - curp
+  - pasaporte
+pasos:
+  - titulo: 'Agenda tu cita'
+    detalle: 'Reserva tu cita con tu CURP, eligiendo módulo, fecha y hora.'
+  - titulo: 'Acude al módulo'
+    detalle: 'Preséntate con los tres documentos originales y tu comprobante de cita.'
+  - titulo: 'Captura de datos'
+    detalle: 'El personal verifica tus documentos y registra tus datos y tu domicilio.'
+  - titulo: 'Toma de fotografía, firma y huellas'
+    detalle: 'Se realiza de forma presencial; por eso el trámite no puede hacerse por internet.'
+  - titulo: 'Revisa y confirma'
+    detalle: 'Verifica que todos los datos sean correctos antes de validar.'
+  - titulo: 'Recibe tu comprobante'
+    detalle: 'Te entregan un comprobante con la fecha estimada de entrega de tu credencial.'
+  - titulo: 'Recoge tu credencial'
+    detalle: 'Recógela en el mismo módulo; al hacerlo se activa en la Lista Nominal. Verifica antes en línea si ya está lista.'
 faq:
   - pregunta: '¿Cuánto cuesta tramitar o renovar la credencial para votar?'
     respuesta: 'Es totalmente gratis en todas sus modalidades. El INE nunca cobra por expedirla ni entregarla.'
@@ -43,7 +63,7 @@ fuentes:
     url: 'https://consulta-tramite.ine.mx/'
 ---
 
-## Qué es
+## Qué es la credencial del INE
 
 La **Credencial para Votar** con fotografía, comúnmente llamada **INE** (antes IFE), es el documento oficial que expide el Instituto Nacional Electoral a las personas ciudadanas mexicanas mayores de 18 años. Acredita tu registro en el Padrón Electoral y tu inscripción en la Lista Nominal, requisitos para votar. Desde junio de 2026 los módulos entregan una nueva versión rediseñada para reforzar la protección de datos y dificultar la falsificación.
 
@@ -62,15 +82,21 @@ La **Credencial para Votar** con fotografía, comúnmente llamada **INE** (antes
 
 ## Documentos necesarios
 
-Tres documentos originales, uno de cada categoría:
+Necesitas **tres documentos originales**, uno de cada categoría:
 
-1. **Nacionalidad:** acta de nacimiento (cualquier formato vigente, incluida la versión digital impresa) o carta de naturalización.
+1. **Nacionalidad:** [acta de nacimiento](/acta-de-nacimiento/) (cualquier formato vigente, incluida la versión digital impresa) o carta de naturalización.
 2. **Identificación con fotografía:** pasaporte, cédula profesional, licencia de conducir, cartilla militar, credencial de servicios de salud, credencial laboral o escolar reconocida, matrícula consular o tu credencial anterior.
 3. **Comprobante de domicilio:** recibo de luz, agua, predial, teléfono, gas o TV de paga; estado de cuenta; o contrato de arrendamiento con recibo. **No mayor a 3 meses** (los anuales como el predial, del año en curso o anterior).
 
+> [!CONSEJO]
+> Lleva también tu [CURP](/curp/) actualizada. No siempre es obligatoria, pero agiliza el registro y evita discrepancias de datos entre tus documentos.
+
 ## Costo
 
-El trámite es **completamente gratuito** en todas sus modalidades (primera vez, renovación, reposición por robo o extravío, y actualización de datos). El INE no cobra; cualquier cobro es irregular.
+El trámite es **completamente gratuito** en todas sus modalidades (primera vez, renovación, reposición por robo o extravío, y actualización de datos).
+
+> [!IMPORTANTE]
+> El INE **nunca cobra** por expedir o entregar tu credencial. Cualquier persona que te pida dinero por "agilizar" el trámite está cometiendo una irregularidad.
 
 ## Dónde se hace
 
@@ -90,16 +116,6 @@ La cita se agenda en línea de forma gratuita:
 
 También puedes agendar por teléfono en INETEL: **800 433 2000**.
 
-## Paso a paso
-
-1. **Agenda tu cita** con tu CURP, eligiendo módulo, fecha y hora.
-2. **Acude al módulo** con los tres documentos originales y tu comprobante de cita.
-3. **Captura de datos:** el personal verifica documentos y registra tus datos y domicilio.
-4. **Toma de fotografía, firma y huellas** (presencial).
-5. **Revisa y confirma** que los datos sean correctos antes de validar.
-6. **Recibe tu comprobante** con la fecha estimada de entrega.
-7. **Recoge tu credencial** en el mismo módulo; al recogerla se activa en la Lista Nominal. Verifica antes si ya está lista en el sistema de consulta de trámite.
-
 ## Tiempo de respuesta
 
 La credencial **no se entrega el mismo día**: se imprime de forma centralizada y se envía al módulo donde la tramitaste. El plazo estimado es de aproximadamente **5 a 30 días naturales**; la fecha exacta aparece en tu comprobante. Conviene verificar el estatus en línea antes de acudir.
@@ -107,6 +123,9 @@ La credencial **no se entrega el mismo día**: se imprime de forma centralizada 
 ## Vigencia
 
 La credencial tiene una **vigencia de 10 años**, contados a partir del año de emisión (el año de vencimiento aparece impreso). Al vencer, debes renovarla para mantener tu inscripción en la Lista Nominal y poder votar.
+
+> [!AVISO]
+> Tienes hasta **2 años** para recoger tu credencial. Si no la recoges en ese plazo, se destruye y se da de baja tu registro: tendrías que iniciar el trámite desde cero.
 
 ## Problemas comunes
 

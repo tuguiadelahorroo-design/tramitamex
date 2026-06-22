@@ -13,8 +13,28 @@ vigencia: 'No caduca'
 urlOficial: 'https://www.gob.mx/cedulaprofesional'
 urlOficialTexto: 'Tramita tu Cédula — gob.mx'
 actualizado: 2026-06-17
+revisadoPor: 'el equipo editorial de TramitaMex'
 destacado: true
 orden: 7
+relacionados:
+  - firma-electronica
+  - curp
+  - rfc
+pasos:
+  - titulo: 'Obtén tu e.firma'
+    detalle: 'Si aún no la tienes, tramítala en el SAT (es gratuita). Es indispensable para firmar el trámite.'
+  - titulo: 'Entra al portal oficial'
+    detalle: 'Ingresa a gob.mx/cedulaprofesional y haz clic en Tramita tu Cédula Profesional.'
+  - titulo: 'Captura tu CURP'
+    detalle: 'Escribe tu CURP y verifica que el sistema localice tu título profesional ya registrado.'
+  - titulo: 'Confirma tus datos'
+    detalle: 'Revisa que tus datos académicos y personales sean correctos.'
+  - titulo: 'Paga los derechos'
+    detalle: 'Realiza el pago mediante el esquema e5cinco según tu nivel educativo.'
+  - titulo: 'Firma con tu e.firma'
+    detalle: 'Carga tus archivos .cer y .key y tu contraseña para firmar electrónicamente.'
+  - titulo: 'Descarga tu cédula en PDF'
+    detalle: 'Descarga el documento con folio y código QR, o recíbelo en tu correo. Podrás volver a descargarlo cuando lo necesites.'
 faq:
   - pregunta: '¿La cédula electrónica tiene la misma validez que la impresa?'
     respuesta: 'Sí. El PDF con folio y código QR tiene plena validez legal en todo el país, igual que la versión física.'
@@ -43,9 +63,12 @@ fuentes:
     url: 'https://www.gob.mx/tramites/ficha/obtencion-de-e-firma/SAT137'
 ---
 
-## Qué es
+## Qué es la cédula profesional
 
-La **cédula profesional electrónica** es el documento oficial que expide la Dirección General de Profesiones (DGP) de la SEP para acreditar que concluiste tus estudios y tienes un título profesional registrado a nivel nacional. Es la versión digital de la cédula tradicional: se entrega en PDF, incluye un **folio único** y un **código QR** de verificación, y tiene **la misma validez legal** que la versión impresa en todo el país.
+La **cédula profesional electrónica** es el documento oficial que expide la Dirección General de Profesiones (DGP) de la SEP para acreditar que concluiste tus estudios y tienes un título profesional registrado a nivel nacional. Es la versión digital de la cédula tradicional: se entrega en PDF, incluye un **folio único** y un **código QR** de verificación.
+
+> [!DATO]
+> El PDF tiene **la misma validez legal** que la versión impresa en todo el país. Puedes descargarlo cuantas veces lo necesites y cualquiera puede verificar su autenticidad escaneando el código QR.
 
 ## Para qué sirve
 
@@ -58,10 +81,13 @@ La **cédula profesional electrónica** es el documento oficial que expide la Di
 ## Requisitos
 
 - Ser titular de un **título profesional registrado** ante la DGP (que tu institución lo haya enviado al sistema).
-- Contar con **CURP** vigente y correcta.
-- Tener **e.firma vigente** emitida por el SAT.
+- Contar con **[CURP](/curp/)** vigente y correcta.
+- Tener **[e.firma](/firma-electronica/) vigente** emitida por el SAT.
 - Disponer de un **medio de pago** (tarjeta o línea de captura).
 - Tener un correo electrónico válido. El trámite es 100% en línea.
+
+> [!IMPORTANTE]
+> La **e.firma** del SAT es indispensable para concluir el trámite. Si no la tienes, tramítala primero: ante el SAT es **gratuita**, aunque la primera vez se hace de forma presencial con cita.
 
 ## Documentos necesarios
 
@@ -97,16 +123,6 @@ El sistema funciona 24/7.
 ## Cómo sacar cita
 
 **No se requiere cita.** Al ser totalmente electrónico, se realiza en el portal con tu CURP y e.firma cuando quieras. La única gestión previa que puede requerir cita es la obtención de la **e.firma ante el SAT**, si aún no la tienes (es gratuita).
-
-## Paso a paso
-
-1. **Obtén tu e.firma** (si no la tienes): trámite gratuito en el SAT.
-2. **Ingresa** a gob.mx/cedulaprofesional y haz clic en *Tramita tu Cédula Profesional*.
-3. **Captura tu CURP** y verifica que el sistema localice tu **título registrado**.
-4. **Confirma tus datos** académicos y personales.
-5. **Realiza el pago de derechos** (e5cinco) según tu nivel educativo.
-6. **Firma con tu e.firma** (carga .cer, .key y contraseña).
-7. **Descarga tu cédula electrónica en PDF** o recíbela en tu correo. Podrás volver a descargarla cuando la necesites.
 
 ## Tiempo de respuesta
 

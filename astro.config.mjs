@@ -1,6 +1,7 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
+import remarkCallouts from './src/lib/remark-callouts.mjs';
 
 // Dominio canónico del sitio. Se usa para sitemap, canonical y Open Graph.
 export const SITE_URL = 'https://tramitamex.com.mx';
@@ -18,5 +19,9 @@ export default defineConfig({
   build: {
     // URLs limpias: /curp/ en vez de /curp.html
     format: 'directory',
+  },
+  markdown: {
+    // Convierte blockquotes `> [!IMPORTANTE]` en recuadros de aviso.
+    remarkPlugins: [remarkCallouts],
   },
 });

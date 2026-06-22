@@ -13,8 +13,24 @@ vigencia: '4 años'
 urlOficial: 'https://www.sat.gob.mx/tramites/16703/obten-tu-certificado-de-e.firma'
 urlOficialTexto: 'Obtén tu e.firma — Portal del SAT'
 actualizado: 2026-06-17
+revisadoPor: 'el equipo editorial de TramitaMex'
 destacado: true
 orden: 9
+relacionados:
+  - rfc
+  - constancia-de-situacion-fiscal
+  - opinion-de-cumplimiento
+pasos:
+  - titulo: 'Prepara tus archivos con Certifica (opcional)'
+    detalle: 'Descarga el programa Certifica del SAT, elige Requerimiento de generación de e.firma, captura RFC, CURP y correo, y define tu contraseña de la clave privada. Genera tu .key y tu .req y guárdalos en tu USB. Esto agiliza la cita.'
+  - titulo: 'Agenda tu cita'
+    detalle: 'Saca cita en citas.sat.gob.mx para el servicio e.firma personas físicas.'
+  - titulo: 'Acude a la oficina del SAT'
+    detalle: 'Preséntate el día y hora de tu cita con tus documentos en original y tu memoria USB.'
+  - titulo: 'Registro biométrico'
+    detalle: 'En la oficina se toman tu foto, huellas, iris y firma, y se cotejan tus documentos.'
+  - titulo: 'Recibe y resguarda tus archivos'
+    detalle: 'El SAT genera y entrega tu .cer y el acuse. Guárdalo junto con tu .key y tu contraseña en un lugar seguro; sin ellos no podrás usarla ni renovarla.'
 faq:
   - pregunta: '¿La e.firma es lo mismo que la antigua FIEL?'
     respuesta: 'Sí. La FIEL (Firma Electrónica Avanzada) cambió de nombre a e.firma; es el mismo instrumento.'
@@ -43,7 +59,7 @@ fuentes:
     url: 'https://citas.sat.gob.mx/'
 ---
 
-## Qué es
+## Qué es la e.firma
 
 La **e.firma** (firma electrónica avanzada, antes conocida como **FIEL**) es el conjunto de datos que te identifica al realizar trámites por internet ante el SAT y otras instituciones. Funciona como un archivo digital seguro y cifrado con la **misma validez legal que tu firma autógrafa**. Se compone de tres elementos que debes resguardar:
 
@@ -52,6 +68,9 @@ La **e.firma** (firma electrónica avanzada, antes conocida como **FIEL**) es el
 - **Contraseña de la clave privada** (la que tú defines al generarla).
 
 Es **personal e intransferible**.
+
+> [!IMPORTANTE]
+> No confundas la **e.firma** con la **Contraseña** del SAT (antes CIEC). La Contraseña sirve para entrar al portal; la e.firma es un certificado digital (.cer y .key) con validez legal para firmar trámites.
 
 ## Para qué sirve
 
@@ -64,7 +83,7 @@ Es **personal e intransferible**.
 
 Para personas físicas, **primera vez** (presencial, con cita previa):
 
-- Ser mayor de edad y contar con tu RFC (si no lo tienes, puedes obtenerlo en la misma cita).
+- Ser mayor de edad y contar con tu [RFC](/rfc/) (si no lo tienes, puedes obtenerlo en la misma cita).
 - Cita registrada en citas.sat.gob.mx para el servicio *e.firma personas físicas*.
 - Memoria USB (de preferencia nueva) para guardar tus archivos.
 - Correo electrónico personal vigente.
@@ -96,19 +115,8 @@ El trámite es **gratuito**, tanto la obtención por primera vez como la renovac
 5. Selecciona fecha y hora disponibles.
 6. Confirma y guarda tu **acuse de cita**; llévalo el día del trámite.
 
-> Las citas suelen agotarse rápido. Revisa el portal varias veces al día (suelen liberar lugares por la mañana) o intenta en módulos cercanos.
-
-## Paso a paso
-
-**Primera vez (presencial):**
-
-1. **Genera tus archivos de requerimiento (opcional, agiliza):** descarga el programa **Certifica** del portal del SAT, elige *Requerimiento de generación de e.firma*, captura RFC, CURP y correo, y define tu **contraseña de la clave privada**. Genera tu **.key** y el archivo **.req**; guárdalos en tu USB.
-2. **Saca tu cita** en citas.sat.gob.mx.
-3. **Acude a la oficina** el día y hora de tu cita con tus documentos y tu USB.
-4. **Registro biométrico:** se toman foto, huellas, iris y firma, y se cotejan tus documentos.
-5. **Recibe tus archivos:** el SAT genera y entrega tu **.cer** y el acuse. Guárdalo junto con tu **.key** y tu contraseña en un lugar seguro.
-
-**Renovación en línea:** si está vigente, usa **CertiSAT WEB** con tu e.firma activa; si venció hace máximo un año, usa **SAT ID** (identificación + video) y luego descarga el nuevo certificado.
+> [!CONSEJO]
+> Las citas suelen agotarse rápido. Revisa el portal varias veces al día (suelen liberar lugares por la mañana) o intenta en módulos de oficinas cercanas.
 
 ## Tiempo de respuesta
 
@@ -116,13 +124,19 @@ El trámite es **gratuito**, tanto la obtención por primera vez como la renovac
 - **Renovación con CertiSAT WEB (vigente):** inmediata.
 - **Renovación con SAT ID (vencida hasta un año):** la solicitud se resuelve en un **máximo de 5 días hábiles**; la respuesta llega a tu correo.
 
-## Vigencia
+## Vigencia y renovación
 
-La e.firma tiene una **vigencia de 4 años**. Cómo renovarla:
+La e.firma tiene una **vigencia de 4 años**. La forma de renovarla depende de su estado:
 
-- **Vigente:** en línea por **CertiSAT WEB** o con **e.firma portable**.
-- **Vencida hace menos de 1 año:** en línea con **SAT ID**.
-- **Vencida hace más de 1 año, revocada, o si perdiste tu .key o contraseña:** presencial, con cita.
+| Estado de tu e.firma | Cómo renovarla |
+|---|---|
+| **Vigente** | En línea por CertiSAT WEB o con e.firma portable |
+| **Vencida hace menos de 1 año** | En línea con SAT ID (identificación + video) |
+| **Vencida hace más de 1 año o revocada** | Presencial, con cita |
+| **Perdiste tu .key o tu contraseña** | Presencial, con cita (genera una nueva) |
+
+> [!AVISO]
+> El SAT **no guarda** la contraseña de tu clave privada ni una copia de tu archivo .key. Si los pierdes, no hay forma de recuperarlos en línea: tendrás que generar una e.firma nueva de manera presencial. Respáldalos en un lugar seguro.
 
 ## Problemas comunes
 
@@ -131,4 +145,3 @@ La e.firma tiene una **vigencia de 4 años**. Cómo renovarla:
 - **Contraseña olvidada:** el SAT no la almacena; si la olvidaste, debes generar una e.firma nueva presencialmente.
 - **Pérdida del archivo .key:** sin la clave privada no puedes usarla ni renovarla; requiere trámite presencial.
 - **CURP o domicilio no coinciden con el RFC:** actualiza tus datos en el RFC antes de la cita.
-- **No confundir e.firma con la Contraseña (antes CIEC):** la Contraseña es para acceso al portal; la e.firma es el certificado digital con .cer y .key.

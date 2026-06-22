@@ -2,7 +2,23 @@
 import BaseLayout from './BaseLayout.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import Faq from '../components/Faq.astro';
+import Pasos from '../components/Pasos.astro';
+import Relacionados from '../components/Relacionados.astro';
+import TablaContenido from '../components/TablaContenido.astro';
 import { getInstitucion } from '../data/instituciones';
+
+interface Heading {
+  depth: number;
+  slug: string;
+  text: string;
+}
+interface RelItem {
+  slug: string;
+  titulo: string;
+  resumen: string;
+  categoria?: string;
+  costo?: string;
+}
 
 export interface Props {
   titulo: string;
@@ -19,13 +35,21 @@ export interface Props {
   urlOficial: string;
   urlOficialTexto: string;
   actualizado: Date;
+  revisadoPor?: string;
   faq: { pregunta: string; respuesta: string }[];
   fuentes: { titulo: string; url: string }[];
+  pasos?: { titulo: string; detalle: string }[];
+  // Datos calculados que inyecta la ruta [tramite].astro:
+  headings?: Heading[];
+  lecturaMin?: number;
+  relacionadosData?: RelItem[];
 }
 
 const p = Astro.props;
 const h1 = p.tituloLargo ?? p.titulo;
 const institucion = getInstitucion(p.institucion);
+const pasos = p.pasos ?? [];
+const relacionados = p.relacionadosData ?? [];
 
 const fmtFecha = new Intl.DateTimeFormat('es-MX', {
   day: 'numeric',
@@ -33,6 +57,18 @@ const fmtFecha = new Intl.DateTimeFormat('es-MX', {
   year: 'numeric',
 });
 const actualizadoTexto = fmtFecha.format(p.actualizado);
+
+// Índice "En esta guía": encabezados H2 del cuerpo + secciones generadas.
+const tocItems = [
+  ...(p.headings ?? [])
+    .filter((h) => h.depth === 2)
+    .map((h) => ({ slug: h.slug, text: h.text })),
+  ...(pasos.length ? [{ slug: 'paso-a-paso', text: 'Paso a paso' }] : []),
+  ...(p.faq.length ? [{ slug: 'faq-title', text: 'Preguntas frecuentes' }] : []),
+  ...(relacionados.length
+    ? [{ slug: 'tramites-relacionados', text: 'Trámites relacionados' }]
+    : []),
+];
 
 const articleSchema = {
   '@context': 'https://schema.org',
@@ -46,6 +82,24 @@ const articleSchema = {
   publisher: { '@type': 'Organization', name: 'TramitaMex' },
 };
 
+// Schema HowTo: ayuda a Google a mostrar el paso a paso como guía enriquecida.
+const howToSchema =
+  pasos.length > 0
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'HowTo',
+        name: h1,
+        description: p.descripcion,
+        inLanguage: 'es-MX',
+        step: pasos.map((paso, i) => ({
+          '@type': 'HowToStep',
+          position: i + 1,
+          name: paso.titulo,
+          text: paso.detalle,
+        })),
+      }
+    : null;
+
 const ficha = [
   { etiqueta: 'Costo', valor: p.costo, destacado: true },
   { etiqueta: 'Modalidad', valor: p.modalidad },
@@ -54,27 +108,62 @@ const ficha = [
   { etiqueta: 'Nivel', valor: p.nivel },
   { etiqueta: 'Institución', valor: institucion?.nombre ?? p.institucion },
 ].filter((f) => f.valor);
+
+const jsonLd = howToSchema ? [articleSchema, howToSchema] : [articleSchema];
 ---
 
-<BaseLayout title={h1} description={p.descripcion} ogType="article" jsonLd={[articleSchema]}>
+<BaseLayout title={h1} description={p.descripcion} ogType="article" jsonLd={jsonLd}>
   <article class="tramite">
     <div class="tramite-hero">
       <div class="container">
         <Breadcrumbs
-          items={[
-            { nombre: 'Trámites', href: '/tramites/' },
-            { nombre: p.titulo },
-          ]}
+          items={[{ nombre: 'Trámites', href: '/tramites/' }, { nombre: p.titulo }]}
         />
         <p class="eyebrow">{p.categoria}</p>
         <h1>{h1}</h1>
         <p class="lead">{p.resumen}</p>
+
+        <div class="hero-meta">
+          {
+            p.lecturaMin && (
+              <span class="meta-item">
+                <svg width="15" height="15" viewBox="0 0 16 16" aria-hidden="true">
+                  <circle cx="8" cy="8" r="6.25" fill="none" stroke="currentColor" stroke-width="1.4" />
+                  <path d="M8 4.5V8l2.5 1.5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                {p.lecturaMin} min de lectura
+              </span>
+            )
+          }
+          {
+            p.revisadoPor && (
+              <span class="meta-item">
+                <svg width="15" height="15" viewBox="0 0 16 16" aria-hidden="true">
+                  <path d="M2 8.5 6 12l8-8.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                Revisado por {p.revisadoPor}
+              </span>
+            )
+          }
+          <span class="meta-item">
+            <svg width="15" height="15" viewBox="0 0 16 16" aria-hidden="true">
+              <rect x="2.25" y="3" width="11.5" height="11" rx="1.75" fill="none" stroke="currentColor" stroke-width="1.4" />
+              <path d="M2.25 6.25h11.5M5.5 1.75v2.5M10.5 1.75v2.5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" />
+            </svg>
+            Actualizado el {actualizadoTexto}
+          </span>
+        </div>
+
         <div class="hero-actions">
-          <a href={p.urlOficial} class="btn btn-primary" target="_blank" rel="noopener noreferrer nofollow">
+          <a
+            href={p.urlOficial}
+            class="btn btn-primary"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+          >
             Ir al sitio oficial
             <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3h7v7M13 3 6.5 9.5M11 9.5V13H3V5h3.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
-          <span class="hero-updated">Actualizado el {actualizadoTexto}</span>
         </div>
       </div>
     </div>
@@ -82,6 +171,8 @@ const ficha = [
     <div class="container tramite-body">
       <div class="tramite-content prose">
         <slot />
+
+        <Pasos pasos={pasos} />
 
         <Faq items={p.faq} />
 
@@ -107,20 +198,31 @@ const ficha = [
           requisitos y costos pueden cambiar; confirma siempre en el portal oficial antes de
           iniciar tu trámite.
         </p>
+
+        <Relacionados items={relacionados} />
       </div>
 
       <aside class="tramite-aside">
+        <TablaContenido items={tocItems} />
+
         <div class="ficha surface-card">
           <p class="ficha-title">Ficha rápida</p>
           <dl class="ficha-list">
-            {ficha.map((f) => (
-              <div class:list={['ficha-row', { 'is-highlight': f.destacado }]}>
-                <dt>{f.etiqueta}</dt>
-                <dd>{f.valor}</dd>
-              </div>
-            ))}
+            {
+              ficha.map((f) => (
+                <div class:list={['ficha-row', { 'is-highlight': f.destacado }]}>
+                  <dt>{f.etiqueta}</dt>
+                  <dd>{f.valor}</dd>
+                </div>
+              ))
+            }
           </dl>
-          <a href={p.urlOficial} class="btn btn-accent ficha-cta" target="_blank" rel="noopener noreferrer nofollow">
+          <a
+            href={p.urlOficial}
+            class="btn btn-accent ficha-cta"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+          >
             {p.urlOficialTexto}
           </a>
         </div>
@@ -149,14 +251,30 @@ const ficha = [
   .tramite-hero h1 {
     font-size: var(--text-3xl);
     margin-top: var(--space-2xs);
-    max-width: 18ch;
+    max-width: 20ch;
   }
   .lead {
     margin-top: var(--space-sm);
-    max-width: 60ch;
+    max-width: 62ch;
     font-size: var(--text-md);
     color: var(--color-text-soft);
   }
+
+  .hero-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-xs) var(--space-md);
+    margin-top: var(--space-md);
+    font-size: var(--text-sm);
+    color: var(--color-text-faint);
+  }
+  .meta-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+  .meta-item svg { color: var(--color-primary); }
+
   .hero-actions {
     display: flex;
     flex-wrap: wrap;
@@ -164,7 +282,6 @@ const ficha = [
     gap: var(--space-sm);
     margin-top: var(--space-md);
   }
-  .hero-updated { font-size: var(--text-sm); color: var(--color-text-faint); }
 
   .tramite-body {
     display: grid;
@@ -215,7 +332,7 @@ const ficha = [
   .aside-inst-name { font-family: var(--font-display); font-size: var(--text-lg); color: var(--color-primary-strong); font-weight: var(--weight-semibold); }
   .aside-inst-full { font-size: var(--text-sm); color: var(--color-text-soft); }
 
-  .fuentes { margin-top: var(--space-xl); padding: var(--space-md); background: var(--color-surface-2); border-radius: var(--radius-lg); border: 1px solid var(--color-border); }
+  .fuentes { margin-top: var(--space-2xl); padding: var(--space-md); background: var(--color-surface-2); border-radius: var(--radius-lg); border: 1px solid var(--color-border); }
   .fuentes h2 { font-size: var(--text-lg); margin-bottom: var(--space-sm); }
   .fuentes ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 0.5rem; }
   .fuentes a { font-size: var(--text-sm); }
@@ -230,8 +347,10 @@ const ficha = [
     color: var(--color-text-soft);
   }
 
+  /* El índice se oculta en móvil (la navegación por scroll es suficiente). */
   @media (max-width: 920px) {
     .tramite-body { grid-template-columns: 1fr; gap: var(--space-lg); }
     .tramite-aside { position: static; order: -1; }
+    .tramite-aside :global(.toc) { display: none; }
   }
 </style>

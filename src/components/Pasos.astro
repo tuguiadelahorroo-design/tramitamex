@@ -1,0 +1,105 @@
+---
+// Paso a paso diseñado (línea de tiempo numerada). Los datos vienen del
+// frontmatter `pasos[]` del trámite; el mismo arreglo alimenta el schema HowTo.
+export interface Paso {
+  titulo: string;
+  detalle: string;
+}
+export interface Props {
+  pasos: Paso[];
+  titulo?: string;
+  id?: string;
+}
+const { pasos, titulo = 'Paso a paso', id = 'paso-a-paso' } = Astro.props;
+---
+
+{
+  pasos && pasos.length > 0 && (
+    <section class="pasos-section" aria-labelledby={`${id}-title`}>
+      <h2 id={id} class="pasos-h2">
+        <span id={`${id}-title`}>{titulo}</span>
+      </h2>
+      <ol class="pasos" role="list">
+        {pasos.map((paso, i) => (
+          <li class="paso">
+            <div class="paso-num" aria-hidden="true">
+              {i + 1}
+            </div>
+            <div class="paso-body">
+              <h3 class="paso-titulo">{paso.titulo}</h3>
+              <p class="paso-detalle">{paso.detalle}</p>
+            </div>
+          </li>
+        ))}
+      </ol>
+    </section>
+  )
+}
+
+<style>
+  .pasos-section {
+    margin-top: var(--space-xl);
+    scroll-margin-top: 6rem;
+  }
+  .pasos-h2 {
+    margin-bottom: var(--space-lg);
+  }
+  .pasos {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+  }
+  .paso {
+    --paso-size: 2.75rem;
+    position: relative;
+    display: grid;
+    grid-template-columns: var(--paso-size) 1fr;
+    gap: var(--space-md);
+    padding-bottom: var(--space-lg);
+  }
+  /* Línea conectora entre los círculos numerados. */
+  .paso::before {
+    content: '';
+    position: absolute;
+    left: calc(var(--paso-size) / 2 - 1px);
+    top: var(--paso-size);
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(var(--color-primary-tint), var(--color-border));
+  }
+  .paso:last-child {
+    padding-bottom: 0;
+  }
+  .paso:last-child::before {
+    display: none;
+  }
+  .paso-num {
+    width: var(--paso-size);
+    height: var(--paso-size);
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: var(--color-primary-strong);
+    color: var(--color-text-on-dark);
+    font-family: var(--font-display);
+    font-weight: var(--weight-bold);
+    font-size: var(--text-lg);
+    box-shadow: var(--shadow-sm);
+    position: relative;
+    z-index: 1;
+  }
+  .paso-body {
+    padding-top: 0.35rem;
+  }
+  .paso-titulo {
+    font-size: var(--text-lg);
+    margin: 0 0 0.3rem;
+  }
+  .paso-detalle {
+    margin: 0;
+    color: var(--color-text-soft);
+    max-width: 62ch;
+    line-height: var(--leading-relaxed);
+  }
+</style>

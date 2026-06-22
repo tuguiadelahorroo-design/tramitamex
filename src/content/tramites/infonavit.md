@@ -13,8 +13,26 @@ vigencia: 'Acceso permanente'
 urlOficial: 'https://micuenta.infonavit.org.mx/'
 urlOficialTexto: 'Mi Cuenta Infonavit'
 actualizado: 2026-06-17
+revisadoPor: 'el equipo editorial de TramitaMex'
 destacado: true
 orden: 13
+relacionados:
+  - afore
+  - nss
+  - semanas-cotizadas-imss
+pasos:
+  - titulo: 'Entra al registro'
+    detalle: 'Abre micuenta.infonavit.org.mx/registro para crear tu cuenta la primera vez.'
+  - titulo: 'Captura NSS, CURP y RFC'
+    detalle: 'Escribe tu NSS de 11 dígitos, tu CURP y tu RFC.'
+  - titulo: 'Registra correo y celular'
+    detalle: 'Indica un correo electrónico y un número de celular vigentes para recibir los códigos.'
+  - titulo: 'Crea tu contraseña'
+    detalle: 'Mínimo 8 caracteres con mayúsculas, minúsculas, números y un carácter especial.'
+  - titulo: 'Verifica con el código'
+    detalle: 'Ingresa el código que recibes por correo o SMS y confirma el registro.'
+  - titulo: 'Inicia sesión y consulta'
+    detalle: 'Entra con tu NSS y contraseña: el saldo está en Mi ahorro y los puntos y la precalificación en Mi crédito.'
 faq:
   - pregunta: '¿Cuánto cuesta consultar mi saldo, puntos y precalificación?'
     respuesta: 'Es completamente gratis. Nunca pagues a terceros por este servicio.'
@@ -43,7 +61,7 @@ fuentes:
     url: 'https://portalmx.infonavit.org.mx/wps/portal/infonavitmx/mx2/derechohabientes/mi_ahorro/'
 ---
 
-## Qué es
+## Qué es Mi Cuenta Infonavit
 
 **Mi Cuenta Infonavit** es la plataforma digital oficial y gratuita del Infonavit que permite a cualquier derechohabiente consultar y gestionar su información de vivienda en línea, 24/7, sin acudir a una oficina. Te permite revisar tres datos clave:
 
@@ -62,18 +80,19 @@ fuentes:
 
 ## Requisitos
 
-- **NSS** de 11 dígitos (el mismo del IMSS).
+- **[NSS](/nss/)** de 11 dígitos (el mismo del IMSS).
 - **CURP** y **RFC**.
 - Un **correo electrónico** y un **número de celular** vigentes (para los códigos de verificación).
 - **Crear una contraseña** segura durante el registro.
 
-> Para consultar saldo, puntos y precalificación **no** necesitas relación laboral activa; basta tener NSS registrado. La relación laboral vigente solo es requisito para *solicitar* el crédito.
+> [!DATO]
+> Para consultar saldo, puntos y precalificación **no** necesitas relación laboral activa: basta tener NSS registrado. La relación laboral vigente solo es requisito para *solicitar* el crédito.
 
 ## Documentos necesarios
 
 No se entregan documentos físicos; la consulta es totalmente digital. Solo ten a la mano:
 
-- NSS (localízalo con tu CURP en IMSS Digital, o en recibos de nómina y estados de cuenta de tu Afore).
+- NSS (localízalo con tu CURP en IMSS Digital, o en recibos de nómina y estados de cuenta de tu [Afore](/afore/)).
 - CURP y RFC.
 - Correo electrónico y celular activos.
 
@@ -92,23 +111,6 @@ Es un trámite **100% en línea**:
 ## Cómo sacar cita
 
 Para la **consulta de saldo, puntos y precalificación no se requiere cita**: todo es en línea. La cita solo aplica para atención presencial en un CESI (algunos trámites de crédito, devolución de ahorro o aclaraciones). Para agendar, inicia sesión, ve a *Contáctanos → Haz una cita*, elige CESI, motivo y fecha. También por **Infonatel**: 55 9171 5050 (CDMX) o 800 008 3900 (resto del país).
-
-## Paso a paso
-
-**Registro (primera vez):**
-
-1. Entra a micuenta.infonavit.org.mx/registro.
-2. Captura tu **NSS** (11 dígitos), tu **CURP** y tu **RFC**.
-3. Registra tu **correo** y tu **celular** (10 dígitos).
-4. **Crea tu contraseña** (mínimo 8 caracteres con mayúsculas, minúsculas, números y un carácter especial).
-5. Ingresa el **código de verificación** que recibes por correo y/o SMS.
-6. Confirma el registro.
-
-**Consultar saldo, puntos y precalificación:**
-
-1. Inicia sesión con tu **NSS** y contraseña.
-2. En *Mi ahorro* verás el **saldo** de tu Subcuenta de Vivienda (con rendimientos) y podrás descargar tu estado de cuenta.
-3. En *Mi crédito → Precalificación y puntos* verás tu **puntaje**, cuántos te faltan para 1,080 y, si ya los alcanzas, tu **monto de precalificación**.
 
 ## Tiempo de respuesta
 

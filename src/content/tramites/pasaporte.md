@@ -13,8 +13,26 @@ vigencia: '3, 6 o 10 años'
 urlOficial: 'https://www.gob.mx/pasaporte/'
 urlOficialTexto: 'Portal del Pasaporte — gob.mx'
 actualizado: 2026-06-17
+revisadoPor: 'el equipo editorial de TramitaMex'
 destacado: true
 orden: 6
+relacionados:
+  - acta-de-nacimiento
+  - curp
+  - ine
+pasos:
+  - titulo: 'Reúne tus documentos'
+    detalle: 'Ten lista tu acta de nacimiento certificada, identificación oficial vigente, CURP y, para renovación, el pasaporte anterior.'
+  - titulo: 'Agenda tu cita'
+    detalle: 'Reserva tu cita gratuita en citas.sre.gob.mx (puedes usar tu cuenta Llave MX).'
+  - titulo: 'Paga los derechos'
+    detalle: 'Cubre el costo según la vigencia que elijas y conserva el comprobante de pago.'
+  - titulo: 'Acude a tu cita'
+    detalle: 'Preséntate de manera personal y puntual, con todos los documentos en original.'
+  - titulo: 'Cotejo y datos biométricos'
+    detalle: 'En la oficina cotejan tus documentos y toman tu fotografía, firma y huellas.'
+  - titulo: 'Recoge tu pasaporte'
+    detalle: 'En la mayoría de los casos se entrega el mismo día de la cita en oficinas dentro de México.'
 faq:
   - pregunta: '¿La cita para el pasaporte tiene costo?'
     respuesta: 'No. Agendar la cita es totalmente gratuito; solo se paga el derecho del pasaporte según la vigencia. Quien cobre por la cita es un intermediario no autorizado.'
@@ -43,7 +61,7 @@ fuentes:
     url: 'https://portales.sre.gob.mx/directorio/delegaciones'
 ---
 
-## Qué es
+## Qué es el pasaporte
 
 El **pasaporte mexicano** es el documento oficial de viaje e identidad que expide la Secretaría de Relaciones Exteriores (SRE). Acredita la nacionalidad y la identidad de la persona titular ante las autoridades de México y de otros países. Es personal e intransferible. El más común es el **pasaporte ordinario**; existen también el oficial y el diplomático, solo para personas con cargos específicos.
 
@@ -63,13 +81,16 @@ El **pasaporte mexicano** es el documento oficial de viaje e identidad que expid
 
 Para **menores de edad**: presencia del menor y de **ambos padres o tutores** con identificación, y firma en persona del formato de consentimiento **OP-7**.
 
+> [!IMPORTANTE]
+> El trámite es estrictamente **personal** y la cita es **gratuita**. La SRE no acepta gestores: nadie puede presentarse por ti, porque se toman tu fotografía, firma y huellas en la oficina.
+
 ## Documentos necesarios
 
 **Adultos (primera vez):**
 
-- **Acta de nacimiento** certificada (o carta de naturalización para personas naturalizadas).
-- **Identificación oficial vigente con fotografía** (INE, cédula profesional, cartilla militar, etc.).
-- **CURP** (se recomienda llevarla).
+- **[Acta de nacimiento](/acta-de-nacimiento/)** certificada (o carta de naturalización para personas naturalizadas).
+- **Identificación oficial vigente con fotografía** ([INE](/ine/), cédula profesional, cartilla militar, etc.).
+- **[CURP](/curp/)** (se recomienda llevarla).
 - **Comprobante de pago**. La fotografía se toma en la propia oficina.
 
 **Renovación:** pasaporte anterior (original) y comprobante de pago.
@@ -87,12 +108,16 @@ El pasaporte **sí tiene costo**, fijado por la Ley Federal de Derechos. Montos 
 
 El descuento del 50% aplica a **personas de 60 años o más**, **personas con discapacidad** comprobable y **trabajadores agrícolas temporales** del programa con Canadá. Algunas oficinas ofrecen trámite urgente con un recargo aproximado del 30%.
 
+> [!CONSEJO]
+> Si eres mayor de edad y viajas con frecuencia, el de **10 años** es el más económico por año y te ahorra renovaciones. El de 3 o 6 años conviene si prevés cambios de datos o para menores.
+
 ## Dónde se hace
 
 - **En México:** en las **Delegaciones de la SRE** y **Oficinas de Enlace** estatales y municipales, solo con **cita previa**.
 - **En el extranjero:** en las **embajadas y consulados** de México, mediante el sistema **MiConsulado**.
 
-> Evita gestores o "servicios exprés" externos: son fraudulentos. La cita siempre es gratuita y solo se agenda en canales oficiales.
+> [!AVISO]
+> Evita gestores o "servicios exprés" externos que cobran por la cita: son fraudulentos. La cita siempre es gratuita y solo se agenda en **citas.sre.gob.mx**.
 
 ## Cómo sacar cita
 
@@ -104,15 +129,6 @@ El descuento del 50% aplica a **personas de 60 años o más**, **personas con di
 6. Realiza el **pago de derechos** (en banco, en línea o en caja de la oficina, según el caso).
 
 También puedes agendar por teléfono al **55 8932 4827** (gratuito). Si estás en el extranjero, usa la opción **MiConsulado** en el mismo portal.
-
-## Paso a paso
-
-1. **Reúne tus documentos** (acta certificada, identificación vigente, CURP y, para renovación, el pasaporte anterior).
-2. **Agenda tu cita** en citas.sre.gob.mx.
-3. **Paga los derechos** según la vigencia y conserva el comprobante.
-4. **Acude a tu cita** de manera personal y puntual, con los documentos originales.
-5. En la oficina: cotejo de documentos, toma de **fotografía**, **firma y huellas**.
-6. **Recoge tu pasaporte** el mismo día (en la mayoría de los casos).
 
 ## Tiempo de respuesta
 

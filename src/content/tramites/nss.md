@@ -13,8 +13,26 @@ vigencia: 'Permanente'
 urlOficial: 'https://serviciosdigitales.imss.gob.mx/gestionAsegurados-web-externo/asignacionNSS'
 urlOficialTexto: 'Asignación o localización de NSS — IMSS'
 actualizado: 2026-06-17
+revisadoPor: 'el equipo editorial de TramitaMex'
 destacado: true
 orden: 4
+relacionados:
+  - curp
+  - semanas-cotizadas-imss
+  - vigencia-de-derechos-imss
+pasos:
+  - titulo: 'Entra al portal del IMSS'
+    detalle: 'Abre Servicios Digitales del IMSS, en la sección Asignación o localización de NSS.'
+  - titulo: 'Captura tu CURP'
+    detalle: 'Escribe tu CURP; ten a la mano un correo electrónico válido.'
+  - titulo: 'Confirma tu correo'
+    detalle: 'Escribe y confirma tu correo electrónico personal; quedará asociado a tu CURP.'
+  - titulo: 'Valida el captcha y acepta términos'
+    detalle: 'Ingresa el código de verificación, acepta los términos y da clic en continuar.'
+  - titulo: 'El sistema asigna o localiza tu NSS'
+    detalle: 'De forma inmediata, el IMSS te asigna un NSS si no tenías, o localiza el que ya existía.'
+  - titulo: 'Descarga tu documento'
+    detalle: 'Descarga e imprime el documento con tu NSS; también llegará la confirmación a tu correo.'
 faq:
   - pregunta: '¿Cuántos dígitos tiene el NSS?'
     respuesta: 'El NSS tiene 11 dígitos.'
@@ -43,9 +61,12 @@ fuentes:
     url: 'https://www.imss.gob.mx/imssdigital'
 ---
 
-## Qué es
+## Qué es el NSS
 
-El **Número de Seguridad Social (NSS)** es la clave de **11 dígitos** que el Instituto Mexicano del Seguro Social (IMSS) asigna a cada persona para identificarla dentro del sistema de seguridad social. Es único, permanente e intransferible: te acompaña toda la vida y no cambia aunque cambies de patrón o empleo. Lo necesitas para que tus semanas cotizadas y tus aportaciones queden registradas a tu nombre.
+El **Número de Seguridad Social (NSS)** es la clave de **11 dígitos** que el Instituto Mexicano del Seguro Social (IMSS) asigna a cada persona para identificarla dentro del sistema de seguridad social. Lo necesitas para que tus [semanas cotizadas](/semanas-cotizadas-imss/) y tus aportaciones queden registradas a tu nombre.
+
+> [!DATO]
+> El NSS es **único, permanente e intransferible**: te acompaña toda la vida y **no cambia** aunque cambies de patrón o de empleo. No lo confundas con la [CURP](/curp/), que emite RENAPO para identificación general.
 
 ## Para qué sirve
 
@@ -78,7 +99,10 @@ El **Número de Seguridad Social (NSS)** es la clave de **11 dígitos** que el I
 
 ## Costo
 
-El trámite es **gratis**, ya sea en línea, en la app IMSS Digital o de forma presencial. El IMSS nunca cobra por asignar o localizar el NSS.
+El trámite es **gratis**, ya sea en línea, en la app IMSS Digital o de forma presencial.
+
+> [!IMPORTANTE]
+> El IMSS nunca cobra por asignar o localizar el NSS. En línea basta tu CURP y un correo: no necesitas pagar a gestores ni intermediarios.
 
 ## Dónde se hace
 
@@ -89,17 +113,6 @@ El trámite es **gratis**, ya sea en línea, en la app IMSS Digital o de forma p
 ## Cómo sacar cita
 
 Para obtener el NSS en línea **no se necesita cita**: el servicio es inmediato y está disponible las 24 horas. Solo si acudes de forma presencial puedes agendar cita en el portal de citas del IMSS o llamar al 800 623 2323; aun así, la asignación o localización del NSS también puede atenderse directamente en la ventanilla de Afiliación y Cobranza.
-
-## Paso a paso
-
-1. Entra al portal de Servicios Digitales del IMSS, sección *Asignación o localización de NSS*.
-2. Ten a la mano tu CURP y un correo electrónico válido.
-3. Captura tu CURP.
-4. Escribe y confirma tu correo electrónico.
-5. Ingresa el código captcha y acepta los términos.
-6. Da clic en continuar.
-7. El sistema asigna tu NSS (si no tenías) o lo localiza (si ya existía) de forma inmediata.
-8. Descarga e imprime tu documento con el NSS; también llegará la confirmación a tu correo.
 
 ## Tiempo de respuesta
 

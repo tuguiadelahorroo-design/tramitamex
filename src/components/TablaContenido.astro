@@ -1,0 +1,101 @@
+---
+// Índice "En esta guía" generado a partir de los encabezados del artículo.
+// Incluye scrollspy (resalta la sección visible) con IntersectionObserver.
+export interface TocItem {
+  slug: string;
+  text: string;
+}
+export interface Props {
+  items: TocItem[];
+}
+const { items } = Astro.props;
+---
+
+{
+  items.length > 1 && (
+    <nav class="toc surface-card" aria-label="Contenido de la guía">
+      <p class="toc-title">En esta guía</p>
+      <ol class="toc-list" role="list">
+        {items.map((it) => (
+          <li>
+            <a href={`#${it.slug}`} data-toc-link={it.slug}>
+              {it.text}
+            </a>
+          </li>
+        ))}
+      </ol>
+    </nav>
+  )
+}
+
+<style>
+  .toc {
+    padding: var(--space-md);
+  }
+  .toc-title {
+    font-family: var(--font-display);
+    font-weight: var(--weight-semibold);
+    font-size: var(--text-base);
+    color: var(--color-text);
+    margin-bottom: var(--space-2xs);
+  }
+  .toc-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 0.1rem;
+    counter-reset: toc;
+  }
+  .toc-list a {
+    display: block;
+    padding: 0.4rem 0.65rem;
+    border-radius: var(--radius-sm);
+    font-size: var(--text-sm);
+    color: var(--color-text-soft);
+    text-decoration: none;
+    border-left: 2px solid transparent;
+    transition: color var(--duration-fast), background-color var(--duration-fast),
+      border-color var(--duration-fast);
+  }
+  .toc-list a:hover {
+    color: var(--color-primary-strong);
+    background: var(--color-primary-soft);
+  }
+  .toc-list a.is-active {
+    color: var(--color-primary-strong);
+    border-left-color: var(--color-primary);
+    background: var(--color-primary-soft);
+    font-weight: var(--weight-medium);
+  }
+</style>
+
+<script>
+  const links = Array.from(
+    document.querySelectorAll('[data-toc-link]')
+  ) as HTMLAnchorElement[];
+
+  if (links.length) {
+    const linkBySlug = new Map(
+      links.map((l) => [l.getAttribute('data-toc-link') ?? '', l])
+    );
+    const targets = links
+      .map((l) => document.getElementById(l.getAttribute('data-toc-link') ?? ''))
+      .filter((el): el is HTMLElement => el !== null);
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (entry.isIntersecting) {
+            links.forEach((l) => l.classList.remove('is-active'));
+            const active = linkBySlug.get(entry.target.id);
+            if (active) active.classList.add('is-active');
+          }
+        }
+      },
+      { rootMargin: '-20% 0px -70% 0px', threshold: 0 }
+    );
+
+    targets.forEach((t) => observer.observe(t));
+  }
+</script>

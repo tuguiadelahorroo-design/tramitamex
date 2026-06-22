@@ -24,6 +24,20 @@ const tramites = defineCollection({
     actualizado: z.coerce.date(),
     destacado: z.boolean().default(false),
     orden: z.number().default(99),
+    // Quién revisó editorialmente el contenido (señal E-E-A-T).
+    revisadoPor: z.string().optional(),
+    // Pasos del "Paso a paso": alimentan el componente diseñado y el schema HowTo.
+    pasos: z
+      .array(
+        z.object({
+          titulo: z.string(),
+          detalle: z.string(),
+        })
+      )
+      .optional(),
+    // Slugs de trámites relacionados (enlazado interno).
+    // Si se omite, se infieren automáticamente por categoría.
+    relacionados: z.array(z.string()).optional(),
     // Preguntas frecuentes (alimentan el schema FAQPage y el acordeón)
     faq: z
       .array(

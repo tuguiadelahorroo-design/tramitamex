@@ -13,8 +13,26 @@ vigencia: '30 días (3 meses para estímulos)'
 urlOficial: 'https://www.sat.gob.mx/consultas/20777/consulta-tu-opinion-de-cumplimiento-de-obligaciones-fiscales'
 urlOficialTexto: 'Opinión de cumplimiento — Portal del SAT'
 actualizado: 2026-06-17
+revisadoPor: 'el equipo editorial de TramitaMex'
 destacado: true
 orden: 14
+relacionados:
+  - constancia-de-situacion-fiscal
+  - firma-electronica
+  - rfc
+pasos:
+  - titulo: 'Abre la aplicación de la opinión'
+    detalle: 'Ingresa al Portal del SAT o directamente a la aplicación de la opinión de cumplimiento.'
+  - titulo: 'Da clic en Iniciar'
+    detalle: 'Comienza el trámite desde la aplicación.'
+  - titulo: 'Autentícate'
+    detalle: 'Entra con tu contraseña del SAT (RFC + contraseña) o con tu e.firma. Cualquiera de las dos funciona.'
+  - titulo: 'Captura el captcha'
+    detalle: 'Escribe el texto de la imagen que muestra la pantalla.'
+  - titulo: 'Envía la solicitud'
+    detalle: 'Da clic en Enviar para que el sistema consulte tu situación fiscal.'
+  - titulo: 'Guarda o imprime tu opinión'
+    detalle: 'El sistema genera la opinión de inmediato en PDF; descárgala o imprímela.'
 faq:
   - pregunta: '¿Cuánto cuesta la opinión de cumplimiento?'
     respuesta: 'Es totalmente gratuita. El SAT no cobra por emitirla.'
@@ -43,14 +61,14 @@ fuentes:
     url: 'https://www.sat.gob.mx/consulta/20957/valida-la-autenticidad-de-la-informacion-de-tu-opinion-del-cumplimiento-de-obligaciones-fiscales'
 ---
 
-## Qué es
+## Qué es la opinión de cumplimiento
 
 La **Opinión del cumplimiento de obligaciones fiscales** es un documento que emite el SAT y que indica de manera instantánea si estás al corriente con tus obligaciones fiscales. Su fundamento es el **artículo 32-D del Código Fiscal de la Federación**. Puede salir en dos sentidos:
 
 - **Positiva:** estás al corriente; cumples todos los requisitos que revisa la autoridad.
 - **Negativa:** tienes adeudos, omisiones u otras inconsistencias pendientes de regularizar.
 
-Para que salga **positiva**, la autoridad revisa que estés inscrito y activo en el RFC, al corriente en tus declaraciones, que no aparezcas en el listado del artículo 69-B (operaciones simuladas) y que no tengas créditos fiscales firmes o exigibles.
+Para que salga **positiva**, la autoridad revisa que estés inscrito y activo en el [RFC](/rfc/), al corriente en tus declaraciones, que no aparezcas en el listado del artículo 69-B (operaciones simuladas) y que no tengas créditos fiscales firmes o exigibles.
 
 ## Para qué sirve
 
@@ -63,7 +81,7 @@ Para que salga **positiva**, la autoridad revisa que estés inscrito y activo en
 ## Requisitos
 
 - **RFC** vigente.
-- **Contraseña** del SAT **o** **e.firma** vigente. Cualquiera de las dos es suficiente.
+- **Contraseña** del SAT **o** **[e.firma](/firma-electronica/)** vigente. Cualquiera de las dos es suficiente.
 
 ## Documentos necesarios
 
@@ -86,27 +104,21 @@ Es **completamente gratuito**. El SAT no cobra por generar la opinión.
 
 **No se requiere cita.** El trámite es 100% en línea, sin necesidad de agendar ni acudir a una oficina del SAT.
 
-## Paso a paso
-
-1. Ingresa al Portal del SAT o directamente a la aplicación de la opinión de cumplimiento.
-2. Da clic en **Iniciar**.
-3. Autentícate con tu **contraseña** (RFC + contraseña) **o** con tu **e.firma**.
-4. Escribe el texto de la imagen (**captcha**).
-5. Da clic en **Enviar**.
-6. El sistema genera la opinión de inmediato. **Guarda o imprime** tu PDF.
-
 ## Tiempo de respuesta
 
 **Inmediato.** La opinión se genera y se puede descargar o imprimir en el momento, en línea.
 
 ## Vigencia
 
-La opinión refleja tu situación fiscal **a la fecha de emisión**. La vigencia de una opinión positiva es:
+La opinión refleja tu situación fiscal **a la fecha de emisión**. La vigencia de una opinión positiva depende del uso que le des:
 
-- **Tres meses** para obtención de **estímulos o subsidios**.
-- **30 días naturales** desde su emisión **en los demás casos** (contratación, proveedores, créditos).
+| Para qué la usas | Vigencia |
+|---|---|
+| Estímulos o subsidios | 3 meses |
+| Contratación, proveedores, créditos (demás casos) | 30 días naturales |
 
-En la práctica casi siempre te la pedirán **reciente**: genérala con no más de 30 días de antigüedad.
+> [!AVISO]
+> En la práctica casi siempre te la pedirán **reciente**. Genérala con no más de 30 días de antigüedad para evitar que te la rechacen.
 
 ## Problemas comunes
 
@@ -114,5 +126,7 @@ En la práctica casi siempre te la pedirán **reciente**: genérala con no más 
 - **Negativa por omisión de declaraciones:** presenta todas las declaraciones pendientes y vuelve a generarla.
 - **Estado fiscal no activo:** RFC suspendido o cancelado; reactiva o actualiza tu situación en el RFC.
 - **Aparición en el 69-B:** estar en el listado definitivo genera opinión negativa.
-- **Sale negativa aunque estás al corriente:** presenta una **aclaración** en el Portal del SAT (Mi portal / Servicios por internet / Aclaraciones / Solicitud); es gratuita.
 - **Problemas de acceso:** contraseña bloqueada o e.firma vencida; primero renueva o desbloquea tus credenciales.
+
+> [!CONSEJO]
+> Si tu opinión sale **negativa pero crees estar al corriente**, presenta una **aclaración** en el Portal del SAT (Mi portal / Servicios por internet / Aclaraciones / Solicitud). Es gratuita y puedes ingresarla en cualquier momento.

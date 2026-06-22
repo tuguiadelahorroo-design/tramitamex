@@ -1,0 +1,54 @@
+---
+// Trámites relacionados (enlazado interno). Reutiliza TramiteCard.
+import TramiteCard from './TramiteCard.astro';
+
+export interface RelItem {
+  slug: string;
+  titulo: string;
+  resumen: string;
+  categoria?: string;
+  costo?: string;
+}
+export interface Props {
+  items: RelItem[];
+  titulo?: string;
+}
+const { items, titulo = 'Trámites relacionados' } = Astro.props;
+---
+
+{
+  items.length > 0 && (
+    <section class="relacionados" aria-labelledby="relacionados-title">
+      <h2 id="tramites-relacionados">
+        <span id="relacionados-title">{titulo}</span>
+      </h2>
+      <div class="relacionados-grid">
+        {items.map((it) => (
+          <TramiteCard
+            titulo={it.titulo}
+            descripcion={it.resumen}
+            slug={it.slug}
+            categoria={it.categoria}
+            costo={it.costo}
+            live={true}
+          />
+        ))}
+      </div>
+    </section>
+  )
+}
+
+<style>
+  .relacionados {
+    margin-top: var(--space-2xl);
+    scroll-margin-top: 6rem;
+  }
+  .relacionados > h2 {
+    margin-bottom: var(--space-md);
+  }
+  .relacionados-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: var(--space-md);
+  }
+</style>

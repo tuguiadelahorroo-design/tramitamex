@@ -6,14 +6,53 @@ export async function getStaticPaths() {
   const tramites = await getCollection('tramites');
   return tramites.map((entry) => ({
     params: { tramite: entry.id },
-    props: { entry },
+    props: { entry, tramites },
   }));
 }
 
-const { entry } = Astro.props;
-const { Content } = await render(entry);
+const { entry, tramites } = Astro.props;
+const { Content, headings } = await render(entry);
+
+// Tiempo de lectura estimado (cuerpo + texto de los pasos), ~180 palabras/min.
+const pasosTexto = (entry.data.pasos ?? [])
+  .map((paso) => `${paso.titulo} ${paso.detalle}`)
+  .join(' ');
+const palabras = `${entry.body ?? ''} ${pasosTexto}`
+  .split(/\s+/)
+  .filter(Boolean).length;
+const lecturaMin = Math.max(3, Math.round(palabras / 180));
+
+// Trámites relacionados: usa los slugs del frontmatter o, si faltan,
+// infiere hasta 3 de la misma categoría.
+const datosPorSlug = new Map(tramites.map((t) => [t.id, t.data]));
+let relSlugs = entry.data.relacionados ?? [];
+if (relSlugs.length === 0) {
+  relSlugs = tramites
+    .filter((t) => t.id !== entry.id && t.data.categoria === entry.data.categoria)
+    .sort((a, b) => (a.data.orden ?? 99) - (b.data.orden ?? 99))
+    .slice(0, 3)
+    .map((t) => t.id);
+}
+const relacionadosData = relSlugs
+  .map((slug) => {
+    const d = datosPorSlug.get(slug);
+    if (!d) return null;
+    return {
+      slug,
+      titulo: d.titulo,
+      resumen: d.resumen,
+      categoria: d.categoria,
+      costo: d.costo,
+    };
+  })
+  .filter((x) => x !== null);
 ---
 
-<TramiteLayout {...entry.data}>
+<TramiteLayout
+  {...entry.data}
+  headings={headings}
+  lecturaMin={lecturaMin}
+  relacionadosData={relacionadosData}
+>
   <Content />
 </TramiteLayout>

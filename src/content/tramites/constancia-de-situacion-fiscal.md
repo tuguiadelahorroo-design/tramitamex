@@ -13,8 +13,26 @@ vigencia: 'Sin caducidad legal; pídela reciente'
 urlOficial: 'https://www.sat.gob.mx/aplicacion/53027/genera-tu-constancia-de-situacion-fiscal'
 urlOficialTexto: 'Genera tu Constancia — Portal del SAT'
 actualizado: 2026-06-17
+revisadoPor: 'el equipo editorial de TramitaMex'
 destacado: true
 orden: 3
+relacionados:
+  - rfc
+  - firma-electronica
+  - opinion-de-cumplimiento
+pasos:
+  - titulo: 'Abre la aplicación oficial'
+    detalle: 'Entra a Genera tu Constancia de Situación Fiscal en el Portal del SAT.'
+  - titulo: 'Da clic en Ejecutar en línea'
+    detalle: 'Selecciona el botón Ejecutar en línea para iniciar el trámite.'
+  - titulo: 'Elige cómo autenticarte'
+    detalle: 'Selecciona el medio: contraseña del SAT (lo más rápido) o e.firma.'
+  - titulo: 'Captura tus datos'
+    detalle: 'Escribe tu RFC, tu contraseña y el captcha, y da clic en Enviar.'
+  - titulo: 'Genera la constancia'
+    detalle: 'Selecciona Generar Constancia para crear el documento con tus datos fiscales.'
+  - titulo: 'Descarga e imprime tu PDF'
+    detalle: 'Se descargará el PDF con tu RFC, régimen y domicilio fiscal; guárdalo o imprímelo.'
 faq:
   - pregunta: '¿Cuánto cuesta la Constancia de Situación Fiscal?'
     respuesta: 'Es completamente gratis en todos los medios oficiales del SAT. Desconfía de quien cobre por tramitarla.'
@@ -43,9 +61,9 @@ fuentes:
     url: 'https://citas.sat.gob.mx/'
 ---
 
-## Qué es
+## Qué es la Constancia de Situación Fiscal
 
-La **Constancia de Situación Fiscal (CSF)** es un documento que expide el SAT con tu información fiscal vigente. Contiene tu RFC con código QR, tu Cédula de Identificación Fiscal (CIF), tus datos de identidad (RFC, CURP, nombre o razón social), tu domicilio fiscal registrado y tu régimen fiscal con sus obligaciones. Aplica para personas físicas y morales inscritas en el RFC.
+La **Constancia de Situación Fiscal (CSF)** es un documento que expide el SAT con tu información fiscal vigente. Contiene tu [RFC](/rfc/) con código QR, tu Cédula de Identificación Fiscal (CIF), tus datos de identidad (RFC, CURP, nombre o razón social), tu domicilio fiscal registrado y tu régimen fiscal con sus obligaciones. Aplica para personas físicas y morales inscritas en el RFC.
 
 ## Para qué sirve
 
@@ -54,6 +72,20 @@ La **Constancia de Situación Fiscal (CSF)** es un documento que expide el SAT c
 - **Trámites bancarios:** apertura de cuentas, créditos o productos empresariales.
 - **Dependencias y proveedores:** licitaciones, padrones de proveedores, contratos.
 - **Verificar tus datos:** confirmar régimen, obligaciones y domicilio fiscal.
+
+## Formas de obtenerla
+
+Hay varias maneras de descargarla, según las credenciales que tengas a la mano:
+
+| Método | Qué necesitas | Tiempo |
+|---|---|---|
+| **Contraseña** | RFC + contraseña del SAT | Inmediato |
+| **e.firma** | Archivos .cer, .key y contraseña | Inmediato |
+| **SAT ID** (sin contraseña) | INE, correo, celular y un video | Hasta 5 días hábiles |
+| **SAT Móvil** (app) | RFC y contraseña (o RFC y CURP) | Inmediato |
+
+> [!DATO]
+> Si nunca has tenido contraseña ni [e.firma](/firma-electronica/), no te preocupes: con **SAT ID** puedes obtener tu constancia validando tu identidad con tu identificación oficial y un video, sin pisar una oficina.
 
 ## Requisitos
 
@@ -72,7 +104,10 @@ Depende del método que elijas:
 
 ## Costo
 
-La Constancia de Situación Fiscal es **gratis**. Todos los trámites del SAT son gratuitos; no tiene ningún costo en ningún medio (en línea, app, SAT ID, oficina virtual o presencial). Desconfía de páginas o personas que cobren por tramitarla.
+La Constancia de Situación Fiscal es **gratis**. Todos los trámites del SAT son gratuitos; no tiene ningún costo en ningún medio (en línea, app, SAT ID, oficina virtual o presencial).
+
+> [!IMPORTANTE]
+> Desconfía de páginas o personas que cobren por "tramitar" tu constancia: el documento es gratuito y oficial únicamente en los canales del SAT.
 
 ## Dónde se hace
 
@@ -98,18 +133,8 @@ Si no tienes contraseña ni e.firma y prefieres atención personal:
 4. Confirma y recibirás un correo con tu folio.
 5. Acude con identificación oficial vigente.
 
-> **Alternativa sin cita:** usa **SAT ID** para obtener la constancia de forma remota validando tu identidad con identificación oficial y video. La respuesta llega a tu correo en un plazo de hasta 5 días hábiles.
-
-## Paso a paso
-
-Para descargarla en línea con **RFC y contraseña** (lo más rápido):
-
-1. Entra a la aplicación *Genera tu Constancia de Situación Fiscal* en el portal del SAT.
-2. Selecciona el botón **Ejecutar en línea**.
-3. Elige el medio de autenticación: contraseña (o e.firma).
-4. Captura tu RFC, contraseña y el captcha; da clic en **Enviar**.
-5. Selecciona **Generar Constancia**.
-6. Se descargará el PDF; imprímelo o guárdalo.
+> [!CONSEJO]
+> Antes de pelearte por una cita, prueba **SAT ID**: obtienes la constancia de forma remota validando tu identidad con identificación oficial y video. La respuesta llega a tu correo en un plazo de hasta 5 días hábiles.
 
 ## Tiempo de respuesta
 

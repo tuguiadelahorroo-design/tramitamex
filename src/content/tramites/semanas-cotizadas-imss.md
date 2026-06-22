@@ -13,8 +13,26 @@ vigencia: 'Hasta nueva emisión'
 urlOficial: 'https://serviciosdigitales.imss.gob.mx/semanascotizadas-web/usuarios/IngresoAsegurado'
 urlOficialTexto: 'Reporte de semanas cotizadas — IMSS'
 actualizado: 2026-06-17
+revisadoPor: 'el equipo editorial de TramitaMex'
 destacado: true
 orden: 8
+relacionados:
+  - nss
+  - vigencia-de-derechos-imss
+  - afore
+pasos:
+  - titulo: 'Reúne tus datos'
+    detalle: 'Ten a la mano tu CURP, tu NSS y un correo electrónico vigente.'
+  - titulo: 'Entra al portal de Semanas Cotizadas'
+    detalle: 'Ingresa al portal SISEC del IMSS (Servicios Digitales).'
+  - titulo: 'Captura tu CURP y tu NSS'
+    detalle: 'Escríbelos tal como aparecen en tus documentos.'
+  - titulo: 'Confirma correo y celular'
+    detalle: 'Escribe y confirma tu correo electrónico y tu número de celular; resuelve el captcha y da Continuar.'
+  - titulo: 'Elige el tipo de reporte'
+    detalle: 'General (resumen del total) o detallado (últimos 5 patrones o historial desde 1982).'
+  - titulo: 'Recibe tu constancia en PDF'
+    detalle: 'Confirma la solicitud; la constancia llega a tu correo en minutos desde una dirección oficial del IMSS. Revisa spam si no la ves.'
 faq:
   - pregunta: '¿Cuánto cuesta obtener mi reporte de semanas cotizadas?'
     respuesta: 'Nada. Es un trámite 100% gratuito en el portal del IMSS. Si alguien te cobra por él, es un fraude.'
@@ -43,9 +61,12 @@ fuentes:
     url: 'https://www.imss.gob.mx/imssdigital'
 ---
 
-## Qué es
+## Qué es el reporte de semanas cotizadas
 
 El **reporte (o constancia) de semanas cotizadas** es un documento informativo del IMSS que muestra el número total de semanas que has cotizado ante el Instituto a lo largo de tu vida laboral como asegurado. Refleja tu historial: periodos de cotización, patrones con los que estuviste dado de alta, fechas de alta y baja, y el estado de tu afiliación. Es el equivalente digital de tu historia laboral ante el Seguro Social.
+
+> [!DATO]
+> **Mínimos de referencia (2026):** bajo la **Ley 73** (quienes empezaron a cotizar antes del 1 de julio de 1997) se requieren al menos **500 semanas**; bajo la **Ley 97**, **875 semanas en 2026**, cifra que aumenta 25 cada año hasta llegar a 1,000 en 2031.
 
 ## Para qué sirve
 
@@ -55,12 +76,10 @@ El **reporte (o constancia) de semanas cotizadas** es un documento informativo d
 - **Detectar errores u omisiones** (semanas faltantes) para iniciar a tiempo una aclaración.
 - Como **comprobante** ante Afores o asesores previsionales.
 
-> **Mínimos de referencia (2026):** bajo la **Ley 73** (quienes empezaron a cotizar antes del 1 de julio de 1997) se requieren al menos **500 semanas**; bajo la **Ley 97**, **875 semanas en 2026**, cifra que aumenta 25 cada año hasta llegar a 1,000 en 2031.
-
 ## Requisitos
 
 - **CURP** (18 caracteres).
-- **NSS** (11 dígitos).
+- **[NSS](/nss/)** (11 dígitos).
 - **Correo electrónico personal** (a donde llegará la constancia en PDF).
 - Número de teléfono celular (el sistema lo solicita con confirmación).
 
@@ -85,17 +104,6 @@ Principalmente **en línea**, en el portal de Servicios Digitales del IMSS (SISE
 
 **No se requiere cita** para el trámite en línea: es un servicio automatizado disponible las 24 horas. Si decides hacerlo presencial, puedes acudir directamente en el horario de atención; para evitar filas, agenda cita en el Centro de Contacto IMSS al **800 623 2323**. La vía recomendada es la digital, por ser inmediata.
 
-## Paso a paso
-
-1. Ten a la mano tu **CURP**, tu **NSS** y un **correo electrónico** vigente.
-2. Ingresa al portal de Semanas Cotizadas del IMSS (SISEC).
-3. Captura tu **CURP** y tu **NSS**.
-4. Escribe y confirma tu **correo electrónico** y tu **número de celular**.
-5. Resuelve el **captcha** y haz clic en **Continuar**.
-6. Elige el tipo de reporte: **general** (resumen del total) o **detallado** (últimos 5 patrones o historial desde 1982).
-7. Confirma y **finaliza** la solicitud.
-8. **Revisa tu correo:** la constancia llega en **PDF** (desde una dirección oficial del IMSS). Si no la ves, revisa spam.
-
 ## Tiempo de respuesta
 
 **Inmediato.** El documento PDF se genera al momento y llega a tu correo en minutos. El servicio está disponible 24/7.
@@ -110,4 +118,6 @@ La constancia **es válida hasta que se emita una nueva**. No tiene fecha de cad
 - **No llega el correo:** revisa spam y verifica que escribiste bien tu correo; a veces hay intermitencias por alta demanda.
 - **Semanas que faltan:** ocurre cuando un patrón no te dio de alta o no reportó tus cotizaciones; requieren **aclaración**.
 - **Reporte con menos semanas de las esperadas:** bajas, ausencias o incapacidades pueden reducir el total; revisa el detalle por patrón.
-- **Aclaración de semanas (IMSS-02-025-C):** cuando no estás de acuerdo con el número, inicia este trámite (también gratuito, en línea o presencial), aporta tus **avisos afiliatorios**; el plazo de respuesta es de hasta **30 días hábiles**.
+
+> [!CONSEJO]
+> Si no estás de acuerdo con el número de semanas, inicia el trámite de **aclaración de semanas cotizadas** (IMSS-02-025-C, también gratuito, en línea o presencial) y aporta tus **avisos afiliatorios**. El plazo de respuesta es de hasta **30 días hábiles**.
