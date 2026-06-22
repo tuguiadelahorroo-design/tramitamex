@@ -1,0 +1,128 @@
+---
+// Banner de categoría con estilo de marca (panel verde + ícono vectorial + marca de agua).
+// Sirve como encabezado de sección (sin href) o como tarjeta enlazada (con href).
+import CategoryIcon from './CategoryIcon.astro';
+
+export interface Props {
+  id: string;
+  titulo: string;
+  count?: number;
+  href?: string;
+  eyebrow?: string;
+}
+const { id, titulo, count, href, eyebrow } = Astro.props;
+const Tag = href ? 'a' : 'div';
+---
+
+<Tag class:list={['cat-banner', { 'is-link': href }]} href={href}>
+  <span class="cb-icon" aria-hidden="true"><CategoryIcon id={id} size={28} /></span>
+  <span class="cb-text">
+    {eyebrow && <span class="cb-eyebrow">{eyebrow}</span>}
+    <span class="cb-title">{titulo}</span>
+    {
+      count != null && (
+        <span class="cb-count">
+          {count} {count === 1 ? 'trámite' : 'trámites'}
+        </span>
+      )
+    }
+  </span>
+  {
+    href && (
+      <span class="cb-arrow" aria-hidden="true">
+        <svg width="18" height="18" viewBox="0 0 16 16"><path d="M3 8h9m0 0L8.5 4.5M12 8l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </span>
+    )
+  }
+  <span class="cb-watermark" aria-hidden="true"><CategoryIcon id={id} size={150} /></span>
+</Tag>
+
+<style>
+  .cat-banner {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    padding: var(--space-md) var(--space-lg);
+    border-radius: var(--radius-xl);
+    color: var(--color-text-on-dark);
+    background:
+      radial-gradient(120% 140% at 88% -30%, rgba(255, 255, 255, 0.16), transparent 60%),
+      linear-gradient(110deg, var(--color-primary-deep), var(--color-primary-strong) 60%, var(--color-primary) 100%);
+    box-shadow: var(--shadow-sm);
+  }
+
+  .cb-icon {
+    display: grid;
+    place-items: center;
+    width: 52px;
+    height: 52px;
+    flex-shrink: 0;
+    border-radius: var(--radius-lg);
+    background: rgba(255, 255, 255, 0.14);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+  }
+
+  .cb-text {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    gap: 0.1rem;
+    min-width: 0;
+  }
+  .cb-eyebrow {
+    font-size: var(--text-xs);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-weight: var(--weight-semibold);
+    color: var(--color-accent);
+  }
+  .cb-title {
+    font-family: var(--font-display);
+    font-weight: var(--weight-semibold);
+    font-size: var(--text-xl);
+    line-height: 1.1;
+    color: #fff;
+  }
+  .cb-count {
+    font-size: var(--text-sm);
+    color: rgba(255, 255, 255, 0.82);
+  }
+
+  .cb-arrow {
+    position: relative;
+    z-index: 1;
+    margin-left: auto;
+    color: rgba(255, 255, 255, 0.9);
+    transition: transform var(--duration-fast) var(--ease-out-expo);
+  }
+
+  /* Marca de agua: el mismo ícono, grande y tenue */
+  .cb-watermark {
+    position: absolute;
+    right: -1.4rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    opacity: 0.1;
+    pointer-events: none;
+    line-height: 0;
+  }
+
+  /* Variante enlazada (tarjeta) */
+  .is-link {
+    text-decoration: none;
+    transition: transform var(--duration-normal) var(--ease-out-expo),
+      box-shadow var(--duration-normal) var(--ease-out-expo);
+  }
+  .is-link:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-lg);
+    color: var(--color-text-on-dark);
+  }
+  .is-link:hover .cb-arrow {
+    transform: translateX(3px);
+  }
+</style>

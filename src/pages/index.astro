@@ -6,6 +6,7 @@ import { ESTADOS } from '../data/estados';
 import { INSTITUCIONES } from '../data/instituciones';
 import { TRAMITES_DESTACADOS, CATEGORIAS } from '../data/navigation';
 import CategoryIcon from '../components/CategoryIcon.astro';
+import CategoriaBanner from '../components/CategoriaBanner.astro';
 
 const todosTramites = (await getCollection('tramites')).sort(
   (a, b) => a.data.orden - b.data.orden
@@ -125,17 +126,7 @@ const categorias = CATEGORIAS.map((c) => ({
       <div class="categorias-grid">
         {
           categorias.map((c) => (
-            <a href={`/tramites/#${c.id}`} class="categoria-card">
-              <span class="categoria-icon">
-                <CategoryIcon id={c.id} size={26} />
-              </span>
-              <span class="categoria-info">
-                <span class="categoria-titulo">{c.titulo}</span>
-                <span class="categoria-count">
-                  {c.live} {c.live === 1 ? 'trámite' : 'trámites'}
-                </span>
-              </span>
-            </a>
+            <CategoriaBanner id={c.id} titulo={c.titulo} count={c.live} href={`/tramites/#${c.id}`} />
           ))
         }
       </div>

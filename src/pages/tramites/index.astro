@@ -3,6 +3,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import TramiteCard from '../../components/TramiteCard.astro';
 import CategoryIcon from '../../components/CategoryIcon.astro';
+import CategoriaBanner from '../../components/CategoriaBanner.astro';
 import { getCollection } from 'astro:content';
 import { CATEGORIAS } from '../../data/navigation';
 import { GUIAS } from '../../data/guias';
@@ -38,9 +39,7 @@ const dataPorSlug = new Map(tramites.map((t) => [t.id, t.data]));
     {
       CATEGORIAS.map((cat) => (
         <section class="cat-block" id={cat.id} data-cat-block>
-          <h2 class="cat-title">
-            <CategoryIcon id={cat.id} size={24} /> {cat.titulo}
-          </h2>
+          <CategoriaBanner id={cat.id} titulo={cat.titulo} count={cat.items.length} eyebrow="Categoría" />
           <div class="cards-grid">
             {cat.items.map((item) => {
               const d = dataPorSlug.get(item.slug);
@@ -118,6 +117,7 @@ const dataPorSlug = new Map(tramites.map((t) => [t.id, t.data]));
   .search-empty { margin-top: var(--space-md); color: var(--color-text-soft); }
 
   .cat-block { margin-bottom: var(--space-xl); scroll-margin-top: 6rem; }
+  .cat-block :global(.cat-banner) { margin-bottom: var(--space-md); }
   .cat-block[hidden] { display: none; }
   .cat-title { display: flex; align-items: center; gap: 0.6rem; font-size: var(--text-xl); margin-bottom: var(--space-md); }
   .cat-title :global(svg) { color: var(--color-primary); flex-shrink: 0; }
