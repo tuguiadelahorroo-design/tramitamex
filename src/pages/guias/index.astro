@@ -1,28 +1,21 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
-
-const guias = [
-  { titulo: 'Trámites para empezar a trabajar', desc: 'CURP, RFC, NSS y constancia fiscal: el orden correcto para tu primer empleo.', icono: '💼' },
-  { titulo: 'Trámites para viajar al extranjero', desc: 'Pasaporte, visa y documentos que necesitas antes de salir del país.', icono: '✈️' },
-  { titulo: 'Trámites para comprar un auto usado', desc: 'Cambio de propietario, placas, tenencia y verificación.', icono: '🚗' },
-  { titulo: 'Documentos básicos en México', desc: 'Los documentos que todo adulto debería tener en regla.', icono: '📂' },
-  { titulo: 'Trámites para estudiantes', desc: 'Cédula, certificados, becas y revalidaciones.', icono: '🎓' },
-  { titulo: 'Trámites para adultos mayores', desc: 'Pensión Bienestar, INAPAM y apoyos disponibles.', icono: '👵' },
-];
+import GuiaIcon from '../../components/GuiaIcon.astro';
+import { GUIAS } from '../../data/guias';
 ---
 
 <BaseLayout
   title="Guías de trámites por situación de vida"
-  description="Guías prácticas que agrupan los trámites que necesitas según tu situación: empezar a trabajar, viajar, comprar auto, estudiar y más."
+  description="Guías prácticas que agrupan los trámites que necesitas según tu situación: empezar a trabajar, viajar, comprar auto, estudiar y más, en el orden correcto."
 >
   <section class="page-hero">
     <div class="container">
       <Breadcrumbs items={[{ nombre: 'Guías' }]} />
       <h1>Guías por situación de vida</h1>
       <p class="lead">
-        En lugar de buscar trámite por trámite, te decimos exactamente qué necesitas según
-        tu momento de vida. Estamos publicando estas guías de forma gradual.
+        En lugar de buscar trámite por trámite, te decimos exactamente qué necesitas según tu
+        momento de vida, en el orden correcto y con enlace directo a cada trámite.
       </p>
     </div>
   </section>
@@ -30,13 +23,18 @@ const guias = [
   <div class="container section">
     <div class="guias-grid">
       {
-        guias.map((g) => (
-          <article class="guia-card">
-            <span class="guia-icon" aria-hidden="true">{g.icono}</span>
+        GUIAS.map((g) => (
+          <a class="guia-card" href={`/guias/${g.slug}/`}>
+            <span class="guia-icon" aria-hidden="true">
+              <GuiaIcon id={g.icono} size={26} />
+            </span>
             <h2>{g.titulo}</h2>
-            <p>{g.desc}</p>
-            <span class="guia-soon">Próximamente</span>
-          </article>
+            <p>{g.resumen}</p>
+            <span class="guia-foot">
+              {g.pasos.length} trámites
+              <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h9m0 0L8.5 4.5M12 8l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          </a>
         ))
       }
     </div>
@@ -61,20 +59,39 @@ const guias = [
     border: 1px solid var(--color-border);
     border-radius: var(--radius-lg);
     align-content: start;
+    text-decoration: none;
+    color: inherit;
+    box-shadow: var(--shadow-xs);
+    transition: transform var(--duration-normal) var(--ease-out-expo),
+      box-shadow var(--duration-normal), border-color var(--duration-fast);
   }
-  .guia-icon { font-size: 1.8rem; }
-  .guia-card h2 { font-size: var(--text-lg); margin-top: 0.2rem; }
+  .guia-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--color-primary-tint);
+  }
+  .guia-icon {
+    display: grid;
+    place-items: center;
+    width: 48px;
+    height: 48px;
+    border-radius: var(--radius-md);
+    background: var(--color-primary-soft);
+    color: var(--color-primary-strong);
+  }
+  .guia-card h2 { font-size: var(--text-lg); margin-top: 0.4rem; }
   .guia-card p { font-size: var(--text-sm); color: var(--color-text-soft); margin: 0; }
-  .guia-soon {
-    justify-self: start;
-    margin-top: 0.5rem;
-    font-size: 0.62rem;
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
-    color: var(--color-accent-strong);
-    background: var(--color-accent-soft);
-    padding: 0.15rem 0.55rem;
-    border-radius: var(--radius-pill);
+  .guia-foot {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    margin-top: var(--space-sm);
+    padding-top: 0.75rem;
+    border-top: 1px solid var(--color-border);
+    font-size: var(--text-sm);
     font-weight: var(--weight-semibold);
+    color: var(--color-primary-strong);
   }
+  .guia-foot svg { transition: transform var(--duration-fast) var(--ease-out-expo); }
+  .guia-card:hover .guia-foot svg { transform: translateX(3px); }
 </style>
