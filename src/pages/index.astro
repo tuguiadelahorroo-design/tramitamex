@@ -4,7 +4,8 @@ import TramiteCard from '../components/TramiteCard.astro';
 import { getCollection } from 'astro:content';
 import { ESTADOS } from '../data/estados';
 import { INSTITUCIONES } from '../data/instituciones';
-import { TRAMITES_DESTACADOS } from '../data/navigation';
+import { TRAMITES_DESTACADOS, CATEGORIAS } from '../data/navigation';
+import CategoryIcon from '../components/CategoryIcon.astro';
 
 const todosTramites = (await getCollection('tramites')).sort(
   (a, b) => a.data.orden - b.data.orden
@@ -26,21 +27,38 @@ const estadosDestacados = [
 
 const beneficios = [
   {
-    icono: '✅',
+    id: 'verificada',
     titulo: 'Información verificada',
     texto: 'Cada guía se contrasta con los portales oficiales del gobierno antes de publicarse.',
   },
   {
-    icono: '🔗',
+    id: 'oficial',
     titulo: 'Siempre te mandamos al sitio oficial',
     texto: 'No tramitamos por ti ni pedimos tus datos: te llevamos al portal correcto, gratis.',
   },
   {
-    icono: '🗓️',
+    id: 'actualizado',
     titulo: 'Actualizado',
     texto: 'Revisamos requisitos y costos con regularidad y mostramos la fecha de actualización.',
   },
 ];
+
+// Íconos vectoriales (estilo línea) para los beneficios; heredan currentColor.
+const BENEFICIO_ICONS: Record<string, string> = {
+  verificada:
+    '<path d="M12 3 5 6v5c0 4.3 3 7.5 7 9 4-1.5 7-4.7 7-9V6l-7-3z"/><path d="m8.5 12 2.3 2.3 4.7-4.8"/>',
+  oficial:
+    '<path d="M14 4h6v6"/><path d="M20 4 11 13"/><path d="M19 13v5a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h5"/>',
+  actualizado:
+    '<path d="M20.5 12a8.5 8.5 0 1 1-2.6-6.1"/><path d="M20.5 4v4h-4"/><path d="M12 8v4.2l2.6 1.6"/>',
+};
+
+// Categorías con su número de trámites publicados.
+const categorias = CATEGORIAS.map((c) => ({
+  id: c.id,
+  titulo: c.titulo,
+  live: c.items.filter((i) => i.live).length,
+}));
 ---
 
 <BaseLayout
@@ -94,6 +112,36 @@ const beneficios = [
     </div>
   </section>
 
+  <!-- EXPLORA POR CATEGORÍA -->
+  <section class="section categorias-section">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Explora</p>
+          <h2>Trámites por categoría</h2>
+        </div>
+        <a href="/tramites/" class="btn btn-ghost">Ver todos</a>
+      </div>
+      <div class="categorias-grid">
+        {
+          categorias.map((c) => (
+            <a href={`/tramites/#${c.id}`} class="categoria-card">
+              <span class="categoria-icon">
+                <CategoryIcon id={c.id} size={26} />
+              </span>
+              <span class="categoria-info">
+                <span class="categoria-titulo">{c.titulo}</span>
+                <span class="categoria-count">
+                  {c.live} {c.live === 1 ? 'trámite' : 'trámites'}
+                </span>
+              </span>
+            </a>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
   <!-- TRÁMITES DESTACADOS -->
   <section class="section">
     <div class="container">
@@ -134,7 +182,9 @@ const beneficios = [
         {
           beneficios.map((b) => (
             <div class="beneficio">
-              <span class="beneficio-icon" aria-hidden="true">{b.icono}</span>
+              <span class="beneficio-icon" aria-hidden="true">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" set:html={BENEFICIO_ICONS[b.id]} />
+              </span>
               <h3>{b.titulo}</h3>
               <p>{b.texto}</p>
             </div>
@@ -352,9 +402,63 @@ const beneficios = [
     border: 1px solid var(--color-border);
     border-radius: var(--radius-lg);
   }
-  .beneficio-icon { font-size: 1.8rem; }
+  .beneficio-icon {
+    display: inline-grid;
+    place-items: center;
+    width: 48px;
+    height: 48px;
+    border-radius: var(--radius-md);
+    background: var(--color-primary-soft);
+    color: var(--color-primary-strong);
+  }
   .beneficio h3 { margin-block: var(--space-sm) var(--space-2xs); font-size: var(--text-lg); }
   .beneficio p { color: var(--color-text-soft); font-size: var(--text-sm); }
+
+  /* Categorías */
+  .categorias-section {
+    background: var(--color-surface-2);
+    border-bottom: 1px solid var(--color-border);
+  }
+  .categorias-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: var(--space-md);
+  }
+  .categoria-card {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    padding: var(--space-md);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    text-decoration: none;
+    color: inherit;
+    transition: transform var(--duration-normal) var(--ease-out-expo),
+      box-shadow var(--duration-normal), border-color var(--duration-fast);
+  }
+  .categoria-card:hover {
+    border-color: var(--color-primary-tint);
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+  }
+  .categoria-icon {
+    display: grid;
+    place-items: center;
+    width: 48px;
+    height: 48px;
+    border-radius: var(--radius-md);
+    background: var(--color-primary-soft);
+    color: var(--color-primary-strong);
+    flex-shrink: 0;
+  }
+  .categoria-info { display: grid; gap: 0.1rem; }
+  .categoria-titulo {
+    font-family: var(--font-display);
+    font-weight: var(--weight-semibold);
+    font-size: var(--text-base);
+  }
+  .categoria-count { font-size: var(--text-sm); color: var(--color-text-faint); }
 
   /* Estados */
   .estado-grid {

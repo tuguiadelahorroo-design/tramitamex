@@ -36,7 +36,7 @@ const dataPorSlug = new Map(tramites.map((t) => [t.id, t.data]));
   <div class="container section">
     {
       CATEGORIAS.map((cat) => (
-        <section class="cat-block" data-cat-block>
+        <section class="cat-block" id={cat.id} data-cat-block>
           <h2 class="cat-title">
             <CategoryIcon id={cat.id} size={24} /> {cat.titulo}
           </h2>
@@ -88,7 +88,7 @@ const dataPorSlug = new Map(tramites.map((t) => [t.id, t.data]));
   .page-search input { flex: 1; border: none; background: none; outline: none; font-size: var(--text-base); min-width: 0; }
   .search-empty { margin-top: var(--space-md); color: var(--color-text-soft); }
 
-  .cat-block { margin-bottom: var(--space-xl); }
+  .cat-block { margin-bottom: var(--space-xl); scroll-margin-top: 6rem; }
   .cat-block[hidden] { display: none; }
   .cat-title { display: flex; align-items: center; gap: 0.6rem; font-size: var(--text-xl); margin-bottom: var(--space-md); }
   .cat-title :global(svg) { color: var(--color-primary); flex-shrink: 0; }
