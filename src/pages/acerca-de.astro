@@ -1,47 +1,139 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
+import { getCollection } from 'astro:content';
+import { GUIAS } from '../data/guias';
+import { ESTADOS } from '../data/estados';
+import { INSTITUCIONES } from '../data/instituciones';
+
+const nTramites = (await getCollection('tramites')).length;
+const stats = [
+  { num: `${nTramites}`, label: 'trámites explicados' },
+  { num: `${GUIAS.length}`, label: 'guías por situación' },
+  { num: `${ESTADOS.length}`, label: 'estados cubiertos' },
+  { num: `${INSTITUCIONES.length}`, label: 'instituciones' },
+];
+
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'AboutPage',
+    name: 'Acerca de TramitaMex',
+    description:
+      'Qué es TramitaMex, cómo verificamos la información y por qué somos un sitio informativo independiente sobre trámites en México.',
+    about: {
+      '@type': 'Organization',
+      name: 'TramitaMex',
+      url: 'https://tramitamex.com.mx',
+      description:
+        'Guía informativa independiente sobre trámites en México. Reúne y explica trámites con base en fuentes oficiales del gobierno.',
+    },
+  },
+];
 ---
 
 <BaseLayout
   title="Acerca de TramitaMex"
-  description="Qué es TramitaMex, cómo trabajamos y por qué somos un sitio informativo independiente sobre trámites en México."
+  description="Qué es TramitaMex, cómo verificamos la información con fuentes oficiales y por qué somos un sitio informativo independiente sobre trámites en México."
+  jsonLd={jsonLd}
 >
   <section class="page-hero">
     <div class="container container-narrow">
       <Breadcrumbs items={[{ nombre: 'Acerca de' }]} />
       <h1>Acerca de TramitaMex</h1>
+      <p class="lead">
+        Somos una guía informativa independiente que explica, en lenguaje claro y con base en
+        fuentes oficiales, cómo hacer los trámites más buscados de México.
+      </p>
     </div>
   </section>
 
   <div class="container container-narrow section">
+    <div class="stats">
+      {
+        stats.map((s) => (
+          <div class="stat">
+            <span class="stat-num">{s.num}</span>
+            <span class="stat-label">{s.label}</span>
+          </div>
+        ))
+      }
+    </div>
+
     <div class="prose">
       <p>
-        <strong>TramitaMex</strong> es una guía informativa independiente que reúne, organiza y
-        explica en lenguaje claro los trámites más buscados de México. Nuestro objetivo es que
-        cualquier persona entienda <em>qué necesita</em>, <em>cuánto cuesta</em> y
-        <em>cómo hacerlo</em>, sin perderse entre portales.
+        <strong>TramitaMex</strong> nace de una idea simple: hacer un trámite en México no debería
+        significar perderse entre portales, gestores y costos poco claros. Reunimos, organizamos y
+        explicamos cada trámite para que entiendas <em>qué necesitas</em>, <em>cuánto cuesta</em> y
+        <em>cómo hacerlo</em>, y luego te enviamos directo al portal oficial.
       </p>
 
-      <h2>Cómo trabajamos</h2>
+      <h2>Cómo verificamos la información</h2>
+      <p>
+        Nuestro compromiso es que lo que lees coincida con la fuente oficial. Por eso, en cada
+        guía:
+      </p>
       <ul>
-        <li>Cada guía se elabora consultando los portales oficiales del gobierno.</li>
-        <li>Mostramos siempre la <strong>fecha de actualización</strong> y las <strong>fuentes oficiales</strong>.</li>
-        <li>Te enviamos al sitio oficial para que hagas el trámite directamente; nunca tramitamos por ti.</li>
-        <li>No solicitamos tus datos personales para realizar trámites.</li>
+        <li>
+          Consultamos los <strong>portales oficiales del gobierno</strong> (dominios gob.mx, SAT,
+          IMSS, INE, SRE, SEP y los gobiernos estatales) como única fuente de requisitos y costos.
+        </li>
+        <li>
+          Citamos las <strong>fuentes oficiales</strong> al final de cada trámite, con enlace
+          directo para que verifiques por tu cuenta.
+        </li>
+        <li>
+          Mostramos la <strong>fecha de actualización</strong> y la nota de
+          <strong>revisión editorial</strong> en cada guía.
+        </li>
+        <li>
+          Distinguimos lo <strong>federal</strong> (igual en todo el país) de lo
+          <strong>estatal</strong> (varía por entidad) para no darte datos que no apliquen en tu
+          estado.
+        </li>
+        <li>
+          Cuando un dato cambia con frecuencia (montos, fechas), lo señalamos y te pedimos
+          confirmarlo en el portal oficial antes de iniciar.
+        </li>
       </ul>
 
-      <h2>Lo que NO somos</h2>
+      <h2>Quién hace TramitaMex</h2>
       <p>
-        No somos una dependencia del gobierno ni un gestor. No cobramos por trámites que son
-        gratuitos. Si alguna página te pide pago o datos sensibles a nombre de TramitaMex para
-        un trámite oficial, desconfía: no somos nosotros.
+        El contenido lo elabora y revisa el <strong>equipo editorial de TramitaMex</strong>, que se
+        especializa en organizar información pública y traducir el lenguaje burocrático a algo que
+        cualquiera pueda seguir. Cada guía pasa por una revisión antes de publicarse y se actualiza
+        cuando cambian los requisitos.
       </p>
 
-      <h2>¿Encontraste algo desactualizado?</h2>
+      <h2>Nuestras fuentes</h2>
       <p>
-        Los requisitos y costos cambian. Si ves información que ya no coincide con la fuente
-        oficial, <a href="/contacto/">avísanos</a> y lo corregimos.
+        Solo usamos <strong>fuentes oficiales</strong>: portales del Gobierno de México y de las
+        dependencias responsables de cada trámite. No nos basamos en información de gestores ni de
+        páginas que cobran por trámites gratuitos. Si un dato no aparece en una fuente oficial, no
+        lo publicamos.
+      </p>
+
+      <h2>Lo que NO somos</h2>
+      <blockquote>
+        <p>
+          No somos una dependencia del gobierno ni un gestor. No tramitamos por ti, no pedimos tus
+          datos personales y no cobramos por trámites que son gratuitos. Si una página te pide pago
+          o datos sensibles a nombre de TramitaMex para un trámite oficial, <strong>desconfía: no
+          somos nosotros</strong>.
+        </p>
+      </blockquote>
+
+      <h2>Actualización y correcciones</h2>
+      <p>
+        Los requisitos y costos cambian, y revisamos el contenido con regularidad. Aun así, ninguna
+        guía sustituye a la fuente oficial. Si encuentras información que ya no coincide con el
+        portal del gobierno, <a href="/contacto/">escríbenos</a> y la corregimos lo antes posible.
+      </p>
+
+      <p>
+        ¿Dudas o sugerencias? Visita nuestra página de <a href="/contacto/">contacto</a> o revisa
+        el <a href="/aviso-legal/">aviso legal</a> y la <a href="/privacidad/">política de
+        privacidad</a>.
       </p>
     </div>
   </div>
@@ -54,4 +146,37 @@ import Breadcrumbs from '../components/Breadcrumbs.astro';
     padding-block: var(--space-md) var(--space-lg);
   }
   .page-hero h1 { margin-top: var(--space-sm); }
+  .lead {
+    margin-top: var(--space-sm);
+    font-size: var(--text-md);
+    color: var(--color-text-soft);
+  }
+
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-sm);
+    margin-bottom: var(--space-xl);
+  }
+  .stat {
+    display: grid;
+    gap: 0.1rem;
+    padding: var(--space-md);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    text-align: center;
+  }
+  .stat-num {
+    font-family: var(--font-display);
+    font-size: var(--text-2xl);
+    font-weight: var(--weight-bold);
+    color: var(--color-primary-strong);
+    line-height: 1;
+  }
+  .stat-label { font-size: var(--text-sm); color: var(--color-text-soft); }
+
+  @media (max-width: 560px) {
+    .stats { grid-template-columns: repeat(2, 1fr); }
+  }
 </style>
