@@ -65,8 +65,8 @@ export const CATEGORIAS: TramiteCategoria[] = [
       { nombre: 'Número de Seguro Social (NSS)', slug: 'nss', live: true },
       { nombre: 'Semanas cotizadas', slug: 'semanas-cotizadas-imss', live: true },
       { nombre: 'Vigencia de derechos', slug: 'vigencia-de-derechos-imss', live: true },
-      { nombre: 'Cita médica IMSS', slug: 'cita-medica-imss', live: false },
-      { nombre: 'Pensión IMSS', slug: 'pension-imss', live: false },
+      { nombre: 'Cita médica IMSS', slug: 'cita-medica-imss', live: true },
+      { nombre: 'Pensión IMSS', slug: 'pension-imss', live: true },
     ],
   },
   {
