@@ -99,9 +99,9 @@ export const CATEGORIAS: TramiteCategoria[] = [
     icono: '🤝',
     items: [
       { nombre: 'Pensión del Bienestar', slug: 'pension-bienestar', live: true },
-      { nombre: 'Becas Benito Juárez', slug: 'becas-benito-juarez', live: false },
-      { nombre: 'Mujeres con Bienestar', slug: 'mujeres-con-bienestar', live: false },
-      { nombre: 'Jóvenes Construyendo el Futuro', slug: 'jovenes-construyendo-el-futuro', live: false },
+      { nombre: 'Becas Benito Juárez', slug: 'becas-benito-juarez', live: true },
+      { nombre: 'Pensión Mujeres Bienestar', slug: 'mujeres-con-bienestar', live: true },
+      { nombre: 'Jóvenes Construyendo el Futuro', slug: 'jovenes-construyendo-el-futuro', live: true },
     ],
   },
 ];

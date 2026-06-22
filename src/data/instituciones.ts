@@ -115,7 +115,25 @@ export const INSTITUCIONES: Institucion[] = [
     descripcion:
       'Opera los programas sociales del Gobierno de México, como la Pensión para el Bienestar de las Personas Adultas Mayores.',
     sitioOficial: 'https://www.gob.mx/bienestar',
-    tramites: ['pension-bienestar'],
+    tramites: ['pension-bienestar', 'mujeres-con-bienestar'],
+  },
+  {
+    slug: 'becas-bienestar',
+    nombre: 'Becas Bienestar',
+    nombreCompleto: 'Coordinación Nacional de Becas para el Bienestar Benito Juárez',
+    descripcion:
+      'Coordina las Becas para el Bienestar Benito Juárez: educación básica (Rita Cetina), media superior y superior.',
+    sitioOficial: 'https://www.gob.mx/becasbenitojuarez',
+    tramites: ['becas-benito-juarez'],
+  },
+  {
+    slug: 'stps',
+    nombre: 'STPS',
+    nombreCompleto: 'Secretaría del Trabajo y Previsión Social',
+    descripcion:
+      'Rectora de la política laboral en México. Opera el programa Jóvenes Construyendo el Futuro y atiende temas de trabajo y previsión social.',
+    sitioOficial: 'https://www.gob.mx/stps',
+    tramites: ['jovenes-construyendo-el-futuro'],
   },
 ];
 
