@@ -37,7 +37,7 @@ export const INSTITUCIONES: Institucion[] = [
     descripcion:
       'Dependiente de la Secretaría de Gobernación, administra la CURP, las actas del registro civil y el registro de identidad de la población.',
     sitioOficial: 'https://www.gob.mx/segob',
-    tramites: ['curp', 'acta-de-nacimiento', 'acta-de-matrimonio'],
+    tramites: ['curp', 'acta-de-nacimiento', 'acta-de-matrimonio', 'acta-de-defuncion', 'acta-de-divorcio', 'correccion-de-actas'],
   },
   {
     slug: 'sre',

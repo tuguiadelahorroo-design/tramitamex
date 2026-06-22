@@ -39,9 +39,9 @@ export const CATEGORIAS: TramiteCategoria[] = [
     items: [
       { nombre: 'Acta de nacimiento', slug: 'acta-de-nacimiento', live: true },
       { nombre: 'Acta de matrimonio', slug: 'acta-de-matrimonio', live: true },
-      { nombre: 'Acta de defunción', slug: 'acta-de-defuncion', live: false },
-      { nombre: 'Acta de divorcio', slug: 'acta-de-divorcio', live: false },
-      { nombre: 'Corrección de actas', slug: 'correccion-de-actas', live: false },
+      { nombre: 'Acta de defunción', slug: 'acta-de-defuncion', live: true },
+      { nombre: 'Acta de divorcio', slug: 'acta-de-divorcio', live: true },
+      { nombre: 'Corrección de actas', slug: 'correccion-de-actas', live: true },
     ],
   },
   {
