@@ -52,9 +52,9 @@ export const CATEGORIAS: TramiteCategoria[] = [
       { nombre: 'RFC', slug: 'rfc', live: true },
       { nombre: 'Constancia de Situación Fiscal', slug: 'constancia-de-situacion-fiscal', live: true },
       { nombre: 'Firma electrónica (e.firma)', slug: 'firma-electronica', live: true },
-      { nombre: 'Declaración anual', slug: 'declaracion-anual', live: false },
+      { nombre: 'Declaración anual', slug: 'declaracion-anual', live: true },
       { nombre: 'Opinión de cumplimiento', slug: 'opinion-de-cumplimiento', live: true },
-      { nombre: 'Buzón tributario', slug: 'buzon-tributario', live: false },
+      { nombre: 'Buzón tributario', slug: 'buzon-tributario', live: true },
     ],
   },
   {

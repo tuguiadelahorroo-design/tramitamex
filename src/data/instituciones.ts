@@ -19,7 +19,7 @@ export const INSTITUCIONES: Institucion[] = [
     descripcion:
       'Autoridad fiscal de México. Administra el RFC, la facturación electrónica, la e.firma y las declaraciones de impuestos.',
     sitioOficial: 'https://www.sat.gob.mx/',
-    tramites: ['rfc', 'constancia-de-situacion-fiscal', 'firma-electronica', 'opinion-de-cumplimiento'],
+    tramites: ['rfc', 'constancia-de-situacion-fiscal', 'firma-electronica', 'opinion-de-cumplimiento', 'declaracion-anual', 'buzon-tributario'],
   },
   {
     slug: 'imss',
