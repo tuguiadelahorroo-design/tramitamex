@@ -81,6 +81,24 @@ export const INSTITUCIONES: Institucion[] = [
     sitioOficial: 'https://www.infonavit.org.mx/',
     tramites: ['infonavit'],
   },
+  {
+    slug: 'sspc',
+    nombre: 'SSPC',
+    nombreCompleto: 'Secretaría de Seguridad y Protección Ciudadana',
+    descripcion:
+      'A través del OADPRS emite la constancia federal de antecedentes penales y coordina la prevención y reinserción social a nivel federal.',
+    sitioOficial: 'https://www.gob.mx/sspc',
+    tramites: ['antecedentes-no-penales'],
+  },
+  {
+    slug: 'gobiernos-estatales',
+    nombre: 'Gobiernos estatales',
+    nombreCompleto: 'Gobiernos de las entidades federativas',
+    descripcion:
+      'Emiten trámites locales como la licencia de conducir, placas, tenencia, verificación vehicular y predial. Cada estado tiene su propia autoridad, requisitos y tarifas.',
+    sitioOficial: 'https://www.gob.mx/tramites',
+    tramites: ['licencia-de-conducir'],
+  },
 ];
 
 export function getInstitucion(slug: string): Institucion | undefined {

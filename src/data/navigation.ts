@@ -73,7 +73,7 @@ export const CATEGORIAS: TramiteCategoria[] = [
     titulo: 'Vehiculares',
     icono: '🚗',
     items: [
-      { nombre: 'Licencia de conducir', slug: 'licencia-de-conducir', live: false },
+      { nombre: 'Licencia de conducir', slug: 'licencia-de-conducir', live: true },
       { nombre: 'Placas', slug: 'placas', live: false },
       { nombre: 'Tenencia', slug: 'tenencia', live: false },
       { nombre: 'Verificación vehicular', slug: 'verificacion-vehicular', live: false },
@@ -85,7 +85,7 @@ export const CATEGORIAS: TramiteCategoria[] = [
     titulo: 'Trabajo y antecedentes',
     icono: '💼',
     items: [
-      { nombre: 'Antecedentes no penales', slug: 'antecedentes-no-penales', live: false },
+      { nombre: 'Antecedentes no penales', slug: 'antecedentes-no-penales', live: true },
       { nombre: 'Afore', slug: 'afore', live: true },
       { nombre: 'Infonavit', slug: 'infonavit', live: true },
       { nombre: 'Fonacot', slug: 'fonacot', live: false },
@@ -113,8 +113,8 @@ export const TRAMITES_DESTACADOS: TramiteLink[] = [
   { nombre: 'NSS', slug: 'nss', live: true },
   { nombre: 'Acta de nacimiento', slug: 'acta-de-nacimiento', live: true },
   { nombre: 'Pasaporte', slug: 'pasaporte', live: true },
-  { nombre: 'Licencia de conducir', slug: 'licencia-de-conducir', live: false },
-  { nombre: 'Antecedentes no penales', slug: 'antecedentes-no-penales', live: false },
+  { nombre: 'Licencia de conducir', slug: 'licencia-de-conducir', live: true },
+  { nombre: 'Antecedentes no penales', slug: 'antecedentes-no-penales', live: true },
 ];
 
 /** Navegación principal (barra superior). */
