@@ -69,6 +69,7 @@ export const CATEGORIAS: TramiteCategoria[] = [
       { nombre: 'Cita médica IMSS', slug: 'cita-medica-imss', live: true },
       { nombre: 'Pensión IMSS', slug: 'pension-imss', live: true },
       { nombre: 'ISSSTE', slug: 'issste', live: true },
+      { nombre: 'Aborto legal (ILE)', slug: 'aborto-legal', live: true },
     ],
   },
   {

@@ -171,6 +171,15 @@ export const INSTITUCIONES: Institucion[] = [
     sitioOficial: 'https://www.gob.mx/issste',
     tramites: ['issste'],
   },
+  {
+    slug: 'salud',
+    nombre: 'Secretaría de Salud',
+    nombreCompleto: 'Secretaría de Salud (federal y estatales)',
+    descripcion:
+      'Coordina los servicios de salud pública en México. A través de las secretarías de salud federal y estatales, el IMSS y el IMSS-Bienestar se brindan servicios como la interrupción legal del embarazo donde es legal.',
+    sitioOficial: 'https://www.gob.mx/salud',
+    tramites: ['aborto-legal'],
+  },
 ];
 
 export function getInstitucion(slug: string): Institucion | undefined {
