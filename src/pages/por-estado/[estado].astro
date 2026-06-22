@@ -4,6 +4,7 @@ import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import TramiteCard from '../../components/TramiteCard.astro';
 import { ESTADOS } from '../../data/estados';
 import { GUIAS } from '../../data/guias';
+import { getDatosEstado } from '../../data/estados-datos';
 import { getCollection } from 'astro:content';
 
 export async function getStaticPaths() {
@@ -14,6 +15,7 @@ export async function getStaticPaths() {
 }
 
 const { estado } = Astro.props;
+const datos = getDatosEstado(estado.slug);
 const tramites = (await getCollection('tramites')).sort(
   (a, b) => a.data.orden - b.data.orden
 );
@@ -35,7 +37,9 @@ const jsonLd = [
 
 <BaseLayout
   title={`Trámites en ${estado.nombre}: federales y estatales`}
-  description={`Trámites en ${estado.nombre}: cuáles son federales (iguales en todo el país) y cuáles estatales (licencia, placas, tenencia, verificación). Con enlaces y guías.`}
+  description={datos
+    ? `Trámites en ${estado.nombre}: costos 2026, portales oficiales y guías. Federales (CURP, RFC, NSS) y estatales (licencia, placas, tenencia, verificación).`
+    : `Trámites en ${estado.nombre}: cuáles son federales (iguales en todo el país) y cuáles estatales (licencia, placas, tenencia, verificación). Con enlaces y guías.`}
   jsonLd={jsonLd}
 >
   <section class="page-hero">
@@ -54,6 +58,46 @@ const jsonLd = [
   </section>
 
   <div class="container section">
+    {
+      datos && (
+        <section class="datos-estado">
+          <h2>
+            Datos de {estado.nombre} <span class="datos-year">2026</span>
+          </h2>
+          <p class="datos-intro">{datos.intro}</p>
+          <div class="datos-cols">
+            <div>
+              <h3>Costos de referencia</h3>
+              <dl class="costo-list">
+                {datos.costos.map((c) => (
+                  <div class="costo-row">
+                    <dt>{c.tramite}</dt>
+                    <dd>{c.detalle}</dd>
+                  </div>
+                ))}
+              </dl>
+              <p class="datos-aviso">
+                Montos aproximados 2026; confirma el importe vigente en el portal oficial antes de
+                pagar.
+              </p>
+            </div>
+            <div>
+              <h3>Portales oficiales</h3>
+              <ul class="datos-portales" role="list">
+                {datos.portales.map((p) => (
+                  <li>
+                    <a href={p.url} target="_blank" rel="noopener noreferrer nofollow">
+                      {p.nombre}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </section>
+      )
+    }
+
     <!-- ESTATALES (destacados) -->
     <section class="block">
       <h2>Trámites estatales en {estado.nombre}</h2>
@@ -135,6 +179,46 @@ const jsonLd = [
   .block h2 { font-size: var(--text-xl); }
   .block-sub { margin-block: 0.35rem var(--space-md); color: var(--color-text-soft); max-width: 70ch; }
   .cards-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: var(--space-md); }
+
+  /* Datos específicos del estado */
+  .datos-estado {
+    margin-bottom: var(--space-2xl);
+    padding: var(--space-lg);
+    background: var(--color-primary-soft);
+    border: 1px solid var(--color-primary-tint);
+    border-radius: var(--radius-xl);
+  }
+  .datos-estado > h2 { font-size: var(--text-xl); display: flex; align-items: center; gap: 0.5rem; }
+  .datos-year {
+    font-family: var(--font-sans);
+    font-size: var(--text-xs);
+    font-weight: var(--weight-bold);
+    letter-spacing: 0.04em;
+    color: var(--color-primary-strong);
+    background: var(--color-surface);
+    padding: 0.15rem 0.5rem;
+    border-radius: var(--radius-pill);
+  }
+  .datos-intro { margin-block: var(--space-sm) var(--space-md); color: var(--color-text-soft); max-width: 72ch; }
+  .datos-cols { display: grid; grid-template-columns: 1.3fr 1fr; gap: var(--space-lg); }
+  .datos-cols h3 { font-size: var(--text-md); margin-bottom: var(--space-sm); }
+  .costo-list { display: grid; gap: 0; margin: 0; }
+  .costo-row {
+    display: grid;
+    gap: 0.1rem;
+    padding-block: 0.6rem;
+    border-bottom: 1px dashed var(--color-primary-tint);
+  }
+  .costo-row:last-child { border-bottom: none; }
+  .costo-row dt { font-weight: var(--weight-semibold); font-size: var(--text-sm); }
+  .costo-row dd { margin: 0; font-size: var(--text-sm); color: var(--color-text-soft); }
+  .datos-aviso { margin-top: var(--space-sm); font-size: var(--text-xs); color: var(--color-text-faint); }
+  .datos-portales { margin: 0; padding: 0; list-style: none; display: grid; gap: 0.5rem; }
+  .datos-portales a { font-size: var(--text-sm); }
+
+  @media (max-width: 700px) {
+    .datos-cols { grid-template-columns: 1fr; gap: var(--space-md); }
+  }
 
   /* Federales: enlaces compactos */
   .fed-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 0.6rem; }
