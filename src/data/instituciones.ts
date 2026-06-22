@@ -37,7 +37,7 @@ export const INSTITUCIONES: Institucion[] = [
     descripcion:
       'Dependiente de la Secretaría de Gobernación, administra la CURP, las actas del registro civil y el registro de identidad de la población.',
     sitioOficial: 'https://www.gob.mx/segob',
-    tramites: ['curp', 'acta-de-nacimiento'],
+    tramites: ['curp', 'acta-de-nacimiento', 'acta-de-matrimonio'],
   },
   {
     slug: 'sre',
@@ -97,7 +97,25 @@ export const INSTITUCIONES: Institucion[] = [
     descripcion:
       'Emiten trámites locales como la licencia de conducir, placas, tenencia, verificación vehicular y predial. Cada estado tiene su propia autoridad, requisitos y tarifas.',
     sitioOficial: 'https://www.gob.mx/tramites',
-    tramites: ['licencia-de-conducir'],
+    tramites: ['licencia-de-conducir', 'placas', 'tarjeta-de-circulacion'],
+  },
+  {
+    slug: 'sedena',
+    nombre: 'SEDENA',
+    nombreCompleto: 'Secretaría de la Defensa Nacional',
+    descripcion:
+      'Administra el Servicio Militar Nacional y, a través de las Juntas Municipales de Reclutamiento, la emisión de la cartilla militar.',
+    sitioOficial: 'https://www.gob.mx/sedena',
+    tramites: ['cartilla-militar'],
+  },
+  {
+    slug: 'bienestar',
+    nombre: 'Bienestar',
+    nombreCompleto: 'Secretaría del Bienestar',
+    descripcion:
+      'Opera los programas sociales del Gobierno de México, como la Pensión para el Bienestar de las Personas Adultas Mayores.',
+    sitioOficial: 'https://www.gob.mx/bienestar',
+    tramites: ['pension-bienestar'],
   },
 ];
 

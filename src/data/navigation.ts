@@ -29,6 +29,7 @@ export const CATEGORIAS: TramiteCategoria[] = [
       { nombre: 'Acta de nacimiento', slug: 'acta-de-nacimiento', live: true },
       { nombre: 'INE', slug: 'ine', live: true },
       { nombre: 'Pasaporte', slug: 'pasaporte', live: true },
+      { nombre: 'Cartilla militar (SMN)', slug: 'cartilla-militar', live: true },
     ],
   },
   {
@@ -37,7 +38,7 @@ export const CATEGORIAS: TramiteCategoria[] = [
     icono: '📜',
     items: [
       { nombre: 'Acta de nacimiento', slug: 'acta-de-nacimiento', live: true },
-      { nombre: 'Acta de matrimonio', slug: 'acta-de-matrimonio', live: false },
+      { nombre: 'Acta de matrimonio', slug: 'acta-de-matrimonio', live: true },
       { nombre: 'Acta de defunción', slug: 'acta-de-defuncion', live: false },
       { nombre: 'Acta de divorcio', slug: 'acta-de-divorcio', live: false },
       { nombre: 'Corrección de actas', slug: 'correccion-de-actas', live: false },
@@ -74,10 +75,10 @@ export const CATEGORIAS: TramiteCategoria[] = [
     icono: '🚗',
     items: [
       { nombre: 'Licencia de conducir', slug: 'licencia-de-conducir', live: true },
-      { nombre: 'Placas', slug: 'placas', live: false },
+      { nombre: 'Placas (emplacamiento)', slug: 'placas', live: true },
+      { nombre: 'Tarjeta de circulación', slug: 'tarjeta-de-circulacion', live: true },
       { nombre: 'Tenencia', slug: 'tenencia', live: false },
       { nombre: 'Verificación vehicular', slug: 'verificacion-vehicular', live: false },
-      { nombre: 'Tarjeta de circulación', slug: 'tarjeta-de-circulacion', live: false },
     ],
   },
   {
@@ -97,7 +98,7 @@ export const CATEGORIAS: TramiteCategoria[] = [
     titulo: 'Programas sociales',
     icono: '🤝',
     items: [
-      { nombre: 'Pensión Bienestar', slug: 'pension-bienestar', live: false },
+      { nombre: 'Pensión del Bienestar', slug: 'pension-bienestar', live: true },
       { nombre: 'Becas Benito Juárez', slug: 'becas-benito-juarez', live: false },
       { nombre: 'Mujeres con Bienestar', slug: 'mujeres-con-bienestar', live: false },
       { nombre: 'Jóvenes Construyendo el Futuro', slug: 'jovenes-construyendo-el-futuro', live: false },
