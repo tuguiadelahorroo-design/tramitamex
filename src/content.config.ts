@@ -22,6 +22,8 @@ const tramites = defineCollection({
     urlOficial: z.string().url(),
     urlOficialTexto: z.string(),
     actualizado: z.coerce.date(),
+    // Fecha de PRIMERA publicación (datePublished en el schema). Si falta, usa `actualizado`.
+    publicado: z.coerce.date().optional(),
     destacado: z.boolean().default(false),
     orden: z.number().default(99),
     // Quién revisó editorialmente el contenido (señal E-E-A-T).

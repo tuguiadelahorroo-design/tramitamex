@@ -25,12 +25,23 @@ const tramites = (await getCollection('tramites')).sort(
 const estatales = tramites.filter((t) => t.data.nivel.toLowerCase().includes('estatal'));
 const federales = tramites.filter((t) => !t.data.nivel.toLowerCase().includes('estatal'));
 
+const tramitesPagina = [...estatales, ...federales];
 const jsonLd = [
   {
     '@context': 'https://schema.org',
     '@type': 'CollectionPage',
     name: `Trámites en ${estado.nombre}`,
     description: `Trámites federales y estatales en ${estado.nombre}, México.`,
+    inLanguage: 'es-MX',
+    mainEntity: {
+      '@type': 'ItemList',
+      itemListElement: tramitesPagina.map((t, i) => ({
+        '@type': 'ListItem',
+        position: i + 1,
+        name: t.data.titulo,
+        url: new URL(`/${t.id}/`, Astro.site).href,
+      })),
+    },
   },
 ];
 ---
@@ -86,7 +97,7 @@ const jsonLd = [
               <ul class="datos-portales" role="list">
                 {datos.portales.map((p) => (
                   <li>
-                    <a href={p.url} target="_blank" rel="noopener noreferrer nofollow">
+                    <a href={p.url} target="_blank" rel="noopener noreferrer">
                       {p.nombre}
                     </a>
                   </li>

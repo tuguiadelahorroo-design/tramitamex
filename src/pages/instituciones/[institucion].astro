@@ -29,11 +29,23 @@ const tramitesInst = institucion.tramites.map((slug) => {
     live: dataPorSlug.has(slug),
   };
 });
+
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'GovernmentOrganization',
+    name: institucion.nombreCompleto,
+    alternateName: institucion.nombre,
+    url: institucion.sitioOficial,
+    description: institucion.descripcion,
+  },
+];
 ---
 
 <BaseLayout
   title={`${institucion.nombre}: trámites y servicios (${institucion.nombreCompleto})`}
   description={`Trámites del ${institucion.nombreCompleto} (${institucion.nombre}): ${institucion.descripcion}`}
+  jsonLd={jsonLd}
 >
   <section class="page-hero">
     <div class="container">
@@ -47,7 +59,7 @@ const tramitesInst = institucion.tramites.map((slug) => {
       <h1>{institucion.nombre}</h1>
       <p class="inst-full">{institucion.nombreCompleto}</p>
       <p class="lead">{institucion.descripcion}</p>
-      <a href={institucion.sitioOficial} class="btn btn-primary" target="_blank" rel="noopener noreferrer nofollow">
+      <a href={institucion.sitioOficial} class="btn btn-primary" target="_blank" rel="noopener noreferrer">
         Sitio oficial
         <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3h7v7M13 3 6.5 9.5M11 9.5V13H3V5h3.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </a>

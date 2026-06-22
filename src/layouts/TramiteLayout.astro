@@ -35,6 +35,7 @@ export interface Props {
   urlOficial: string;
   urlOficialTexto: string;
   actualizado: Date;
+  publicado?: Date;
   revisadoPor?: string;
   faq: { pregunta: string; respuesta: string }[];
   fuentes: { titulo: string; url: string }[];
@@ -70,16 +71,63 @@ const tocItems = [
     : []),
 ];
 
+// Convierte el "tiempo" en español a una duración ISO 8601 (schema HowTo).
+function tiempoAISO(tiempo: string): string | undefined {
+  const t = tiempo.toLowerCase();
+  if (t.includes('inmediat') || t.includes('al instante') || t.includes('mismo día')) return 'PT1H';
+  const nums = (t.match(/\d+/g) ?? []).map(Number);
+  if (nums.length === 0) return undefined;
+  const n = Math.max(...nums);
+  if (t.includes('minuto')) return `PT${n}M`;
+  if (t.includes('hora')) return `PT${n}H`;
+  if (t.includes('semana')) return `P${n}W`;
+  if (t.includes('mes')) return `P${n}M`;
+  if (t.includes('año')) return `P${n}Y`;
+  if (t.includes('día') || t.includes('dia')) return `P${n}D`;
+  return undefined;
+}
+
+// Extrae el costo numérico (MXN) para el schema HowTo.
+function costoAMonto(costo: string): string | undefined {
+  if (/gratis|sin costo|gratuito/i.test(costo)) return '0';
+  const m = costo.replace(/[\s,]/g, '').match(/\d+(\.\d+)?/);
+  return m ? m[0] : undefined;
+}
+const totalTime = tiempoAISO(p.tiempo);
+const estimatedCost = costoAMonto(p.costo);
+
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
   headline: h1,
   description: p.descripcion,
   inLanguage: 'es-MX',
-  datePublished: p.actualizado.toISOString(),
+  datePublished: (p.publicado ?? p.actualizado).toISOString(),
   dateModified: p.actualizado.toISOString(),
-  author: { '@type': 'Organization', name: 'Equipo editorial TramitaMex' },
-  publisher: { '@type': 'Organization', name: 'TramitaMex' },
+  speakable: {
+    '@type': 'SpeakableSpecification',
+    cssSelector: ['.lead', '.ficha-list'],
+  },
+  image: {
+    '@type': 'ImageObject',
+    url: new URL('/og-default.png', Astro.site).href,
+    width: 1200,
+    height: 675,
+  },
+  author: {
+    '@type': 'Organization',
+    name: 'Equipo editorial TramitaMex',
+    url: new URL('/acerca-de/', Astro.site).href,
+  },
+  publisher: {
+    '@type': 'Organization',
+    name: 'TramitaMex',
+    url: Astro.site?.href,
+    logo: {
+      '@type': 'ImageObject',
+      url: new URL('/favicon.svg', Astro.site).href,
+    },
+  },
 };
 
 // Schema HowTo: ayuda a Google a mostrar el paso a paso como guía enriquecida.
@@ -91,6 +139,12 @@ const howToSchema =
         name: h1,
         description: p.descripcion,
         inLanguage: 'es-MX',
+        ...(totalTime ? { totalTime } : {}),
+        ...(estimatedCost !== undefined
+          ? {
+              estimatedCost: { '@type': 'MonetaryAmount', currency: 'MXN', value: estimatedCost },
+            }
+          : {}),
         step: pasos.map((paso, i) => ({
           '@type': 'HowToStep',
           position: i + 1,
@@ -109,7 +163,33 @@ const ficha = [
   { etiqueta: 'Institución', valor: institucion?.nombre ?? p.institucion },
 ].filter((f) => f.valor);
 
-const jsonLd = howToSchema ? [articleSchema, howToSchema] : [articleSchema];
+const govServiceSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'GovernmentService',
+  name: h1,
+  description: p.descripcion,
+  serviceType: p.titulo,
+  inLanguage: 'es-MX',
+  areaServed: { '@type': 'Country', name: 'México' },
+  audience: { '@type': 'Audience', audienceType: 'Ciudadanía mexicana' },
+  ...(institucion
+    ? {
+        provider: {
+          '@type': 'GovernmentOrganization',
+          name: institucion.nombreCompleto,
+          alternateName: institucion.nombre,
+          url: institucion.sitioOficial,
+        },
+      }
+    : {}),
+  availableChannel: {
+    '@type': 'ServiceChannel',
+    serviceUrl: p.urlOficial,
+    name: p.urlOficialTexto,
+  },
+};
+
+const jsonLd = [articleSchema, govServiceSchema, ...(howToSchema ? [howToSchema] : [])];
 ---
 
 <BaseLayout title={h1} description={p.descripcion} ogType="article" jsonLd={jsonLd}>
@@ -141,7 +221,7 @@ const jsonLd = howToSchema ? [articleSchema, howToSchema] : [articleSchema];
                 <svg width="15" height="15" viewBox="0 0 16 16" aria-hidden="true">
                   <path d="M2 8.5 6 12l8-8.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
-                Revisado por {p.revisadoPor}
+                Revisado por <a href="/acerca-de/">{p.revisadoPor}</a>
               </span>
             )
           }
@@ -159,7 +239,7 @@ const jsonLd = howToSchema ? [articleSchema, howToSchema] : [articleSchema];
             href={p.urlOficial}
             class="btn btn-primary"
             target="_blank"
-            rel="noopener noreferrer nofollow"
+            rel="noopener noreferrer"
           >
             Ir al sitio oficial
             <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3h7v7M13 3 6.5 9.5M11 9.5V13H3V5h3.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -183,7 +263,7 @@ const jsonLd = howToSchema ? [articleSchema, howToSchema] : [articleSchema];
               <ul role="list">
                 {p.fuentes.map((f) => (
                   <li>
-                    <a href={f.url} target="_blank" rel="noopener noreferrer nofollow">
+                    <a href={f.url} target="_blank" rel="noopener noreferrer">
                       {f.titulo}
                     </a>
                   </li>
@@ -221,7 +301,7 @@ const jsonLd = howToSchema ? [articleSchema, howToSchema] : [articleSchema];
             href={p.urlOficial}
             class="btn btn-accent ficha-cta"
             target="_blank"
-            rel="noopener noreferrer nofollow"
+            rel="noopener noreferrer"
           >
             {p.urlOficialTexto}
           </a>
@@ -274,6 +354,8 @@ const jsonLd = howToSchema ? [articleSchema, howToSchema] : [articleSchema];
     gap: 0.4rem;
   }
   .meta-item svg { color: var(--color-primary); }
+  .meta-item a { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
+  .meta-item a:hover { color: var(--color-primary-strong); }
 
   .hero-actions {
     display: flex;

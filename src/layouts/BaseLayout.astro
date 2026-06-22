@@ -1,6 +1,8 @@
 ---
 import '@fontsource-variable/inter';
 import '@fontsource-variable/fraunces';
+import interWoff2 from '@fontsource-variable/inter/files/inter-latin-wght-normal.woff2?url';
+import frauncesWoff2 from '@fontsource-variable/fraunces/files/fraunces-latin-wght-normal.woff2?url';
 import '../styles/global.css';
 import SEO from '../components/SEO.astro';
 import Header from '../components/Header.astro';
@@ -22,6 +24,15 @@ const orgSchema = {
   name: 'TramitaMex',
   url: Astro.site?.href,
   description: 'Guía informativa independiente sobre trámites en México.',
+  logo: {
+    '@type': 'ImageObject',
+    url: new URL('/favicon.svg', Astro.site).href,
+  },
+  contactPoint: {
+    '@type': 'ContactPoint',
+    contactType: 'editorial',
+    url: new URL('/contacto/', Astro.site).href,
+  },
 };
 ---
 
@@ -32,6 +43,8 @@ const orgSchema = {
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="theme-color" content="#0f5132" />
+    <link rel="preload" href={interWoff2} as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href={frauncesWoff2} as="font" type="font/woff2" crossorigin />
     <SEO
       title={title}
       description={description}

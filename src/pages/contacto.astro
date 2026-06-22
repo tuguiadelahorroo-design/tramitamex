@@ -20,7 +20,18 @@ import Breadcrumbs from '../components/Breadcrumbs.astro';
 
   <div class="container container-narrow section">
     <div class="contacto-grid">
-      <form class="contacto-form surface-card" action="#" method="post" data-contacto-form>
+      <form
+        class="contacto-form surface-card"
+        name="contacto"
+        method="POST"
+        data-netlify="true"
+        netlify-honeypot="bot-field"
+        data-contacto-form
+      >
+        <input type="hidden" name="form-name" value="contacto" />
+        <p class="hp-field" hidden>
+          <label>No llenar si eres humano: <input name="bot-field" /></label>
+        </p>
         <div class="field">
           <label for="nombre">Nombre</label>
           <input id="nombre" name="nombre" type="text" autocomplete="name" required />
@@ -43,15 +54,20 @@ import Breadcrumbs from '../components/Breadcrumbs.astro';
         </div>
         <button type="submit" class="btn btn-primary">Enviar mensaje</button>
         <p class="form-note" data-form-note hidden>
-          Gracias. El formulario aún no está conectado a un servidor; mientras tanto, escríbenos
-          por correo.
+          ¡Gracias! Recibimos tu mensaje. Te responderemos al correo que nos dejaste.
+        </p>
+        <p class="form-error" data-form-error hidden>
+          No pudimos enviar tu mensaje. Inténtalo de nuevo en un momento.
         </p>
       </form>
 
       <aside class="contacto-aside">
         <div class="surface-card aside-box">
-          <h2>Correo</h2>
-          <p>Pronto habilitaremos un correo de contacto público.</p>
+          <h2>¿Cómo respondemos?</h2>
+          <p>
+            Usa el formulario y te contestaremos al correo que nos dejes. Leemos todos los
+            mensajes, aunque no damos seguimiento a expedientes ni realizamos trámites.
+          </p>
         </div>
         <div class="surface-card aside-box">
           <h2>Importante</h2>
@@ -91,7 +107,8 @@ import Breadcrumbs from '../components/Breadcrumbs.astro';
   .field select:focus,
   .field textarea:focus { outline: none; border-color: var(--color-primary); }
   .contacto-form .btn { justify-self: start; }
-  .form-note { font-size: var(--text-sm); color: var(--color-text-soft); margin: 0; }
+  .form-note { font-size: var(--text-sm); color: var(--color-success); margin: 0; }
+  .form-error { font-size: var(--text-sm); color: var(--color-danger, #b42318); margin: 0; }
 
   .contacto-aside { display: grid; gap: var(--space-md); }
   .aside-box { padding: var(--space-md); }
@@ -106,8 +123,24 @@ import Breadcrumbs from '../components/Breadcrumbs.astro';
 <script>
   const form = document.querySelector('[data-contacto-form]') as HTMLFormElement | null;
   const note = document.querySelector('[data-form-note]') as HTMLElement | null;
-  form?.addEventListener('submit', (e) => {
+  const errorNote = document.querySelector('[data-form-error]') as HTMLElement | null;
+
+  form?.addEventListener('submit', async (e) => {
     e.preventDefault();
-    if (note) note.hidden = false;
+    if (!form) return;
+    const datos = new URLSearchParams(new FormData(form) as unknown as Record<string, string>);
+    try {
+      const res = await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: datos.toString(),
+      });
+      if (!res.ok) throw new Error(String(res.status));
+      form.reset();
+      if (note) note.hidden = false;
+      if (errorNote) errorNote.hidden = true;
+    } catch {
+      if (errorNote) errorNote.hidden = false;
+    }
   });
 </script>

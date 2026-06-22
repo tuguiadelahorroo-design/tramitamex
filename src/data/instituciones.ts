@@ -19,7 +19,7 @@ export const INSTITUCIONES: Institucion[] = [
     descripcion:
       'Autoridad fiscal de México. Administra el RFC, la facturación electrónica, la e.firma y las declaraciones de impuestos.',
     sitioOficial: 'https://www.sat.gob.mx/',
-    tramites: ['rfc', 'constancia-de-situacion-fiscal', 'firma-electronica', 'opinion-de-cumplimiento', 'declaracion-anual', 'buzon-tributario'],
+    tramites: ['rfc', 'constancia-de-situacion-fiscal', 'firma-electronica', 'opinion-de-cumplimiento', 'declaracion-anual', 'buzon-tributario', 'devolucion-impuestos-sat', 'facturar-cfdi', 'resico-sat'],
   },
   {
     slug: 'imss',
@@ -28,7 +28,7 @@ export const INSTITUCIONES: Institucion[] = [
     descripcion:
       'Brinda seguridad social a los trabajadores: NSS, atención médica, semanas cotizadas, pensiones e incapacidades.',
     sitioOficial: 'https://www.imss.gob.mx/',
-    tramites: ['nss', 'semanas-cotizadas-imss', 'vigencia-de-derechos-imss', 'cita-medica-imss', 'pension-imss'],
+    tramites: ['nss', 'semanas-cotizadas-imss', 'vigencia-de-derechos-imss', 'cita-medica-imss', 'pension-imss', 'incapacidad-imss', 'alta-patronal-imss'],
   },
   {
     slug: 'renapo',
@@ -45,7 +45,7 @@ export const INSTITUCIONES: Institucion[] = [
     nombreCompleto: 'Secretaría de Relaciones Exteriores',
     descripcion: 'Emite el pasaporte mexicano y atiende trámites para mexicanos en el extranjero.',
     sitioOficial: 'https://www.gob.mx/sre',
-    tramites: ['pasaporte'],
+    tramites: ['pasaporte', 'pasaporte-menores'],
   },
   {
     slug: 'ine',
@@ -70,7 +70,7 @@ export const INSTITUCIONES: Institucion[] = [
     descripcion:
       'Regula el sistema de ahorro para el retiro (Afores). Permite localizar tu Afore y consultar tu cuenta individual.',
     sitioOficial: 'https://www.gob.mx/consar',
-    tramites: ['afore'],
+    tramites: ['afore', 'retiro-afore-desempleo'],
   },
   {
     slug: 'infonavit',
@@ -79,7 +79,7 @@ export const INSTITUCIONES: Institucion[] = [
     descripcion:
       'Administra el ahorro para vivienda de los trabajadores y otorga créditos hipotecarios. Aquí consultas tu saldo, puntos y precalificación.',
     sitioOficial: 'https://www.infonavit.org.mx/',
-    tramites: ['infonavit'],
+    tramites: ['infonavit', 'devolucion-saldo-infonavit'],
   },
   {
     slug: 'sspc',
@@ -88,7 +88,7 @@ export const INSTITUCIONES: Institucion[] = [
     descripcion:
       'A través del OADPRS emite la constancia federal de antecedentes penales y coordina la prevención y reinserción social a nivel federal.',
     sitioOficial: 'https://www.gob.mx/sspc',
-    tramites: ['antecedentes-no-penales'],
+    tramites: ['antecedentes-no-penales', 'repuve'],
   },
   {
     slug: 'gobiernos-estatales',
@@ -97,7 +97,7 @@ export const INSTITUCIONES: Institucion[] = [
     descripcion:
       'Emiten trámites locales como la licencia de conducir, placas, tenencia, verificación vehicular y predial. Cada estado tiene su propia autoridad, requisitos y tarifas.',
     sitioOficial: 'https://www.gob.mx/tramites',
-    tramites: ['licencia-de-conducir', 'licencia-digital', 'placas', 'tarjeta-de-circulacion', 'tenencia', 'verificacion-vehicular'],
+    tramites: ['licencia-de-conducir', 'licencia-digital', 'placas', 'tarjeta-de-circulacion', 'tenencia', 'verificacion-vehicular', 'holograma-00', 'pagar-multa-transito'],
   },
   {
     slug: 'sedena',
@@ -133,7 +133,7 @@ export const INSTITUCIONES: Institucion[] = [
     descripcion:
       'Rectora de la política laboral en México. Opera el programa Jóvenes Construyendo el Futuro y atiende temas de trabajo y previsión social.',
     sitioOficial: 'https://www.gob.mx/stps',
-    tramites: ['jovenes-construyendo-el-futuro'],
+    tramites: ['jovenes-construyendo-el-futuro', 'finiquito-liquidacion'],
   },
   {
     slug: 'fonacot',
