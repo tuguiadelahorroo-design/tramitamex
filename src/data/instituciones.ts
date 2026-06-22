@@ -97,7 +97,7 @@ export const INSTITUCIONES: Institucion[] = [
     descripcion:
       'Emiten trámites locales como la licencia de conducir, placas, tenencia, verificación vehicular y predial. Cada estado tiene su propia autoridad, requisitos y tarifas.',
     sitioOficial: 'https://www.gob.mx/tramites',
-    tramites: ['licencia-de-conducir', 'placas', 'tarjeta-de-circulacion'],
+    tramites: ['licencia-de-conducir', 'placas', 'tarjeta-de-circulacion', 'tenencia', 'verificacion-vehicular'],
   },
   {
     slug: 'sedena',
@@ -134,6 +134,15 @@ export const INSTITUCIONES: Institucion[] = [
       'Rectora de la política laboral en México. Opera el programa Jóvenes Construyendo el Futuro y atiende temas de trabajo y previsión social.',
     sitioOficial: 'https://www.gob.mx/stps',
     tramites: ['jovenes-construyendo-el-futuro'],
+  },
+  {
+    slug: 'fonacot',
+    nombre: 'Fonacot',
+    nombreCompleto: 'Instituto del Fondo Nacional para el Consumo de los Trabajadores',
+    descripcion:
+      'Otorga créditos en efectivo a las personas que trabajan formalmente en empresas afiliadas, con descuento vía nómina.',
+    sitioOficial: 'https://www.fonacot.gob.mx/',
+    tramites: ['fonacot'],
   },
 ];
 
