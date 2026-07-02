@@ -1,5 +1,8 @@
 ---
 // Tarjeta de trámite usada en listados (home, índice, instituciones).
+import { Image } from 'astro:assets';
+import { getCardImage } from '../data/card-images';
+
 export interface Props {
   titulo: string;
   descripcion: string;
@@ -10,9 +13,13 @@ export interface Props {
 }
 const { titulo, descripcion, slug, categoria, costo, live = true } = Astro.props;
 const Tag = live ? 'a' : 'div';
+const foto = getCardImage(slug);
 ---
 
 <Tag class:list={['tramite-card', { 'is-soon': !live }]} href={live ? `/${slug}/` : undefined}>
+  <div class="card-media">
+    <Image src={foto} alt="" widths={[400, 800]} sizes="(max-width: 700px) 92vw, 380px" format="webp" quality={72} loading="lazy" />
+  </div>
   <div class="card-top">
     {categoria && <span class="card-cat">{categoria}</span>}
     {!live && <span class="card-soon">Próximamente</span>}
@@ -52,6 +59,25 @@ const Tag = live ? 'a' : 'div';
   }
   a.tramite-card:hover .card-title { color: var(--color-primary-strong); }
   .is-soon { opacity: 0.72; }
+  .card-media {
+    margin: calc(-1 * var(--space-md)) calc(-1 * var(--space-md)) 0.35rem;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    border-radius: calc(var(--radius-lg) - 1px) calc(var(--radius-lg) - 1px) 0 0;
+    background: var(--color-surface-2);
+  }
+  .card-media img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--duration-normal) var(--ease-out-expo);
+  }
+  a.tramite-card:hover .card-media img { transform: scale(1.04); }
+  @media (prefers-reduced-motion: reduce) {
+    .card-media img { transition: none; }
+    a.tramite-card:hover .card-media img { transform: none; }
+  }
   .card-top { display: flex; align-items: center; justify-content: space-between; gap: 0.5rem; }
   .card-cat {
     font-size: var(--text-xs);
@@ -74,7 +100,17 @@ const Tag = live ? 'a' : 'div';
     font-weight: var(--weight-semibold);
   }
   .card-title { font-size: var(--text-lg); margin: 0; transition: color var(--duration-fast) var(--ease-out-expo); }
-  .card-desc { font-size: var(--text-sm); color: var(--color-text-soft); margin: 0; flex-grow: 1; }
+  .card-desc {
+    font-size: var(--text-sm);
+    color: var(--color-text-soft);
+    margin: 0;
+    flex-grow: 1;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    overflow: hidden;
+  }
   .card-foot {
     display: flex;
     align-items: center;
