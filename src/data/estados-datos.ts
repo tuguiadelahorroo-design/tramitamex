@@ -80,6 +80,70 @@ export const DATOS_ESTADO: Record<string, DatosEstado> = {
       { nombre: 'Actas del Registro Civil', url: 'https://www.gob.mx/actas' },
     ],
   },
+  guanajuato: {
+    intro:
+      'En Guanajuato las licencias de conducir las emite la Secretaría de Seguridad y Paz con vigencia a elegir de 2, 3 o 5 años, y el refrendo se paga en línea en el portal de Finanzas. El estado no cobra tenencia general: solo aplica un impuesto a "vehículos de lujo" cuya factura supera los $522,000, y la verificación de emisiones es obligatoria cada semestre.',
+    costos: [
+      { tramite: 'Licencia de conducir (Tipo A, automovilista)', detalle: '$936 por 2 años · $1,189 por 3 años · $1,420 por 5 años' },
+      { tramite: 'Verificación vehicular', detalle: 'Obligatoria cada semestre · ≈ $375 constancia usual · $610 hologramas 00/0/1/2' },
+      { tramite: 'Tenencia y refrendo', detalle: 'Sin tenencia general; solo pagan autos con factura mayor a $522,000 (impuesto a vehículos de lujo) · refrendo ≈ $940 antes del 31 de marzo' },
+      { tramite: 'Acta de nacimiento (en línea)', detalle: '$130 adultos · $40 menores y adultos mayores' },
+    ],
+    portales: [
+      { nombre: 'Licencias de conducir — Seguridad y Paz Guanajuato', url: 'https://seguridad.guanajuato.gob.mx/licencias_conducir/' },
+      { nombre: 'Refrendo y tenencia — Finanzas Guanajuato', url: 'https://refrendo.guanajuato.gob.mx/' },
+      { nombre: 'Verificación vehicular — SAMA (citas y calendario)', url: 'https://sama.guanajuato.gob.mx/verificacion-vehicular' },
+      { nombre: 'Actas del Registro Civil', url: 'https://www.gob.mx/actas' },
+    ],
+  },
+  queretaro: {
+    intro:
+      'En Querétaro la licencia de conducir se tramita con cita en los módulos de la Secretaría de Seguridad Ciudadana y los pagos vehiculares se hacen en el portal tributario estatal (Recaudanet). El estado mantiene la "Tenencia Cero": si pagas el refrendo entre enero y marzo y tu auto no rebasa los $800,000 de valor, quedas exento del impuesto; la verificación vehicular es obligatoria dos veces al año.',
+    costos: [
+      { tramite: 'Licencia de conducir (Tipo A, automovilista)', detalle: '≈ $1,408 · vigencia de 5 años (50% de descuento con INAPAM, pensión o discapacidad)' },
+      { tramite: 'Verificación vehicular', detalle: 'Obligatoria cada semestre · ≈ $431 hologramas 1 y 2 · ≈ $735 holograma 0 · exentos eléctricos e híbridos' },
+      { tramite: 'Tenencia y refrendo', detalle: 'Tenencia subsidiada (Tenencia Cero) si pagas el refrendo (9 UMA, ≈ $1,020 – $1,056) de enero a marzo y el valor del auto no rebasa $800,000' },
+      { tramite: 'Acta de nacimiento (en línea)', detalle: '≈ $141 – $143' },
+    ],
+    portales: [
+      { nombre: 'Licencias de conducir — citas SSC Querétaro', url: 'https://citaslicencias.sscqro.gob.mx/' },
+      { nombre: 'Refrendo y tenencia — Portal Tributario (Recaudanet)', url: 'https://portal-tributario.queretaro.gob.mx/app/ingresos' },
+      { nombre: 'Verificación vehicular — SEDESU (calendario)', url: 'https://queretaro.gob.mx/web/sedesu/calendario' },
+      { nombre: 'Actas del Registro Civil', url: 'https://www.gob.mx/actas' },
+    ],
+  },
+  puebla: {
+    intro:
+      'En Puebla las licencias las expide la Secretaría de Movilidad y Transporte (SMT) y los pagos vehiculares se concentran en los portales del gobierno estatal. El estado no expide licencia permanente nueva (solo vigencias de 3 o 5 años), la verificación es obligatoria dos veces al año y la tenencia queda exenta al 100% si pagas a tiempo el Control Vehicular anual.',
+    costos: [
+      { tramite: 'Licencia de conducir (automovilista)', detalle: '≈ $895 por 3 años · $1,385 por 5 años · permiso de 6 meses $560' },
+      { tramite: 'Verificación vehicular', detalle: '≈ $628 por semestre (obligatoria 2 veces al año) · híbridos y eléctricos ≈ $245' },
+      { tramite: 'Tenencia', detalle: 'Subsidio del 100% si pagas el Control Vehicular (≈ $700) a inicios de año (en 2026: hasta el 31 de marzo, con prórroga al 30 de abril) y no tienes adeudos' },
+      { tramite: 'Acta de nacimiento (en línea)', detalle: '≈ $170' },
+    ],
+    portales: [
+      { nombre: 'Licencia de conducir — SMT', url: 'https://smt.puebla.gob.mx/' },
+      { nombre: 'Control Vehicular y tenencia (pago en línea)', url: 'https://rl.puebla.gob.mx/AdeudoVehicular/' },
+      { nombre: 'Verificación vehicular (citas)', url: 'https://verificacionvehicular.puebla.gob.mx/' },
+      { nombre: 'Actas del Registro Civil', url: 'https://www.gob.mx/actas' },
+    ],
+  },
+  veracruz: {
+    intro:
+      'En Veracruz la licencia la expide la Secretaría de Seguridad Pública (se pide constancia de no ser deudor alimentario) y los pagos vehiculares se hacen en la Oficina Virtual de Hacienda (OVH). Las tarifas se ajustan con la UMA en febrero, la licencia permanente solo aplica a mayores de 50 años y en 2026 corre el reemplacamiento "Año Nuevo, Placas Nuevas".',
+    costos: [
+      { tramite: 'Licencia de conducir (Tipo C, automovilista)', detalle: '≈ $2,003 primera vez · $1,001 canje/renovación · $1,716 permanente (solo mayores de 50 años)' },
+      { tramite: 'Verificación vehicular', detalle: '≈ $493 por semestre (obligatoria; subió de $476 con la UMA en febrero de 2026)' },
+      { tramite: 'Tenencia', detalle: 'Subsidio del 100% si pagas los derechos vehiculares (≈ $1,239) entre enero y marzo, estás al corriente y cumpliste la verificación' },
+      { tramite: 'Acta de nacimiento (en línea)', detalle: '≈ $199' },
+    ],
+    portales: [
+      { nombre: 'Licencia de conducir — SSP Veracruz', url: 'https://www.veracruz.gob.mx/seguridad/licencias-de-conducir/' },
+      { nombre: 'Tenencia y pagos vehiculares — OVH', url: 'https://www.ovh.gob.mx/' },
+      { nombre: 'Verificación vehicular — SEDEMA', url: 'https://www.veracruz.gob.mx/medioambiente/' },
+      { nombre: 'Actas del Registro Civil', url: 'https://www.gob.mx/actas' },
+    ],
+  },
 };
 
 export function getDatosEstado(slug: string): DatosEstado | undefined {
