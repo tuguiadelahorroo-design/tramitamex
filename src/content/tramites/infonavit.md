@@ -78,6 +78,15 @@ fuentes:
 - Iniciar trámites de crédito, devolución de ahorro (Fondo de Ahorro 72-92) y aclaraciones.
 - **Agendar citas** en un Centro de Servicio Infonavit (CESI).
 
+Estos son los principales tipos de crédito vigentes del Infonavit:
+
+| Crédito | Para qué sirve | Dato clave |
+| --- | --- | --- |
+| Crédito Infonavit (tradicional) | Comprar vivienda nueva o existente, construir, remodelar o pagar tu hipoteca | Financiado 100% por el Infonavit |
+| Cofinavit | Comprar vivienda de mayor valor | Suma tu crédito Infonavit a uno bancario |
+| Apoyo Infonavit | Obtener una hipoteca 100% bancaria | Tu subcuenta queda como garantía y tus aportaciones abonan al capital |
+| Mejoravit | Reparar, ampliar o mejorar tu vivienda | Montos menores, sin garantía hipotecaria |
+
 ## Requisitos
 
 - **[NSS](/nss/)** de 11 dígitos (el mismo del IMSS).

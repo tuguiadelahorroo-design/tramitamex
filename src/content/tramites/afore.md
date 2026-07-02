@@ -103,6 +103,15 @@ El trámite lo opera la **CONSAR**:
 - **App AforeMóvil** (oficial de CONSAR/PROCESAR), gratis en Android e iOS.
 - **SARTEL (teléfono):** 55 1328 5000, llamada sin costo.
 
+Esto es lo que necesitas en cada canal:
+
+| Canal | Qué necesitas | Respuesta |
+| --- | --- | --- |
+| Portal e-SAR | CURP o NSS y un correo | Correo en minutos |
+| AforeWeb | CURP o NSS y un correo | Correo en minutos |
+| AforeMóvil | CURP, correo y celular | Inmediata en la app |
+| SARTEL | CURP o NSS a la mano | Durante la llamada |
+
 ## Cómo sacar cita
 
 **No se requiere cita.** Es un trámite 100% en línea o telefónico, de consulta inmediata. Si más adelante necesitas un trámite presencial con tu Afore (por ejemplo, un retiro), se gestiona directamente con la administradora una vez localizada.

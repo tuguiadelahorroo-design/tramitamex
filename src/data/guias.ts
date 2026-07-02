@@ -143,6 +143,24 @@ export const GUIAS: Guia[] = [
     ],
     consejo: 'Ten a la mano tu CURP, acta e identificación vigentes: son la base de todos estos registros. Pregunta también por la credencial del INAPAM.',
   },
+  {
+    slug: 'extranjeros-en-mexico',
+    titulo: 'Trámites para extranjeros en México',
+    tituloLargo: 'Trámites para extranjeros que se mudan a México (en orden)',
+    descripcion:
+      'Los trámites para extranjeros que se mudan a México, en orden: residencia temporal, CURP, RFC, NSS y apostilla de documentos.',
+    resumen:
+      'Si vienes a vivir o trabajar a México, estos son los trámites que te esperan y el orden lógico para hacerlos sin atorarte.',
+    icono: 'mundo',
+    pasos: [
+      { slug: 'residencia-temporal-mexico', nota: 'El primer paso: la visa en el consulado y el canje a tarjeta de residente ante el INM (30 días al llegar).' },
+      { slug: 'curp', nota: 'Con tu tarjeta de residente obtienes tu CURP, la llave de casi todos los trámites en México.' },
+      { slug: 'rfc', nota: 'Si vas a trabajar o facturar, necesitarás tu clave fiscal ante el SAT.' },
+      { slug: 'nss', nota: 'Si te contrata una empresa, te afiliará al IMSS con tu número de seguro social.' },
+      { slug: 'apostilla-de-documentos', nota: 'Tus documentos del extranjero (actas, títulos) deben venir apostillados desde el país de origen y traducidos.' },
+    ],
+    consejo: 'No dejes pasar los 30 días naturales para el canje de tu visa por la tarjeta de residente: es el plazo que más atrapa a los recién llegados.',
+  },
 ];
 
 export function getGuia(slug: string): Guia | undefined {

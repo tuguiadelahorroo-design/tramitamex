@@ -33,6 +33,7 @@ export const CATEGORIAS: TramiteCategoria[] = [
       { nombre: 'Visa americana', slug: 'visa-americana', live: true },
       { nombre: 'Apostilla de documentos', slug: 'apostilla-de-documentos', live: true },
       { nombre: 'Doble nacionalidad', slug: 'doble-nacionalidad', live: true },
+      { nombre: 'Residencia temporal (INM)', slug: 'residencia-temporal-mexico', live: true },
     ],
   },
   {
@@ -79,6 +80,7 @@ export const CATEGORIAS: TramiteCategoria[] = [
       { nombre: 'Alta patronal (IMSS)', slug: 'alta-patronal-imss', live: true },
       { nombre: 'ISSSTE', slug: 'issste', live: true },
       { nombre: 'Aborto legal (ILE)', slug: 'aborto-legal', live: true },
+      { nombre: 'Cambio de clínica (UMF)', slug: 'cambio-clinica-imss', live: true },
     ],
   },
   {
@@ -97,6 +99,7 @@ export const CATEGORIAS: TramiteCategoria[] = [
       { nombre: 'Multas y fotomultas', slug: 'pagar-multa-transito', live: true },
       { nombre: 'Baja de placas', slug: 'baja-de-placas', live: true },
       { nombre: 'Cambio de propietario', slug: 'cambio-de-propietario-vehicular', live: true },
+      { nombre: 'Licencia federal de conducir', slug: 'licencia-federal-de-conducir', live: true },
     ],
   },
   {
@@ -114,6 +117,7 @@ export const CATEGORIAS: TramiteCategoria[] = [
       { nombre: 'Finiquito y liquidación', slug: 'finiquito-liquidacion', live: true },
       { nombre: 'Precalificación Infonavit', slug: 'precalificacion-infonavit', live: true },
       { nombre: 'Revalidación de estudios (SEP)', slug: 'revalidacion-estudios-sep', live: true },
+      { nombre: '¿Infonavit o crédito bancario?', slug: 'infonavit-vs-credito-bancario', live: true },
     ],
   },
   {

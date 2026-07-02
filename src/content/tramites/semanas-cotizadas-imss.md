@@ -76,6 +76,15 @@ El **reporte (o constancia) de semanas cotizadas** es un documento informativo d
 - **Detectar errores u omisiones** (semanas faltantes) para iniciar a tiempo una aclaración.
 - Como **comprobante** ante Afores o asesores previsionales.
 
+Como referencia, esto es lo que se pide según tu objetivo:
+
+| Objetivo | Mínimo requerido | Detalle |
+| --- | --- | --- |
+| Pensión Ley 73 (vejez o cesantía) | 500 semanas | Si empezaste a cotizar antes del 1 de julio de 1997 |
+| Pensión Ley 97 (vejez o cesantía) | 875 semanas en 2026 | Sube 25 al año hasta llegar a 1,000 en 2031 |
+| Modalidad 40 (continuación voluntaria) | 52 semanas en los últimos 5 años | Se solicita dentro de los 5 años tras tu baja |
+| Retiro parcial por desempleo | 12 bimestres cotizados (mod. A) | Cuenta Afore de 3 años; de 5 años para la mod. B |
+
 ## Requisitos
 
 - **CURP** (18 caracteres).

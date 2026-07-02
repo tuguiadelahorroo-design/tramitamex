@@ -64,6 +64,17 @@ La **Pensión para el Bienestar de las Personas Adultas Mayores** es un programa
 > [!DATO]
 > En 2026 el apoyo es de **$6,400 pesos bimestrales** y se deposita en una tarjeta del **Banco del Bienestar** a nombre de la persona beneficiaria.
 
+El apoyo en números:
+
+| Concepto | Dato |
+|---|---|
+| Monto del apoyo | $6,400 pesos bimestrales |
+| Edad requerida | 65 años o más |
+| Cobertura | Universal, para residentes en México |
+| Cómo se paga | Depósito en la tarjeta del Banco del Bienestar |
+| Frecuencia | Bimestral (6 depósitos al año) |
+| Costo del registro | Gratuito |
+
 ## Para qué sirve
 
 - Brindar un ingreso económico permanente a las personas adultas mayores.

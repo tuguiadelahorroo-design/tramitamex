@@ -28,7 +28,7 @@ export const INSTITUCIONES: Institucion[] = [
     descripcion:
       'Brinda seguridad social a los trabajadores: NSS, atención médica, semanas cotizadas, pensiones e incapacidades.',
     sitioOficial: 'https://www.imss.gob.mx/',
-    tramites: ['nss', 'semanas-cotizadas-imss', 'vigencia-de-derechos-imss', 'cita-medica-imss', 'pension-imss', 'incapacidad-imss', 'alta-patronal-imss'],
+    tramites: ['nss', 'semanas-cotizadas-imss', 'vigencia-de-derechos-imss', 'cita-medica-imss', 'pension-imss', 'incapacidad-imss', 'alta-patronal-imss', 'cambio-clinica-imss'],
   },
   {
     slug: 'renapo',
@@ -79,7 +79,7 @@ export const INSTITUCIONES: Institucion[] = [
     descripcion:
       'Administra el ahorro para vivienda de los trabajadores y otorga créditos hipotecarios. Aquí consultas tu saldo, puntos y precalificación.',
     sitioOficial: 'https://www.infonavit.org.mx/',
-    tramites: ['infonavit', 'devolucion-saldo-infonavit', 'precalificacion-infonavit'],
+    tramites: ['infonavit', 'devolucion-saldo-infonavit', 'precalificacion-infonavit', 'infonavit-vs-credito-bancario'],
   },
   {
     slug: 'sspc',
@@ -179,6 +179,24 @@ export const INSTITUCIONES: Institucion[] = [
       'Coordina los servicios de salud pública en México. A través de las secretarías de salud federal y estatales, el IMSS y el IMSS-Bienestar se brindan servicios como la interrupción legal del embarazo donde es legal.',
     sitioOficial: 'https://www.gob.mx/salud',
     tramites: ['aborto-legal'],
+  },
+  {
+    slug: 'sict',
+    nombre: 'SICT',
+    nombreCompleto: 'Secretaría de Infraestructura, Comunicaciones y Transportes',
+    descripcion:
+      'Rectora del autotransporte federal. Emite la licencia federal de conducir (hoy digital) para operadores de carga, pasaje y turismo en carreteras federales.',
+    sitioOficial: 'https://www.gob.mx/sict',
+    tramites: ['licencia-federal-de-conducir'],
+  },
+  {
+    slug: 'inm',
+    nombre: 'INM',
+    nombreCompleto: 'Instituto Nacional de Migración',
+    descripcion:
+      'Autoridad migratoria de México. Emite las tarjetas de residente temporal y permanente, y atiende los trámites migratorios de las personas extranjeras en el país.',
+    sitioOficial: 'https://www.gob.mx/inm',
+    tramites: ['residencia-temporal-mexico'],
   },
 ];
 

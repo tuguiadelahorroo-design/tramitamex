@@ -88,6 +88,15 @@ Necesitas **tres documentos originales**, uno de cada categoría:
 2. **Identificación con fotografía:** pasaporte, cédula profesional, licencia de conducir, cartilla militar, credencial de servicios de salud, credencial laboral o escolar reconocida, matrícula consular o tu credencial anterior.
 3. **Comprobante de domicilio:** recibo de luz, agua, predial, teléfono, gas o TV de paga; estado de cuenta; o contrato de arrendamiento con recibo. **No mayor a 3 meses** (los anuales como el predial, del año en curso o anterior).
 
+Los mismos tres documentos aplican en todos los casos; lo que cambia es el detalle a cuidar:
+
+| Tipo de trámite | Documentos | Detalle a cuidar |
+|---|---|---|
+| Primera vez | Los tres documentos | Puedes tramitarla desde los 17 años |
+| Renovación por vigencia | Los tres documentos | Tu credencial vencida sirve como identificación |
+| Reposición por robo o extravío | Los tres documentos | Necesitas otra identificación con fotografía |
+| Cambio de domicilio | Los tres documentos | Comprobante del nuevo domicilio, no mayor a 3 meses |
+
 > [!CONSEJO]
 > Lleva también tu [CURP](/curp/) actualizada. No siempre es obligatoria, pero agiliza el registro y evita discrepancias de datos entre tus documentos.
 

@@ -110,6 +110,14 @@ El trámite es **gratis**, ya sea en línea, en la app IMSS Digital o de forma p
 - **App móvil:** IMSS Digital (Android e iOS).
 - **Presencial:** Subdelegación u Oficina Auxiliar de Afiliación y Cobranza del IMSS, de lunes a viernes de 8:00 a 15:30 horas.
 
+Los requisitos cambian según el canal que elijas:
+
+| Canal | Qué necesitas | Disponibilidad |
+|---|---|---|
+| Portal de Servicios Digitales | CURP y correo electrónico | 24/7, resultado inmediato |
+| App IMSS Digital | CURP y correo electrónico | 24/7, resultado inmediato |
+| Presencial (Afiliación y Cobranza) | Acta de nacimiento, identificación oficial y CURP impresa (originales) | Lunes a viernes de 8:00 a 15:30 |
+
 ## Cómo sacar cita
 
 Para obtener el NSS en línea **no se necesita cita**: el servicio es inmediato y está disponible las 24 horas. Solo si acudes de forma presencial puedes agendar cita en el portal de citas del IMSS o llamar al 800 623 2323; aun así, la asignación o localización del NSS también puede atenderse directamente en la ventanilla de Afiliación y Cobranza.

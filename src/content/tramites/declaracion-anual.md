@@ -83,6 +83,17 @@ Debes presentarla, entre otros casos, si durante el año:
 - Dejaste de laborar antes del 31 de diciembre.
 - Recibiste ingresos **del extranjero** o sin retención de ISR.
 
+En resumen, así queda la obligación según tu situación:
+
+| Tu situación en el año | ¿Debes declarar? |
+|---|---|
+| Un solo patrón, solo salarios y hasta $400,000 | No es obligatorio (puedes hacerlo por el saldo a favor) |
+| Ingresos anuales mayores a $400,000 | Sí |
+| Dos o más patrones | Sí |
+| Honorarios, arrendamiento, negocio o plataformas digitales | Sí |
+| Dejaste de trabajar antes del 31 de diciembre | Sí |
+| Ingresos del extranjero o sin retención de ISR | Sí |
+
 ## Requisitos
 
 - **RFC** vigente.

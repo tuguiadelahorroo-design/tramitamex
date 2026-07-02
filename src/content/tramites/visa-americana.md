@@ -88,6 +88,15 @@ La **visa americana B1/B2** es el permiso que otorga el gobierno de Estados Unid
 - Fotografía conforme a los lineamientos (la suben en el DS-160).
 - Documentos de apoyo: comprobantes de empleo, estados de cuenta, escrituras, etc.
 
+Esto es lo que necesitas en cada etapa del trámite:
+
+| Etapa | Dónde | Qué necesitas |
+|---|---|---|
+| Formulario DS-160 | En línea (ceac.state.gov) | Pasaporte, datos personales y fotografía digital |
+| Pago de la tarifa MRV | Banco autorizado o en línea | 185 USD (no reembolsables) |
+| Cita en el CAS | Centro de Atención al Solicitante | Pasaporte y hoja de confirmación del DS-160 |
+| Entrevista consular | Embajada o consulado | Pasaporte, hoja del DS-160, comprobante de pago y pruebas de arraigo |
+
 ## Costo
 
 La tarifa consular (**MRV**) de la visa B1/B2 es de **185 USD**, **no reembolsable** aunque te nieguen la visa. Se paga en bancos autorizados (Scotiabank o Citibanamex) o con tarjeta en línea.
