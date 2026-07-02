@@ -16,6 +16,10 @@ publicado: 2026-06-22
 destacado: false
 orden: 55
 revisadoPor: 'el equipo editorial de TramitaMex'
+relacionados:
+  - pasaporte
+  - acta-de-nacimiento
+  - apostilla-de-documentos
 pasos:
   - titulo: 'Identifica tu caso'
     detalle: 'Define si eres mexicano por nacimiento que adquirió otra nacionalidad (no hay trámite), un extranjero que busca naturalizarse, o requieres la declaratoria de nacionalidad por nacimiento.'

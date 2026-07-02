@@ -149,6 +149,17 @@
   border-bottom: none;
 }
 
+/* En pantallas angostas la tabla se desplaza horizontal en vez de romper el layout. */
+@media (max-width: 700px) {
+  .prose table {
+    display: block;
+    width: max-content;
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
 /* ==========================================================================
    Recuadros de aviso (callouts) — generados por remark-callouts.mjs
    ========================================================================== */

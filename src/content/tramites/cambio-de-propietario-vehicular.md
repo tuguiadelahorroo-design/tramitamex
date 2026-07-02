@@ -16,6 +16,10 @@ publicado: 2026-06-22
 destacado: false
 orden: 60
 revisadoPor: 'Equipo editorial de TramitaMex'
+relacionados:
+  - baja-de-placas
+  - placas
+  - tarjeta-de-circulacion
 pasos:
   - titulo: 'Verifica que no haya adeudos'
     detalle: 'Antes de comprar, confirma que el vehículo esté al corriente de tenencia, refrendo, multas y verificación. Estos adeudos suelen bloquear el trámite y los hereda el nuevo dueño.'

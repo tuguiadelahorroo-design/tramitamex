@@ -20,10 +20,11 @@ const tramites = (await getCollection('tramites')).sort(
   (a, b) => a.data.orden - b.data.orden
 );
 
-// Estatales = el costo/portal/requisitos los define cada estado.
+// Estatales/municipales = el costo/portal/requisitos los define cada entidad o municipio.
 // Federales = se hacen igual en todo el país.
-const estatales = tramites.filter((t) => t.data.nivel.toLowerCase().includes('estatal'));
-const federales = tramites.filter((t) => !t.data.nivel.toLowerCase().includes('estatal'));
+const esLocal = (nivel: string) => /estatal|municipal/.test(nivel.toLowerCase());
+const estatales = tramites.filter((t) => esLocal(t.data.nivel));
+const federales = tramites.filter((t) => !esLocal(t.data.nivel));
 
 const tramitesPagina = [...estatales, ...federales];
 const jsonLd = [
@@ -111,7 +112,7 @@ const jsonLd = [
 
     <!-- ESTATALES (destacados) -->
     <section class="block">
-      <h2>Trámites estatales en {estado.nombre}</h2>
+      <h2>Trámites estatales y municipales en {estado.nombre}</h2>
       <p class="block-sub">
         Estos los gestiona el gobierno de {estado.nombre}: el costo, el portal y los requisitos
         cambian según el estado. En cada guía te explicamos el proceso general y cómo llegar al

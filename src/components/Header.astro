@@ -1,5 +1,5 @@
 ---
-import { CATEGORIAS, NAV_PRINCIPAL } from '../data/navigation';
+import { CATEGORIAS, NAV_PRINCIPAL, TRAMITES_DESTACADOS } from '../data/navigation';
 import { ESTADOS } from '../data/estados';
 import CategoryIcon from './CategoryIcon.astro';
 
@@ -40,12 +40,15 @@ const estadosDestacados = [
                   <div class="mega-col">
                     <p class="mega-col-title"><CategoryIcon id={cat.id} size={18} /> {cat.titulo}</p>
                     <ul role="list">
-                      {cat.items.slice(0, 5).map((item) =>
+                      {cat.items.slice(0, 7).map((item) =>
                         item.live ? (
                           <li><a href={`/${item.slug}/`}>{item.nombre}</a></li>
                         ) : (
                           <li><span class="soon">{item.nombre}<em>pronto</em></span></li>
                         )
+                      )}
+                      {cat.items.length > 7 && (
+                        <li class="mega-more"><a href={`/tramites/#${cat.id}`}>Ver los {cat.items.length} →</a></li>
                       )}
                     </ul>
                   </div>
@@ -81,10 +84,11 @@ const estadosDestacados = [
     <nav class="container" aria-label="Navegación móvil">
       <p class="mobile-section-title">Trámites destacados</p>
       <ul role="list" class="mobile-tramites">
-        {CATEGORIAS.flatMap((c) => c.items).filter((i) => i.live).map((item) => (
+        {TRAMITES_DESTACADOS.filter((i) => i.live).map((item) => (
           <li><a href={`/${item.slug}/`}>{item.nombre}</a></li>
         ))}
       </ul>
+      <a class="mobile-all" href="/tramites/">Ver todos los trámites →</a>
 
       <p class="mobile-section-title">Secciones</p>
       <ul role="list" class="mobile-links">
@@ -173,6 +177,8 @@ const estadosDestacados = [
     border-bottom: 1px solid var(--color-border);
     box-shadow: var(--shadow-lg);
     animation: mega-in var(--duration-normal) var(--ease-out-expo);
+    max-height: calc(100dvh - 4.5rem);
+    overflow-y: auto;
   }
   .mega[hidden] { display: none; }
 
@@ -212,6 +218,7 @@ const estadosDestacados = [
     transition: background-color var(--duration-fast) var(--ease-out-expo), color var(--duration-fast) var(--ease-out-expo);
   }
   .mega-col a:hover { background: var(--color-primary-soft); color: var(--color-primary-strong); }
+  .mega-more a { color: var(--color-primary-strong); font-weight: var(--weight-semibold); }
   .soon {
     display: flex;
     align-items: center;
@@ -231,11 +238,18 @@ const estadosDestacados = [
     border-radius: var(--radius-pill);
   }
   .mega-cta {
+    /* Banda a lo ancho: con 8 categorías el grid queda en 2 filas parejas y el CTA cierra abajo. */
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--space-sm) var(--space-md);
     background: var(--color-primary-soft);
     border-radius: var(--radius-md);
-    padding: var(--space-md);
+    padding: var(--space-sm) var(--space-md);
   }
-  .mega-cta-text { font-size: var(--text-sm); color: var(--color-text-soft); margin-block: 0.5rem 1rem; }
+  .mega-cta .mega-col-title { margin-bottom: 0; }
+  .mega-cta-text { font-size: var(--text-sm); color: var(--color-text-soft); margin: 0; flex: 1; min-width: 26ch; }
 
   .header-cta { display: none; }
 
@@ -293,6 +307,12 @@ const estadosDestacados = [
   }
   .mobile-links a { font-weight: var(--weight-medium); color: var(--color-text); }
   .mobile-nav a:hover { background: var(--color-primary-soft); color: var(--color-primary-strong); }
+  .mobile-all {
+    display: inline-block;
+    margin-top: var(--space-2xs);
+    font-weight: var(--weight-semibold);
+    color: var(--color-primary-strong) !important;
+  }
 
   @media (min-width: 1000px) {
     .nav-desktop > ul { display: flex; }

@@ -152,6 +152,8 @@ export const TRAMITES_DESTACADOS: TramiteLink[] = [
   { nombre: 'Pasaporte', slug: 'pasaporte', live: true },
   { nombre: 'Licencia de conducir', slug: 'licencia-de-conducir', live: true },
   { nombre: 'Antecedentes no penales', slug: 'antecedentes-no-penales', live: true },
+  { nombre: 'Pensión del Bienestar', slug: 'pension-bienestar', live: true },
+  { nombre: 'Predial', slug: 'predial', live: true },
 ];
 
 /** Navegación principal (barra superior). */

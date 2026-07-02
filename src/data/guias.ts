@@ -62,18 +62,37 @@ export const GUIAS: Guia[] = [
     slug: 'comprar-auto-usado',
     titulo: 'Trámites al comprar un auto usado',
     descripcion:
-      'Qué hacer al comprar un auto usado: cambio de placas, tarjeta de circulación a tu nombre, tenencia al corriente y verificación vehicular.',
+      'Qué hacer al comprar un auto usado: consulta REPUVE, cambio de propietario, tarjeta de circulación a tu nombre, tenencia al corriente y verificación.',
     resumen:
-      'Comprar un auto usado no termina con el pago: hay que ponerlo a tu nombre y al corriente. Esta es la ruta.',
+      'Comprar un auto usado no termina con el pago: hay que revisarlo, ponerlo a tu nombre y al corriente. Esta es la ruta.',
     icono: 'auto',
     pasos: [
-      { slug: 'placas', nota: 'Haz el cambio de propietario para que el vehículo quede a tu nombre.' },
-      { slug: 'tarjeta-de-circulacion', nota: 'Se reexpide a tu nombre junto con el emplacamiento.' },
+      { slug: 'repuve', nota: 'Antes de pagar, consulta gratis que el auto no tenga reporte de robo.' },
+      { slug: 'cambio-de-propietario-vehicular', nota: 'Ponlo a tu nombre en el padrón de tu estado (con placas nuevas si viene de otra entidad).' },
+      { slug: 'tarjeta-de-circulacion', nota: 'Se reexpide a tu nombre junto con el cambio de propietario.' },
       { slug: 'tenencia', nota: 'Verifica que no haya adeudos y ponte al corriente del año.' },
       { slug: 'verificacion-vehicular', nota: 'Si tu estado la exige, mantenla vigente según tu engomado.' },
       { slug: 'licencia-de-conducir', nota: 'Y, por supuesto, tu licencia vigente para conducir.' },
     ],
-    consejo: 'Antes de pagar el auto, revisa que no tenga adeudos de tenencia, multas ni verificación pendiente: esos se heredan al nuevo dueño.',
+    consejo: 'Antes de pagar el auto, revisa que no tenga adeudos de tenencia, multas ni verificación pendiente: esos se heredan al nuevo dueño. Y si eres quien vende, tramita la baja de placas para deslindarte de multas futuras.',
+  },
+  {
+    slug: 'comprar-casa',
+    titulo: 'Trámites para comprar tu casa',
+    tituloLargo: 'Trámites para comprar una casa en México (en orden)',
+    descripcion:
+      'Los trámites para comprar casa en México, en orden: precalificación Infonavit, crédito, escrituración ante notario, predial y testamento.',
+    resumen:
+      'Comprar una vivienda es la operación más grande en la vida de muchas personas. Esta es la ruta completa: desde saber cuánto te prestan hasta proteger tu patrimonio.',
+    icono: 'casa',
+    pasos: [
+      { slug: 'precalificacion-infonavit', nota: 'Empieza aquí: consulta gratis tus puntos y cuánto crédito te corresponde.' },
+      { slug: 'infonavit', nota: 'Revisa tu saldo en la Subcuenta de Vivienda y las opciones de crédito.' },
+      { slug: 'escrituracion', nota: 'La compra se formaliza ante notario y se inscribe en el Registro Público de la Propiedad.' },
+      { slug: 'predial', nota: 'Ya como propietario, este impuesto municipal se paga cada año (pagar en enero suele tener descuento).' },
+      { slug: 'testamento', nota: 'Protege tu patrimonio; en septiembre (Mes del Testamento) los honorarios bajan hasta 50%.' },
+    ],
+    consejo: 'Antes de firmar nada, pide el certificado de libertad de gravamen y confirma que el predial y el agua estén al corriente: los adeudos se quedan con la casa.',
   },
   {
     slug: 'documentos-basicos',
