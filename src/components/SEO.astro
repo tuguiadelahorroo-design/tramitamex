@@ -9,13 +9,29 @@ export interface Props {
   /** Objetos JSON-LD a inyectar (BreadcrumbList, FAQPage, Article, etc.). */
   jsonLd?: Record<string, unknown>[];
   noindex?: boolean;
+  /** Imagen social absoluta; si falta, usa la genérica del sitio. */
+  ogImage?: string;
+  ogImageAlt?: string;
+  ogImageWidth?: number;
+  ogImageHeight?: number;
 }
 
-const { title, description, ogType = 'website', jsonLd = [], noindex = false } = Astro.props;
+const {
+  title,
+  description,
+  ogType = 'website',
+  jsonLd = [],
+  noindex = false,
+  ogImage: ogImageProp,
+  ogImageAlt,
+  ogImageWidth = 1200,
+  ogImageHeight = 675,
+} = Astro.props;
 
 const SITE_NAME = 'TramitaMex';
 const canonical = new URL(Astro.url.pathname, Astro.site).href;
-const ogImage = new URL('/og-default.png', Astro.site).href;
+const ogImage = ogImageProp ?? new URL('/og-default.png', Astro.site).href;
+const ogAlt = ogImageAlt ?? 'TramitaMex — La guía nacional de trámites en México';
 const fullTitle = title.includes(SITE_NAME) ? title : `${title} | ${SITE_NAME}`;
 ---
 
@@ -32,15 +48,16 @@ const fullTitle = title.includes(SITE_NAME) ? title : `${title} | ${SITE_NAME}`;
 <meta property="og:url" content={canonical} />
 <meta property="og:locale" content="es_MX" />
 <meta property="og:image" content={ogImage} />
-<meta property="og:image:width" content="1200" />
-<meta property="og:image:height" content="675" />
-<meta property="og:image:alt" content="TramitaMex — La guía nacional de trámites en México" />
+<meta property="og:image:width" content={String(ogImageWidth)} />
+<meta property="og:image:height" content={String(ogImageHeight)} />
+<meta property="og:image:alt" content={ogAlt} />
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content={fullTitle} />
 <meta name="twitter:description" content={description} />
 <meta name="twitter:image" content={ogImage} />
+<meta name="twitter:image:alt" content={ogAlt} />
 
 <!-- Datos estructurados -->
 {

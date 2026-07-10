@@ -14,8 +14,13 @@ export interface Props {
   ogType?: 'website' | 'article';
   jsonLd?: Record<string, unknown>[];
   noindex?: boolean;
+  ogImage?: string;
+  ogImageAlt?: string;
+  ogImageWidth?: number;
+  ogImageHeight?: number;
 }
-const { title, description, ogType, jsonLd, noindex } = Astro.props;
+const { title, description, ogType, jsonLd, noindex, ogImage, ogImageAlt, ogImageWidth, ogImageHeight } =
+  Astro.props;
 
 // Organización (Schema.org) presente en todas las páginas.
 const orgSchema = {
@@ -51,6 +56,10 @@ const orgSchema = {
       ogType={ogType}
       jsonLd={[orgSchema, ...(jsonLd ?? [])]}
       noindex={noindex}
+      ogImage={ogImage}
+      ogImageAlt={ogImageAlt}
+      ogImageWidth={ogImageWidth}
+      ogImageHeight={ogImageHeight}
     />
   </head>
   <body>
