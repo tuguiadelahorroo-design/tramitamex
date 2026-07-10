@@ -1,0 +1,26 @@
+---
+// Silueta del contorno de un estado, escalada a su propio bounding box para
+// que llene el contenedor. Usa currentColor (el color lo pone el contenedor).
+import { ESTADO_SILUETAS } from '../data/estado-siluetas';
+
+export interface Props {
+  slug: string;
+  class?: string;
+}
+const { slug, class: className } = Astro.props;
+const silueta = ESTADO_SILUETAS[slug];
+---
+
+{
+  silueta && (
+    <svg
+      class={className}
+      viewBox={silueta.viewBox}
+      preserveAspectRatio="xMidYMid meet"
+      fill="currentColor"
+      aria-hidden="true"
+    >
+      <path d={silueta.path} />
+    </svg>
+  )
+}

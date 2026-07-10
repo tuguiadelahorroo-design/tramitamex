@@ -1,7 +1,11 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import EstadoSilueta from '../../components/EstadoSilueta.astro';
 import { ESTADOS } from '../../data/estados';
+
+// Colores que rotan por tarjeta para dar variedad a las siluetas.
+const COLORES = ['--color-primary', '--color-primary-deep', '--color-accent-strong'];
 ---
 
 <BaseLayout
@@ -22,14 +26,20 @@ import { ESTADOS } from '../../data/estados';
   <div class="container section">
     <div class="estado-grid">
       {
-        ESTADOS.map((e) => (
+        ESTADOS.map((e, i) => (
           <a href={`/por-estado/${e.slug}/`} class="estado-card">
+            <span class="estado-media" style={`color: var(${COLORES[i % COLORES.length]})`}>
+              <EstadoSilueta slug={e.slug} class="estado-silueta" />
+            </span>
             <span class="estado-name">{e.nombre}</span>
             <span class="estado-cap">{e.capital}</span>
           </a>
         ))
       }
     </div>
+    <p class="creditos">
+      Siluetas de los estados: <a href="https://github.com/VictorCazanave/svg-maps" target="_blank" rel="noopener noreferrer">svg-maps</a> de Victor Cazanave, licencia <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>.
+    </p>
   </div>
 </BaseLayout>
 
@@ -44,25 +54,52 @@ import { ESTADOS } from '../../data/estados';
 
   .estado-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: var(--space-sm);
+    grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+    gap: var(--space-md);
   }
   .estado-card {
     display: grid;
     gap: 0.15rem;
-    padding: var(--space-md);
+    padding: var(--space-sm);
     background: var(--color-surface);
     border: 1px solid var(--color-border);
-    border-radius: var(--radius-md);
+    border-radius: var(--radius-lg);
     text-decoration: none;
     color: inherit;
-    transition: all var(--duration-fast) var(--ease-out-expo);
+    box-shadow: var(--shadow-card);
+    transition: transform var(--duration-normal) var(--ease-out-expo), box-shadow var(--duration-normal), border-color var(--duration-fast);
   }
   .estado-card:hover {
     border-color: var(--color-primary);
-    transform: translateY(-3px);
+    transform: translateY(-4px);
     box-shadow: var(--shadow-md);
   }
-  .estado-name { font-weight: var(--weight-semibold); color: var(--color-text); }
-  .estado-cap { font-size: var(--text-sm); color: var(--color-text-faint); }
+  .estado-media {
+    display: grid;
+    place-items: center;
+    aspect-ratio: 16 / 10;
+    margin-bottom: 0.5rem;
+    border-radius: var(--radius-md);
+    background:
+      radial-gradient(120% 120% at 80% 15%, var(--color-primary-soft), transparent 60%),
+      var(--color-surface-2);
+  }
+  .estado-media :global(.estado-silueta) {
+    width: 62%;
+    height: 62%;
+    filter: drop-shadow(0 1px 1px oklch(30% 0.04 162 / 0.18));
+    transition: transform var(--duration-normal) var(--ease-out-expo);
+  }
+  .estado-card:hover .estado-media :global(.estado-silueta) { transform: scale(1.06); }
+  .estado-name { font-weight: var(--weight-semibold); color: var(--color-text); padding-inline: 0.35rem; }
+  .estado-cap { font-size: var(--text-sm); color: var(--color-text-faint); padding-inline: 0.35rem; padding-bottom: 0.25rem; }
+  @media (prefers-reduced-motion: reduce) {
+    .estado-media :global(.estado-silueta) { transition: none; }
+  }
+  .creditos {
+    margin-top: var(--space-lg);
+    font-size: var(--text-xs);
+    color: var(--color-text-faint);
+  }
+  .creditos a { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
 </style>
