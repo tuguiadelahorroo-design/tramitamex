@@ -331,14 +331,26 @@ const estadosDestacados = [
     const megaRoot = header.querySelector('[data-mega-root]') as HTMLElement | null;
     const mobileToggle = header.querySelector('[data-mobile-toggle]') as HTMLButtonElement | null;
     const mobileNav = header.querySelector('[data-mobile-nav]') as HTMLElement | null;
-    const desktopQuery = window.matchMedia('(min-width: 1000px)');
+    // Solo abrir por hover en dispositivos con puntero real (evita que en tablet
+    // táctil el "tap" abra y el click enseguida cierre el mega-menú).
+    const hoverQuery = window.matchMedia('(min-width: 1000px) and (hover: hover)');
+
+    let megaCloseTimer: number | undefined;
+    const cancelMegaClose = () => {
+      if (megaCloseTimer !== undefined) {
+        clearTimeout(megaCloseTimer);
+        megaCloseTimer = undefined;
+      }
+    };
 
     const openMega = () => {
+      cancelMegaClose();
       if (!megaPanel || !megaTrigger) return;
       megaPanel.hidden = false;
       megaTrigger.setAttribute('aria-expanded', 'true');
     };
     const closeMega = () => {
+      cancelMegaClose();
       if (!megaPanel || !megaTrigger) return;
       megaPanel.hidden = true;
       megaTrigger.setAttribute('aria-expanded', 'false');
@@ -347,9 +359,18 @@ const estadosDestacados = [
 
     megaTrigger?.addEventListener('click', () => (megaIsOpen() ? closeMega() : openMega()));
 
-    // Hover en escritorio.
-    megaRoot?.addEventListener('pointerenter', () => desktopQuery.matches && openMega());
-    megaRoot?.addEventListener('pointerleave', () => desktopQuery.matches && closeMega());
+    // Hover con "periodo de gracia": al pasar del botón al panel el cursor cruza
+    // un hueco; en vez de cerrar de inmediato esperamos 220 ms y, si el cursor
+    // entra al panel (descendiente del root), se cancela el cierre.
+    megaRoot?.addEventListener('pointerenter', () => {
+      if (hoverQuery.matches) openMega();
+    });
+    megaRoot?.addEventListener('pointerleave', (e) => {
+      // Ignora "leaves" por toque; solo aplica al ratón.
+      if (!hoverQuery.matches || (e as PointerEvent).pointerType === 'touch') return;
+      cancelMegaClose();
+      megaCloseTimer = window.setTimeout(closeMega, 220);
+    });
 
     // Cerrar con Escape o clic fuera.
     document.addEventListener('keydown', (e) => {
