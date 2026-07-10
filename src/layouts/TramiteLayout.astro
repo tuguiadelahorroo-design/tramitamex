@@ -272,7 +272,7 @@ const jsonLd = [articleSchema, govServiceSchema, ...(howToSchema ? [howToSchema]
             src={heroImage}
             alt=""
             widths={[400, 700, 900]}
-            sizes="(max-width: 920px) 92vw, 38vw"
+            sizes="(max-width: 920px) 92vw, 45vw"
             format="webp"
             quality={74}
             loading="eager"
@@ -363,13 +363,14 @@ const jsonLd = [articleSchema, govServiceSchema, ...(howToSchema ? [howToSchema]
   }
   .hero-grid {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(0, 0.62fr);
+    grid-template-columns: minmax(0, 1fr) minmax(0, 0.82fr);
     gap: var(--space-xl);
-    align-items: center;
+    align-items: stretch;
   }
+  .hero-text { align-self: center; }
   .hero-figure {
     margin: 0;
-    aspect-ratio: 4 / 3;
+    min-height: 320px;
     border-radius: var(--radius-lg);
     overflow: hidden;
     box-shadow: var(--shadow-card);
@@ -487,7 +488,7 @@ const jsonLd = [articleSchema, govServiceSchema, ...(howToSchema ? [howToSchema]
   /* El índice se oculta en móvil (la navegación por scroll es suficiente). */
   @media (max-width: 920px) {
     .hero-grid { grid-template-columns: 1fr; gap: var(--space-md); }
-    .hero-figure { aspect-ratio: 16 / 9; max-height: 260px; }
+    .hero-figure { min-height: 0; aspect-ratio: 16 / 9; max-height: 300px; }
     .tramite-body { grid-template-columns: 1fr; gap: var(--space-lg); }
     .tramite-aside { position: static; order: -1; }
     .tramite-aside :global(.toc) { display: none; }

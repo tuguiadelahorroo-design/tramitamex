@@ -1,10 +1,12 @@
 ---
+import { Image } from 'astro:assets';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import TramiteCard from '../../components/TramiteCard.astro';
 import { INSTITUCIONES } from '../../data/instituciones';
 import { CATEGORIAS } from '../../data/navigation';
 import { getCollection } from 'astro:content';
+import { getCardImage } from '../../data/card-images';
 
 export async function getStaticPaths() {
   return INSTITUCIONES.map((institucion) => ({
@@ -16,6 +18,9 @@ export async function getStaticPaths() {
 const { institucion } = Astro.props;
 const tramites = await getCollection('tramites');
 const dataPorSlug = new Map(tramites.map((t) => [t.id, t.data]));
+
+// Foto: la del primer trámite de la institución (representativo de su área).
+const heroImage = getCardImage(institucion.tramites[0] ?? 'default');
 
 // Para mostrar nombre y estado (live/soon) de cada trámite de la institución.
 const todosLosItems = CATEGORIAS.flatMap((c) => c.items);
@@ -48,21 +53,35 @@ const jsonLd = [
   jsonLd={jsonLd}
 >
   <section class="page-hero">
-    <div class="container">
-      <Breadcrumbs
-        items={[
-          { nombre: 'Instituciones', href: '/instituciones/' },
-          { nombre: institucion.nombre },
-        ]}
-      />
-      <p class="eyebrow">Institución</p>
-      <h1>{institucion.nombre}</h1>
-      <p class="inst-full">{institucion.nombreCompleto}</p>
-      <p class="lead">{institucion.descripcion}</p>
-      <a href={institucion.sitioOficial} class="btn btn-primary" target="_blank" rel="noopener noreferrer">
-        Sitio oficial
-        <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3h7v7M13 3 6.5 9.5M11 9.5V13H3V5h3.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </a>
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <Breadcrumbs
+          items={[
+            { nombre: 'Instituciones', href: '/instituciones/' },
+            { nombre: institucion.nombre },
+          ]}
+        />
+        <p class="eyebrow">Institución</p>
+        <h1>{institucion.nombre}</h1>
+        <p class="inst-full">{institucion.nombreCompleto}</p>
+        <p class="lead">{institucion.descripcion}</p>
+        <a href={institucion.sitioOficial} class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+          Sitio oficial
+          <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3h7v7M13 3 6.5 9.5M11 9.5V13H3V5h3.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+      <figure class="hero-figure">
+        <Image
+          src={heroImage}
+          alt=""
+          widths={[400, 700, 900]}
+          sizes="(max-width: 920px) 92vw, 45vw"
+          format="webp"
+          quality={74}
+          loading="eager"
+          fetchpriority="high"
+        />
+      </figure>
     </div>
   </section>
 
@@ -89,6 +108,27 @@ const jsonLd = [
     background: linear-gradient(180deg, var(--color-primary-soft), transparent);
     border-bottom: 1px solid var(--color-border);
     padding-block: var(--space-md) var(--space-xl);
+  }
+  .hero-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 0.82fr);
+    gap: var(--space-xl);
+    align-items: stretch;
+  }
+  .hero-text { align-self: center; }
+  .hero-figure {
+    margin: 0;
+    min-height: 300px;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-card);
+    border: 1px solid var(--color-border);
+    background: var(--color-surface-2);
+  }
+  .hero-figure img { display: block; width: 100%; height: 100%; object-fit: cover; }
+  @media (max-width: 920px) {
+    .hero-grid { grid-template-columns: 1fr; gap: var(--space-md); }
+    .hero-figure { min-height: 0; aspect-ratio: 16 / 9; max-height: 300px; }
   }
   .page-hero .eyebrow { margin-top: var(--space-md); }
   .page-hero h1 { margin-top: var(--space-2xs); font-size: var(--text-3xl); }
