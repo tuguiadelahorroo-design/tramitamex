@@ -1,6 +1,8 @@
 ---
+import { Image } from 'astro:assets';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import TramiteCard from '../components/TramiteCard.astro';
+import { getCardImage } from '../data/card-images';
 import { getCollection } from 'astro:content';
 import { ESTADOS } from '../data/estados';
 import { INSTITUCIONES } from '../data/instituciones';
@@ -221,6 +223,17 @@ const categorias = CATEGORIAS.map((c) => ({
         {
           INSTITUCIONES.map((i) => (
             <a href={`/instituciones/${i.slug}/`} class="inst-card">
+              <span class="inst-media">
+                <Image
+                  src={getCardImage(i.tramites[0] ?? 'default')}
+                  alt=""
+                  widths={[240, 480]}
+                  sizes="(max-width: 700px) 92vw, 240px"
+                  format="webp"
+                  quality={70}
+                  loading="lazy"
+                />
+              </span>
               <span class="inst-abbr">{i.nombre}</span>
               <span class="inst-name">{i.nombreCompleto}</span>
             </a>
@@ -505,6 +518,25 @@ const categorias = CATEGORIAS.map((c) => ({
     transition: all var(--duration-fast) var(--ease-out-expo);
   }
   .inst-card:hover { border-color: var(--color-primary-tint); transform: translateY(-3px); box-shadow: var(--shadow-md); }
+  .inst-media {
+    margin: calc(-1 * var(--space-md)) calc(-1 * var(--space-md)) 0.35rem;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    border-radius: calc(var(--radius-lg) - 1px) calc(var(--radius-lg) - 1px) 0 0;
+    background: var(--color-surface-2);
+  }
+  .inst-media img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--duration-normal) var(--ease-out-expo);
+  }
+  .inst-card:hover .inst-media img { transform: scale(1.04); }
+  @media (prefers-reduced-motion: reduce) {
+    .inst-media img { transition: none; }
+    .inst-card:hover .inst-media img { transform: none; }
+  }
   .inst-abbr { font-family: var(--font-display); font-size: 1.4rem; font-weight: var(--weight-bold); color: var(--color-primary-strong); }
   .inst-name { font-size: var(--text-sm); color: var(--color-text-soft); }
 
