@@ -32,6 +32,7 @@ const dataPorSlug = new Map(tramites.map((t) => [t.id, t.data]));
         No encontramos trámites ni guías con ese nombre. Prueba con otra palabra o
         <a href="/contacto/">sugiérenos uno</a>.
       </p>
+      <p class="visually-hidden" role="status" data-search-status></p>
     </div>
   </section>
 
@@ -171,6 +172,7 @@ const dataPorSlug = new Map(tramites.map((t) => [t.id, t.data]));
   const cards = Array.from(document.querySelectorAll('[data-card]')) as HTMLElement[];
   const blocks = Array.from(document.querySelectorAll('[data-cat-block]')) as HTMLElement[];
   const empty = document.querySelector('[data-search-empty]') as HTMLElement | null;
+  const status = document.querySelector('[data-search-status]') as HTMLElement | null;
   const form = document.querySelector('[data-search-form]') as HTMLFormElement | null;
 
   form?.addEventListener('submit', (e) => e.preventDefault());
@@ -197,6 +199,15 @@ const dataPorSlug = new Map(tramites.map((t) => [t.id, t.data]));
     });
 
     if (empty) empty.hidden = visibles !== 0;
+    // Anuncia el resultado a lectores de pantalla (región aria-live).
+    if (status) {
+      status.textContent =
+        q === ''
+          ? ''
+          : visibles === 0
+            ? 'No se encontraron trámites con ese nombre.'
+            : `${visibles} trámite${visibles === 1 ? '' : 's'} encontrado${visibles === 1 ? '' : 's'}.`;
+    }
   }
 
   // Lee ?q= del hero al cargar.

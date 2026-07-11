@@ -17,7 +17,7 @@ actualizado: 2026-06-22
 publicado: 2026-06-22
 destacado: false
 orden: 53
-revisadoPor: 'Equipo editorial de TramitaMex'
+revisadoPor: 'el equipo editorial de TramitaMex'
 relacionados:
   - acta-de-nacimiento
   - acta-de-defuncion

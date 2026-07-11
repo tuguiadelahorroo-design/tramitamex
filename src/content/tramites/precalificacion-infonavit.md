@@ -16,7 +16,7 @@ actualizado: 2026-06-22
 publicado: 2026-06-22
 destacado: false
 orden: 54
-revisadoPor: 'Equipo editorial de TramitaMex'
+revisadoPor: 'el equipo editorial de TramitaMex'
 pasos:
   - titulo: 'Verifica tu relación laboral'
     detalle: 'Asegúrate de tener una relación laboral vigente y de estar cotizando ante el IMSS e Infonavit; sin patrón activo no se generan puntos nuevos.'

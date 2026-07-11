@@ -16,7 +16,7 @@ actualizado: 2026-06-22
 publicado: 2026-06-22
 destacado: false
 orden: 56
-revisadoPor: 'Equipo editorial de TramitaMex'
+revisadoPor: 'el equipo editorial de TramitaMex'
 relacionados:
   - cedula-profesional
   - apostilla-de-documentos

@@ -16,6 +16,9 @@
 
   --color-accent: oklch(78% 0.135 76);
   --color-accent-strong: oklch(70% 0.155 64);
+  /* Ámbar oscuro para TEXTO/FOCO sobre fondos claros: accent-strong solo da
+     ~2.7:1 sobre blanco; este pasa WCAG AA (>6:1). */
+  --color-accent-text: oklch(52% 0.14 64);
   --color-accent-soft: oklch(95% 0.045 80);
 
   --color-guinda: oklch(40% 0.13 14);
@@ -31,7 +34,7 @@
 
   --color-text: oklch(26% 0.014 235);
   --color-text-soft: oklch(44% 0.013 235);
-  --color-text-faint: oklch(57% 0.011 235);
+  --color-text-faint: oklch(50% 0.011 235);
   --color-text-on-dark: oklch(97% 0.01 95);
 
   /* ---- Semánticos ---- */

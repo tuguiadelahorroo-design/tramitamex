@@ -372,7 +372,7 @@ const estadosDestacados = [
       megaCloseTimer = window.setTimeout(closeMega, 220);
     });
 
-    // Cerrar con Escape o clic fuera.
+    // Cerrar con Escape, clic fuera, o cuando el foco (Tab) abandona el menú.
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape' && megaIsOpen()) {
         closeMega();
@@ -382,14 +382,27 @@ const estadosDestacados = [
     document.addEventListener('click', (e) => {
       if (megaIsOpen() && megaRoot && !megaRoot.contains(e.target as Node)) closeMega();
     });
+    megaRoot?.addEventListener('focusout', (e) => {
+      const next = (e as FocusEvent).relatedTarget as Node | null;
+      if (megaIsOpen() && (!next || !megaRoot.contains(next))) closeMega();
+    });
 
-    // Menú móvil.
+    // Menú móvil (con Escape y bloqueo del scroll del fondo mientras está abierto).
+    const setMobileOpen = (open: boolean) => {
+      if (!mobileNav || !mobileToggle) return;
+      mobileToggle.setAttribute('aria-expanded', String(open));
+      mobileToggle.querySelector('.visually-hidden')!.textContent = open ? 'Cerrar menú' : 'Abrir menú';
+      mobileNav.hidden = !open;
+      document.body.style.overflow = open ? 'hidden' : '';
+    };
     mobileToggle?.addEventListener('click', () => {
-      if (!mobileNav) return;
-      const isOpen = mobileToggle.getAttribute('aria-expanded') === 'true';
-      mobileToggle.setAttribute('aria-expanded', String(!isOpen));
-      mobileToggle.querySelector('.visually-hidden')!.textContent = isOpen ? 'Abrir menú' : 'Cerrar menú';
-      mobileNav.hidden = isOpen;
+      setMobileOpen(mobileToggle.getAttribute('aria-expanded') !== 'true');
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && mobileToggle?.getAttribute('aria-expanded') === 'true') {
+        setMobileOpen(false);
+        mobileToggle.focus();
+      }
     });
   }
 </script>

@@ -14,7 +14,7 @@ urlOficial: 'https://registrocivil.cdmx.gob.mx/'
 urlOficialTexto: 'Registro Civil de la Ciudad de México'
 actualizado: 2026-06-22
 publicado: 2026-06-22
-revisadoPor: 'Equipo editorial de TramitaMex'
+revisadoPor: 'el equipo editorial de TramitaMex'
 destacado: false
 orden: 64
 relacionados:

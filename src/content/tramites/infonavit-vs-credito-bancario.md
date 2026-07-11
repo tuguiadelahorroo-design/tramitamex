@@ -16,7 +16,7 @@ actualizado: 2026-07-01
 publicado: 2026-07-01
 destacado: false
 orden: 68
-revisadoPor: 'Equipo editorial de TramitaMex'
+revisadoPor: 'el equipo editorial de TramitaMex'
 pasos:
   - titulo: 'Precalifícate en el Infonavit'
     detalle: 'Entra gratis a Mi Cuenta Infonavit y consulta tus puntos y el monto que el Instituto puede prestarte; es tu punto de partida para comparar.'

@@ -17,7 +17,7 @@ actualizado: 2026-06-22
 publicado: 2026-06-22
 destacado: false
 orden: 62
-revisadoPor: 'Equipo editorial de TramitaMex'
+revisadoPor: 'el equipo editorial de TramitaMex'
 pasos:
   - titulo: 'Ten a la mano tu RFC y tu acceso al SAT'
     detalle: 'Necesitas tu RFC y tu Contraseña (antes CIEC) o tu e.firma vigente. Con la Contraseña basta para consultar; la e.firma da acceso a más opciones.'

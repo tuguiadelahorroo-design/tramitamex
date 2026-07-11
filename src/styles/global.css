@@ -93,13 +93,16 @@ a {
 }
 
 a:hover {
-  color: var(--color-accent-strong);
+  color: var(--color-accent-text);
 }
 
 /* ---- Accesibilidad ---- */
+/* Anillo doble: separador claro pegado al elemento + ámbar oscuro por fuera.
+   Así el foco contrasta tanto en fondos claros como en paneles verdes oscuros. */
 :focus-visible {
-  outline: 3px solid var(--color-accent-strong);
-  outline-offset: 2px;
+  outline: 2px solid var(--color-bg);
+  outline-offset: 0;
+  box-shadow: 0 0 0 5px var(--color-accent-text);
   border-radius: var(--radius-xs);
 }
 

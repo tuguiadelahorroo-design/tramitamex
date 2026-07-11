@@ -14,7 +14,7 @@ urlOficial: 'https://www.sat.gob.mx/tramites/82714/realiza-tu-inscripcion-en-el-
 urlOficialTexto: 'Inscripción en el RFC persona física — SAT'
 actualizado: 2026-06-22
 publicado: 2026-06-22
-revisadoPor: 'Equipo editorial de TramitaMex'
+revisadoPor: 'el equipo editorial de TramitaMex'
 destacado: false
 orden: 58
 relacionados:

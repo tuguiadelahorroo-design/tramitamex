@@ -17,7 +17,7 @@ actualizado: 2026-07-01
 publicado: 2026-07-01
 destacado: false
 orden: 67
-revisadoPor: 'Equipo editorial de TramitaMex'
+revisadoPor: 'el equipo editorial de TramitaMex'
 relacionados:
   - curp
   - doble-nacionalidad

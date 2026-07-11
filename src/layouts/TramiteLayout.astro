@@ -264,6 +264,7 @@ const jsonLd = [articleSchema, govServiceSchema, ...(howToSchema ? [howToSchema]
             rel="noopener noreferrer"
           >
             Ir al sitio oficial
+            <span class="visually-hidden">(abre en otra pestaña)</span>
             <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3h7v7M13 3 6.5 9.5M11 9.5V13H3V5h3.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
         </div>
@@ -300,6 +301,7 @@ const jsonLd = [articleSchema, govServiceSchema, ...(howToSchema ? [howToSchema]
                   <li>
                     <a href={f.url} target="_blank" rel="noopener noreferrer">
                       {f.titulo}
+                      <span class="visually-hidden">(abre en otra pestaña)</span>
                     </a>
                   </li>
                 ))}
@@ -339,6 +341,7 @@ const jsonLd = [articleSchema, govServiceSchema, ...(howToSchema ? [howToSchema]
             rel="noopener noreferrer"
           >
             {p.urlOficialTexto}
+            <span class="visually-hidden">(abre en otra pestaña)</span>
           </a>
         </div>
 

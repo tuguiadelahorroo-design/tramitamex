@@ -16,7 +16,7 @@ actualizado: 2026-06-22
 publicado: 2026-06-22
 destacado: false
 orden: 61
-revisadoPor: 'Equipo editorial de TramitaMex'
+revisadoPor: 'el equipo editorial de TramitaMex'
 pasos:
   - titulo: 'Identifica tu situación'
     detalle: 'Define quién tiene derecho a los alimentos (hija, hijo, cónyuge, etc.) y quién está obligado a darlos. Reúne datos del deudor: dónde vive, dónde trabaja y, si es posible, cuánto gana.'
