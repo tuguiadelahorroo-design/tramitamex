@@ -7,13 +7,13 @@ resumen: 'La verificación vehicular comprueba las emisiones de tu auto. En CDMX
 categoria: 'Vehiculares'
 institucion: 'gobiernos-estatales'
 nivel: 'Estatal'
-costo: 'Varía (≈$580–$750 por estado)'
+costo: 'Varía (≈$580–$740 por estado)'
 modalidad: 'Presencial con cita'
 tiempo: 'Mismo día'
 vigencia: 'Semestral (según engomado)'
 urlOficial: 'https://www.gob.mx/tramites'
 urlOficialTexto: 'Busca el portal de tu estado — gob.mx'
-actualizado: 2026-06-21
+actualizado: 2026-07-10
 revisadoPor: 'el equipo editorial de TramitaMex'
 destacado: true
 orden: 33
@@ -40,13 +40,13 @@ faq:
   - pregunta: '¿Cada cuándo debo verificar?'
     respuesta: 'Generalmente dos veces al año (semestral), en el periodo que te toca según el color de tu engomado y el último dígito de tu placa.'
   - pregunta: '¿Cuánto cuesta?'
-    respuesta: 'Varía por estado: en 2026 ronda los $750 en la CDMX y entre $580 y $720 en el Estado de México, según el municipio. El costo es el mismo sin importar el holograma.'
+    respuesta: 'Varía por estado: en 2026 la tarifa es de $738 en la CDMX (5.625 UMA más IVA) y de entre $580 y $720 en el Estado de México, según el municipio. El costo es el mismo sin importar el holograma.'
   - pregunta: '¿Qué significan los hologramas?'
     respuesta: 'El holograma indica con qué frecuencia y restricciones circula tu auto: 00 (autos nuevos, no verifican por 2 años), 0 (sin restricción), 1 y 2 (con restricciones del Hoy No Circula), además del exento.'
   - pregunta: '¿Necesito tener pagada la tenencia?'
     respuesta: 'Sí. Para verificar sin contratiempos debes tener al corriente la tenencia y el refrendo, y sin multas pendientes.'
   - pregunta: '¿Qué pasa si no verifico a tiempo?'
-    respuesta: 'Tienes un plazo (en CDMX/Edomex, 60 días) para hacer la verificación extemporánea con multa (alrededor de 30 UMA). Circular sin verificación vigente también es infracción.'
+    respuesta: 'Puedes hacer la verificación extemporánea pagando una multa (en la CDMX ronda los $2,000–$2,400 según la UMA vigente; el Edomex tiene reglas y montos propios). Circular sin verificación vigente también es infracción.'
   - pregunta: '¿Cómo saco cita?'
     respuesta: 'En el portal de citas de tu estado: en la CDMX en citasverificentros.cdmx.gob.mx y en el Edomex en citaverificacion.edomex.gob.mx.'
   - pregunta: '¿Qué llevo el día de la cita?'
@@ -77,15 +77,16 @@ La **verificación vehicular** es la prueba que mide las **emisiones contaminant
 
 En CDMX y Edomex el periodo depende del **color del engomado** y el **último dígito de la placa**:
 
-| Engomado | Placas | Meses (1er semestre) |
-|---|---|---|
-| Amarillo | 5 y 6 | enero y febrero |
-| Rosa | 7 y 8 | febrero y marzo |
-| Rojo | 3 y 4 | marzo y abril |
-| Verde | 1 y 2 | abril y mayo |
-| Azul | 9 y 0 | mayo y junio |
+| Engomado | Placas | 1er semestre | 2º semestre |
+|---|---|---|---|
+| Amarillo | 5 y 6 | enero y febrero | julio y agosto |
+| Rosa | 7 y 8 | febrero y marzo | agosto y septiembre |
+| Rojo | 3 y 4 | marzo y abril | septiembre y octubre |
+| Verde | 1 y 2 | abril y mayo | octubre y noviembre |
+| Azul | 9 y 0 | mayo y junio | noviembre y diciembre |
 
-El segundo semestre repite el esquema (julio a diciembre).
+> [!DATO]
+> **El segundo semestre 2026 ya está en curso:** si tu engomado es **amarillo** (placas terminación 5 o 6), tu periodo es **julio-agosto**. Las placas con pura letra o sin número final verifican en el último periodo (noviembre-diciembre).
 
 ## Requisitos
 
@@ -97,11 +98,11 @@ El segundo semestre repite el esquema (julio a diciembre).
 ## Costo
 
 > [!DATO]
-> En 2026 el costo ronda los **$750 en la CDMX** y entre **$580 y $720 en el Estado de México** (según el municipio). Es el mismo sin importar el holograma que obtengas.
+> En 2026 la tarifa en la **CDMX es de $738** (equivale a 5.625 UMA más IVA) y en el **Estado de México va de ≈$580 a $720** según el municipio. Es la misma sin importar el holograma que obtengas; confirma el monto vigente al agendar tu cita.
 
 ## Dónde se hace
 
-En los **verificentros autorizados** de tu estado. La cita se agenda en el portal oficial de tu entidad (CDMX: citasverificentros.cdmx.gob.mx; Edomex: citaverificacion.edomex.gob.mx).
+En los **verificentros autorizados** de tu estado. La cita se agenda en el portal oficial de tu entidad (CDMX: citasverificentros.cdmx.gob.mx; Edomex: citaverificacion.edomex.gob.mx). En la CDMX operan de **lunes a viernes de 8:00 a 19:00** y **sábados de 8:00 a 15:00**.
 
 ## Cómo sacar cita
 
@@ -120,7 +121,7 @@ La verificación se realiza **el mismo día** de la cita; si apruebas, recibes t
 Es **semestral**: debes verificar en cada periodo que te corresponde según tu engomado. El holograma **00** (autos nuevos) suele exentar la verificación por dos años.
 
 > [!AVISO]
-> Si no verificas en tu periodo, tienes un plazo (en CDMX/Edomex, 60 días) para hacerlo de forma **extemporánea con multa** (alrededor de 30 UMA, unos $3,393). Circular sin verificación vigente también es infracción.
+> Si no verificas en tu periodo, aún puedes hacerlo de forma **extemporánea pagando una multa** (en la CDMX ronda los **$2,000–$2,400**, pues depende de la UMA vigente; el Edomex tiene sus propias reglas y montos). Circular sin verificación vigente también es infracción.
 
 ## Problemas comunes
 

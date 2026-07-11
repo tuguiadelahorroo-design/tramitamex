@@ -13,7 +13,7 @@ tiempo: 'Según el calendario de registro'
 vigencia: 'Mientras sigas inscrito y cumplas requisitos'
 urlOficial: 'https://www.gob.mx/becasbenitojuarez'
 urlOficialTexto: 'Coordinación Nacional de Becas — gob.mx'
-actualizado: 2026-06-21
+actualizado: 2026-07-10
 revisadoPor: 'el equipo editorial de TramitaMex'
 destacado: true
 orden: 22
@@ -50,7 +50,7 @@ faq:
   - pregunta: '¿Puedo tener dos becas al mismo tiempo?'
     respuesta: 'No puedes recibir simultáneamente otra beca federal con el mismo propósito.'
   - pregunta: '¿Cuándo abre el registro?'
-    respuesta: 'Por periodos que anuncia la Coordinación Nacional de Becas. Consulta las fechas vigentes en becabenitojuarez.gob.mx y becaritacetina.gob.mx.'
+    respuesta: 'La Coordinación Nacional de Becas anunció una nueva etapa de registro en septiembre de 2026, con el arranque del ciclo escolar 2026-2027. Como referencia, el ciclo pasado corrió del 15 de septiembre al 5 de octubre. Las fechas exactas se publican en la convocatoria oficial en becaritacetina.gob.mx y becabenitojuarez.gob.mx.'
 fuentes:
   - titulo: 'Coordinación Nacional de Becas para el Bienestar Benito Juárez — gob.mx'
     url: 'https://www.gob.mx/becasbenitojuarez'
@@ -115,6 +115,12 @@ El registro y las becas son **totalmente gratuitos**.
 ## Cómo sacar cita
 
 No se trabaja con cita individual: el registro **se abre por periodos** que anuncia la Coordinación Nacional de Becas. Consulta las fechas vigentes en los portales oficiales antes de intentar registrarte.
+
+> [!IMPORTANTE]
+> **Registro de septiembre 2026:** la Coordinación anunció una nueva etapa de registro al arrancar el **ciclo escolar 2026-2027**, para incorporar a estudiantes que no alcanzaron los periodos anteriores (Rita Cetina, Benito Juárez y Jóvenes Escribiendo el Futuro). Como referencia, el ciclo pasado el registro corrió del **15 de septiembre al 5 de octubre**. Las fechas exactas salen en la convocatoria oficial.
+
+> [!CONSEJO]
+> **Prepárate desde agosto:** ten a la mano la [CURP](/curp/), el [acta de nacimiento](/acta-de-nacimiento/), un comprobante de domicilio, la CCT de la escuela, y crea tu cuenta **Llave MX** con anticipación — el portal se satura los primeros días del registro.
 
 ## Tiempo de respuesta
 
