@@ -1,7 +1,7 @@
 ---
 titulo: Acta de matrimonio
-tituloLargo: 'Acta de matrimonio en línea: descarga tu copia certificada'
-tituloSeo: 'Acta de matrimonio en línea: descárgala'
+tituloLargo: 'Acta de matrimonio: copia certificada en línea y su costo'
+tituloSeo: 'Acta de matrimonio: copia y costo'
 descripcion: 'Descarga tu acta de matrimonio certificada en línea en gob.mx/actas, con validez legal. Costo por estado, paso a paso y preguntas frecuentes 2026.'
 resumen: 'La copia certificada de tu acta de matrimonio se descarga en línea en el portal oficial, con la misma validez legal que la de ventanilla. Te decimos cómo, cuánto cuesta por estado y qué datos necesitas.'
 categoria: 'Registro Civil'

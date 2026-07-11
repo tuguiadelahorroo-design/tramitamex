@@ -1,7 +1,7 @@
 ---
 titulo: Acta de defunción
-tituloLargo: 'Acta de defunción en línea: cómo descargar la copia certificada'
-tituloSeo: 'Acta de defunción: descarga en línea'
+tituloLargo: 'Acta de defunción: cómo obtenerla y para qué trámites sirve'
+tituloSeo: 'Acta de defunción: obtenerla y para qué'
 descripcion: 'Descarga el acta de defunción certificada en línea en gob.mx/actas, con validez legal. Costo por estado, para qué sirve y paso a paso. Guía 2026.'
 resumen: 'La copia certificada del acta de defunción se descarga en línea en el portal oficial, con validez legal. Te decimos cómo obtenerla, cuánto cuesta por estado y para qué trámites la necesitas (herencias, seguros y pensiones).'
 categoria: 'Registro Civil'
@@ -18,9 +18,9 @@ revisadoPor: 'el equipo editorial de TramitaMex'
 destacado: true
 orden: 27
 relacionados:
+  - testamento
+  - pension-imss
   - acta-de-nacimiento
-  - acta-de-matrimonio
-  - curp
 pasos:
   - titulo: 'Entra al portal oficial'
     detalle: 'Abre gob.mx/actas, el portal oficial para obtener la copia certificada. Puedes entrar con tu cuenta Llave MX o tu CURP.'

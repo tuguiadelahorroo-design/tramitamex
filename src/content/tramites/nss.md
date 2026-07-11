@@ -74,9 +74,9 @@ El **Número de Seguridad Social (NSS)** es la clave de **11 dígitos** que el I
 - Identificarte ante el IMSS como trabajador o asegurado.
 - Recibir atención médica y servicios del IMSS (alta de derechohabiente).
 - Que tu patrón te dé de alta y se registren tus semanas cotizadas.
-- Acumular aportaciones para tu pensión y tu cuenta Afore.
+- Acumular aportaciones para tu [pensión](/pension-imss/) y tu cuenta [Afore](/afore/).
 - Registrar a tus beneficiarios y solicitar prestaciones (incapacidades, guarderías).
-- Como requisito en empleos, escuelas y créditos Infonavit.
+- Como requisito en empleos, escuelas y créditos [Infonavit](/infonavit/).
 
 ## Requisitos
 

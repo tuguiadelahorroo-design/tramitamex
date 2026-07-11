@@ -70,7 +70,7 @@ La **declaración anual** es el documento con el que informas al SAT tus ingreso
 ## Para qué sirve
 
 - Cumplir con tu obligación fiscal anual.
-- **Recuperar un saldo a favor** mediante la devolución automática.
+- **Recuperar un saldo a favor** mediante la [devolución automática](/devolucion-impuestos-sat/).
 - Aplicar tus **deducciones personales** para pagar menos impuesto.
 - Mantener tu situación fiscal en orden (útil para créditos y trámites).
 
@@ -99,7 +99,7 @@ En resumen, así queda la obligación según tu situación:
 
 - **RFC** vigente.
 - **Contraseña** del SAT **o** **[e.firma](/firma-electronica/)** (la e.firma es obligatoria para autorizar devoluciones elevadas).
-- Tus **CFDI** de ingresos y de deducciones personales.
+- Tus **[CFDI](/facturar-cfdi/)** de ingresos y de deducciones personales.
 - **CLABE** interbancaria a tu nombre (para el saldo a favor).
 
 ## Documentos necesarios

@@ -71,11 +71,11 @@ El **reporte (o constancia) de semanas cotizadas** es un documento informativo d
 
 ## Para qué sirve
 
-- **Tramitar tu pensión** (cesantía en edad avanzada, vejez o invalidez): las semanas son un requisito clave.
+- **Tramitar tu [pensión](/pension-imss/)** (cesantía en edad avanzada, vejez o invalidez): las semanas son un requisito clave.
 - **Verificar tu historial laboral** y confirmar que todos tus patrones te dieron de alta correctamente.
 - **Planear tu retiro:** saber cuántas semanas llevas y cuántas te faltan.
 - **Detectar errores u omisiones** (semanas faltantes) para iniciar a tiempo una aclaración.
-- Como **comprobante** ante Afores o asesores previsionales.
+- Como **comprobante** ante [Afores](/afore/) o asesores previsionales.
 
 Como referencia, esto es lo que se pide según tu objetivo:
 

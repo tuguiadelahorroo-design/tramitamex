@@ -68,7 +68,7 @@ fuentes:
 
 - **Saldo de tu Subcuenta de Vivienda:** el ahorro acumulado con las aportaciones del 5% que tus patrones depositan, más rendimientos.
 - **Puntos Infonavit:** la puntuación que indica qué tan cerca estás de solicitar un crédito (se requieren al menos **1,080 puntos**).
-- **Precalificación de crédito:** una estimación del monto al que podrías acceder según tu salario, edad, ahorro y bimestres cotizados.
+- **[Precalificación de crédito](/precalificacion-infonavit/):** una estimación del monto al que podrías acceder según tu salario, edad, ahorro y bimestres cotizados.
 
 ## Para qué sirve
 
@@ -76,7 +76,7 @@ fuentes:
 - Revisar tus **puntos** y saber cuántos te faltan para los 1,080.
 - Ver tu **precalificación**: el monto estimado de crédito disponible.
 - Descargar tu **estado de cuenta** de la Subcuenta de Vivienda.
-- Iniciar trámites de crédito, devolución de ahorro (Fondo de Ahorro 72-92) y aclaraciones.
+- Iniciar trámites de crédito, [devolución de ahorro](/devolucion-saldo-infonavit/) (Fondo de Ahorro 72-92) y aclaraciones.
 - **Agendar citas** en un Centro de Servicio Infonavit (CESI).
 
 Estos son los principales tipos de crédito vigentes del Infonavit:

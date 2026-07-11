@@ -13,7 +13,7 @@ tiempo: 'Mismo día'
 vigencia: 'Varía (1 a 5 años; hay permanentes)'
 urlOficial: 'https://www.gob.mx/tramites'
 urlOficialTexto: 'Busca el portal de tu estado — gob.mx'
-actualizado: 2026-06-21
+actualizado: 2026-07-10
 revisadoPor: 'el equipo editorial de TramitaMex'
 destacado: true
 orden: 15
@@ -43,6 +43,8 @@ faq:
     respuesta: 'Cada vez más estados sí. Es común un examen teórico de unas 20 preguntas (calificación mínima 8); algunos estados, como Nuevo León, piden además examen médico y práctico.'
   - pregunta: '¿Qué es la licencia permanente?'
     respuesta: 'Es una licencia que no se renueva, con un pago único. Varios estados la reintrodujeron (por ejemplo, la CDMX, con un costo aproximado de $1,500). No todos los estados la ofrecen.'
+  - pregunta: '¿Cuánto cuesta la licencia permanente en la CDMX?'
+    respuesta: 'En 2026 tiene un costo único de $1,500, sin renovación. Si es tu primera licencia de la CDMX presentas un examen teórico de 20 preguntas (mínimo 8); si ya tenías una Tipo A local, estás exento. Se tramita en licenciapermanente.cdmx.gob.mx con tu Llave CDMX.'
   - pregunta: '¿Qué es la licencia digital?'
     respuesta: 'Es la representación electrónica de tu licencia física en una app oficial del estado. En general necesitas tener primero la licencia física vigente para activarla.'
   - pregunta: '¿Desde qué edad puedo tramitarla?'
@@ -169,4 +171,30 @@ Tras años en que casi todos los estados la habían eliminado, varias entidades 
 > [!IMPORTANTE]
 > La licencia de conducir es **estatal**: que exista la permanente, su costo y sus requisitos **dependen de tu entidad** y cambian de un estado a otro. Antes de decidir, verifica en el **portal oficial de tu estado** si ofrece licencia permanente y cuál es el costo vigente; no te guíes por lo que aplica en otra entidad.
 
-Independientemente de cuál elijas, recuerda que en muchos estados puedes activar también la **licencia digital** (la versión electrónica en la app oficial) una vez que tienes tu licencia física vigente, para traerla siempre en el celular.
+## Licencia permanente en la CDMX (2026)
+
+La **Ciudad de México** es el caso más buscado: recuperó la **licencia permanente Tipo A** (automovilista) y la mantiene en 2026, con un **pago único de $1,500** y sin renovación.
+
+**Requisitos:**
+
+- Identificación oficial vigente ([INE](/ine/) o pasaporte).
+- [CURP](/curp/) actualizada.
+- Comprobante de domicilio reciente (no mayor a 3 meses).
+- No tener sentencias por delitos viales ni sanciones del programa "Conduce Sin Alcohol".
+
+**¿Hay examen?** Depende de tu historial:
+
+- Si **ya tuviste licencia Tipo A de la CDMX**, estás **exento** del examen.
+- Si es tu **primera licencia de la CDMX**, presentas un **examen teórico** de 20 preguntas (Reglamento de Tránsito, señalización y seguridad vial), con calificación mínima de **8** y hasta **dos intentos**.
+
+**Cómo tramitarla:**
+
+1. Entra a **licenciapermanente.cdmx.gob.mx** e inicia sesión con tu **Llave CDMX**.
+2. Elige "Nuevo trámite" → **Permanente Tipo A** y sube tus documentos legibles.
+3. Agenda cita en uno de los **35 módulos** habilitados (hay además un macromódulo). También puedes agendar por el Chatbot CDMX (55 5658 1111) o Locatel (0311).
+4. Acude con tus documentos originales y presenta el examen si te corresponde.
+
+> [!AVISO]
+> Esto aplica **solo a la CDMX**. Otros estados que ofrecen permanente (Tamaulipas, Oaxaca, San Luis Potosí, entre otros) tienen sus propios costos, requisitos y portales; verifica siempre el de tu entidad.
+
+Independientemente de cuál elijas, recuerda que en muchos estados puedes activar también la **[licencia digital](/licencia-digital/)** (la versión electrónica en la app oficial) una vez que tienes tu licencia física vigente, para traerla siempre en el celular.

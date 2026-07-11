@@ -75,8 +75,8 @@ Es **personal e intransferible**.
 
 ## Para qué sirve
 
-- Realizar trámites en línea ante el SAT (declaraciones, devoluciones, facturación, buzón tributario).
-- Generar tu **e.firma portable** y tus Certificados de Sello Digital (CSD) para facturar.
+- Realizar trámites en línea ante el SAT ([declaraciones](/declaracion-anual/), devoluciones, facturación, [buzón tributario](/buzon-tributario/)).
+- Generar tu **e.firma portable** y tus Certificados de Sello Digital (CSD) para [facturar](/facturar-cfdi/).
 - Firmar documentos y trámites digitales con validez legal equivalente a tu firma autógrafa.
 - Hacer trámites en otras dependencias de gobierno y con empresas privadas que la aceptan.
 
