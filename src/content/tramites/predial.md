@@ -1,6 +1,7 @@
 ---
 titulo: Impuesto predial
 tituloLargo: 'Pago del impuesto predial 2026: descuentos, cómo calcularlo y pagar en línea'
+tituloSeo: 'Predial 2026: descuentos y pago en línea'
 descripcion: 'Paga tu predial 2026: cómo se calcula, descuentos por pago anual anticipado y para adultos mayores, cómo pagar en línea con tu cuenta predial y qué pasa si no pagas.'
 resumen: 'El predial es un impuesto municipal que pagan los dueños y poseedores de inmuebles. Se calcula con el valor catastral por una tasa que fija cada municipio, por eso varía mucho. Te explicamos los descuentos por pago anticipado y para adultos mayores, cómo pagar en línea con tu cuenta predial y qué pasa si no pagas.'
 categoria: 'Patrimonio y legal'

@@ -1,6 +1,7 @@
 ---
 titulo: Pensión IMSS
 tituloLargo: 'Pensión IMSS 2026: requisitos por Ley 73 y Ley 97, edad y semanas'
+tituloSeo: 'Pensión IMSS: Ley 73 vs 97, edad y semanas'
 descripcion: 'Pensión del IMSS 2026: requisitos por Ley 73 (500 semanas) y Ley 97 (875 semanas), edad para cesantía y vejez, documentos y cómo iniciar el trámite.'
 resumen: 'La pensión del IMSS depende de tu régimen: Ley 73 (cotizaste antes de julio de 1997) o Ley 97 (después). Te explicamos las semanas y la edad que necesitas, la diferencia entre ambas leyes y cómo iniciar tu trámite.'
 categoria: 'IMSS, ISSSTE y salud'

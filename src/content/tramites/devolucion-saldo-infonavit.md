@@ -1,6 +1,7 @@
 ---
 titulo: Devolución de saldo Infonavit
 tituloLargo: 'Devolución del saldo de la Subcuenta de Vivienda Infonavit 2026 (Retiro 92 y 97)'
+tituloSeo: 'Devolución de saldo Infonavit 2026'
 descripcion: 'Devolución del saldo de la Subcuenta de Vivienda Infonavit 2026: quién puede pedirla, requisitos, e.firma y CLABE, y cómo solicitarla gratis paso a paso.'
 resumen: 'Si te pensionaste y no usaste tu crédito, el Infonavit te devuelve el saldo de tu Subcuenta de Vivienda (Fondo de Ahorro 72-92 y Retiro 92 y 97). Te explicamos quién puede pedirlo, los requisitos (resolución de pensión, CLABE y e.firma) y cómo solicitarlo gratis en línea o en un CAPDE.'
 categoria: 'Trabajo y antecedentes'

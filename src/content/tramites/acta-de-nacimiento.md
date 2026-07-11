@@ -1,6 +1,7 @@
 ---
 titulo: Acta de nacimiento
 tituloLargo: 'Acta de nacimiento en línea: cómo descargar tu copia certificada'
+tituloSeo: 'Acta de nacimiento en línea: descárgala'
 descripcion: 'Descarga tu acta de nacimiento certificada en línea en el portal oficial gob.mx/actas. Costo por estado, paso a paso y preguntas frecuentes 2026.'
 resumen: 'La copia certificada de tu acta de nacimiento se descarga en línea en el portal oficial, con la misma validez legal que la de ventanilla. Te decimos cómo, cuánto cuesta por estado y cómo evitar sitios fraudulentos.'
 categoria: 'Registro Civil'

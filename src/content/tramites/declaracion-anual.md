@@ -1,6 +1,7 @@
 ---
 titulo: Declaración anual
 tituloLargo: 'Declaración anual de personas físicas (SAT): quién y cómo presentarla'
+tituloSeo: 'Declaración anual SAT: quién y cómo'
 descripcion: 'Declaración anual 2026 ante el SAT: quiénes están obligados, fecha límite (30 de abril), deducciones personales, saldo a favor y cómo presentarla en línea.'
 resumen: 'La declaración anual es el cálculo de tus impuestos del año ante el SAT. Te explicamos quién está obligado, la fecha límite, las deducciones personales que reducen tu pago y cómo presentarla en línea para obtener tu saldo a favor.'
 categoria: 'SAT e impuestos'

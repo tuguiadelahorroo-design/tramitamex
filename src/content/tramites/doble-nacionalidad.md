@@ -1,6 +1,7 @@
 ---
 titulo: Doble nacionalidad
 tituloLargo: 'Doble nacionalidad en México 2026: cómo conservarla u obtenerla'
+tituloSeo: 'Doble nacionalidad en México: guía 2026'
 descripcion: 'Doble nacionalidad mexicana 2026: por qué un mexicano por nacimiento no la pierde, cómo naturalizarse (SRE) y la declaratoria de nacionalidad. Casos, costos y pasos.'
 resumen: 'La doble nacionalidad genera mucha confusión porque mezcla tres situaciones distintas. Te explicamos cuándo NO necesitas trámite (mexicano por nacimiento que adquiere otra nacionalidad), cómo un extranjero obtiene la carta de naturalización ante la SRE, y qué es la declaratoria de nacionalidad por nacimiento, con costos y tiempos 2026.'
 categoria: 'Identidad y documentos'

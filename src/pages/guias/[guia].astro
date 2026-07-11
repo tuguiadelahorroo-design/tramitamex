@@ -1,5 +1,5 @@
 ---
-import { Image } from 'astro:assets';
+import { Image, getImage } from 'astro:assets';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import GuiaIcon from '../../components/GuiaIcon.astro';
@@ -27,6 +27,8 @@ const IMG_POR_GUIA: Record<string, string> = {
   'extranjeros-en-mexico': 'residencia-temporal-mexico',
 };
 const heroImage = getCardImage(IMG_POR_GUIA[guia.slug] ?? guia.pasos[0]?.slug ?? 'default');
+const ogGenerated = await getImage({ src: heroImage, width: 1200, format: 'jpeg', quality: 70 });
+const ogImageUrl = new URL(ogGenerated.src, Astro.site).href;
 
 const pasos = guia.pasos
   .map((p) => {
@@ -62,7 +64,15 @@ const collectionSchema = {
 };
 ---
 
-<BaseLayout title={h1} description={guia.descripcion} jsonLd={[collectionSchema, itemListSchema]}>
+<BaseLayout
+  title={guia.titulo}
+  description={guia.descripcion}
+  jsonLd={[collectionSchema, itemListSchema]}
+  ogImage={ogImageUrl}
+  ogImageAlt={guia.titulo}
+  ogImageWidth={1200}
+  ogImageHeight={800}
+>
   <section class="guia-hero">
     <div class="container hero-grid">
       <div class="hero-text">

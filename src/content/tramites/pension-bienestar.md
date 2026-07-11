@@ -1,6 +1,7 @@
 ---
 titulo: Pensión del Bienestar
 tituloLargo: 'Pensión del Bienestar para adultos mayores: requisitos y registro'
+tituloSeo: 'Pensión del Bienestar: requisitos y registro'
 descripcion: 'La Pensión del Bienestar da $6,400 bimestrales a personas de 65 años o más. Requisitos, documentos, cómo registrarte y fechas. Es gratis y universal. Guía 2026.'
 resumen: 'La Pensión para el Bienestar de las Personas Adultas Mayores es universal: entrega $6,400 bimestrales a todas las personas de 65 años o más. Te explicamos los requisitos, los documentos y cómo registrarte en los módulos.'
 categoria: 'Programas sociales'

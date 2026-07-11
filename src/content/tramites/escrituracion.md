@@ -1,6 +1,7 @@
 ---
 titulo: Escrituración de una casa
 tituloLargo: 'Escriturar una casa en México: costos 2026, requisitos y paso a paso ante notario'
+tituloSeo: 'Escriturar una casa: costos y pasos 2026'
 descripcion: 'Cómo escriturar una casa en México: qué cuesta (5-8% del valor), requisitos, el papel del notario y el Registro Público, y el paso a paso. Guía 2026.'
 resumen: 'Escriturar es formalizar la propiedad de un inmueble ante notario público e inscribirla en el Registro Público de la Propiedad. Te explicamos qué cuesta (suele ser entre 5% y 8% del valor del inmueble), qué documentos necesitas, quién interviene y el paso a paso, con la aclaración de que las cifras varían por estado y siempre debes confirmarlas con una notaría.'
 categoria: 'Patrimonio y legal'

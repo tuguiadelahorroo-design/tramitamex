@@ -1,6 +1,7 @@
 ---
 titulo: Opinión de cumplimiento
 tituloLargo: 'Opinión de cumplimiento del SAT (32-D): cómo obtenerla gratis'
+tituloSeo: 'Opinión de cumplimiento SAT (32-D) gratis'
 descripcion: 'Genera tu opinión de cumplimiento de obligaciones fiscales del SAT gratis en línea con contraseña o e.firma. Paso a paso, vigencia y qué hacer si sale negativa.'
 resumen: 'La opinión de cumplimiento (artículo 32-D) indica si estás al corriente con el SAT. Te explicamos cómo generarla gratis en línea con tu contraseña o e.firma, su vigencia y qué hacer si sale en sentido negativo.'
 categoria: 'SAT e impuestos'

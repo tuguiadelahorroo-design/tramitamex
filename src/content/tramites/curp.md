@@ -1,6 +1,7 @@
 ---
 titulo: CURP
 tituloLargo: 'CURP: cómo consultar, descargar e imprimir tu Clave Única en línea'
+tituloSeo: 'CURP: consulta, descarga e impresión gratis'
 descripcion: 'Consulta, descarga e imprime tu CURP gratis en el portal oficial. Requisitos, paso a paso, correcciones y preguntas frecuentes 2026.'
 resumen: 'La CURP es tu clave única de 18 caracteres que te identifica en México. Aquí te explicamos cómo consultarla, descargarla e imprimirla gratis en el portal oficial, y qué hacer si tiene errores.'
 categoria: 'Identidad y documentos'

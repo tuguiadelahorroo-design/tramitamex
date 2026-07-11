@@ -1,6 +1,7 @@
 ---
 titulo: Pagar multas de tránsito
 tituloLargo: 'Cómo pagar multas de tránsito y fotomultas en línea 2026 (CDMX y Edomex)'
+tituloSeo: 'Pagar multas de tránsito en línea 2026'
 descripcion: 'Cómo consultar y pagar multas de tránsito y fotomultas en línea 2026: por placa, descuentos por pronto pago y portales de CDMX y Edomex. Guía.'
 resumen: 'Casi todos los estados permiten consultar tus infracciones por placa y pagarlas en línea con tarjeta o línea de captura. Te explicamos cómo hacerlo, cómo funcionan las fotomultas y los descuentos por pronto pago, con el detalle de CDMX y Estado de México.'
 categoria: 'Vehiculares'

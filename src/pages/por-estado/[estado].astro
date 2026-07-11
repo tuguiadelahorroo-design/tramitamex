@@ -48,7 +48,9 @@ const jsonLd = [
 ---
 
 <BaseLayout
-  title={`Trámites en ${estado.nombre}: federales y estatales`}
+  title={estado.nombre.length > 14
+    ? `Trámites en ${estado.nombre}`
+    : `Trámites en ${estado.nombre}: federales y estatales`}
   description={datos
     ? `Trámites en ${estado.nombre}: costos 2026, portales oficiales y guías. Federales (CURP, RFC, NSS) y estatales (licencia, placas, tenencia, verificación).`
     : `Trámites en ${estado.nombre}: cuáles son federales (iguales en todo el país) y cuáles estatales (licencia, placas, tenencia, verificación). Con enlaces y guías.`}

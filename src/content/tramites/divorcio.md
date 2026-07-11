@@ -1,6 +1,7 @@
 ---
 titulo: Divorcio
 tituloLargo: 'Cómo tramitar un divorcio en México 2026: administrativo vs judicial'
+tituloSeo: 'Divorcio en México: administrativo o judicial'
 descripcion: 'Cómo divorciarse en México en 2026: divorcio administrativo ante el Registro Civil vs judicial (incausado) ante el Juez de lo Familiar. Requisitos, pasos y costos.'
 resumen: 'En México hay dos vías para divorciarse: la administrativa, ante el Registro Civil, cuando ambos están de acuerdo y no hay hijos menores ni bienes en disputa; y la judicial o incausado, ante el Juez de lo Familiar, cuando hay hijos, bienes o desacuerdo. Te explicamos los requisitos, el paso a paso y los costos de cada una, y cómo obtener orientación gratuita en la Defensoría de Oficio.'
 categoria: 'Patrimonio y legal'

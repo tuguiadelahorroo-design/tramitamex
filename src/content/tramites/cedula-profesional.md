@@ -1,6 +1,7 @@
 ---
 titulo: Cédula profesional
 tituloLargo: 'Cédula profesional electrónica: cómo tramitarla en línea (SEP)'
+tituloSeo: 'Cédula profesional en línea (SEP)'
 descripcion: 'Tramita tu cédula profesional electrónica en línea con CURP y e.firma. Costos 2026 por nivel, requisitos, paso a paso y preguntas frecuentes.'
 resumen: 'La cédula profesional electrónica la expide la SEP 100% en línea con tu CURP y e.firma. Te explicamos los costos 2026 por nivel, los requisitos y cómo descargar tu cédula en PDF con folio y código QR.'
 categoria: 'Trabajo y antecedentes'

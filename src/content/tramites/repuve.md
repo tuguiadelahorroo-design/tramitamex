@@ -1,6 +1,7 @@
 ---
 titulo: REPUVE
 tituloLargo: 'REPUVE: cómo consultar gratis si un auto es robado (placa o NIV)'
+tituloSeo: 'REPUVE: consulta gratis autos robados'
 descripcion: 'Consulta gratis en el REPUVE si un vehículo tiene reporte de robo o problemas legales, con la placa o el NIV. Ideal antes de comprar un auto usado.'
 resumen: 'El REPUVE es el registro público que te permite verificar gratis y en segundos si un vehículo tiene reporte de robo o situación legal irregular, usando la placa, el NIV (número de serie) o el folio de la constancia. Es la consulta más importante antes de comprar un auto usado.'
 categoria: 'Vehiculares'

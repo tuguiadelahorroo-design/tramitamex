@@ -1,6 +1,7 @@
 ---
 titulo: Pensión alimenticia
 tituloLargo: 'Pensión alimenticia en México: cómo solicitarla, requisitos y monto 2026'
+tituloSeo: 'Pensión alimenticia: requisitos y monto 2026'
 descripcion: 'Cómo solicitar pensión alimenticia en México: qué son los alimentos, quién puede pedirla, vías (convenio o juicio), requisitos y la Defensoría gratuita.'
 resumen: 'La pensión alimenticia garantiza alimentos, salud, educación, vivienda y vestido a quien tiene derecho a recibirlos. Te explicamos qué cubre, quién puede pedirla, las vías para tramitarla (convenio voluntario o juicio ante el Juez de lo Familiar) y cómo acceder a la Defensoría Pública gratuita si no puedes pagar un abogado.'
 categoria: 'Patrimonio y legal'

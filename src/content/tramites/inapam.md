@@ -1,6 +1,7 @@
 ---
 titulo: Credencial INAPAM
 tituloLargo: 'Credencial INAPAM: cómo tramitarla gratis y qué descuentos da'
+tituloSeo: 'Credencial INAPAM: trámite y descuentos'
 descripcion: 'Credencial INAPAM 2026: gratis para personas de 60 años o más. Requisitos, dónde tramitarla y los descuentos (transporte, salud, predial). Guía.'
 resumen: 'La credencial del INAPAM es gratuita para personas de 60 años o más y da descuentos en transporte, salud, comercios y trámites. Te explicamos los requisitos, dónde tramitarla y los principales beneficios.'
 categoria: 'Programas sociales'

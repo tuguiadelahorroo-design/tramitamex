@@ -1,6 +1,7 @@
 ---
 titulo: Becas Benito Juárez
 tituloLargo: 'Becas para el Bienestar Benito Juárez: montos por nivel y registro'
+tituloSeo: 'Becas Benito Juárez: montos y registro'
 descripcion: 'Becas para el Bienestar Benito Juárez 2026: montos por nivel (Rita Cetina en básica, media superior y superior), requisitos y cómo registrarte. Son gratuitas.'
 resumen: 'Las Becas para el Bienestar Benito Juárez apoyan a estudiantes de escuelas públicas, de primaria a universidad. Te explicamos qué beca te toca según tu nivel, los montos 2026, los requisitos y cómo registrarte. Son gratuitas.'
 categoria: 'Programas sociales'

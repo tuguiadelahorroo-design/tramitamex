@@ -1,6 +1,7 @@
 ---
 titulo: Crédito Fonacot
 tituloLargo: 'Crédito Fonacot 2026: quién puede pedirlo, requisitos y cómo solicitarlo'
+tituloSeo: 'Crédito Fonacot 2026: requisitos y solicitud'
 descripcion: 'Crédito Fonacot 2026: quién puede pedirlo (trabajadores formales), requisitos, montos (hasta 4 meses de salario) y cómo solicitarlo paso a paso.'
 resumen: 'El crédito Fonacot es un préstamo en efectivo para personas que trabajan formalmente en empresas afiliadas. Te explicamos quién puede solicitarlo, los requisitos, cuánto prestan y cómo tramitarlo, con descuento vía nómina.'
 categoria: 'Trabajo y antecedentes'

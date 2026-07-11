@@ -1,6 +1,7 @@
 ---
 titulo: Apostilla de documentos
 tituloLargo: 'Apostilla de documentos en México 2026: quién la expide, costo y requisitos'
+tituloSeo: 'Apostilla de documentos: costo y requisitos'
 descripcion: 'Apostilla tus documentos para usarlos en el extranjero: federales en la SEGOB y estatales en tu estado. Costos 2026, requisitos y diferencias.'
 resumen: 'La apostilla valida un documento público mexicano para usarlo en otro país del Convenio de La Haya. La clave es saber quién la expide: los documentos federales se apostillan en la SEGOB y los estatales (como las actas) en el Gobierno del Estado que los emitió. Te explicamos costos 2026, requisitos y los errores más comunes.'
 categoria: 'Identidad y documentos'

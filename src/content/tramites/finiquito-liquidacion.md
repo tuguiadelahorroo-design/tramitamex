@@ -1,6 +1,7 @@
 ---
 titulo: Finiquito y liquidación
 tituloLargo: 'Finiquito y liquidación en México 2026: qué te corresponde y cómo se calcula'
+tituloSeo: 'Finiquito y liquidación: cómo se calculan'
 descripcion: 'Finiquito y liquidación en México 2026: diferencia, qué te corresponde por renuncia o despido y cómo se calcula cada concepto según la LFT. Guía clara.'
 resumen: 'El finiquito se paga cuando renuncias o termina tu contrato; la liquidación cuando te despiden sin causa justificada. Te explicamos qué te corresponde en cada caso, cómo se calcula cada concepto según la Ley Federal del Trabajo y qué hacer si no te pagan, con la asesoría gratuita de la PROFEDET.'
 categoria: 'Trabajo y antecedentes'

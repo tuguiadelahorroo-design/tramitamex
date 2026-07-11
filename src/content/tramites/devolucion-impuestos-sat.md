@@ -1,6 +1,7 @@
 ---
 titulo: Devolución de impuestos (SAT)
 tituloLargo: 'Devolución de impuestos del SAT 2026: saldo a favor y cómo solicitarla'
+tituloSeo: 'Devolución de impuestos SAT: saldo a favor'
 descripcion: 'Devolución de impuestos SAT 2026: qué es el saldo a favor de ISR, devolución automática vs. manual (FED), requisitos, plazos y cómo solicitarla en línea.'
 resumen: 'Si te resultó saldo a favor de ISR en tu declaración anual, el SAT puede devolvértelo. Te explicamos la devolución automática y la manual (FED), los requisitos, los plazos y por qué se rechazan las solicitudes.'
 categoria: 'SAT e impuestos'

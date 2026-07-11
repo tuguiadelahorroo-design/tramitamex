@@ -1,6 +1,7 @@
 ---
 titulo: Licencia digital
 tituloLargo: 'Licencia de conducir digital: cómo activarla en tu celular'
+tituloSeo: 'Licencia de conducir digital: actívala'
 descripcion: 'Licencia de conducir digital 2026: misma validez que el plástico. Cómo activarla en la app de tu estado (CDMX, Edomex, Jalisco). Requisitos y paso a paso.'
 resumen: 'La licencia de conducir digital es la versión electrónica de tu licencia física, con la misma validez legal ante tránsito. Te explicamos cómo activarla en la app oficial de tu estado y qué necesitas.'
 categoria: 'Vehiculares'

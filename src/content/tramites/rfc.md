@@ -1,6 +1,7 @@
 ---
 titulo: RFC
 tituloLargo: 'RFC: cómo sacarlo en línea con tu CURP, gratis y paso a paso'
+tituloSeo: 'RFC: sácalo en línea con tu CURP gratis'
 descripcion: 'Saca tu RFC gratis en línea con tu CURP o en oficina del SAT. Requisitos, paso a paso, cómo recuperarlo y preguntas frecuentes 2026.'
 resumen: 'El RFC es tu clave fiscal ante el SAT. Te explicamos cómo inscribirte en línea con tu CURP de forma gratuita, cómo agendar cita y cómo recuperar tu RFC si lo olvidaste.'
 categoria: 'SAT e impuestos'

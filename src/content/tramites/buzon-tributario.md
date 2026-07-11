@@ -1,6 +1,7 @@
 ---
 titulo: Buzón tributario
 tituloLargo: 'Buzón tributario del SAT: cómo activarlo y quién está obligado'
+tituloSeo: 'Buzón tributario SAT: activación 2026'
 descripcion: 'Buzón tributario del SAT: qué es, quién debe activarlo, cómo registrar tus medios de contacto y las multas por no habilitarlo. Es gratis. Guía 2026.'
 resumen: 'El buzón tributario es el canal oficial por el que el SAT te envía notificaciones. Te explicamos quién está obligado a habilitarlo, cómo registrar tus medios de contacto (correo y celular) y las multas por no hacerlo.'
 categoria: 'SAT e impuestos'

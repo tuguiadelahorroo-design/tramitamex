@@ -1,6 +1,7 @@
 ---
 titulo: Tenencia
 tituloLargo: 'Tenencia vehicular 2026: quién paga, cómo se calcula y subsidios'
+tituloSeo: 'Tenencia 2026: quién paga y cómo calcularla'
 descripcion: 'Tenencia vehicular 2026: quién paga, cómo se calcula y los subsidios del 100% por estado (CDMX, Edomex). Fechas para no perder el descuento. Guía.'
 resumen: 'La tenencia es un impuesto estatal anual por tener un vehículo. Muchos estados dan subsidio del 100% si pagas a tiempo y tu auto está por debajo de cierto valor. Te explicamos quién paga, cómo se calcula y cómo no perder el descuento.'
 categoria: 'Vehiculares'

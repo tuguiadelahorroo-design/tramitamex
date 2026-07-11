@@ -1,6 +1,7 @@
 ---
 titulo: Cambio de clínica IMSS
 tituloLargo: 'Alta o cambio de clínica IMSS (UMF): hazlo en línea gratis en minutos'
+tituloSeo: 'Cambio de clínica IMSS (UMF) en línea'
 descripcion: 'Da de alta o cambia tu clínica (UMF) del IMSS en línea con CURP, NSS, correo y código postal. Gratis, sin cita y en minutos. Guía 2026 paso a paso.'
 resumen: 'Registrarte en tu clínica (UMF) del IMSS o cambiarla cuando te mudas es gratis y se hace en línea con tu CURP, NSS, correo y código postal, sin cita y en minutos. Te explicamos cuándo aplica el alta, cuándo procede el cambio y qué hacer si el trámite digital falla.'
 categoria: 'IMSS, ISSSTE y salud'

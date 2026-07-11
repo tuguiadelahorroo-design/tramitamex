@@ -1,6 +1,7 @@
 ---
 titulo: Licencia de conducir
 tituloLargo: 'Licencia de conducir en México: requisitos, costos y examen 2026'
+tituloSeo: 'Licencia de conducir: costos y examen 2026'
 descripcion: 'La licencia de conducir la emite cada estado: requisitos, costos y vigencia varían. Te explicamos el proceso general, el examen y las licencias permanentes 2026.'
 resumen: 'La licencia de conducir la expide cada estado, así que requisitos, costos y vigencia cambian según la entidad. Te explicamos el proceso general, qué documentos llevar, el examen (cada vez más común) y las licencias permanentes.'
 categoria: 'Vehiculares'

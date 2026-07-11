@@ -26,6 +26,7 @@ export interface Props {
   slug: string;
   titulo: string;
   tituloLargo?: string;
+  tituloSeo?: string;
   descripcion: string;
   resumen: string;
   categoria: string;
@@ -204,7 +205,7 @@ const jsonLd = [articleSchema, govServiceSchema, ...(howToSchema ? [howToSchema]
 ---
 
 <BaseLayout
-  title={h1}
+  title={p.tituloSeo ?? h1}
   description={p.descripcion}
   ogType="article"
   jsonLd={jsonLd}

@@ -1,6 +1,7 @@
 ---
 titulo: Tarjeta de circulación
 tituloLargo: 'Tarjeta de circulación: qué es, cómo obtenerla y reponerla'
+tituloSeo: 'Tarjeta de circulación: obtenerla y reponerla'
 descripcion: 'Qué es la tarjeta de circulación, cómo obtenerla al emplacar, su reposición o duplicado y la versión digital. El trámite es estatal. Guía 2026.'
 resumen: 'La tarjeta de circulación es el documento que vincula tu vehículo contigo y te permite circular. La emite cada estado al emplacar. Te explicamos cómo obtenerla, reponerla si la perdiste y cómo funciona la versión digital.'
 categoria: 'Vehiculares'

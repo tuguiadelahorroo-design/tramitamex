@@ -1,6 +1,7 @@
 ---
 titulo: Alta patronal (IMSS)
 tituloLargo: 'Alta patronal en el IMSS: cómo registrarte y dar de alta a tus trabajadores 2026'
+tituloSeo: 'Alta patronal en el IMSS: requisitos 2026'
 descripcion: 'Alta patronal en el IMSS 2026: registra tu RFC como patrón con e.firma, da de alta a tus trabajadores en 5 días hábiles y conoce requisitos y cuotas.'
 resumen: 'El alta patronal te registra como patrón ante el IMSS y es el paso previo para dar de alta a tus trabajadores. Te explicamos los requisitos 2026, cómo hacerlo en línea con tu e.firma y el plazo de 5 días hábiles para inscribir al personal.'
 categoria: 'IMSS, ISSSTE y salud'

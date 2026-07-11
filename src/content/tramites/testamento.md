@@ -1,6 +1,7 @@
 ---
 titulo: Testamento
 tituloLargo: 'Cómo hacer un testamento en México: costo 2026, requisitos y el Mes del Testamento'
+tituloSeo: 'Testamento en México: costo y requisitos 2026'
 descripcion: 'Haz tu testamento público abierto ante notario: requisitos 2026, paso a paso, costo por estado y el descuento del Mes del Testamento en septiembre.'
 resumen: 'El testamento público abierto se otorga ante notario y es la forma más común y segura de dejar en orden tu patrimonio. Te explicamos los requisitos, el paso a paso, cuánto cuesta según el estado y cómo aprovechar el descuento de hasta 50% del "Mes del Testamento" en septiembre, aclarando que el trámite puede hacerse durante todo el año.'
 categoria: 'Patrimonio y legal'

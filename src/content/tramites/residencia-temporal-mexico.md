@@ -1,6 +1,7 @@
 ---
 titulo: Residencia temporal en México
 tituloLargo: 'Residencia temporal en México: visa, canje ante el INM y costos 2026'
+tituloSeo: 'Residencia temporal en México: guía y costos'
 descripcion: 'Residencia temporal en México 2026: visa en el consulado, canje por la tarjeta ante el INM en 30 días, costos por 1 a 4 años, solvencia económica y renovación.'
 resumen: 'La residencia temporal permite vivir en México más de 180 días y hasta 4 años. El trámite tiene dos etapas: la visa se solicita en un consulado mexicano en el extranjero y, ya en México, se canjea por la Tarjeta de Residente Temporal ante el INM dentro de 30 días naturales. Te explicamos las vías, los montos de solvencia y los costos 2026.'
 categoria: 'Identidad y documentos'

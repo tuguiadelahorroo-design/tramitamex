@@ -1,6 +1,7 @@
 ---
 titulo: Baja de placas
 tituloLargo: 'Baja de placas vehiculares en México: costos 2026, requisitos y cómo hacerla por estado'
+tituloSeo: 'Baja de placas: costos y requisitos 2026'
 descripcion: 'Baja de placas en México 2026: qué es, cuándo darla al vender tu auto, requisitos, costos por estado (CDMX, Edomex, Jalisco, NL) y cómo hacerla en tu portal estatal.'
 resumen: 'La baja de placas es un trámite estatal que cancela el registro de tu vehículo en el padrón de tu estado y te libera de multas, tenencia y responsabilidad legal. Te explicamos en qué se diferencia del cambio de propietario, los requisitos, los costos 2026 por estado y cómo localizar el portal oficial que te corresponde.'
 categoria: 'Vehiculares'

@@ -1,6 +1,7 @@
 ---
 titulo: Constancia de Situación Fiscal
 tituloLargo: 'Constancia de Situación Fiscal: cómo descargarla gratis en el SAT'
+tituloSeo: 'Constancia de Situación Fiscal SAT gratis'
 descripcion: 'Descarga tu Constancia de Situación Fiscal gratis: con contraseña, e.firma o sin contraseña por SAT ID. Paso a paso y preguntas frecuentes 2026.'
 resumen: 'La Constancia de Situación Fiscal contiene tu RFC, régimen y domicilio fiscal. Te explicamos cómo descargarla gratis en minutos, con contraseña, e.firma o sin contraseña mediante SAT ID.'
 categoria: 'SAT e impuestos'

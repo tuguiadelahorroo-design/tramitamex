@@ -1,6 +1,7 @@
 ---
 titulo: Facturar (CFDI 4.0)
 tituloLargo: 'Cómo facturar en el SAT (CFDI 4.0): guía paso a paso 2026'
+tituloSeo: 'Cómo facturar en el SAT (CFDI 4.0)'
 descripcion: 'Cómo facturar en el SAT con CFDI 4.0 en 2026: requisitos, datos del cliente y paso a paso con la herramienta gratuita "Genera tu factura".'
 resumen: 'El CFDI 4.0 es la única versión de factura vigente en México. Te explicamos los requisitos (e.firma o CSD), qué datos necesitas de tu cliente y cómo emitir tu factura gratis con la herramienta del SAT, paso a paso.'
 categoria: 'SAT e impuestos'

@@ -1,6 +1,7 @@
 ---
 titulo: Vigencia de derechos IMSS
 tituloLargo: 'Constancia de vigencia de derechos IMSS: cómo obtenerla en línea'
+tituloSeo: 'Vigencia de derechos IMSS en línea'
 descripcion: 'Consulta y descarga gratis tu constancia de vigencia de derechos del IMSS en línea con CURP y NSS. Paso a paso, qué hacer si sales sin vigencia y FAQ.'
 resumen: 'La constancia de vigencia de derechos indica si tienes derecho a servicios médicos del IMSS y desde cuándo. Te explicamos cómo obtenerla gratis en línea con tu CURP y NSS, y qué hacer si apareces sin vigencia.'
 categoria: 'IMSS, ISSSTE y salud'

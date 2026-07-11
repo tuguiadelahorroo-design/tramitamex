@@ -1,6 +1,7 @@
 ---
 titulo: Semanas cotizadas IMSS
 tituloLargo: 'Semanas cotizadas IMSS: cómo consultar tu reporte en línea'
+tituloSeo: 'Semanas cotizadas IMSS: consulta en línea'
 descripcion: 'Consulta y descarga gratis tu reporte de semanas cotizadas del IMSS en línea con CURP y NSS. Paso a paso, aclaración de semanas y preguntas frecuentes.'
 resumen: 'El reporte de semanas cotizadas muestra tu historial laboral ante el IMSS y es clave para tu pensión. Te explicamos cómo obtenerlo gratis en línea con tu CURP y NSS, y qué hacer si te faltan semanas.'
 categoria: 'IMSS, ISSSTE y salud'

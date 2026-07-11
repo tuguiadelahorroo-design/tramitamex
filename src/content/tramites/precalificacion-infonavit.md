@@ -1,6 +1,7 @@
 ---
 titulo: Precalificación Infonavit
 tituloLargo: 'Precalificación Infonavit 2026: cuánto crédito te toca y si ya tienes los puntos'
+tituloSeo: 'Precalificación Infonavit: puntos y crédito'
 descripcion: 'Consulta gratis tu precalificación Infonavit: cuánto crédito te toca y si ya reúnes los 1080 puntos. Qué los compone y cómo verlos en Mi Cuenta.'
 resumen: 'La precalificación te dice cuánto crédito puede prestarte el Infonavit y si ya reúnes los requisitos para solicitarlo. Necesitas al menos 1080 puntos, que dependen de tu edad, salario, ahorro en la Subcuenta de Vivienda y bimestres de cotización continua. Consultarla en Mi Cuenta Infonavit es gratis; te explicamos paso a paso cómo verla.'
 categoria: 'Trabajo y antecedentes'

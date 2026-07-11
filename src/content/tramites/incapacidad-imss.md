@@ -1,6 +1,7 @@
 ---
 titulo: Incapacidad (IMSS)
 tituloLargo: 'Incapacidad por el IMSS: cómo tramitarla y cobrar el subsidio 2026'
+tituloSeo: 'Incapacidad IMSS: trámite y subsidio 2026'
 descripcion: 'Incapacidad IMSS 2026: cómo tramitar el certificado médico, tipos, requisitos y cómo cobrar el subsidio (60% o 100% del salario). Guía paso a paso.'
 resumen: 'La incapacidad del IMSS la expide tu médico tratante y da derecho a un subsidio en dinero. Te explicamos los tipos (enfermedad general, riesgo de trabajo y maternidad), cuánto se paga, los días de espera y cómo cobrar el subsidio en tu cuenta.'
 categoria: 'IMSS, ISSSTE y salud'

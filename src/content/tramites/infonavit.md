@@ -1,6 +1,7 @@
 ---
 titulo: Infonavit (Mi Cuenta)
 tituloLargo: 'Mi Cuenta Infonavit: consulta saldo, puntos y precalificación'
+tituloSeo: 'Mi Cuenta Infonavit: saldo y puntos'
 descripcion: 'Consulta gratis tu saldo de la subcuenta de vivienda, tus puntos y tu precalificación en Mi Cuenta Infonavit. Registro, paso a paso y preguntas frecuentes 2026.'
 resumen: 'En Mi Cuenta Infonavit consultas gratis el saldo de tu subcuenta de vivienda, tus puntos (necesitas 1,080 para el crédito) y tu precalificación. Te explicamos cómo registrarte y consultar todo en línea.'
 categoria: 'Trabajo y antecedentes'

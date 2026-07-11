@@ -1,6 +1,7 @@
 ---
 titulo: Revalidación de estudios
 tituloLargo: 'Revalidación de estudios en México (SEP): cómo validar estudios del extranjero en 2026'
+tituloSeo: 'Revalidación de estudios SEP: guía 2026'
 descripcion: 'Revalida ante la SEP tus estudios del extranjero: diferencia con la equivalencia, quién resuelve por nivel, requisitos, costos 2026, plataforma SERE y paso a paso.'
 resumen: 'La revalidación da validez oficial en México a los estudios que cursaste en el extranjero. Te explicamos en qué se diferencia de la equivalencia, quién resuelve según el nivel (autoridad estatal o SEP federal), los requisitos, los costos 2026 y cómo iniciar el trámite en la plataforma oficial SERE.'
 categoria: 'Trabajo y antecedentes'

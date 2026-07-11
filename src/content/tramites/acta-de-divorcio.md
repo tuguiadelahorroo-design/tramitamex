@@ -1,6 +1,7 @@
 ---
 titulo: Acta de divorcio
 tituloLargo: 'Acta de divorcio: cómo obtener tu copia certificada en línea'
+tituloSeo: 'Acta de divorcio: copia certificada en línea'
 descripcion: 'Obtén tu acta de divorcio certificada en línea: varios estados ya la ofrecen en gob.mx/actas o su portal estatal. Requisitos, costo y paso a paso. Guía 2026.'
 resumen: 'La copia certificada del acta de divorcio acredita la disolución legal de tu matrimonio. Muchos estados ya la ofrecen en línea; otros, en el portal del Registro Civil estatal. Te explicamos cómo obtenerla y cuándo la necesitas.'
 categoria: 'Registro Civil'

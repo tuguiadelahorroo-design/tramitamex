@@ -1,6 +1,7 @@
 ---
 titulo: Aborto legal (ILE)
 tituloLargo: 'Aborto legal en México (ILE): dónde es legal y cómo acceder'
+tituloSeo: 'Aborto legal en México (ILE): dónde y cómo'
 descripcion: 'Aborto legal (ILE) en México: en qué estados es legal, hasta cuántas semanas, cómo acceder gratis en el sistema de salud y dónde pedir ayuda. Guía 2026.'
 resumen: 'La interrupción legal del embarazo (ILE) es un servicio de salud legal en la mayoría de los estados de México. Te explicamos, de forma informativa y neutral, en dónde es legal, hasta cuántas semanas, cómo acceder de forma gratuita en el sistema público y dónde pedir orientación.'
 categoria: 'IMSS, ISSSTE y salud'

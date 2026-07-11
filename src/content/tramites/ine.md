@@ -1,6 +1,7 @@
 ---
 titulo: INE (credencial para votar)
 tituloLargo: 'Credencial para votar (INE): requisitos, cita y paso a paso'
+tituloSeo: 'Credencial INE: requisitos y cita'
 descripcion: 'Tramita o renueva tu credencial para votar (INE) gratis. Los 3 documentos requeridos, cómo sacar cita, paso a paso y vigencia. Guía 2026.'
 resumen: 'La credencial para votar (INE) es la identificación oficial más aceptada en México. Te explicamos los 3 documentos que necesitas, cómo agendar cita en un módulo y el paso a paso. El trámite es gratis.'
 categoria: 'Identidad y documentos'

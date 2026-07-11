@@ -1,6 +1,7 @@
 ---
 titulo: Licencia federal de conducir
 tituloLargo: 'Licencia federal de conducir (SICT): categorías, costos 2026 y trámite del autotransporte federal'
+tituloSeo: 'Licencia federal de conducir SICT: costos 2026'
 descripcion: 'Licencia federal de conducir SICT 2026: categorías A-F, costos, examen psicofísico, curso y trámite 100% digital. Solo para operadores del autotransporte federal.'
 resumen: 'La licencia federal de conducir la expide la SICT únicamente a operadores del autotransporte federal (carga, pasaje, turismo y materiales peligrosos) y desde 2021 es 100% digital: ya no se emiten plásticos. No sustituye a la licencia estatal del automovilista. Te explicamos las categorías A-F, los costos 2026 y el trámite en línea.'
 categoria: 'Vehiculares'

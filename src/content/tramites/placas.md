@@ -1,6 +1,7 @@
 ---
 titulo: Placas (emplacamiento)
 tituloLargo: 'Placas y emplacamiento: cómo emplacar o reemplacar tu vehículo'
+tituloSeo: 'Placas y emplacamiento: guía 2026'
 descripcion: 'Cómo tramitar placas en México: alta de placas, cambio de propietario y reemplacamiento. Requisitos comunes y costos por estado. Guía 2026.'
 resumen: 'El emplacamiento (placas, tarjeta de circulación y calcomanía) lo gestiona cada estado. Te explicamos el proceso general para dar de alta placas, cambiar de propietario o reemplacar, los documentos comunes y por qué los costos varían por entidad.'
 categoria: 'Vehiculares'

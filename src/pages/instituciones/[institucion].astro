@@ -1,5 +1,5 @@
 ---
-import { Image } from 'astro:assets';
+import { Image, getImage } from 'astro:assets';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import TramiteCard from '../../components/TramiteCard.astro';
@@ -21,6 +21,14 @@ const dataPorSlug = new Map(tramites.map((t) => [t.id, t.data]));
 
 // Foto: la del primer trámite de la institución (representativo de su área).
 const heroImage = getCardImage(institucion.tramites[0] ?? 'default');
+const ogGenerated = await getImage({ src: heroImage, width: 1200, format: 'jpeg', quality: 70 });
+const ogImageUrl = new URL(ogGenerated.src, Astro.site).href;
+
+// Title corto (<=62 con " | TramitaMex"); el nombre completo va en H1/página.
+const titleSeo = `${institucion.nombre}: trámites y servicios`;
+// Meta description acotada a 165: usa la plantilla solo si cabe.
+const descLarga = `Trámites del ${institucion.nombre}: ${institucion.descripcion}`;
+const metaDesc = descLarga.length <= 165 ? descLarga : institucion.descripcion;
 
 // Para mostrar nombre y estado (live/soon) de cada trámite de la institución.
 const todosLosItems = CATEGORIAS.flatMap((c) => c.items);
@@ -48,9 +56,13 @@ const jsonLd = [
 ---
 
 <BaseLayout
-  title={`${institucion.nombre}: trámites y servicios (${institucion.nombreCompleto})`}
-  description={`Trámites del ${institucion.nombreCompleto} (${institucion.nombre}): ${institucion.descripcion}`}
+  title={titleSeo}
+  description={metaDesc}
   jsonLd={jsonLd}
+  ogImage={ogImageUrl}
+  ogImageAlt={`Trámites del ${institucion.nombre}`}
+  ogImageWidth={1200}
+  ogImageHeight={800}
 >
   <section class="page-hero">
     <div class="container hero-grid">

@@ -1,6 +1,7 @@
 ---
 titulo: '¿Infonavit o crédito bancario?'
 tituloLargo: '¿Infonavit o crédito hipotecario bancario? Comparativo 2026 para decidir'
+tituloSeo: '¿Infonavit o crédito bancario? Comparativo'
 descripcion: 'Infonavit, Cofinavit, Apoyo Infonavit o banco: compara tasas 2026, montos, enganche y requisitos, y decide con el CAT y los simuladores oficiales.'
 resumen: 'Si cotizas en el Infonavit tienes cuatro caminos para financiar una vivienda: crédito Infonavit tradicional, Cofinavit, Apoyo Infonavit y crédito bancario puro. Comparamos requisitos, tasas 2026, montos máximos, enganche y plazos, y te damos una ruta paso a paso para decidir con el CAT y los simuladores oficiales del Infonavit y la Condusef. Información general, no asesoría financiera.'
 categoria: 'Trabajo y antecedentes'

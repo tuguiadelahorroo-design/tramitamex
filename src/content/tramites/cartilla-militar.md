@@ -1,6 +1,7 @@
 ---
 titulo: Cartilla militar (SMN)
 tituloLargo: 'Cartilla militar: cómo tramitar y liberar tu Servicio Militar Nacional'
+tituloSeo: 'Cartilla militar: trámite y liberación'
 descripcion: 'Tramita tu cartilla del Servicio Militar Nacional (SEDENA): quién está obligado, requisitos, el sorteo y cómo liberarla. Es gratis y presencial. Guía 2026.'
 resumen: 'La cartilla del Servicio Militar Nacional es obligatoria para los hombres mexicanos al cumplir 18 años. Te explicamos quién debe tramitarla, los requisitos, el sorteo (bola blanca o negra) y cómo liberarla. Es gratis.'
 categoria: 'Identidad y documentos'

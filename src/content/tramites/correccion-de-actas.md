@@ -1,6 +1,7 @@
 ---
 titulo: Corrección de actas
 tituloLargo: 'Corrección de actas del Registro Civil: aclaración y rectificación'
+tituloSeo: 'Corrección de actas del Registro Civil'
 descripcion: 'Corrige errores en tu acta del Registro Civil: aclaración administrativa (errores menores) o rectificación judicial (datos sustanciales). Requisitos y proceso 2026.'
 resumen: 'Si tu acta tiene un error, hay dos caminos: la aclaración administrativa (para errores menores, ante el Registro Civil) y la rectificación judicial (para datos sustanciales, ante un juez). Te explicamos cuál te toca y cómo hacerlo.'
 categoria: 'Registro Civil'

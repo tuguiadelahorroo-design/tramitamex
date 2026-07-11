@@ -1,6 +1,7 @@
 ---
 titulo: Pensión Mujeres Bienestar
 tituloLargo: 'Pensión Mujeres Bienestar (60 a 64 años): requisitos y registro'
+tituloSeo: 'Pensión Mujeres Bienestar: requisitos'
 descripcion: 'La Pensión Mujeres Bienestar da $3,100 bimestrales a mujeres de 60 a 64 años. Requisitos, documentos y cómo registrarte. Es gratis y federal. Guía 2026.'
 resumen: 'La Pensión Mujeres Bienestar es un apoyo federal para mujeres de 60 a 64 años: $3,100 bimestrales. Te explicamos los requisitos, los documentos y cómo registrarte en los módulos del Bienestar.'
 categoria: 'Programas sociales'

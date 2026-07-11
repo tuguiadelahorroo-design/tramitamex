@@ -1,6 +1,7 @@
 ---
 titulo: CFDI de nómina
 tituloLargo: 'CFDI de nómina (recibo timbrado): cómo consultarlo y descargarlo en el SAT'
+tituloSeo: 'CFDI de nómina: cómo consultarlo en el SAT'
 descripcion: 'Recibo de nómina timbrado (CFDI): qué es, para qué sirve y cómo consultarlo y descargarlo gratis en el visor del SAT con e.firma o contraseña.'
 resumen: 'El recibo de nómina timbrado (CFDI de nómina) es el comprobante de tus ingresos como trabajador. Lo emite tu patrón, pero tú lo consultas y descargas gratis en el portal del SAT. Te explicamos cómo verificarlo y qué hacer si tiene errores antes de tu declaración anual.'
 categoria: 'SAT e impuestos'

@@ -1,6 +1,7 @@
 ---
 titulo: Cita médica IMSS
 tituloLargo: 'Cita médica IMSS: cómo agendar en línea o por app, sin filas'
+tituloSeo: 'Cita médica IMSS en línea o por app'
 descripcion: 'Cómo agendar tu cita médica en el IMSS en línea o por app con tu NSS, gratis y sin filas. Requisitos, paso a paso y teléfono. Guía 2026.'
 resumen: 'Puedes agendar tu cita de medicina familiar en el IMSS desde la app, el portal web o por teléfono, gratis y sin hacer fila. Te explicamos los requisitos (NSS y vigencia) y el paso a paso.'
 categoria: 'IMSS, ISSSTE y salud'

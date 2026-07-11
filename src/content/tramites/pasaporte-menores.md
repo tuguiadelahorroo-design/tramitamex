@@ -1,6 +1,7 @@
 ---
 titulo: Pasaporte para menores
 tituloLargo: 'Pasaporte para menores de edad: requisitos, OP-7, citas y costos 2026'
+tituloSeo: 'Pasaporte para menores: requisitos y costos'
 descripcion: 'Cómo sacar el pasaporte de un menor en la SRE: requisitos, formato OP-7, presencia de ambos padres, costos 2026 y cómo agendar la cita gratuita.'
 resumen: 'El pasaporte de un menor lo expide la SRE con cita previa gratuita y la presencia del menor y de ambos padres o tutores. Te explicamos los requisitos, el formato de consentimiento OP-7, qué hacer cuando falta uno de los padres, los costos 2026 por vigencia y cómo agendar la cita sin intermediarios.'
 categoria: 'Identidad y documentos'

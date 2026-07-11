@@ -1,6 +1,7 @@
 ---
 titulo: RFC para menores de edad
 tituloLargo: 'RFC para menores de edad 2026: requisitos, quién lo tramita y paso a paso (SAT)'
+tituloSeo: 'RFC para menores de edad: requisitos 2026'
 descripcion: 'Cómo sacar el RFC de un menor de edad en el SAT: cuándo lo necesita, requisitos, quién lo tramita, cita y paso a paso. Trámite gratuito y 2026.'
 resumen: 'Un menor de edad puede necesitar RFC cuando tiene ingresos, recibe una herencia, empieza a trabajar o va a abrir una cuenta o inversión a su nombre. El trámite es gratuito, se hace en oficina del SAT con cita y lo realiza el padre, la madre o el tutor; a partir de los 16 años el propio menor puede inscribirse como asalariado.'
 categoria: 'SAT e impuestos'

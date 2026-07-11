@@ -1,6 +1,7 @@
 ---
 titulo: Cambio de propietario vehicular
 tituloLargo: 'Cambio de propietario vehicular en México: requisitos y costos 2026'
+tituloSeo: 'Cambio de propietario vehicular: guía 2026'
 descripcion: 'Cómo hacer el cambio de propietario (traspaso) de un auto usado en México: requisitos, costos 2026 por estado, plazos y riesgos de no hacerlo. Trámite estatal.'
 resumen: 'El cambio de propietario es un trámite estatal que pone el vehículo usado a nombre del nuevo dueño en el padrón vehicular. Te explicamos los requisitos típicos, los costos 2026 con ejemplos por estado (CDMX, Edomex, Jalisco y Nuevo León), los plazos y por qué conviene hacerlo pronto, tanto si compras como si vendes.'
 categoria: 'Vehiculares'

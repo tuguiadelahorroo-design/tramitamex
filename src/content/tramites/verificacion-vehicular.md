@@ -1,6 +1,7 @@
 ---
 titulo: Verificación vehicular
 tituloLargo: 'Verificación vehicular 2026: calendario por engomado, costo y cita'
+tituloSeo: 'Verificación vehicular 2026: calendario y costo'
 descripcion: 'Verificación vehicular 2026: calendario por engomado, costo, hologramas y cómo sacar cita en CDMX y Edomex. Evita multas. Guía por estado.'
 resumen: 'La verificación vehicular comprueba las emisiones de tu auto. En CDMX, Edomex y la Megalópolis se hace dos veces al año según el color de tu engomado. Te explicamos el calendario, el costo, los hologramas y cómo sacar cita.'
 categoria: 'Vehiculares'

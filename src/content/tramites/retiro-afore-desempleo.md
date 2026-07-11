@@ -1,6 +1,7 @@
 ---
 titulo: Retiro Afore por desempleo
 tituloLargo: 'Retiro parcial del Afore por desempleo: requisitos y pasos 2026'
+tituloSeo: 'Retiro del Afore por desempleo: pasos 2026'
 descripcion: 'Retiro Afore por desempleo 2026: cuánto puedes retirar (modalidad A y B), requisitos, cómo afecta tus semanas cotizadas y cómo solicitarlo gratis.'
 resumen: 'El retiro por desempleo te permite disponer de una parte de tu Afore si llevas al menos 46 días sin empleo. Te explicamos los requisitos 2026, cuánto puedes retirar en la modalidad A y B, cómo afecta tus semanas cotizadas y cómo solicitarlo sin costo.'
 categoria: 'Trabajo y antecedentes'

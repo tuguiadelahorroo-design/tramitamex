@@ -1,6 +1,7 @@
 ---
 titulo: Pasaporte
 tituloLargo: 'Pasaporte mexicano: costos 2026, requisitos y cómo sacar cita'
+tituloSeo: 'Pasaporte mexicano: costos 2026 y cita'
 descripcion: 'Saca o renueva tu pasaporte mexicano en la SRE: costos 2026 por vigencia, requisitos, cómo agendar cita gratis y paso a paso. Trámite personal.'
 resumen: 'El pasaporte lo expide la SRE solo con cita previa (gratuita) y de forma personal. Te explicamos los costos 2026 por vigencia, los requisitos para adultos y menores, y cómo agendar tu cita sin intermediarios.'
 categoria: 'Identidad y documentos'

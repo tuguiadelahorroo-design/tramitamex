@@ -1,6 +1,7 @@
 ---
 titulo: Jóvenes Construyendo el Futuro
 tituloLargo: 'Jóvenes Construyendo el Futuro: apoyo mensual, requisitos y registro'
+tituloSeo: 'Jóvenes Construyendo el Futuro: registro'
 descripcion: 'Jóvenes Construyendo el Futuro 2026: capacitación laboral con apoyo de $9,582 al mes y seguro del IMSS para jóvenes de 18 a 29 años. Requisitos y registro.'
 resumen: 'Jóvenes Construyendo el Futuro da a personas de 18 a 29 años que no estudian ni trabajan una capacitación laboral pagada: un apoyo mensual equivalente a un salario mínimo más seguro del IMSS. Te explicamos requisitos y registro.'
 categoria: 'Programas sociales'

@@ -1,6 +1,7 @@
 ---
 titulo: Visa americana
 tituloLargo: 'Visa americana B1/B2 desde México: DS-160, costo, citas y requisitos'
+tituloSeo: 'Visa americana B1/B2: costo, citas y DS-160'
 descripcion: 'Visa americana B1/B2 desde México 2026: formulario DS-160, pago MRV ($185 USD), citas CAS y consulado, requisitos y tiempos. Paso a paso.'
 resumen: 'La visa americana de turista/negocios (B1/B2) se tramita ante la Embajada de EE. UU.: llenas el DS-160, pagas la tarifa MRV y acudes a dos citas (biométricos y entrevista). Te explicamos el proceso, costos y qué llevar.'
 categoria: 'Identidad y documentos'

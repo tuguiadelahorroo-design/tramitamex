@@ -1,6 +1,7 @@
 ---
 titulo: ISSSTE
 tituloLargo: 'ISSSTE: cómo sacar cita médica y tu constancia de derechohabiencia'
+tituloSeo: 'ISSSTE: cita médica y derechohabiencia'
 descripcion: 'ISSSTE 2026: cómo sacar tu cita médica (ASISSSTE) y tu constancia de derechohabiencia en línea, gratis. Requisitos, canales y paso a paso.'
 resumen: 'Si eres derechohabiente del ISSSTE, puedes sacar tu cita médica y tu constancia de derechohabiencia en línea, gratis y sin filas. Te explicamos los canales (portal, app ASISSSTE y teléfono) y el paso a paso.'
 categoria: 'IMSS, ISSSTE y salud'

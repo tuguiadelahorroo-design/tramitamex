@@ -95,7 +95,7 @@ export const INSTITUCIONES: Institucion[] = [
     nombre: 'Gobiernos estatales',
     nombreCompleto: 'Gobiernos de las entidades federativas',
     descripcion:
-      'Emiten trámites locales como la licencia de conducir, placas, tenencia, verificación vehicular y predial. Cada estado tiene su propia autoridad, requisitos y tarifas.',
+      'Emiten trámites locales: licencia de conducir, placas, tenencia, verificación y predial. Cada estado tiene su propia autoridad y tarifas.',
     sitioOficial: 'https://www.gob.mx/tramites',
     tramites: ['licencia-de-conducir', 'licencia-digital', 'placas', 'tarjeta-de-circulacion', 'tenencia', 'verificacion-vehicular', 'holograma-00', 'pagar-multa-transito', 'baja-de-placas', 'apostilla-de-documentos', 'testamento', 'predial', 'cambio-de-propietario-vehicular', 'pension-alimenticia', 'escrituracion', 'divorcio'],
   },
@@ -176,7 +176,7 @@ export const INSTITUCIONES: Institucion[] = [
     nombre: 'Secretaría de Salud',
     nombreCompleto: 'Secretaría de Salud (federal y estatales)',
     descripcion:
-      'Coordina los servicios de salud pública en México. A través de las secretarías de salud federal y estatales, el IMSS y el IMSS-Bienestar se brindan servicios como la interrupción legal del embarazo donde es legal.',
+      'Coordina la salud pública en México. Junto con las secretarías estatales, el IMSS y el IMSS-Bienestar brinda servicios como la interrupción legal del embarazo.',
     sitioOficial: 'https://www.gob.mx/salud',
     tramites: ['aborto-legal'],
   },

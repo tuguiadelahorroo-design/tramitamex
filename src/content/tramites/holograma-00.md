@@ -1,6 +1,7 @@
 ---
 titulo: Holograma 00 y exención
 tituloLargo: 'Holograma 00 y exención de verificación vehicular: quién califica en 2026'
+tituloSeo: 'Holograma 00: quién califica en 2026'
 descripcion: 'Holograma 00 y exención de verificación vehicular 2026: qué es, quién califica, autos nuevos e híbridos y diferencias CDMX vs Edomex. Guía por estado.'
 resumen: 'El holograma 00 es el distintivo más alto de la verificación vehicular: lo obtienen autos nuevos y de bajas emisiones, y permite circular todos los días y no verificar por varios semestres. Te explicamos quién califica, la diferencia con el holograma exento y cómo cambia entre la CDMX y el Edomex en 2026.'
 categoria: 'Vehiculares'

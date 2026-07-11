@@ -1,6 +1,7 @@
 ---
 titulo: Acta de defunción
 tituloLargo: 'Acta de defunción en línea: cómo descargar la copia certificada'
+tituloSeo: 'Acta de defunción: descarga en línea'
 descripcion: 'Descarga el acta de defunción certificada en línea en gob.mx/actas, con validez legal. Costo por estado, para qué sirve y paso a paso. Guía 2026.'
 resumen: 'La copia certificada del acta de defunción se descarga en línea en el portal oficial, con validez legal. Te decimos cómo obtenerla, cuánto cuesta por estado y para qué trámites la necesitas (herencias, seguros y pensiones).'
 categoria: 'Registro Civil'

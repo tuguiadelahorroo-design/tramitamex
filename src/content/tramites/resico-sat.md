@@ -1,6 +1,7 @@
 ---
 titulo: RESICO
 tituloLargo: 'RESICO en el SAT 2026: qué es, cuánto se paga y cómo darte de alta'
+tituloSeo: 'RESICO SAT 2026: qué es y cuánto se paga'
 descripcion: 'RESICO 2026: qué es el Régimen Simplificado de Confianza, cuánto se paga de ISR (1% a 2.5%), requisitos, quién no puede y cómo darte de alta en el SAT.'
 resumen: 'El RESICO es el régimen del SAT con las tasas de ISR más bajas para personas físicas: del 1% al 2.5% sobre tus ingresos cobrados, con un tope de 3.5 millones de pesos al año. Te explicamos quién puede tributar, quién no, cuánto se paga, tus obligaciones y cómo darte de alta o cambiar de régimen en línea.'
 categoria: 'SAT e impuestos'

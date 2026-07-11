@@ -9,6 +9,10 @@ const tramites = defineCollection({
     titulo: z.string(),
     // Título largo opcional para el <title> y el H1 (más rico en keywords).
     tituloLargo: z.string().optional(),
+    // Título corto opcional SOLO para el <title>/SERP (<=49 chars para que con
+    // " | TramitaMex" no pase de ~62 y Google no lo trunque). El H1 sigue
+    // usando tituloLargo.
+    tituloSeo: z.string().max(49).optional(),
     descripcion: z.string().max(165),
     resumen: z.string(),
     categoria: z.string(),

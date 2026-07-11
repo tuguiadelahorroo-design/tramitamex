@@ -1,6 +1,7 @@
 ---
 titulo: NSS (Número de Seguro Social)
 tituloLargo: 'NSS: cómo obtener o consultar tu Número de Seguro Social del IMSS'
+tituloSeo: 'NSS: obtener y consultar tu número IMSS'
 descripcion: 'Obtén o consulta tu NSS del IMSS gratis en línea solo con tu CURP. Requisitos, paso a paso, qué hacer si lo olvidaste y preguntas frecuentes 2026.'
 resumen: 'El NSS es tu número permanente de 11 dígitos ante el IMSS. Te explicamos cómo obtenerlo o localizarlo gratis en línea solo con tu CURP, y qué hacer si tienes un NSS duplicado.'
 categoria: 'IMSS, ISSSTE y salud'

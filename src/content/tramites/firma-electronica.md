@@ -1,6 +1,7 @@
 ---
 titulo: e.firma (firma electrónica)
 tituloLargo: 'e.firma del SAT: cómo obtenerla o renovarla (antes FIEL)'
+tituloSeo: 'e.firma del SAT: obtenerla o renovarla'
 descripcion: 'Obtén o renueva tu e.firma del SAT gratis. Primera vez es presencial con cita; renovación en línea con SAT ID. Requisitos, paso a paso y FAQ 2026.'
 resumen: 'La e.firma (antes FIEL) es tu firma electrónica con validez legal ante el SAT. La primera vez se tramita presencial con cita y es gratis; la renovación puede hacerse en línea. Te explicamos cómo.'
 categoria: 'SAT e impuestos'

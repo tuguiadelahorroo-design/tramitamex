@@ -1,6 +1,7 @@
 ---
 titulo: Antecedentes no penales
 tituloLargo: 'Carta de antecedentes no penales: federal en línea y estatal'
+tituloSeo: 'Antecedentes no penales: federal y estatal'
 descripcion: 'Saca tu carta de antecedentes no penales: la federal en línea con la OADPRS o la estatal en tu Fiscalía. Requisitos, costo y paso a paso 2026.'
 resumen: 'La carta de antecedentes no penales certifica si tienes registros penales. Existe una versión federal (en línea, OADPRS) y una estatal (en tu Fiscalía). Te explicamos cuál te conviene, requisitos, costo y paso a paso.'
 categoria: 'Trabajo y antecedentes'

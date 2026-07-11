@@ -1,6 +1,7 @@
 ---
 titulo: Afore (localizar tu Afore)
 tituloLargo: 'Localiza tu Afore: en qué Afore estoy y cómo consultar tu cuenta'
+tituloSeo: '¿En qué Afore estoy? Localízala gratis'
 descripcion: 'Localiza gratis en qué Afore estás con tu CURP o NSS. Cómo consultar tu cuenta de ahorro para el retiro en línea, paso a paso y preguntas frecuentes 2026.'
 resumen: 'Localizar tu Afore es el trámite gratuito para saber qué administradora maneja tu ahorro para el retiro. Te explicamos cómo consultarlo en línea con tu CURP o NSS, y qué hacer si no tienes Afore asignada.'
 categoria: 'Trabajo y antecedentes'
