@@ -96,6 +96,14 @@ a:hover {
   color: var(--color-accent-text);
 }
 
+/* Párrafo introductorio bajo el H1 (consistente en todas las páginas). */
+.lead {
+  margin-top: var(--space-sm);
+  max-width: 62ch;
+  font-size: var(--text-md);
+  color: var(--color-text-soft);
+}
+
 /* ---- Accesibilidad ---- */
 /* Anillo doble: separador claro pegado al elemento + ámbar oscuro por fuera.
    Así el foco contrasta tanto en fondos claros como en paneles verdes oscuros. */

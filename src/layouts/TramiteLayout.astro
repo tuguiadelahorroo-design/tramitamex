@@ -48,6 +48,7 @@ export interface Props {
   headings?: Heading[];
   lecturaMin?: number;
   relacionadosData?: RelItem[];
+  guias?: { slug: string; titulo: string }[];
 }
 
 const p = Astro.props;
@@ -55,6 +56,7 @@ const h1 = p.tituloLargo ?? p.titulo;
 const institucion = getInstitucion(p.institucion);
 const pasos = p.pasos ?? [];
 const relacionados = p.relacionadosData ?? [];
+const guias = p.guias ?? [];
 
 // Imagen temática del trámite (la misma foto de la ficha): encabezado + og:image.
 const heroImage = getCardImage(p.slug);
@@ -354,6 +356,26 @@ const jsonLd = [articleSchema, govServiceSchema, ...(howToSchema ? [howToSchema]
             </a>
           )
         }
+
+        {
+          guias.length > 0 && (
+            <div class="aside-guias surface-card">
+              <span class="aside-guias-label">
+                Parte de {guias.length === 1 ? 'esta guía' : 'estas guías'}
+              </span>
+              <ul role="list">
+                {guias.map((g) => (
+                  <li>
+                    <a href={`/guias/${g.slug}/`}>
+                      {g.titulo}
+                      <svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h9m0 0L8.5 4.5M12 8l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )
+        }
       </aside>
     </div>
   </article>
@@ -392,12 +414,6 @@ const jsonLd = [articleSchema, govServiceSchema, ...(howToSchema ? [howToSchema]
     font-size: var(--text-3xl);
     margin-top: var(--space-2xs);
     max-width: 20ch;
-  }
-  .lead {
-    margin-top: var(--space-sm);
-    max-width: 62ch;
-    font-size: var(--text-md);
-    color: var(--color-text-soft);
   }
 
   .hero-meta {
@@ -473,6 +489,23 @@ const jsonLd = [articleSchema, govServiceSchema, ...(howToSchema ? [howToSchema]
   .aside-inst-label { font-size: var(--text-xs); text-transform: uppercase; letter-spacing: 0.04em; color: var(--color-text-faint); }
   .aside-inst-name { font-family: var(--font-display); font-size: var(--text-lg); color: var(--color-primary-strong); font-weight: var(--weight-semibold); }
   .aside-inst-full { font-size: var(--text-sm); color: var(--color-text-soft); }
+
+  .aside-guias { padding: var(--space-md); }
+  .aside-guias-label { display: block; font-size: var(--text-xs); text-transform: uppercase; letter-spacing: 0.04em; color: var(--color-text-faint); margin-bottom: var(--space-2xs); }
+  .aside-guias ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 0.35rem; }
+  .aside-guias a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    font-size: var(--text-sm);
+    font-weight: var(--weight-medium);
+    color: var(--color-primary-strong);
+    text-decoration: none;
+  }
+  .aside-guias a:hover { color: var(--color-accent-text); }
+  .aside-guias a svg { flex-shrink: 0; transition: transform var(--duration-fast) var(--ease-out-expo); }
+  .aside-guias a:hover svg { transform: translateX(3px); }
 
   .fuentes { margin-top: var(--space-2xl); padding: var(--space-md); background: var(--color-surface-2); border-radius: var(--radius-lg); border: 1px solid var(--color-border); }
   .fuentes h2 { font-size: var(--text-lg); margin-bottom: var(--space-sm); }

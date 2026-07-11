@@ -1,6 +1,7 @@
 ---
 import { getCollection, render } from 'astro:content';
 import TramiteLayout from '../layouts/TramiteLayout.astro';
+import { GUIAS } from '../data/guias';
 
 export async function getStaticPaths() {
   const tramites = await getCollection('tramites');
@@ -46,6 +47,12 @@ const relacionadosData = relSlugs
     };
   })
   .filter((x) => x !== null);
+
+// Guías que incluyen este trámite (enlace inverso trámite → guía).
+const guiasDelTramite = GUIAS.filter((g) => g.pasos.some((p) => p.slug === entry.id)).map((g) => ({
+  slug: g.slug,
+  titulo: g.titulo,
+}));
 ---
 
 <TramiteLayout
@@ -54,6 +61,7 @@ const relacionadosData = relSlugs
   headings={headings}
   lecturaMin={lecturaMin}
   relacionadosData={relacionadosData}
+  guias={guiasDelTramite}
 >
   <Content />
 </TramiteLayout>
