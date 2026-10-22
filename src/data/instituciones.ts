@@ -79,7 +79,7 @@ export const INSTITUCIONES: Institucion[] = [
     descripcion:
       'Administra el ahorro para vivienda de los trabajadores y otorga créditos hipotecarios. Aquí consultas tu saldo, puntos y precalificación.',
     sitioOficial: 'https://www.infonavit.org.mx/',
-    tramites: ['infonavit', 'devolucion-saldo-infonavit', 'precalificacion-infonavit', 'infonavit-vs-credito-bancario'],
+    tramites: ['infonavit', 'devolucion-saldo-infonavit', 'precalificacion-infonavit', 'infonavit-vs-credito-bancario', 'mejoravit'],
   },
   {
     slug: 'sspc',

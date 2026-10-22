@@ -114,6 +114,7 @@ export const CATEGORIAS: TramiteCategoria[] = [
       { nombre: 'Retiro Afore por desempleo', slug: 'retiro-afore-desempleo', live: true },
       { nombre: 'Infonavit', slug: 'infonavit', live: true },
       { nombre: 'Devolución de saldo Infonavit', slug: 'devolucion-saldo-infonavit', live: true },
+      { nombre: 'Mejoravit (remodelar)', slug: 'mejoravit', live: true },
       { nombre: 'Fonacot', slug: 'fonacot', live: true },
       { nombre: 'Cédula profesional', slug: 'cedula-profesional', live: true },
       { nombre: 'Finiquito y liquidación', slug: 'finiquito-liquidacion', live: true },
