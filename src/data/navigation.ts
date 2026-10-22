@@ -64,6 +64,7 @@ export const CATEGORIAS: TramiteCategoria[] = [
       { nombre: 'RESICO', slug: 'resico-sat', live: true },
       { nombre: 'RFC para menores de edad', slug: 'rfc-menores-de-edad', live: true },
       { nombre: 'Recibo de nómina (CFDI)', slug: 'cfdi-nomina', live: true },
+      { nombre: 'Cambio de domicilio fiscal', slug: 'cambio-de-domicilio-fiscal-sat', live: true },
     ],
   },
   {
