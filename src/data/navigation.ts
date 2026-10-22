@@ -123,6 +123,7 @@ export const CATEGORIAS: TramiteCategoria[] = [
       { nombre: 'Precalificación Infonavit', slug: 'precalificacion-infonavit', live: true },
       { nombre: 'Revalidación de estudios (SEP)', slug: 'revalidacion-estudios-sep', live: true },
       { nombre: '¿Infonavit o crédito bancario?', slug: 'infonavit-vs-credito-bancario', live: true },
+      { nombre: 'Constancia de no inhabilitación', slug: 'constancia-de-no-inhabilitacion', live: true },
     ],
   },
   {

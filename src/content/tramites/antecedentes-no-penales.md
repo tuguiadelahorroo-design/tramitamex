@@ -140,3 +140,5 @@ La constancia refleja tu situación **a la fecha de emisión**. No suele tener u
 
 > [!CONSEJO]
 > Si la necesitas para un empleo, pregunta a Recursos Humanos **cuál versión y con qué antigüedad** la requieren. Así la sacas una sola vez, con la vigencia correcta, y evitas pagar dos veces.
+>
+> Si el empleo es en el gobierno, es común que también te pidan la **[constancia de no inhabilitación](/constancia-de-no-inhabilitacion/)**.

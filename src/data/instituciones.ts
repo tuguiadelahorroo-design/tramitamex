@@ -207,6 +207,15 @@ export const INSTITUCIONES: Institucion[] = [
     sitioOficial: 'https://www.gob.mx/difnacional',
     tramites: ['constancia-no-deudor-alimentario'],
   },
+  {
+    slug: 'buen-gobierno',
+    nombre: 'Buen Gobierno',
+    nombreCompleto: 'Secretaría Anticorrupción y Buen Gobierno',
+    descripcion:
+      'Antes Secretaría de la Función Pública (SFP). Emite la constancia federal de no inhabilitación, que acredita que una persona no tiene una sanción vigente para trabajar en el servicio público.',
+    sitioOficial: 'https://www.gob.mx/buengobierno',
+    tramites: ['constancia-de-no-inhabilitacion'],
+  },
 ];
 
 export function getInstitucion(slug: string): Institucion | undefined {
