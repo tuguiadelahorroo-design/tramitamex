@@ -120,9 +120,9 @@ Portales de Chihuahua que sí se confirmaron: `ipagos.chihuahua.gob.mx` (pagos) 
 
 ### Técnicos / infraestructura
 
-- [ ] **`www.tramitamex.com.mx` da 403 / error 1014.** Falta agregarlo como dominio personalizado en el proyecto Pages `tramitamex` (cuenta Tuguiadelahorroo). El intento anterior se interrumpió porque la pestaña de Chrome se congeló — Cloudflare throttlea su SPA en pestañas de fondo, hay que mantener la ventana **al frente**.
+- [x] ~~`www.tramitamex.com.mx` daba 403 / error 1014~~ — **resuelto el 22/10/2026** con una regla de redirección única en la zona (cuenta Aguacatefelix132 → Reglas → Reglas de redireccionamiento): `http*://www.*` → `https://${2}`, 301, conserva la cadena de consulta. No hizo falta agregar www al proyecto Pages; así hay una sola versión canónica (la raíz).
 - [ ] **Mover la zona DNS** de `tramitamex.com.mx` de la cuenta `Aguacatefelix132` a `Tuguiadelahorroo`, donde vive todo lo demás. Evita que vuelva a pasar lo del apagón.
-- [ ] **Instalar analítica:** Cloudflare Web Analytics (gratis, sin cookies).
+- [x] ~~Instalar analítica~~ — **Cloudflare Web Analytics ya estaba activo** en la cuenta Aguacatefelix132 (configuración automática, el beacon se inyecta en el borde). Al 22/10/2026: 58 vistas / 45 visitas en 24 h.
 
 ### Que tiene que hacer el usuario en Search Console
 
