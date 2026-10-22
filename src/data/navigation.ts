@@ -84,6 +84,7 @@ export const CATEGORIAS: TramiteCategoria[] = [
       { nombre: 'Aborto legal (ILE)', slug: 'aborto-legal', live: true },
       { nombre: 'Cambio de clínica (UMF)', slug: 'cambio-clinica-imss', live: true },
       { nombre: 'Pensión de viudez y orfandad', slug: 'pension-viudez-orfandad-imss', live: true },
+      { nombre: 'Modalidad 40 (continuación voluntaria)', slug: 'modalidad-40-imss', live: true },
     ],
   },
   {

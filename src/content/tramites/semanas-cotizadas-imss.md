@@ -83,7 +83,7 @@ Como referencia, esto es lo que se pide según tu objetivo:
 | --- | --- | --- |
 | Pensión Ley 73 (vejez o cesantía) | 500 semanas | Si empezaste a cotizar antes del 1 de julio de 1997 |
 | Pensión Ley 97 (vejez o cesantía) | 875 semanas en 2026 | Sube 25 al año hasta llegar a 1,000 en 2031 |
-| Modalidad 40 (continuación voluntaria) | 52 semanas en los últimos 5 años | Se solicita dentro de los 5 años tras tu baja |
+| [Modalidad 40](/modalidad-40-imss/) (continuación voluntaria) | 52 semanas en los últimos 5 años | Se solicita dentro de los 5 años tras tu baja |
 | Retiro parcial por desempleo | 12 bimestres cotizados (mod. A) | Cuenta Afore de 3 años; de 5 años para la mod. B |
 
 ## Requisitos
