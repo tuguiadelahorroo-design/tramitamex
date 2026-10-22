@@ -81,6 +81,7 @@ export const CATEGORIAS: TramiteCategoria[] = [
       { nombre: 'ISSSTE', slug: 'issste', live: true },
       { nombre: 'Aborto legal (ILE)', slug: 'aborto-legal', live: true },
       { nombre: 'Cambio de clínica (UMF)', slug: 'cambio-clinica-imss', live: true },
+      { nombre: 'Pensión de viudez y orfandad', slug: 'pension-viudez-orfandad-imss', live: true },
     ],
   },
   {

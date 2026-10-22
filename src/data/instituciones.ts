@@ -28,7 +28,7 @@ export const INSTITUCIONES: Institucion[] = [
     descripcion:
       'Brinda seguridad social a los trabajadores: NSS, atención médica, semanas cotizadas, pensiones e incapacidades.',
     sitioOficial: 'https://www.imss.gob.mx/',
-    tramites: ['nss', 'semanas-cotizadas-imss', 'vigencia-de-derechos-imss', 'cita-medica-imss', 'pension-imss', 'incapacidad-imss', 'alta-patronal-imss', 'cambio-clinica-imss'],
+    tramites: ['nss', 'semanas-cotizadas-imss', 'vigencia-de-derechos-imss', 'cita-medica-imss', 'pension-imss', 'incapacidad-imss', 'alta-patronal-imss', 'cambio-clinica-imss', 'pension-viudez-orfandad-imss'],
   },
   {
     slug: 'renapo',
