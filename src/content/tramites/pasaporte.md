@@ -115,7 +115,7 @@ El descuento del 50% aplica a **personas de 60 años o más**, **personas con di
 ## Dónde se hace
 
 - **En México:** en las **Delegaciones de la SRE** y **Oficinas de Enlace** estatales y municipales, solo con **cita previa**.
-- **En el extranjero:** en las **embajadas y consulados** de México, mediante el sistema **MiConsulado**.
+- **En el extranjero:** en las **embajadas y consulados** de México, mediante el sistema **MiConsulado** (te explicamos cómo en nuestra guía de [cita en el consulado](/cita-consulado-mexicano/)).
 
 > [!AVISO]
 > Evita gestores o "servicios exprés" externos que cobran por la cita: son fraudulentos. La cita siempre es gratuita y solo se agenda en **citas.sre.gob.mx**.

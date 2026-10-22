@@ -34,6 +34,7 @@ export const CATEGORIAS: TramiteCategoria[] = [
       { nombre: 'Apostilla de documentos', slug: 'apostilla-de-documentos', live: true },
       { nombre: 'Doble nacionalidad', slug: 'doble-nacionalidad', live: true },
       { nombre: 'Residencia temporal (INM)', slug: 'residencia-temporal-mexico', live: true },
+      { nombre: 'Cita en el consulado (MiConsulado)', slug: 'cita-consulado-mexicano', live: true },
     ],
   },
   {

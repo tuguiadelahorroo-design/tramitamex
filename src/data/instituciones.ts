@@ -45,7 +45,7 @@ export const INSTITUCIONES: Institucion[] = [
     nombreCompleto: 'Secretaría de Relaciones Exteriores',
     descripcion: 'Emite el pasaporte mexicano y atiende trámites para mexicanos en el extranjero.',
     sitioOficial: 'https://www.gob.mx/sre',
-    tramites: ['pasaporte', 'pasaporte-menores', 'doble-nacionalidad'],
+    tramites: ['pasaporte', 'pasaporte-menores', 'doble-nacionalidad', 'cita-consulado-mexicano'],
   },
   {
     slug: 'ine',
