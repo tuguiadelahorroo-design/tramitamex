@@ -1,6 +1,6 @@
 # TramitaMex — Punto de continuación
 
-> **Actualizado:** 2026-10-22 · **Último commit:** `9961a96`
+> **Actualizado:** 2026-10-22 (tarde) · 75 trámites
 >
 > **Para retomar en un chat nuevo:** abre Claude Code en la carpeta del proyecto y escribe:
 > `lee CONTINUAR-AQUI.md y continuemos`
@@ -41,14 +41,14 @@ Los CNAME de raíz y www apuntaban por error a `tramitamex-pasaporte.pages.dev` 
 
 ## 3. Estado actual
 
-**72 trámites · 144 páginas · 22 instituciones · sitemap con 141 URLs.** Todo pusheado y verificado en vivo.
+**75 trámites · 148 páginas · 23 instituciones · sitemap con 145 URLs.**
 
 ### Estructura clave
 
 ```
-src/content/tramites/*.md       → /<slug>/         (72 artículos)
+src/content/tramites/*.md       → /<slug>/         (75 artículos)
 src/content.config.ts           → validación zod del frontmatter (incluye tituloSeo, max 49)
-src/data/instituciones.ts       → 22 instituciones → /instituciones/<slug>/
+src/data/instituciones.ts       → 23 instituciones → /instituciones/<slug>/
 src/data/estados.ts             → los 32 estados
 src/data/estados-datos.ts       → ⭐ datos locales por estado (SOLO 8 de 32)
 src/data/card-images.ts         → foto por slug desde src/assets/cards/<slug>.jpg
@@ -65,9 +65,11 @@ src/components/Header.astro     → mega-menú con hover-intent (220 ms de graci
 3. `src/data/navigation.ts` — registrar en el menú.
 4. `src/data/instituciones.ts` — agregar el slug al array `tramites` de su institución.
 
-### Últimos 4 artículos publicados (22/10/2026)
+> El mega-menú (`Header.astro`) solo muestra los **primeros 7** de cada categoría: los artículos nuevos se agregan **al final** de su categoría para no desplazar a los existentes.
 
-`pension-viudez-orfandad-imss` (69) · `cambio-de-domicilio-fiscal-sat` (70) · `mejoravit` (71) · `constancia-no-deudor-alimentario` (72, institución nueva `dif`).
+### Últimos artículos publicados (22/10/2026)
+
+`pension-viudez-orfandad-imss` (69) · `cambio-de-domicilio-fiscal-sat` (70) · `mejoravit` (71) · `constancia-no-deudor-alimentario` (72, institución nueva `dif`) · `cita-consulado-mexicano` (73) · `modalidad-40-imss` (74) · `constancia-de-no-inhabilitacion` (75, institución nueva `buen-gobierno`).
 
 ---
 
@@ -129,7 +131,8 @@ Portales de Chihuahua que sí se confirmaron: `ipagos.chihuahua.gob.mx` (pagos) 
 
 ### Contenido
 
-- [ ] Último del backlog: **"cita en consulado mexicano"**. Los requisitos varían mucho por consulado → centrar en **MiConsulado / citas.sre.gob.mx** y advertir de la variación local.
+- [x] ~~Cita en consulado mexicano~~ — publicado (73). El backlog original quedó **vacío**.
+- [ ] Ideas para el siguiente lote (no hay cobertura hoy): suspensión de actividades en el SAT, Seguro de Salud para la Familia (IMSS), crédito Fovissste, retiro de Afore por matrimonio, registro de marca (IMPI).
 - [x] ~~Duplicado de tarjeta de circulación~~ — **descartado a propósito** para no canibalizar `tarjeta-de-circulacion.md`.
 
 ### Segundo sitio: `tuguiadelahorro.com` (WordPress/AIOSEO en SiteGround — NO es TramitaMex)
@@ -148,3 +151,6 @@ Portales de Chihuahua que sí se confirmaron: `ipagos.chihuahua.gob.mx` (pagos) 
 - **El operador `site:` en búsqueda web no se respeta** — no sirve para comprobar indexación.
 - **Pestaña de Cloudflare en segundo plano** → se congela (timeout de `Page.captureScreenshot`). Mantenerla al frente.
 - **Heredoc de Bash muy largo con tablas y backticks** puede fallar en Git Bash/Windows; escribir el archivo con la herramienta de escritura.
+- **Los sitios `consulmex.sre.gob.mx` tienen anti-bot (Radware/perfdrive)**: WebFetch suele rebotar. La página de tarifas del Consulado de Miami sí carga; para el resto, usar resultados de búsqueda y no seguir el redirect de validación.
+- **PDFs de leyes (diputados.gob.mx)**: WebFetch no los lee, pero guarda el binario; extraer con `python -I` + `pypdf`. Las tablas de los transitorios vienen como **imagen**: sacarlas con `page.images` y leerlas.
+- **Fotos de Pexels**: buscar en el navegador integrado (`pexels.com/search/...`), sacar los IDs con JS y descargar `images.pexels.com/photos/<id>/pexels-photo-<id>.jpeg?auto=compress&cs=tinysrgb&w=900`.
