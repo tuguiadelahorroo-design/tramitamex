@@ -198,6 +198,15 @@ export const INSTITUCIONES: Institucion[] = [
     sitioOficial: 'https://www.gob.mx/inm',
     tramites: ['residencia-temporal-mexico'],
   },
+  {
+    slug: 'dif',
+    nombre: 'DIF',
+    nombreCompleto: 'Sistema Nacional para el Desarrollo Integral de la Familia',
+    descripcion:
+      'Opera el Registro Nacional de Obligaciones Alimentarias (RNOA), que concentra la información de personas deudoras y acreedoras de pensión alimenticia.',
+    sitioOficial: 'https://www.gob.mx/difnacional',
+    tramites: ['constancia-no-deudor-alimentario'],
+  },
 ];
 
 export function getInstitucion(slug: string): Institucion | undefined {

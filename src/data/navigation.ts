@@ -144,6 +144,7 @@ export const CATEGORIAS: TramiteCategoria[] = [
       { nombre: 'Escrituración de una casa', slug: 'escrituracion', live: true },
       { nombre: 'Testamento', slug: 'testamento', live: true },
       { nombre: 'Pensión alimenticia', slug: 'pension-alimenticia', live: true },
+      { nombre: 'Constancia de no deudor alimentario', slug: 'constancia-no-deudor-alimentario', live: true },
       { nombre: 'Divorcio', slug: 'divorcio', live: true },
     ],
   },
