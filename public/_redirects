@@ -1,0 +1,23 @@
+# Redirecciones 301 de URLs del sitio anterior (formato .html) a sus
+# equivalentes actuales. Google las sigue rastreando y aparecían como 404
+# en Search Console; redirigirlas conserva el historial de esas URLs.
+#
+# Formato de Cloudflare Pages:  /origen  /destino  codigo
+
+/tramite-pasaporte.html                        /pasaporte/              301
+/tramite-acta-nacimiento.html                  /acta-de-nacimiento/     301
+/tramite-matrimonio.html                       /acta-de-matrimonio/     301
+/tramite-cedula-profesional.html               /cedula-profesional/     301
+/tramite-cartilla.html                         /cartilla-militar/       301
+/tramite-visa.html                             /visa-americana/         301
+/seccion/tramitar-curp.html                    /curp/                   301
+/tramite-no-inhabilitacion.html                /constancia-de-no-inhabilitacion/  301
+
+# Actas del registro civil sin página propia: se mandan a la guía de actas,
+# que es el contenido más cercano que sí existe.
+/tramite-acta-adopcion.html                    /acta-de-nacimiento/     301
+/tramite-acta-reconocimiento.html              /acta-de-nacimiento/     301
+
+# Páginas de estructura del sitio anterior.
+/lander                                        /                        301
+/categoria/documentos-de-propiedad-y-vivienda  /tramites/               301
