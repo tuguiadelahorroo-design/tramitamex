@@ -87,6 +87,7 @@ export const CATEGORIAS: TramiteCategoria[] = [
       { nombre: 'Cambio de clínica (UMF)', slug: 'cambio-clinica-imss', live: true },
       { nombre: 'Pensión de viudez y orfandad', slug: 'pension-viudez-orfandad-imss', live: true },
       { nombre: 'Modalidad 40 (continuación voluntaria)', slug: 'modalidad-40-imss', live: true },
+      { nombre: 'Seguro de Salud para la Familia', slug: 'seguro-de-salud-para-la-familia', live: true },
     ],
   },
   {
@@ -127,6 +128,7 @@ export const CATEGORIAS: TramiteCategoria[] = [
       { nombre: '¿Infonavit o crédito bancario?', slug: 'infonavit-vs-credito-bancario', live: true },
       { nombre: 'Constancia de no inhabilitación', slug: 'constancia-de-no-inhabilitacion', live: true },
       { nombre: 'Aguinaldo', slug: 'aguinaldo', live: true },
+      { nombre: 'Retiro Afore por matrimonio', slug: 'retiro-afore-por-matrimonio', live: true },
     ],
   },
   {
@@ -152,6 +154,7 @@ export const CATEGORIAS: TramiteCategoria[] = [
       { nombre: 'Pensión alimenticia', slug: 'pension-alimenticia', live: true },
       { nombre: 'Constancia de no deudor alimentario', slug: 'constancia-no-deudor-alimentario', live: true },
       { nombre: 'Divorcio', slug: 'divorcio', live: true },
+      { nombre: 'Registro de marca (IMPI)', slug: 'registro-de-marca-impi', live: true },
     ],
   },
 ];

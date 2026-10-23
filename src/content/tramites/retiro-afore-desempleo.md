@@ -115,6 +115,9 @@ Las [semanas cotizadas](/semanas-cotizadas-imss/) son las que determinan si tien
 
 La buena noticia es que **puedes recuperarlas**: si más adelante **reintegras** a tu Afore el monto que retiraste, restituyes tanto el saldo como las semanas cotizadas. No hay un plazo límite para hacerlo, pero entre más pronto lo reintegres, más rendimientos generará ese dinero.
 
+> [!DATO]
+> No todos los retiros parciales descuentan semanas: el **[retiro por matrimonio](/retiro-afore-por-matrimonio/)** no lo hace, aunque también reduce tu saldo.
+
 ## Cómo solicitarlo (pasos)
 
 1. **Confirma los requisitos:** verifica que llevas al menos 46 días desempleado y que no has hecho este retiro en los últimos 5 años.

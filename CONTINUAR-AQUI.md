@@ -41,7 +41,7 @@ Los CNAME de raíz y www apuntaban por error a `tramitamex-pasaporte.pages.dev` 
 
 ## 3. Estado actual
 
-**78 trámites · 152 páginas · 24 instituciones · sitemap con 149 URLs.**
+**81 trámites · 156 páginas · 25 instituciones · sitemap con 153 URLs.**
 
 ### Estructura clave
 
@@ -70,7 +70,7 @@ src/components/Header.astro     → mega-menú con hover-intent (220 ms de graci
 
 ### Últimos artículos publicados (22/10/2026)
 
-`pension-viudez-orfandad-imss` (69) · `cambio-de-domicilio-fiscal-sat` (70) · `mejoravit` (71) · `constancia-no-deudor-alimentario` (72, institución nueva `dif`) · `cita-consulado-mexicano` (73) · `modalidad-40-imss` (74) · `constancia-de-no-inhabilitacion` (75, institución nueva `buen-gobierno`) · `aguinaldo` (76) · `llave-mx` (77, institución nueva `atdt`) · `suspension-de-actividades-sat` (78).
+`pension-viudez-orfandad-imss` (69) · `cambio-de-domicilio-fiscal-sat` (70) · `mejoravit` (71) · `constancia-no-deudor-alimentario` (72, institución nueva `dif`) · `cita-consulado-mexicano` (73) · `modalidad-40-imss` (74) · `constancia-de-no-inhabilitacion` (75, institución nueva `buen-gobierno`) · `aguinaldo` (76) · `llave-mx` (77, institución nueva `atdt`) · `suspension-de-actividades-sat` (78) · `retiro-afore-por-matrimonio` (79) · `registro-de-marca-impi` (80, institución nueva `impi`) · `seguro-de-salud-para-la-familia` (81).
 
 ---
 
@@ -113,6 +113,9 @@ La cuenta de Google con la propiedad `tramitamex.com.mx` está en el **Chrome "B
 | `/aguinaldo/` | ⏳ Nueva (22/10) — **prioridad**: pico de búsqueda en nov–dic |
 | `/llave-mx/` | ⏳ Nueva (22/10) |
 | `/suspension-de-actividades-sat/` | ⏳ Nueva (22/10) |
+| `/retiro-afore-por-matrimonio/` | ⏳ Nueva (22/10) |
+| `/registro-de-marca-impi/` | ⏳ Nueva (22/10) |
+| `/seguro-de-salud-para-la-familia/` | ⏳ Nueva (22/10) |
 
 ---
 
@@ -168,7 +171,7 @@ Portales de Chihuahua que sí se confirmaron: `ipagos.chihuahua.gob.mx` (pagos) 
 ### Contenido
 
 - [x] ~~Cita en consulado mexicano~~ — publicado (73). El backlog original quedó **vacío**.
-- [ ] Ideas para el siguiente lote (no hay cobertura hoy): Seguro de Salud para la Familia (IMSS), crédito Fovissste, retiro de Afore por matrimonio, registro de marca (IMPI).
+- [ ] Ideas para el siguiente lote: crédito Fovissste (**ojo**: sus esquemas cambiaron en 2025; verificar todo en fovissste.gob.mx antes de escribir).
 - [ ] **Refresh anual de `aguinaldo`** cada octubre: actualizar salario mínimo, UMA (vigente desde febrero), el día de la semana del 20 de diciembre y el estado de las iniciativas de 30 días.
 - [x] ~~Duplicado de tarjeta de circulación~~ — **descartado a propósito** para no canibalizar `tarjeta-de-circulacion.md`.
 

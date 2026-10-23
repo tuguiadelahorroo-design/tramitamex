@@ -28,7 +28,7 @@ export const INSTITUCIONES: Institucion[] = [
     descripcion:
       'Brinda seguridad social a los trabajadores: NSS, atención médica, semanas cotizadas, pensiones e incapacidades.',
     sitioOficial: 'https://www.imss.gob.mx/',
-    tramites: ['nss', 'semanas-cotizadas-imss', 'vigencia-de-derechos-imss', 'cita-medica-imss', 'pension-imss', 'incapacidad-imss', 'alta-patronal-imss', 'cambio-clinica-imss', 'pension-viudez-orfandad-imss', 'modalidad-40-imss'],
+    tramites: ['nss', 'semanas-cotizadas-imss', 'vigencia-de-derechos-imss', 'cita-medica-imss', 'pension-imss', 'incapacidad-imss', 'alta-patronal-imss', 'cambio-clinica-imss', 'pension-viudez-orfandad-imss', 'seguro-de-salud-para-la-familia', 'modalidad-40-imss'],
   },
   {
     slug: 'renapo',
@@ -70,7 +70,7 @@ export const INSTITUCIONES: Institucion[] = [
     descripcion:
       'Regula el sistema de ahorro para el retiro (Afores). Permite localizar tu Afore y consultar tu cuenta individual.',
     sitioOficial: 'https://www.gob.mx/consar',
-    tramites: ['afore', 'retiro-afore-desempleo'],
+    tramites: ['afore', 'retiro-afore-desempleo', 'retiro-afore-por-matrimonio'],
   },
   {
     slug: 'infonavit',
@@ -224,6 +224,15 @@ export const INSTITUCIONES: Institucion[] = [
       'Encabeza la digitalización de trámites del Gobierno de México. Administra Llave MX, la cuenta única para entrar a trámites, becas y servicios en línea.',
     sitioOficial: 'https://www.gob.mx/atdt',
     tramites: ['llave-mx'],
+  },
+  {
+    slug: 'impi',
+    nombre: 'IMPI',
+    nombreCompleto: 'Instituto Mexicano de la Propiedad Industrial',
+    descripcion:
+      'Autoridad en propiedad industrial. Registra marcas, avisos comerciales, nombres comerciales y patentes, y otorga el derecho exclusivo de usarlos en México.',
+    sitioOficial: 'https://www.gob.mx/impi',
+    tramites: ['registro-de-marca-impi'],
   },
 ];
 

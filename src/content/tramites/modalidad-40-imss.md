@@ -106,7 +106,7 @@ Según la Ley del Seguro Social y el trámite oficial del IMSS:
 **No cubre servicio médico.** Inscribirte en la Modalidad 40 no te da derecho a consulta ni hospitalización en el IMSS.
 
 > [!CONSEJO]
-> Si necesitas atención médica mientras cotizas por tu cuenta, el IMSS ofrece por separado el **Seguro de Salud para la Familia**. Es un trámite y un pago distintos.
+> Si necesitas atención médica mientras cotizas por tu cuenta, el IMSS ofrece por separado el **[Seguro de Salud para la Familia](/seguro-de-salud-para-la-familia/)**. Es un trámite y un pago distintos.
 
 ## Cuánto cuesta en 2026
 
