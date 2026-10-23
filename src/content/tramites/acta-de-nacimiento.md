@@ -71,6 +71,8 @@ El **acta de nacimiento** es el documento oficial que emite el Registro Civil pa
 > [!DATO]
 > La copia que descargas en línea tiene **la misma validez legal** que la de ventanilla: incluye folio único de control, sello electrónico de la SEGOB y código QR para su verificación. Impresa en hoja blanca tamaño carta es válida ante cualquier autoridad municipal, estatal y federal.
 
+Si tu bebé todavía no está registrado, el primer paso es el **[registro de nacimiento](/registro-de-nacimiento/)**: es gratuito y la primera copia del acta no cuesta.
+
 ## Para qué sirve
 
 - Acreditar identidad, edad y nacionalidad mexicana.

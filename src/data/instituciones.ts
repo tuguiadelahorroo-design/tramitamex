@@ -19,7 +19,7 @@ export const INSTITUCIONES: Institucion[] = [
     descripcion:
       'Autoridad fiscal de México. Administra el RFC, la facturación electrónica, la e.firma y las declaraciones de impuestos.',
     sitioOficial: 'https://www.sat.gob.mx/',
-    tramites: ['rfc', 'constancia-de-situacion-fiscal', 'firma-electronica', 'opinion-de-cumplimiento', 'declaracion-anual', 'buzon-tributario', 'devolucion-impuestos-sat', 'facturar-cfdi', 'resico-sat', 'rfc-menores-de-edad', 'cfdi-nomina', 'cambio-de-domicilio-fiscal-sat', 'suspension-de-actividades-sat'],
+    tramites: ['rfc', 'constancia-de-situacion-fiscal', 'firma-electronica', 'opinion-de-cumplimiento', 'declaracion-anual', 'buzon-tributario', 'devolucion-impuestos-sat', 'facturar-cfdi', 'resico-sat', 'rfc-menores-de-edad', 'cfdi-nomina', 'cambio-de-domicilio-fiscal-sat', 'suspension-de-actividades-sat', 'contrasena-sat'],
   },
   {
     slug: 'imss',
@@ -37,7 +37,7 @@ export const INSTITUCIONES: Institucion[] = [
     descripcion:
       'Dependiente de la Secretaría de Gobernación, administra la CURP, las actas del registro civil y el registro de identidad de la población.',
     sitioOficial: 'https://www.gob.mx/segob',
-    tramites: ['curp', 'acta-de-nacimiento', 'acta-de-matrimonio', 'acta-de-defuncion', 'acta-de-divorcio', 'correccion-de-actas'],
+    tramites: ['curp', 'acta-de-nacimiento', 'acta-de-matrimonio', 'acta-de-defuncion', 'acta-de-divorcio', 'correccion-de-actas', 'registro-de-nacimiento'],
   },
   {
     slug: 'sre',
@@ -115,7 +115,7 @@ export const INSTITUCIONES: Institucion[] = [
     descripcion:
       'Opera los programas sociales del Gobierno de México, como la Pensión para el Bienestar de las Personas Adultas Mayores.',
     sitioOficial: 'https://www.gob.mx/bienestar',
-    tramites: ['pension-bienestar', 'mujeres-con-bienestar'],
+    tramites: ['pension-bienestar', 'mujeres-con-bienestar', 'pension-bienestar-discapacidad'],
   },
   {
     slug: 'becas-bienestar',

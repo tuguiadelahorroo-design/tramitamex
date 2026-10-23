@@ -98,7 +98,7 @@ En resumen, así queda la obligación según tu situación:
 ## Requisitos
 
 - **RFC** vigente.
-- **Contraseña** del SAT **o** **[e.firma](/firma-electronica/)** (la e.firma es obligatoria para autorizar devoluciones elevadas).
+- **[Contraseña](/contrasena-sat/)** del SAT **o** **[e.firma](/firma-electronica/)** (la e.firma es obligatoria para autorizar devoluciones elevadas).
 - Tus **[CFDI](/facturar-cfdi/)** de ingresos y de deducciones personales.
 - **CLABE** interbancaria a tu nombre (para el saldo a favor).
 

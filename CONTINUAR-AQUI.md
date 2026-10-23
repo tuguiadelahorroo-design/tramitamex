@@ -41,7 +41,7 @@ Los CNAME de raíz y www apuntaban por error a `tramitamex-pasaporte.pages.dev` 
 
 ## 3. Estado actual
 
-**81 trámites · 156 páginas · 25 instituciones · sitemap con 153 URLs.**
+**84 trámites · 159 páginas · 25 instituciones · sitemap con 156 URLs.**
 
 ### Estructura clave
 
@@ -70,7 +70,7 @@ src/components/Header.astro     → mega-menú con hover-intent (220 ms de graci
 
 ### Últimos artículos publicados (22/10/2026)
 
-`pension-viudez-orfandad-imss` (69) · `cambio-de-domicilio-fiscal-sat` (70) · `mejoravit` (71) · `constancia-no-deudor-alimentario` (72, institución nueva `dif`) · `cita-consulado-mexicano` (73) · `modalidad-40-imss` (74) · `constancia-de-no-inhabilitacion` (75, institución nueva `buen-gobierno`) · `aguinaldo` (76) · `llave-mx` (77, institución nueva `atdt`) · `suspension-de-actividades-sat` (78) · `retiro-afore-por-matrimonio` (79) · `registro-de-marca-impi` (80, institución nueva `impi`) · `seguro-de-salud-para-la-familia` (81).
+`pension-viudez-orfandad-imss` (69) · `cambio-de-domicilio-fiscal-sat` (70) · `mejoravit` (71) · `constancia-no-deudor-alimentario` (72, institución nueva `dif`) · `cita-consulado-mexicano` (73) · `modalidad-40-imss` (74) · `constancia-de-no-inhabilitacion` (75, institución nueva `buen-gobierno`) · `aguinaldo` (76) · `llave-mx` (77, institución nueva `atdt`) · `suspension-de-actividades-sat` (78) · `retiro-afore-por-matrimonio` (79) · `registro-de-marca-impi` (80, institución nueva `impi`) · `seguro-de-salud-para-la-familia` (81) · `contrasena-sat` (82) · `registro-de-nacimiento` (83) · `pension-bienestar-discapacidad` (84).
 
 ---
 
@@ -116,6 +116,9 @@ La cuenta de Google con la propiedad `tramitamex.com.mx` está en el **Chrome "B
 | `/retiro-afore-por-matrimonio/` | ⏳ Nueva (22/10) |
 | `/registro-de-marca-impi/` | ⏳ Nueva (22/10) |
 | `/seguro-de-salud-para-la-familia/` | ⏳ Nueva (22/10) |
+| `/contrasena-sat/` | ⏳ Nueva (22/10) — **prioridad**: búsqueda enorme |
+| `/registro-de-nacimiento/` | ⏳ Nueva (22/10) |
+| `/pension-bienestar-discapacidad/` | ⏳ Nueva (22/10) |
 
 ---
 
@@ -184,6 +187,9 @@ Portales de Chihuahua que sí se confirmaron: `ipagos.chihuahua.gob.mx` (pagos) 
 ---
 
 ## 7. Trampas técnicas ya conocidas
+
+- **Las fichas viejas del SAT (`sat.gob.mx/gobmx/Paginas/ficha_*.html`) pueden estar desactualizadas.** Manda el texto de la RMF vigente en el DOF (anexos publicados cada diciembre). Ejemplo: la ficha 7/CFF decía que la Contraseña se tramita presencial "sin cita" para cualquiera; la RMF 2026 lo limita a extranjeros, adultos mayores, gestantes y personas con discapacidad.
+- **Los PDF oficiales grandes (DOF, leyes) se leen mejor bajándolos con `curl` y pasándolos por `pdftotext`** (está instalado) y luego `grep`; `WebFetch` los devuelve como binario. Los textos salen en latin1: convertir con `iconv -f latin1 -t utf-8`.
 
 - **`grep -oc` cuenta líneas, no coincidencias.** Usar `grep -o ... | wc -l`. Esto ya provocó una falsa alarma de "el sitio perdió su contenido".
 - **Heredoc de Python con emoji en `print()`** truena con `UnicodeEncodeError` (cp1252) en Windows. Quitar emojis de los prints.

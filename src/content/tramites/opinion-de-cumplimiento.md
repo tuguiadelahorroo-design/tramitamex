@@ -82,7 +82,7 @@ Para que salga **positiva**, la autoridad revisa que estés inscrito y activo en
 ## Requisitos
 
 - **RFC** vigente.
-- **Contraseña** del SAT **o** **[e.firma](/firma-electronica/)** vigente. Cualquiera de las dos es suficiente.
+- **[Contraseña](/contrasena-sat/)** del SAT **o** **[e.firma](/firma-electronica/)** vigente. Cualquiera de las dos es suficiente.
 
 ## Documentos necesarios
 

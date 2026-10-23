@@ -88,6 +88,9 @@ El apoyo en números:
 - Ser **mexicano(a)** residente en el país.
 - Realizar el registro en los **periodos y módulos** que anuncia la Secretaría del Bienestar.
 
+> [!DATO]
+> ¿Tienes menos de 65 años y una discapacidad permanente? Revisa la **[Pensión para personas con discapacidad](/pension-bienestar-discapacidad/)**.
+
 ## Documentos necesarios
 
 Lleva original y copia de:

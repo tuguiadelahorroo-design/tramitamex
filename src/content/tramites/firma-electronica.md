@@ -71,7 +71,7 @@ La **e.firma** (firma electrónica avanzada, antes conocida como **FIEL**) es el
 Es **personal e intransferible**.
 
 > [!IMPORTANTE]
-> No confundas la **e.firma** con la **Contraseña** del SAT (antes CIEC). La Contraseña sirve para entrar al portal; la e.firma es un certificado digital (.cer y .key) con validez legal para firmar trámites.
+> No confundas la **e.firma** con la **[Contraseña](/contrasena-sat/)** del SAT (antes CIEC). La Contraseña sirve para entrar al portal; la e.firma es un certificado digital (.cer y .key) con validez legal para firmar trámites.
 
 ## Para qué sirve
 

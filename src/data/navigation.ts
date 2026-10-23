@@ -48,6 +48,7 @@ export const CATEGORIAS: TramiteCategoria[] = [
       { nombre: 'Acta de defunción', slug: 'acta-de-defuncion', live: true },
       { nombre: 'Acta de divorcio', slug: 'acta-de-divorcio', live: true },
       { nombre: 'Corrección de actas', slug: 'correccion-de-actas', live: true },
+      { nombre: 'Registro de nacimiento', slug: 'registro-de-nacimiento', live: true },
     ],
   },
   {
@@ -68,6 +69,7 @@ export const CATEGORIAS: TramiteCategoria[] = [
       { nombre: 'Recibo de nómina (CFDI)', slug: 'cfdi-nomina', live: true },
       { nombre: 'Cambio de domicilio fiscal', slug: 'cambio-de-domicilio-fiscal-sat', live: true },
       { nombre: 'Suspensión de actividades', slug: 'suspension-de-actividades-sat', live: true },
+      { nombre: 'Contraseña del SAT', slug: 'contrasena-sat', live: true },
     ],
   },
   {
@@ -141,6 +143,7 @@ export const CATEGORIAS: TramiteCategoria[] = [
       { nombre: 'Pensión Mujeres Bienestar', slug: 'mujeres-con-bienestar', live: true },
       { nombre: 'Jóvenes Construyendo el Futuro', slug: 'jovenes-construyendo-el-futuro', live: true },
       { nombre: 'Credencial INAPAM', slug: 'inapam', live: true },
+      { nombre: 'Pensión para personas con discapacidad', slug: 'pension-bienestar-discapacidad', live: true },
     ],
   },
   {

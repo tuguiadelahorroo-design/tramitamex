@@ -80,7 +80,7 @@ Hay varias maneras de descargarla, según las credenciales que tengas a la mano:
 
 | Método | Qué necesitas | Tiempo |
 |---|---|---|
-| **Contraseña** | RFC + contraseña del SAT | Inmediato |
+| **[Contraseña](/contrasena-sat/)** | RFC + contraseña del SAT | Inmediato |
 | **e.firma** | Archivos .cer, .key y contraseña | Inmediato |
 | **SAT ID** (sin contraseña) | [INE](/ine/), correo, celular y un video | Hasta 5 días hábiles |
 | **SAT Móvil** (app) | RFC y contraseña (o RFC y CURP) | Inmediato |

@@ -131,7 +131,7 @@ Para varios ejercicios recientes, el SAT ha **relevado a las personas físicas d
 
 El alta o el cambio al RESICO se hace **en línea**, con un aviso de actualización en tu RFC:
 
-1. Reúne tu **RFC activo**, **contraseña** del SAT y **[e.firma](/firma-electronica/)** vigente.
+1. Reúne tu **RFC activo**, **[contraseña](/contrasena-sat/)** del SAT y **[e.firma](/firma-electronica/)** vigente.
 2. Entra al **Portal del SAT** (sat.gob.mx), sección de **trámites del RFC**, opción **Actualización en el RFC**.
 3. Presenta el **aviso de actualización de actividades económicas y obligaciones**, eligiendo el **Régimen Simplificado de Confianza**.
 4. **Envía** el aviso y descarga el **acuse**.

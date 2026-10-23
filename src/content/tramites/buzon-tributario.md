@@ -75,7 +75,7 @@ El **buzón tributario** es el canal de comunicación digital entre tú y el SAT
 ## Requisitos
 
 - **[RFC](/rfc/)** vigente.
-- **Contraseña** del SAT **o** **[e.firma](/firma-electronica/)**.
+- **[Contraseña](/contrasena-sat/)** del SAT **o** **[e.firma](/firma-electronica/)**.
 - Un **correo electrónico** (puedes registrar hasta cinco) y un **número de celular**.
 
 ## Documentos necesarios
