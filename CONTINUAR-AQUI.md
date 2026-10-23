@@ -64,6 +64,7 @@ src/components/Header.astro     → mega-menú con hover-intent (220 ms de graci
 2. `src/assets/cards/<slug>.jpg` — foto propia (Pexels, licencia libre). **Leer la imagen para verificarla.**
 3. `src/data/navigation.ts` — registrar en el menú.
 4. `src/data/instituciones.ts` — agregar el slug al array `tramites` de su institución.
+5. **Después del push:** agregar la URL a la **cola de indexación** (§4) y pedirla en Search Console.
 
 > El mega-menú (`Header.astro`) solo muestra los **primeros 7** de cada categoría: los artículos nuevos se agregan **al final** de su categoría para no desplazar a los existentes.
 
@@ -79,6 +80,36 @@ src/components/Header.astro     → mega-menú con hover-intent (220 ms de graci
 - Es un **problema de posición**, no de títulos ni de CTR.
 - Query top: **"consultar constancia de situación fiscal en cdmx"** → valida la estrategia de **contenido local (estado × trámite)**.
 - Durante el apagón hubo impresiones constantes: el redirect impidió **rankear y re-indexar**, no volvió el sitio invisible del todo.
+
+### Limpieza del 22/10/2026 (hecha)
+
+- **Validaciones iniciadas** en Indexación → Páginas: "Página con redirección" (95), "Bloqueada por robots.txt" (14) y "No se ha encontrado (404)" (13). Google tarda **2–4 semanas** en cerrarlas.
+- **Sitemaps reenviados** (`sitemap-index.xml` y `sitemap-0.xml`): llevaban **sin leerse desde el 10/07/2026** porque durante el apagón también servían el redirect. Ahora detectan 145 URLs.
+- **`public/_redirects`** con 12 redirecciones 301 de URLs del sitio anterior (`/tramite-*.html`, `/lander`, `/seccion/*`, `/categoria/*`) a sus equivalentes actuales.
+- **Pendiente de decidir con el usuario:** borrar 3 sitemaps muertos del sitio viejo (`www.../sitemap_index.xml`, `www.../sitemap.xml`, `www.../sitemap.rss`, enviados en 2025). Es reversible, pero requiere su autorización.
+- Lo que **no** es un problema: "Página alternativa con canónica" (5) y "noindex" (4: 404, aviso legal, privacidad) son correctas. Las redirecciones de `www` → raíz y de URLs sin barra final → con barra seguirán apareciendo como "Página con redirección" para siempre, y está bien.
+
+### Cola de indexación (protocolo para cada página nueva)
+
+Google **no ofrece** una forma automática y permitida de pedir indexación de páginas normales (la Indexing API es solo para empleos y transmisiones en vivo; el "ping" de sitemaps se eliminó en 2023). Lo que sí funciona:
+
+1. **Automático:** el sitemap lleva `<lastmod>` real por página (sale del campo `actualizado`), así que Google detecta lo nuevo al releerlo.
+2. **Manual, el empujón:** Search Console → barra de inspección → pegar la URL → si dice **"La URL no está en Google"**, pulsar **Solicitar indexación**. Si dice "La URL está en Google", **no pedirla** (gasta cuota).
+3. **Cuota: ~10 solicitudes por día** por propiedad. Al superarla sale "Cuota superada" y hay que esperar al día siguiente.
+
+La cuenta de Google con la propiedad `tramitamex.com.mx` está en el **Chrome "Browser 1"** (el "Browser 2" tiene otra cuenta con tuguiadelahorro.com y mimejoramigo.mx).
+
+**Cola actual** (mover a "hecho" al pedirla; borrar si ya aparece indexada):
+
+| URL | Estado |
+|---|---|
+| `/mejoravit/` | ✅ Ya indexada (22/10) |
+| `/pension-viudez-orfandad-imss/` | ⏳ "Descubierta: sin indexar" — pedir (la cuota del 22/10 ya estaba agotada) |
+| `/cambio-de-domicilio-fiscal-sat/` | ⏳ Sin revisar |
+| `/constancia-no-deudor-alimentario/` | ⏳ Sin revisar |
+| `/cita-consulado-mexicano/` | ⏳ Sin revisar |
+| `/modalidad-40-imss/` | ⏳ Sin revisar |
+| `/constancia-de-no-inhabilitacion/` | ⏳ Sin revisar |
 
 ---
 
@@ -124,10 +155,12 @@ Portales de Chihuahua que sí se confirmaron: `ipagos.chihuahua.gob.mx` (pagos) 
 - [ ] **Mover la zona DNS** de `tramitamex.com.mx` de la cuenta `Aguacatefelix132` a `Tuguiadelahorroo`, donde vive todo lo demás. Evita que vuelva a pasar lo del apagón.
 - [x] ~~Instalar analítica~~ — **Cloudflare Web Analytics ya estaba activo** en la cuenta Aguacatefelix132 (configuración automática, el beacon se inyecta en el borde). Al 22/10/2026: 58 vistas / 45 visitas en 24 h.
 
-### Que tiene que hacer el usuario en Search Console
+### Search Console
 
-- [ ] Reenviar el sitemap.
-- [ ] Pedir indexación de ~10 URLs principales.
+- [x] ~~Reenviar el sitemap~~ — hecho el 22/10/2026.
+- [x] ~~Validar las correcciones~~ — iniciadas el 22/10/2026 (ver §4).
+- [ ] Vaciar la **cola de indexación** (§4), ~10 URLs por día.
+- [ ] Decidir si se borran los 3 sitemaps muertos del sitio viejo.
 
 ### Contenido
 
