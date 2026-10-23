@@ -138,5 +138,5 @@ La consulta es **informativa y puntual**: refleja el estatus de tu cuenta al mom
 - **Cuenta en la concentradora de Banxico:** cuando tu cuenta tiene menos de un año, tus recursos se guardan temporalmente en Banco de México mientras se individualizan.
 - **Afore asignada por CONSAR:** si después de un año no elegiste, la CONSAR asigna tu cuenta a una administradora con buenos rendimientos y bajas comisiones.
 - **Cuenta en proceso** (certificación, disposición, unificación o corrección de NSS): espera a que finalice el trámite.
-- **Quiero cambiar de Afore:** primero localiza tu Afore actual; el traspaso se solicita con la nueva Afore (recomendable AforeMóvil con tu NIP).
+- **Quiero cambiar de Afore:** primero localiza tu Afore actual; el traspaso se solicita con la nueva Afore. Te explicamos todo en la guía de **[cambio de Afore](/cambio-de-afore/)**.
 - **No recibo el correo:** revisa spam, verifica tu correo y recuerda el límite de una consulta por día.

@@ -36,6 +36,7 @@ export const CATEGORIAS: TramiteCategoria[] = [
       { nombre: 'Residencia temporal (INM)', slug: 'residencia-temporal-mexico', live: true },
       { nombre: 'Cita en el consulado (MiConsulado)', slug: 'cita-consulado-mexicano', live: true },
       { nombre: 'Llave MX (cuenta del gobierno)', slug: 'llave-mx', live: true },
+      { nombre: 'Visa canadiense o eTA', slug: 'visa-canadiense', live: true },
     ],
   },
   {
@@ -90,6 +91,7 @@ export const CATEGORIAS: TramiteCategoria[] = [
       { nombre: 'Pensión de viudez y orfandad', slug: 'pension-viudez-orfandad-imss', live: true },
       { nombre: 'Modalidad 40 (continuación voluntaria)', slug: 'modalidad-40-imss', live: true },
       { nombre: 'Seguro de Salud para la Familia', slug: 'seguro-de-salud-para-la-familia', live: true },
+      { nombre: 'IMSS-Bienestar (sin seguridad social)', slug: 'imss-bienestar', live: true },
     ],
   },
   {
@@ -131,6 +133,7 @@ export const CATEGORIAS: TramiteCategoria[] = [
       { nombre: 'Constancia de no inhabilitación', slug: 'constancia-de-no-inhabilitacion', live: true },
       { nombre: 'Aguinaldo', slug: 'aguinaldo', live: true },
       { nombre: 'Retiro Afore por matrimonio', slug: 'retiro-afore-por-matrimonio', live: true },
+      { nombre: 'Cambio de Afore (traspaso)', slug: 'cambio-de-afore', live: true },
     ],
   },
   {

@@ -68,6 +68,9 @@ Es una forma de **afiliarte voluntariamente al IMSS** para recibir **atención m
 
 Es útil si trabajas por tu cuenta, si te quedaste sin empleo o si tus papás no tienen seguridad social.
 
+> [!DATO]
+> ¿No tienes seguridad social y no puedes pagar la cuota? En los estados adheridos, **[IMSS-Bienestar](/imss-bienestar/)** te atiende **gratis**.
+
 > [!IMPORTANTE]
 > Es un seguro **solo de atención médica**. No te da semanas cotizadas para tu pensión ni pago de incapacidades. Si lo que necesitas es seguir cotizando para pensionarte, revisa la **[Modalidad 40](/modalidad-40-imss/)**.
 

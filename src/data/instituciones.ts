@@ -70,7 +70,7 @@ export const INSTITUCIONES: Institucion[] = [
     descripcion:
       'Regula el sistema de ahorro para el retiro (Afores). Permite localizar tu Afore y consultar tu cuenta individual.',
     sitioOficial: 'https://www.gob.mx/consar',
-    tramites: ['afore', 'retiro-afore-desempleo', 'retiro-afore-por-matrimonio'],
+    tramites: ['afore', 'retiro-afore-desempleo', 'retiro-afore-por-matrimonio', 'cambio-de-afore'],
   },
   {
     slug: 'infonavit',
@@ -233,6 +233,24 @@ export const INSTITUCIONES: Institucion[] = [
       'Autoridad en propiedad industrial. Registra marcas, avisos comerciales, nombres comerciales y patentes, y otorga el derecho exclusivo de usarlos en México.',
     sitioOficial: 'https://www.gob.mx/impi',
     tramites: ['registro-de-marca-impi'],
+  },
+  {
+    slug: 'imss-bienestar',
+    nombre: 'IMSS-Bienestar',
+    nombreCompleto: 'Servicios de Salud del Instituto Mexicano del Seguro Social para el Bienestar',
+    descripcion:
+      'Da atención médica, medicamentos y estudios gratuitos a las personas sin seguridad social en los estados adheridos a este modelo.',
+    sitioOficial: 'https://imssbienestar.gob.mx/',
+    tramites: ['imss-bienestar'],
+  },
+  {
+    slug: 'gobierno-canada',
+    nombre: 'Gobierno de Canadá (IRCC)',
+    nombreCompleto: 'Immigration, Refugees and Citizenship Canada (IRCC)',
+    descripcion:
+      'Dependencia del Gobierno de Canadá que emite las visas de visitante y las autorizaciones electrónicas de viaje (eTA) para quienes viajan desde México.',
+    sitioOficial: 'https://www.canada.ca/en/immigration-refugees-citizenship.html',
+    tramites: ['visa-canadiense'],
   },
 ];
 

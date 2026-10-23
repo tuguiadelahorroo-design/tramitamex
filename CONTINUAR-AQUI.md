@@ -41,7 +41,7 @@ Los CNAME de raíz y www apuntaban por error a `tramitamex-pasaporte.pages.dev` 
 
 ## 3. Estado actual
 
-**84 trámites · 159 páginas · 25 instituciones · sitemap con 156 URLs.**
+**87 trámites · 164 páginas · 27 instituciones · sitemap con 161 URLs.**
 
 ### Estructura clave
 
@@ -70,7 +70,7 @@ src/components/Header.astro     → mega-menú con hover-intent (220 ms de graci
 
 ### Últimos artículos publicados (22/10/2026)
 
-`pension-viudez-orfandad-imss` (69) · `cambio-de-domicilio-fiscal-sat` (70) · `mejoravit` (71) · `constancia-no-deudor-alimentario` (72, institución nueva `dif`) · `cita-consulado-mexicano` (73) · `modalidad-40-imss` (74) · `constancia-de-no-inhabilitacion` (75, institución nueva `buen-gobierno`) · `aguinaldo` (76) · `llave-mx` (77, institución nueva `atdt`) · `suspension-de-actividades-sat` (78) · `retiro-afore-por-matrimonio` (79) · `registro-de-marca-impi` (80, institución nueva `impi`) · `seguro-de-salud-para-la-familia` (81) · `contrasena-sat` (82) · `registro-de-nacimiento` (83) · `pension-bienestar-discapacidad` (84).
+`pension-viudez-orfandad-imss` (69) · `cambio-de-domicilio-fiscal-sat` (70) · `mejoravit` (71) · `constancia-no-deudor-alimentario` (72, institución nueva `dif`) · `cita-consulado-mexicano` (73) · `modalidad-40-imss` (74) · `constancia-de-no-inhabilitacion` (75, institución nueva `buen-gobierno`) · `aguinaldo` (76) · `llave-mx` (77, institución nueva `atdt`) · `suspension-de-actividades-sat` (78) · `retiro-afore-por-matrimonio` (79) · `registro-de-marca-impi` (80, institución nueva `impi`) · `seguro-de-salud-para-la-familia` (81) · `contrasena-sat` (82) · `registro-de-nacimiento` (83) · `pension-bienestar-discapacidad` (84) · `visa-canadiense` (85, institución nueva `gobierno-canada`) · `cambio-de-afore` (86) · `imss-bienestar` (87, institución nueva `imss-bienestar`).
 
 ---
 
@@ -119,6 +119,9 @@ La cuenta de Google con la propiedad `tramitamex.com.mx` está en el **Chrome "B
 | `/contrasena-sat/` | ⏳ Nueva (22/10) — **prioridad**: búsqueda enorme |
 | `/registro-de-nacimiento/` | ⏳ Nueva (22/10) |
 | `/pension-bienestar-discapacidad/` | ⏳ Nueva (22/10) |
+| `/visa-canadiense/` | ⏳ Nueva (22/10) |
+| `/cambio-de-afore/` | ⏳ Nueva (22/10) |
+| `/imss-bienestar/` | ⏳ Nueva (22/10) |
 
 ---
 

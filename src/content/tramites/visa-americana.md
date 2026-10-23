@@ -72,6 +72,7 @@ La **visa americana B1/B2** es el permiso que otorga el gobierno de Estados Unid
 - Viajar a Estados Unidos por **turismo, visitas familiares o tratamiento médico** (B2).
 - Asistir a **reuniones, conferencias o negocios** sin trabajar de forma remunerada (B1).
 - Es de **entradas múltiples** durante su vigencia (no autoriza trabajar ni residir).
+- Si está vigente, también puede permitirte volar a Canadá con una **eTA** en lugar de la visa canadiense, si cumples las demás condiciones. Ve la guía de **[visa canadiense](/visa-canadiense/)**.
 
 ## Requisitos
 
