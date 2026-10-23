@@ -19,7 +19,7 @@ export const INSTITUCIONES: Institucion[] = [
     descripcion:
       'Autoridad fiscal de México. Administra el RFC, la facturación electrónica, la e.firma y las declaraciones de impuestos.',
     sitioOficial: 'https://www.sat.gob.mx/',
-    tramites: ['rfc', 'constancia-de-situacion-fiscal', 'firma-electronica', 'opinion-de-cumplimiento', 'declaracion-anual', 'buzon-tributario', 'devolucion-impuestos-sat', 'facturar-cfdi', 'resico-sat', 'rfc-menores-de-edad', 'cfdi-nomina', 'cambio-de-domicilio-fiscal-sat'],
+    tramites: ['rfc', 'constancia-de-situacion-fiscal', 'firma-electronica', 'opinion-de-cumplimiento', 'declaracion-anual', 'buzon-tributario', 'devolucion-impuestos-sat', 'facturar-cfdi', 'resico-sat', 'rfc-menores-de-edad', 'cfdi-nomina', 'cambio-de-domicilio-fiscal-sat', 'suspension-de-actividades-sat'],
   },
   {
     slug: 'imss',
@@ -133,7 +133,7 @@ export const INSTITUCIONES: Institucion[] = [
     descripcion:
       'Rectora de la política laboral en México. Opera el programa Jóvenes Construyendo el Futuro y atiende temas de trabajo y previsión social.',
     sitioOficial: 'https://www.gob.mx/stps',
-    tramites: ['jovenes-construyendo-el-futuro', 'finiquito-liquidacion'],
+    tramites: ['jovenes-construyendo-el-futuro', 'finiquito-liquidacion', 'aguinaldo'],
   },
   {
     slug: 'fonacot',
@@ -215,6 +215,15 @@ export const INSTITUCIONES: Institucion[] = [
       'Antes Secretaría de la Función Pública (SFP). Emite la constancia federal de no inhabilitación, que acredita que una persona no tiene una sanción vigente para trabajar en el servicio público.',
     sitioOficial: 'https://www.gob.mx/buengobierno',
     tramites: ['constancia-de-no-inhabilitacion'],
+  },
+  {
+    slug: 'atdt',
+    nombre: 'ATDT',
+    nombreCompleto: 'Agencia de Transformación Digital y Telecomunicaciones',
+    descripcion:
+      'Encabeza la digitalización de trámites del Gobierno de México. Administra Llave MX, la cuenta única para entrar a trámites, becas y servicios en línea.',
+    sitioOficial: 'https://www.gob.mx/atdt',
+    tramites: ['llave-mx'],
   },
 ];
 

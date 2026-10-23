@@ -91,7 +91,7 @@ Los más comunes:
 ## Cómo agendar tu cita en línea
 
 1. Entra a **citas.sre.gob.mx**.
-2. **Crea tu cuenta** con un correo electrónico o con **Llave MX**.
+2. **Crea tu cuenta** con un correo electrónico o con **[Llave MX](/llave-mx/)**.
 3. Elige el **consulado**, el **trámite** y una **fecha disponible**.
 4. Revisa bien tus datos antes de confirmar.
 5. **Guarda tu número de cita**: te lo pueden pedir al llegar.

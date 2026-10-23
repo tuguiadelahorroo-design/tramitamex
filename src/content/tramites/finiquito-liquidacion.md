@@ -95,7 +95,7 @@ El finiquito reúne varios conceptos. Todos parten de tu **salario diario** (tu 
 
 **1. Días de salario pendientes.** Los días que trabajaste y aún no te pagan, multiplicados por tu salario diario.
 
-**2. Aguinaldo proporcional.** El aguinaldo es de al menos **15 días** al año. Si no completaste el año, se calcula así:
+**2. Aguinaldo proporcional.** El [aguinaldo](/aguinaldo/) es de al menos **15 días** al año. Si no completaste el año, se calcula así:
 
 > (15 días × días trabajados en el año) ÷ 365 × salario diario
 

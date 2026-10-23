@@ -35,6 +35,7 @@ export const CATEGORIAS: TramiteCategoria[] = [
       { nombre: 'Doble nacionalidad', slug: 'doble-nacionalidad', live: true },
       { nombre: 'Residencia temporal (INM)', slug: 'residencia-temporal-mexico', live: true },
       { nombre: 'Cita en el consulado (MiConsulado)', slug: 'cita-consulado-mexicano', live: true },
+      { nombre: 'Llave MX (cuenta del gobierno)', slug: 'llave-mx', live: true },
     ],
   },
   {
@@ -66,6 +67,7 @@ export const CATEGORIAS: TramiteCategoria[] = [
       { nombre: 'RFC para menores de edad', slug: 'rfc-menores-de-edad', live: true },
       { nombre: 'Recibo de nómina (CFDI)', slug: 'cfdi-nomina', live: true },
       { nombre: 'Cambio de domicilio fiscal', slug: 'cambio-de-domicilio-fiscal-sat', live: true },
+      { nombre: 'Suspensión de actividades', slug: 'suspension-de-actividades-sat', live: true },
     ],
   },
   {
@@ -124,6 +126,7 @@ export const CATEGORIAS: TramiteCategoria[] = [
       { nombre: 'Revalidación de estudios (SEP)', slug: 'revalidacion-estudios-sep', live: true },
       { nombre: '¿Infonavit o crédito bancario?', slug: 'infonavit-vs-credito-bancario', live: true },
       { nombre: 'Constancia de no inhabilitación', slug: 'constancia-de-no-inhabilitacion', live: true },
+      { nombre: 'Aguinaldo', slug: 'aguinaldo', live: true },
     ],
   },
   {

@@ -123,7 +123,7 @@ El descuento del 50% aplica a **personas de 60 años o más**, **personas con di
 ## Cómo sacar cita
 
 1. Ingresa al portal oficial **citas.sre.gob.mx**.
-2. Crea una cuenta o inicia sesión (puedes usar tu cuenta **Llave MX**).
+2. Crea una cuenta o inicia sesión (puedes usar tu cuenta **[Llave MX](/llave-mx/)**).
 3. Selecciona el trámite (primera vez, renovación, menor, etc.).
 4. Elige la entidad, la oficina, y la fecha y hora disponibles.
 5. Confirma la cita y guarda el comprobante.

@@ -41,7 +41,7 @@ Los CNAME de raíz y www apuntaban por error a `tramitamex-pasaporte.pages.dev` 
 
 ## 3. Estado actual
 
-**75 trámites · 148 páginas · 23 instituciones · sitemap con 145 URLs.**
+**78 trámites · 152 páginas · 24 instituciones · sitemap con 149 URLs.**
 
 ### Estructura clave
 
@@ -70,7 +70,7 @@ src/components/Header.astro     → mega-menú con hover-intent (220 ms de graci
 
 ### Últimos artículos publicados (22/10/2026)
 
-`pension-viudez-orfandad-imss` (69) · `cambio-de-domicilio-fiscal-sat` (70) · `mejoravit` (71) · `constancia-no-deudor-alimentario` (72, institución nueva `dif`) · `cita-consulado-mexicano` (73) · `modalidad-40-imss` (74) · `constancia-de-no-inhabilitacion` (75, institución nueva `buen-gobierno`).
+`pension-viudez-orfandad-imss` (69) · `cambio-de-domicilio-fiscal-sat` (70) · `mejoravit` (71) · `constancia-no-deudor-alimentario` (72, institución nueva `dif`) · `cita-consulado-mexicano` (73) · `modalidad-40-imss` (74) · `constancia-de-no-inhabilitacion` (75, institución nueva `buen-gobierno`) · `aguinaldo` (76) · `llave-mx` (77, institución nueva `atdt`) · `suspension-de-actividades-sat` (78).
 
 ---
 
@@ -110,6 +110,9 @@ La cuenta de Google con la propiedad `tramitamex.com.mx` está en el **Chrome "B
 | `/cita-consulado-mexicano/` | ⏳ Sin revisar |
 | `/modalidad-40-imss/` | ⏳ Sin revisar |
 | `/constancia-de-no-inhabilitacion/` | ⏳ Sin revisar |
+| `/aguinaldo/` | ⏳ Nueva (22/10) — **prioridad**: pico de búsqueda en nov–dic |
+| `/llave-mx/` | ⏳ Nueva (22/10) |
+| `/suspension-de-actividades-sat/` | ⏳ Nueva (22/10) |
 
 ---
 
@@ -165,7 +168,8 @@ Portales de Chihuahua que sí se confirmaron: `ipagos.chihuahua.gob.mx` (pagos) 
 ### Contenido
 
 - [x] ~~Cita en consulado mexicano~~ — publicado (73). El backlog original quedó **vacío**.
-- [ ] Ideas para el siguiente lote (no hay cobertura hoy): suspensión de actividades en el SAT, Seguro de Salud para la Familia (IMSS), crédito Fovissste, retiro de Afore por matrimonio, registro de marca (IMPI).
+- [ ] Ideas para el siguiente lote (no hay cobertura hoy): Seguro de Salud para la Familia (IMSS), crédito Fovissste, retiro de Afore por matrimonio, registro de marca (IMPI).
+- [ ] **Refresh anual de `aguinaldo`** cada octubre: actualizar salario mínimo, UMA (vigente desde febrero), el día de la semana del 20 de diciembre y el estado de las iniciativas de 30 días.
 - [x] ~~Duplicado de tarjeta de circulación~~ — **descartado a propósito** para no canibalizar `tarjeta-de-circulacion.md`.
 
 ### Segundo sitio: `tuguiadelahorro.com` (WordPress/AIOSEO en SiteGround — NO es TramitaMex)

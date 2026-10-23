@@ -121,7 +121,7 @@ A diferencia de los adultos, **los menores no pueden tramitar el de 10 años**. 
 ## Cómo sacar la cita
 
 1. Ingresa al portal oficial **citas.sre.gob.mx**.
-2. Crea una cuenta o inicia sesión (puedes usar tu cuenta **Llave MX**).
+2. Crea una cuenta o inicia sesión (puedes usar tu cuenta **[Llave MX](/llave-mx/)**).
 3. Selecciona el trámite de **pasaporte para menor** (primera vez o renovación).
 4. Elige la entidad, la oficina, y la fecha y hora disponibles.
 5. Confirma la cita y guarda el comprobante.

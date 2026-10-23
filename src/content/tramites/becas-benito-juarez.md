@@ -120,7 +120,7 @@ No se trabaja con cita individual: el registro **se abre por periodos** que anun
 > **Registro de septiembre 2026:** la Coordinación anunció una nueva etapa de registro al arrancar el **ciclo escolar 2026-2027**, para incorporar a estudiantes que no alcanzaron los periodos anteriores (Rita Cetina, Benito Juárez y Jóvenes Escribiendo el Futuro). Como referencia, el ciclo pasado el registro corrió del **15 de septiembre al 5 de octubre**. Las fechas exactas salen en la convocatoria oficial.
 
 > [!CONSEJO]
-> **Prepárate desde agosto:** ten a la mano la [CURP](/curp/), el [acta de nacimiento](/acta-de-nacimiento/), un comprobante de domicilio, la CCT de la escuela, y crea tu cuenta **Llave MX** con anticipación — el portal se satura los primeros días del registro.
+> **Prepárate desde agosto:** ten a la mano la [CURP](/curp/), el [acta de nacimiento](/acta-de-nacimiento/), un comprobante de domicilio, la CCT de la escuela, y crea tu cuenta **[Llave MX](/llave-mx/)** con anticipación — el portal se satura los primeros días del registro.
 
 ## Tiempo de respuesta
 
