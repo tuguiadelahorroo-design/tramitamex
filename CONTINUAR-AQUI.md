@@ -104,24 +104,24 @@ La cuenta de Google con la propiedad `tramitamex.com.mx` está en el **Chrome "B
 | URL | Estado |
 |---|---|
 | `/mejoravit/` | ✅ Ya indexada (22/10) |
-| `/pension-viudez-orfandad-imss/` | ⏳ "Descubierta: sin indexar" — pedir (la cuota del 22/10 ya estaba agotada) |
-| `/cambio-de-domicilio-fiscal-sat/` | ⏳ Sin revisar |
-| `/constancia-no-deudor-alimentario/` | ⏳ Sin revisar |
-| `/cita-consulado-mexicano/` | ⏳ Sin revisar |
-| `/modalidad-40-imss/` | ⏳ Sin revisar |
-| `/constancia-de-no-inhabilitacion/` | ⏳ Sin revisar |
-| `/aguinaldo/` | ⏳ Nueva (22/10) — **prioridad**: pico de búsqueda en nov–dic |
-| `/llave-mx/` | ⏳ Nueva (22/10) |
-| `/suspension-de-actividades-sat/` | ⏳ Nueva (22/10) |
-| `/retiro-afore-por-matrimonio/` | ⏳ Nueva (22/10) |
-| `/registro-de-marca-impi/` | ⏳ Nueva (22/10) |
-| `/seguro-de-salud-para-la-familia/` | ⏳ Nueva (22/10) |
-| `/contrasena-sat/` | ⏳ Nueva (22/10) — **prioridad**: búsqueda enorme |
-| `/registro-de-nacimiento/` | ⏳ Nueva (22/10) |
-| `/pension-bienestar-discapacidad/` | ⏳ Nueva (22/10) |
-| `/visa-canadiense/` | ⏳ Nueva (22/10) |
-| `/cambio-de-afore/` | ⏳ Nueva (22/10) |
-| `/imss-bienestar/` | ⏳ Nueva (22/10) |
+| `/pension-viudez-orfandad-imss/` | ✅ Ya indexada (24/10) |
+| `/cambio-de-domicilio-fiscal-sat/` | ✅ Ya indexada (24/10) |
+| `/constancia-no-deudor-alimentario/` | ✅ Ya indexada (24/10) |
+| `/cita-consulado-mexicano/` | ✅ Ya indexada (24/10) |
+| `/modalidad-40-imss/` | ✅ Ya indexada (24/10) |
+| `/constancia-de-no-inhabilitacion/` | ✅ Ya indexada (24/10) |
+| `/aguinaldo/` | 📨 Indexación solicitada (24/10) |
+| `/llave-mx/` | ✅ Ya indexada (24/10) |
+| `/suspension-de-actividades-sat/` | 📨 Indexación solicitada (24/10) |
+| `/retiro-afore-por-matrimonio/` | 📨 Indexación solicitada (24/10) |
+| `/registro-de-marca-impi/` | ✅ Ya indexada (24/10) |
+| `/seguro-de-salud-para-la-familia/` | ✅ Ya indexada (24/10) |
+| `/contrasena-sat/` | 📨 Indexación solicitada (24/10) |
+| `/registro-de-nacimiento/` | ✅ Ya indexada (24/10) |
+| `/pension-bienestar-discapacidad/` | ✅ Ya indexada (24/10) |
+| `/visa-canadiense/` | ✅ Ya indexada (24/10) |
+| `/cambio-de-afore/` | 📨 Indexación solicitada (24/10) |
+| `/imss-bienestar/` | ✅ Ya indexada (24/10) |
 
 ---
 
@@ -171,7 +171,7 @@ Portales de Chihuahua que sí se confirmaron: `ipagos.chihuahua.gob.mx` (pagos) 
 
 - [x] ~~Reenviar el sitemap~~ — hecho el 22/10/2026.
 - [x] ~~Validar las correcciones~~ — iniciadas el 22/10/2026 (ver §4).
-- [ ] Vaciar la **cola de indexación** (§4), ~10 URLs por día.
+- [x] ~~Vaciar la cola de indexación~~ — hecho el 24/10/2026: 13 ya estaban indexadas solas y se pidieron las 5 restantes. Sitemap reenviado de nuevo (161 URLs).
 - [ ] Decidir si se borran los 3 sitemaps muertos del sitio viejo.
 
 ### Contenido
