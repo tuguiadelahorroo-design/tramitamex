@@ -36,12 +36,13 @@ Los CNAME de raíz y www apuntaban por error a `tramitamex-pasaporte.pages.dev` 
 4. El usuario hace **todos los logins y autorizaciones** (Google, Cloudflare, GitHub, SiteGround). Claude puede guiar o manejar la UI con supervisión, nunca credenciales.
 5. **Verificar las fotos leyéndolas** antes de publicar (ya pasó una vez que una foto "de remodelación" era un sauna).
 6. El usuario cuida el costo: **chat nuevo por tarea**, mínima dispersión de agentes.
+7. **Estilo (desde el 25/10/2026): aplicar la skill `humanizar-texto`** a todo artículo nuevo. En la práctica: pocas negritas (solo cifras, plazos y condiciones; ~10 por artículo, no 50+), nada de listas "- **Etiqueta:** texto", frases de largo variado, paréntesis/punto y coma/preguntas, sin "No es X, es Y". Verificar con `python "C:/Users/morde/.claude/skills/humanizar-texto/auditar.py" archivo.md --detalle`. Los 87 artículos anteriores siguen con el estilo viejo (50–75 negritas): pendiente ofrecer humanizarlos en lote.
 
 ---
 
 ## 3. Estado actual
 
-**87 trámites · 164 páginas · 27 instituciones · sitemap con 161 URLs.**
+**90 trámites · 170 páginas · 30 instituciones · sitemap con 167 URLs.**
 
 ### Estructura clave
 
@@ -70,7 +71,7 @@ src/components/Header.astro     → mega-menú con hover-intent (220 ms de graci
 
 ### Últimos artículos publicados (22/10/2026)
 
-`pension-viudez-orfandad-imss` (69) · `cambio-de-domicilio-fiscal-sat` (70) · `mejoravit` (71) · `constancia-no-deudor-alimentario` (72, institución nueva `dif`) · `cita-consulado-mexicano` (73) · `modalidad-40-imss` (74) · `constancia-de-no-inhabilitacion` (75, institución nueva `buen-gobierno`) · `aguinaldo` (76) · `llave-mx` (77, institución nueva `atdt`) · `suspension-de-actividades-sat` (78) · `retiro-afore-por-matrimonio` (79) · `registro-de-marca-impi` (80, institución nueva `impi`) · `seguro-de-salud-para-la-familia` (81) · `contrasena-sat` (82) · `registro-de-nacimiento` (83) · `pension-bienestar-discapacidad` (84) · `visa-canadiense` (85, institución nueva `gobierno-canada`) · `cambio-de-afore` (86) · `imss-bienestar` (87, institución nueva `imss-bienestar`).
+`pension-viudez-orfandad-imss` (69) · `cambio-de-domicilio-fiscal-sat` (70) · `mejoravit` (71) · `constancia-no-deudor-alimentario` (72, institución nueva `dif`) · `cita-consulado-mexicano` (73) · `modalidad-40-imss` (74) · `constancia-de-no-inhabilitacion` (75, institución nueva `buen-gobierno`) · `aguinaldo` (76) · `llave-mx` (77, institución nueva `atdt`) · `suspension-de-actividades-sat` (78) · `retiro-afore-por-matrimonio` (79) · `registro-de-marca-impi` (80, institución nueva `impi`) · `seguro-de-salud-para-la-familia` (81) · `contrasena-sat` (82) · `registro-de-nacimiento` (83) · `pension-bienestar-discapacidad` (84) · `visa-canadiense` (85, institución nueva `gobierno-canada`) · `cambio-de-afore` (86) · `imss-bienestar` (87, institución nueva `imss-bienestar`) · `etias-viajar-a-europa` (88, `union-europea`) · `vivienda-para-el-bienestar` (89, `conavi`) · `credito-fovissste` (90, `fovissste`).
 
 ---
 
@@ -122,6 +123,9 @@ La cuenta de Google con la propiedad `tramitamex.com.mx` está en el **Chrome "B
 | `/visa-canadiense/` | ✅ Ya indexada (24/10) |
 | `/cambio-de-afore/` | 📨 Indexación solicitada (24/10) |
 | `/imss-bienestar/` | ✅ Ya indexada (24/10) |
+| `/etias-viajar-a-europa/` | ⏳ Nueva (25/10) |
+| `/vivienda-para-el-bienestar/` | ⏳ Nueva (25/10) |
+| `/credito-fovissste/` | ⏳ Nueva (25/10) |
 
 ---
 
@@ -177,7 +181,8 @@ Portales de Chihuahua que sí se confirmaron: `ipagos.chihuahua.gob.mx` (pagos) 
 ### Contenido
 
 - [x] ~~Cita en consulado mexicano~~ — publicado (73). El backlog original quedó **vacío**.
-- [ ] Ideas para el siguiente lote: crédito Fovissste (**ojo**: sus esquemas cambiaron en 2025; verificar todo en fovissste.gob.mx antes de escribir).
+- [ ] Ideas para el siguiente lote: sin pendientes en la lista. Buscar huecos con volumen comparando contra los 90 slugs (cuidar canibalización, p. ej. la CURP biométrica ya está dentro de `curp.md`).
+- [ ] **ETIAS:** revisar cada mes si la UE ya anunció fecha de inicio; al 25/10/2026 no había. Actualizar `etias-viajar-a-europa.md` en cuanto la haya.
 - [ ] **Refresh anual de `aguinaldo`** cada octubre: actualizar salario mínimo, UMA (vigente desde febrero), el día de la semana del 20 de diciembre y el estado de las iniciativas de 30 días.
 - [x] ~~Duplicado de tarjeta de circulación~~ — **descartado a propósito** para no canibalizar `tarjeta-de-circulacion.md`.
 

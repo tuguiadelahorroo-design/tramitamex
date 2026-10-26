@@ -252,6 +252,33 @@ export const INSTITUCIONES: Institucion[] = [
     sitioOficial: 'https://www.canada.ca/en/immigration-refugees-citizenship.html',
     tramites: ['visa-canadiense'],
   },
+  {
+    slug: 'union-europea',
+    nombre: 'Unión Europea',
+    nombreCompleto: 'Unión Europea (Comisión Europea)',
+    descripcion:
+      'Administra el registro de entradas y salidas (EES) en las fronteras del espacio Schengen y el futuro permiso de viaje ETIAS para quienes no necesitan visa.',
+    sitioOficial: 'https://travel-europe.europa.eu/etias',
+    tramites: ['etias-viajar-a-europa'],
+  },
+  {
+    slug: 'conavi',
+    nombre: 'Conavi',
+    nombreCompleto: 'Comisión Nacional de Vivienda',
+    descripcion:
+      'Opera el programa Vivienda para el Bienestar, para familias sin casa propia ni acceso a crédito de vivienda.',
+    sitioOficial: 'https://www.gob.mx/conavi',
+    tramites: ['vivienda-para-el-bienestar'],
+  },
+  {
+    slug: 'fovissste',
+    nombre: 'FOVISSSTE',
+    nombreCompleto: 'Fondo de la Vivienda del ISSSTE',
+    descripcion:
+      'Da créditos de vivienda a las personas que trabajan para el Estado y aportan a la Subcuenta de Vivienda del ISSSTE.',
+    sitioOficial: 'https://www.gob.mx/fovissste',
+    tramites: ['credito-fovissste'],
+  },
 ];
 
 export function getInstitucion(slug: string): Institucion | undefined {

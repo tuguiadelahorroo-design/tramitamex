@@ -71,6 +71,8 @@ El **ISSSTE** (Instituto de Seguridad y Servicios Sociales de los Trabajadores d
 - Obtener tu **constancia de derechohabiencia** (acredita tu derecho a los servicios).
 - Consultar tu vigencia y acceder a otros trámites del Instituto.
 
+Si lo que buscas es comprar casa, el crédito de vivienda para trabajadores del Estado lo da el FOVISSSTE: revisa la guía del **[crédito Mi FOVISSSTE](/credito-fovissste/)**.
+
 ## Constancia de derechohabiencia
 
 La **constancia de derechohabiencia** se genera en línea desde la **Oficina Virtual SINAVID** en menos de 5 minutos:

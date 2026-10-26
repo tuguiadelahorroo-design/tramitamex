@@ -149,7 +149,7 @@ Es el caso más directo: comprador y vendedor acuden al notario, se reúnen los 
 
 ### Compra con crédito Infonavit o bancario
 
-Cuando hay crédito ([Infonavit](/infonavit/), Fovissste o banco), la **compraventa y la hipoteca suelen firmarse en la misma escritura**, ante el notario que designa la institución. La hipoteca queda inscrita a favor del acreedor. Al terminar de pagar el crédito, conviene tramitar la **cancelación de hipoteca** e inscribirla en el Registro Público.
+Cuando hay crédito ([Infonavit](/infonavit/), [Fovissste](/credito-fovissste/) o banco), la **compraventa y la hipoteca suelen firmarse en la misma escritura**, ante el notario que designa la institución. La hipoteca queda inscrita a favor del acreedor. Al terminar de pagar el crédito, conviene tramitar la **cancelación de hipoteca** e inscribirla en el Registro Público.
 
 ### Herencia o adjudicación
 

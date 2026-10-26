@@ -37,6 +37,7 @@ export const CATEGORIAS: TramiteCategoria[] = [
       { nombre: 'Cita en el consulado (MiConsulado)', slug: 'cita-consulado-mexicano', live: true },
       { nombre: 'Llave MX (cuenta del gobierno)', slug: 'llave-mx', live: true },
       { nombre: 'Visa canadiense o eTA', slug: 'visa-canadiense', live: true },
+      { nombre: 'ETIAS y viajar a Europa', slug: 'etias-viajar-a-europa', live: true },
     ],
   },
   {
@@ -134,6 +135,7 @@ export const CATEGORIAS: TramiteCategoria[] = [
       { nombre: 'Aguinaldo', slug: 'aguinaldo', live: true },
       { nombre: 'Retiro Afore por matrimonio', slug: 'retiro-afore-por-matrimonio', live: true },
       { nombre: 'Cambio de Afore (traspaso)', slug: 'cambio-de-afore', live: true },
+      { nombre: 'Crédito Fovissste', slug: 'credito-fovissste', live: true },
     ],
   },
   {
@@ -147,6 +149,7 @@ export const CATEGORIAS: TramiteCategoria[] = [
       { nombre: 'Jóvenes Construyendo el Futuro', slug: 'jovenes-construyendo-el-futuro', live: true },
       { nombre: 'Credencial INAPAM', slug: 'inapam', live: true },
       { nombre: 'Pensión para personas con discapacidad', slug: 'pension-bienestar-discapacidad', live: true },
+      { nombre: 'Vivienda para el Bienestar (Conavi)', slug: 'vivienda-para-el-bienestar', live: true },
     ],
   },
   {
