@@ -123,9 +123,9 @@ La cuenta de Google con la propiedad `tramitamex.com.mx` está en el **Chrome "B
 | `/visa-canadiense/` | ✅ Ya indexada (24/10) |
 | `/cambio-de-afore/` | 📨 Indexación solicitada (24/10) |
 | `/imss-bienestar/` | ✅ Ya indexada (24/10) |
-| `/etias-viajar-a-europa/` | ⏳ Nueva (25/10) |
-| `/vivienda-para-el-bienestar/` | ⏳ Nueva (25/10) |
-| `/credito-fovissste/` | ⏳ Nueva (25/10) |
+| `/etias-viajar-a-europa/` | 📨 Indexación solicitada (25/10) |
+| `/vivienda-para-el-bienestar/` | 📨 Indexación solicitada (25/10) |
+| `/credito-fovissste/` | 📨 Indexación solicitada (25/10) |
 
 ---
 
