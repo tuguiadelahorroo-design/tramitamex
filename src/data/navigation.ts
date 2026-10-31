@@ -137,6 +137,9 @@ export const CATEGORIAS: TramiteCategoria[] = [
       { nombre: 'Retiro Afore por matrimonio', slug: 'retiro-afore-por-matrimonio', live: true },
       { nombre: 'Cambio de Afore (traspaso)', slug: 'cambio-de-afore', live: true },
       { nombre: 'Crédito Fovissste', slug: 'credito-fovissste', live: true },
+      { nombre: 'Vacaciones por ley', slug: 'vacaciones-por-ley', live: true },
+      { nombre: 'Jornada de 40 horas', slug: 'jornada-laboral-40-horas', live: true },
+      { nombre: 'Días de descanso obligatorio', slug: 'dias-de-descanso-obligatorio', live: true },
     ],
   },
   {

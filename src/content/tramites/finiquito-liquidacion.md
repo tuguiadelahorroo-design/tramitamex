@@ -99,7 +99,7 @@ El finiquito reúne varios conceptos. Todos parten de tu **salario diario** (tu 
 
 > (15 días × días trabajados en el año) ÷ 365 × salario diario
 
-**3. Vacaciones no disfrutadas.** Los días de vacaciones que te correspondían y no tomaste, según tu antigüedad. Desde la reforma de *Vacaciones Dignas* (2023), la tabla mínima es:
+**3. Vacaciones no disfrutadas.** Los [días de vacaciones](/vacaciones-por-ley/) que te correspondían y no tomaste, según tu antigüedad. Desde la reforma de *Vacaciones Dignas* (2023), la tabla mínima es:
 
 | Antigüedad | Días de vacaciones |
 |---|---|

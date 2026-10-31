@@ -133,7 +133,7 @@ export const INSTITUCIONES: Institucion[] = [
     descripcion:
       'Rectora de la política laboral en México. Opera el programa Jóvenes Construyendo el Futuro y atiende temas de trabajo y previsión social.',
     sitioOficial: 'https://www.gob.mx/stps',
-    tramites: ['jovenes-construyendo-el-futuro', 'finiquito-liquidacion', 'aguinaldo'],
+    tramites: ['jovenes-construyendo-el-futuro', 'finiquito-liquidacion', 'aguinaldo', 'vacaciones-por-ley', 'jornada-laboral-40-horas', 'dias-de-descanso-obligatorio'],
   },
   {
     slug: 'fonacot',

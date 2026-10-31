@@ -162,3 +162,5 @@ Si llega la fecha límite y no recibiste tu aguinaldo, o te pagaron menos de lo 
 
 > [!CONSEJO]
 > Guarda tus recibos de nómina de todo el año. Si tienes que reclamar ante la PROFEDET, son la prueba más sólida de cuánto ganabas y desde cuándo trabajas ahí.
+
+El aguinaldo no es tu única prestación de fin de año: revisa también tus **[vacaciones](/vacaciones-por-ley/)** y tus **[días de descanso obligatorio](/dias-de-descanso-obligatorio/)**.
