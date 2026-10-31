@@ -279,6 +279,33 @@ export const INSTITUCIONES: Institucion[] = [
     sitioOficial: 'https://www.gob.mx/fovissste',
     tramites: ['credito-fovissste'],
   },
+  {
+    slug: 'crt',
+    nombre: 'CRT',
+    nombreCompleto: 'Comisión Reguladora de Telecomunicaciones',
+    descripcion:
+      'Regula las telecomunicaciones en México. Emitió las reglas para vincular cada línea celular con una persona o empresa y publicó el calendario por último dígito.',
+    sitioOficial: 'https://www.gob.mx/crt',
+    tramites: ['registro-linea-celular'],
+  },
+  {
+    slug: 'profeco',
+    nombre: 'Profeco',
+    nombreCompleto: 'Procuraduría Federal del Consumidor',
+    descripcion:
+      'Atiende las quejas de consumidores contra tiendas y proveedores, y busca un arreglo mediante conciliación.',
+    sitioOficial: 'https://www.gob.mx/profeco',
+    tramites: ['queja-profeco'],
+  },
+  {
+    slug: 'condusef',
+    nombre: 'Condusef',
+    nombreCompleto: 'Comisión Nacional para la Protección y Defensa de los Usuarios de Servicios Financieros',
+    descripcion:
+      'Orienta y defiende a los usuarios de bancos, aseguradoras y otras instituciones financieras, y alerta sobre fraudes.',
+    sitioOficial: 'https://www.gob.mx/condusef',
+    tramites: ['reporte-buro-de-credito'],
+  },
 ];
 
 export function getInstitucion(slug: string): Institucion | undefined {

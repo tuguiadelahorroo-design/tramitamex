@@ -82,6 +82,7 @@ La CURP es uno de los datos que más se piden en México. La necesitas para:
 - Obtención de [pasaporte](/pasaporte/), INE, licencia de conducir y otros documentos oficiales.
 - Acceso a programas sociales y servicios de salud.
 
+- Vincular tu [línea celular de prepago](/registro-linea-celular/), que en 2026 es obligatorio para no perder el servicio.
 ## CURP tradicional vs. CURP biométrica
 
 Conviene saber cuál necesitas antes de empezar, porque el trámite es muy distinto:

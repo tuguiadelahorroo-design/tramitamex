@@ -140,7 +140,7 @@ No necesitas pagar a nadie para comparar; las herramientas oficiales son gratuit
 ## Cómo decidir, paso a paso
 
 1. **Precalifícate en el Infonavit.** Conoce gratis tus puntos, tu monto y tu tasa en Mi Cuenta Infonavit.
-2. **Revisa tu buró de crédito.** Tienes derecho a un reporte de crédito especial gratuito cada 12 meses; así sabrás cómo te verá el banco.
+2. **Revisa tu [buró de crédito](/reporte-buro-de-credito/).** Tienes derecho a un reporte de crédito especial gratuito cada 12 meses; así sabrás cómo te verá el banco.
 3. **Simula el CAT en 2 o 3 bancos.** Mismo monto, mismo plazo, con el simulador de la Condusef y los de cada institución.
 4. **Compara el monto total a pagar.** Mensualidad, CAT y suma final de pagos, incluyendo seguros y comisiones.
 5. **Evalúa las vías mixtas.** Si el monto no alcanza, corre los números de Cofinavit o Apoyo Infonavit.

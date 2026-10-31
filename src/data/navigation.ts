@@ -38,6 +38,7 @@ export const CATEGORIAS: TramiteCategoria[] = [
       { nombre: 'Llave MX (cuenta del gobierno)', slug: 'llave-mx', live: true },
       { nombre: 'Visa canadiense o eTA', slug: 'visa-canadiense', live: true },
       { nombre: 'ETIAS y viajar a Europa', slug: 'etias-viajar-a-europa', live: true },
+      { nombre: 'Registro de línea celular (CURP)', slug: 'registro-linea-celular', live: true },
     ],
   },
   {
@@ -164,12 +165,15 @@ export const CATEGORIAS: TramiteCategoria[] = [
       { nombre: 'Constancia de no deudor alimentario', slug: 'constancia-no-deudor-alimentario', live: true },
       { nombre: 'Divorcio', slug: 'divorcio', live: true },
       { nombre: 'Registro de marca (IMPI)', slug: 'registro-de-marca-impi', live: true },
+      { nombre: 'Queja en Profeco', slug: 'queja-profeco', live: true },
+      { nombre: 'Reporte de Buró de Crédito', slug: 'reporte-buro-de-credito', live: true },
     ],
   },
 ];
 
 /** Trámites destacados para el footer / accesos rápidos. */
 export const TRAMITES_DESTACADOS: TramiteLink[] = [
+  { nombre: 'Registro de celular', slug: 'registro-linea-celular', live: true },
   { nombre: 'CURP', slug: 'curp', live: true },
   { nombre: 'RFC', slug: 'rfc', live: true },
   { nombre: 'Constancia de Situación Fiscal', slug: 'constancia-de-situacion-fiscal', live: true },

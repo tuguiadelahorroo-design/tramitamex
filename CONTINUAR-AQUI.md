@@ -1,6 +1,6 @@
 # TramitaMex — Punto de continuación
 
-> **Actualizado:** 2026-10-22 (tarde) · 75 trámites
+> **Actualizado:** 2026-10-31 · 93 trámites
 >
 > **Para retomar en un chat nuevo:** abre Claude Code en la carpeta del proyecto y escribe:
 > `lee CONTINUAR-AQUI.md y continuemos`
@@ -42,7 +42,7 @@ Los CNAME de raíz y www apuntaban por error a `tramitamex-pasaporte.pages.dev` 
 
 ## 3. Estado actual
 
-**90 trámites · 170 páginas · 30 instituciones · sitemap con 167 URLs.**
+**93 trámites · 176 páginas · 33 instituciones · sitemap con 173 URLs.**
 
 ### Estructura clave
 
@@ -71,7 +71,7 @@ src/components/Header.astro     → mega-menú con hover-intent (220 ms de graci
 
 ### Últimos artículos publicados (22/10/2026)
 
-`pension-viudez-orfandad-imss` (69) · `cambio-de-domicilio-fiscal-sat` (70) · `mejoravit` (71) · `constancia-no-deudor-alimentario` (72, institución nueva `dif`) · `cita-consulado-mexicano` (73) · `modalidad-40-imss` (74) · `constancia-de-no-inhabilitacion` (75, institución nueva `buen-gobierno`) · `aguinaldo` (76) · `llave-mx` (77, institución nueva `atdt`) · `suspension-de-actividades-sat` (78) · `retiro-afore-por-matrimonio` (79) · `registro-de-marca-impi` (80, institución nueva `impi`) · `seguro-de-salud-para-la-familia` (81) · `contrasena-sat` (82) · `registro-de-nacimiento` (83) · `pension-bienestar-discapacidad` (84) · `visa-canadiense` (85, institución nueva `gobierno-canada`) · `cambio-de-afore` (86) · `imss-bienestar` (87, institución nueva `imss-bienestar`) · `etias-viajar-a-europa` (88, `union-europea`) · `vivienda-para-el-bienestar` (89, `conavi`) · `credito-fovissste` (90, `fovissste`).
+`pension-viudez-orfandad-imss` (69) · `cambio-de-domicilio-fiscal-sat` (70) · `mejoravit` (71) · `constancia-no-deudor-alimentario` (72, institución nueva `dif`) · `cita-consulado-mexicano` (73) · `modalidad-40-imss` (74) · `constancia-de-no-inhabilitacion` (75, institución nueva `buen-gobierno`) · `aguinaldo` (76) · `llave-mx` (77, institución nueva `atdt`) · `suspension-de-actividades-sat` (78) · `retiro-afore-por-matrimonio` (79) · `registro-de-marca-impi` (80, institución nueva `impi`) · `seguro-de-salud-para-la-familia` (81) · `contrasena-sat` (82) · `registro-de-nacimiento` (83) · `pension-bienestar-discapacidad` (84) · `visa-canadiense` (85, institución nueva `gobierno-canada`) · `cambio-de-afore` (86) · `imss-bienestar` (87, institución nueva `imss-bienestar`) · `etias-viajar-a-europa` (88, `union-europea`) · `vivienda-para-el-bienestar` (89, `conavi`) · `credito-fovissste` (90, `fovissste`) · `registro-linea-celular` (91, `crt`) · `queja-profeco` (92, `profeco`) · `reporte-buro-de-credito` (93, `condusef`).
 
 ---
 
@@ -126,6 +126,9 @@ La cuenta de Google con la propiedad `tramitamex.com.mx` está en el **Chrome "B
 | `/etias-viajar-a-europa/` | 📨 Indexación solicitada (25/10) |
 | `/vivienda-para-el-bienestar/` | 📨 Indexación solicitada (25/10) |
 | `/credito-fovissste/` | 📨 Indexación solicitada (25/10) |
+| `/registro-linea-celular/` | ⏳ Nueva (31/10) — **máxima prioridad**: plazos activos hasta el 31/12 |
+| `/queja-profeco/` | ⏳ Nueva (31/10) — Buen Fin del 13 al 17/11 |
+| `/reporte-buro-de-credito/` | ⏳ Nueva (31/10) |
 
 ---
 
@@ -182,6 +185,8 @@ Portales de Chihuahua que sí se confirmaron: `ipagos.chihuahua.gob.mx` (pagos) 
 
 - [x] ~~Cita en consulado mexicano~~ — publicado (73). El backlog original quedó **vacío**.
 - [ ] Ideas para el siguiente lote: sin pendientes en la lista. Buscar huecos con volumen comparando contra los 90 slugs (cuidar canibalización, p. ej. la CURP biométrica ya está dentro de `curp.md`).
+- [ ] **Registro de celular:** quitar `registro-linea-celular` de `TRAMITES_DESTACADOS` (`navigation.ts`) en enero de 2027, cuando pase el último plazo, y reescribir el artículo en pasado (cómo reactivar una línea). Si la CRT cambia fechas, actualizar la tabla.
+- [ ] **Revisar Search Console** (no se pudo el 31/10: Chrome desconectado, Ahrefs sin plan, navegador integrado sin sesión): ¿entraron las 8 solicitudes del 24 y 25/10? ¿cómo van las 3 validaciones? ¿ya subieron clics e impresiones?
 - [ ] **ETIAS:** revisar cada mes si la UE ya anunció fecha de inicio; al 25/10/2026 no había. Actualizar `etias-viajar-a-europa.md` en cuanto la haya.
 - [ ] **Refresh anual de `aguinaldo`** cada octubre: actualizar salario mínimo, UMA (vigente desde febrero), el día de la semana del 20 de diciembre y el estado de las iniciativas de 30 días.
 - [x] ~~Duplicado de tarjeta de circulación~~ — **descartado a propósito** para no canibalizar `tarjeta-de-circulacion.md`.
@@ -195,6 +200,8 @@ Portales de Chihuahua que sí se confirmaron: `ipagos.chihuahua.gob.mx` (pagos) 
 ---
 
 ## 7. Trampas técnicas ya conocidas
+
+- **`wc -m` en Git Bash cuenta bytes, no caracteres**: con acentos da de más y no sirve para medir `descripcion` (máx. 165) ni `tituloSeo` (máx. 49). Medir con `len()` en Python; el build falla si te pasas, y eso es bueno.
 
 - **Las fichas viejas del SAT (`sat.gob.mx/gobmx/Paginas/ficha_*.html`) pueden estar desactualizadas.** Manda el texto de la RMF vigente en el DOF (anexos publicados cada diciembre). Ejemplo: la ficha 7/CFF decía que la Contraseña se tramita presencial "sin cita" para cualquiera; la RMF 2026 lo limita a extranjeros, adultos mayores, gestantes y personas con discapacidad.
 - **Los PDF oficiales grandes (DOF, leyes) se leen mejor bajándolos con `curl` y pasándolos por `pdftotext`** (está instalado) y luego `grep`; `WebFetch` los devuelve como binario. Los textos salen en latin1: convertir con `iconv -f latin1 -t utf-8`.
