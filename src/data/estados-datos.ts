@@ -295,6 +295,61 @@ export const DATOS_ESTADO: Record<string, DatosEstado> = {
       { nombre: 'Actas del Registro Civil', url: 'https://www.gob.mx/actas' },
     ],
   },
+  'quintana-roo': {
+    intro:
+      'En Quintana Roo el costo de la licencia depende del municipio, y la diferencia es grande: la de automovilista a 2 años cuesta ≈ $1,897 en Cancún y ≈ $608 en Chetumal. Las tablas oficiales de estos cuatro municipios marcan 50 % de descuento para personas adultas mayores con credencial del INAPAM. Para el vehículo, desde 2026 hay que inscribirse en el Registro Estatal de Contribuyentes del SATQ antes de cualquier trámite. Las placas tienen vigencia de tres años.',
+    costos: [
+      { tramite: 'Licencia de automovilista en Benito Juárez (Cancún)', detalle: '≈ $1,897 (2 años) · $2,846 (3) · $3,794 (4) · $4,743 (5)' },
+      { tramite: 'Licencia de automovilista en Playa del Carmen', detalle: '≈ $1,373 (2 años) · $1,695 (3) · $1,922 (4) · $2,191 (5)' },
+      { tramite: 'Licencia de automovilista en Tulum', detalle: '≈ $1,466 (2 años) · $1,818 (3) · $2,405 (4) · $2,874 (5)' },
+      { tramite: 'Licencia de automovilista en Othón P. Blanco (Chetumal)', detalle: '≈ $608 (2 años) · $911 (3) · $1,215 (4) · $1,519 (5)' },
+      { tramite: 'Canje de placas 2026', detalle: '≈ $1,527 + $141 (auto) · $509 + $141 (moto). Montos de enero; confirma el actual' },
+    ],
+    portales: [
+      { nombre: 'Costos de licencia 2026 en Benito Juárez', url: 'https://imoveqroo.qroo.gob.mx/wp-content/uploads/2026/01/COSTOS-LICENCIAS-2026-BENITO-JUAREZ.pdf' },
+      { nombre: 'Costos de licencia 2026 en Playa del Carmen', url: 'https://imoveqroo.qroo.gob.mx/wp-content/uploads/2026/01/COSTOS-LICENCIAS-2026-PLAYA-DEL-CARMEN.pdf' },
+      { nombre: 'Instituto de Movilidad de Quintana Roo', url: 'https://imoveqroo.qroo.gob.mx/' },
+      { nombre: 'Canje de placas 2026 y Registro Estatal de Contribuyentes', url: 'https://cgc.qroo.gob.mx/quintana-roo-inicia-canje-de-placas-2026-y-activa-el-registro-estatal-de-contribuyentes-como-requisito-para-tramites-vehiculares/' },
+      { nombre: 'Servicio de Administración Tributaria de Quintana Roo', url: 'https://satq.qroo.gob.mx/' },
+      { nombre: 'Actas del Registro Civil', url: 'https://www.gob.mx/actas' },
+    ],
+  },
+  chiapas: {
+    intro:
+      'En Chiapas la licencia nueva se paga en las oficinas de Finanzas, y solo después de aprobar el examen de conducir ante el personal de tránsito. Hay vigencias de 2 a 5 años, y el canje sale más barato que una licencia nueva. Si tienes de 16 a 18 años existe una licencia de automovilista por 1 año, de ≈ $864. La tabla oficial lista aparte el examen.',
+    costos: [
+      { tramite: 'Licencia de automovilista, nueva', detalle: '≈ $1,272 (2 años) · $1,330 (3) · $1,738 (4) · $2,088 (5)' },
+      { tramite: 'Canje de licencia de automovilista', detalle: '≈ $922 (2 años) · $1,214 (3) · $1,330 (4) · $1,738 (5)' },
+      { tramite: 'Licencia de motociclista, nueva', detalle: '≈ $747 (2 años) · $864 (3) · $922 (4) · $1,214 (5)' },
+      { tramite: 'Reposición de licencia', detalle: '≈ $456 (2 a 5 años) · $981 (automovilista permanente)' },
+      { tramite: 'Examen para licencia', detalle: '≈ $159' },
+    ],
+    portales: [
+      { nombre: 'Costos de licencia 2026 — Subsecretaría de Ingresos', url: 'http://www.ingresos.haciendachiapas.gob.mx/servicios/licencia-costos.asp' },
+      { nombre: 'Requisitos de licencia', url: 'http://www.ingresos.haciendachiapas.gob.mx/servicios/licencia-req.asp' },
+      { nombre: 'Requisitos y costos vehiculares', url: 'http://www.ingresos.haciendachiapas.gob.mx/servicios/req-costos-vehic.asp' },
+      { nombre: 'Actas del Registro Civil', url: 'https://www.gob.mx/actas' },
+    ],
+  },
+  aguascalientes: {
+    intro:
+      'En Aguascalientes la licencia se tramita en la Secretaría de Seguridad Pública, en la Avenida Aguascalientes, Ejido Ojocaliente, y solo puede entrar quien hace el trámite: sin niños ni acompañantes. La primera vez lleva curso de vialidad y examen teórico y práctico. El control vehicular cuesta lo mismo para auto y moto, y se paga de enero a marzo. Hay vigencias de 2, 4 y 6 años.',
+    costos: [
+      { tramite: 'Licencia de automovilista o motociclista', detalle: '≈ $484 (2 años) · $784 (4 años) · $1,104 (6 años)' },
+      { tramite: 'Licencia de operador A a E', detalle: '≈ $605 (2 años) · $980 (4 años) · $1,380 (6 años)' },
+      { tramite: 'Permiso para menor de edad', detalle: '≈ $615 (1 año) · $865 (2 años)' },
+      { tramite: 'Reposición de licencia', detalle: '≈ $415' },
+      { tramite: 'Control vehicular 2026', detalle: '≈ $960 (auto o moto)' },
+      { tramite: 'Canje de placas', detalle: '≈ $1,710 (auto) · $1,355 (moto), con control vehicular incluido y sin adeudos' },
+    ],
+    portales: [
+      { nombre: 'Licencia de automovilista — Trámites Aguascalientes', url: 'https://www.aguascalientes.gob.mx/tramites/tramite/EDO-SSP-2' },
+      { nombre: 'Costos de licencia 2026: boletín oficial', url: 'https://eservicios2.aguascalientes.gob.mx/ssi/vnoticia.aspx?b=9292' },
+      { nombre: 'Pago de control vehicular', url: 'https://epagos.aguascalientes.gob.mx/controlvehicular' },
+      { nombre: 'Canje de placas', url: 'https://www.aguascalientes.gob.mx/tramites/tramite/EDO-SEFI-18' },
+      { nombre: 'Actas del Registro Civil', url: 'https://www.gob.mx/actas' },
+    ],
+  },
 };
 
 export function getDatosEstado(slug: string): DatosEstado | undefined {

@@ -150,11 +150,13 @@ export const DATOS_ESTADO: Record<string, DatosEstado> = { ... };
 
 Cada entrada: un `intro`, 3–4 `costos` con `≈`, y 3–4 `portales` oficiales. Copiar la forma de `cdmx` / `jalisco`.
 
-**Ya tienen datos (17):** `cdmx`, `estado-de-mexico`, `jalisco`, `nuevo-leon`, `guanajuato`, `queretaro`, `puebla`, `veracruz`, `baja-california`, `sonora`, `chihuahua`, `coahuila`, `michoacan`, `yucatan`, `tamaulipas`, `hidalgo`, `san-luis-potosi`.
+**Ya tienen datos (20):** `cdmx`, `estado-de-mexico`, `jalisco`, `nuevo-leon`, `guanajuato`, `queretaro`, `puebla`, `veracruz`, `baja-california`, `sonora`, `chihuahua`, `coahuila`, `michoacan`, `yucatan`, `tamaulipas`, `hidalgo`, `san-luis-potosi`, `quintana-roo`, `chiapas`, `aguascalientes`.
 
-**Faltan (15):** aguascalientes, baja-california-sur, campeche, chiapas, colima, durango, guerrero, morelos, nayarit, oaxaca, quintana-roo, sinaloa, tabasco, tlaxcala, zacatecas.
+**Faltan (12):** baja-california-sur, campeche, colima, durango, guerrero, morelos, nayarit, oaxaca, sinaloa, tabasco, tlaxcala, zacatecas.
 
-**Sinaloa y Quintana Roo:** Sinaloa solo publica cifras viejas (RETYS de 2022) y su licencia permanente de $2,323 terminó el 30/06/2026; falta su Ley de Hacienda. Quintana Roo cobra la licencia por municipio: leer los PDF `COSTOS-LICENCIAS-2026-*.pdf` de `imoveqroo.qroo.gob.mx`.
+**Casos difíciles:** Sinaloa solo publica cifras viejas (RETYS de 2022) y su licencia permanente de $2,323 terminó el 30/06/2026; falta su Ley de Hacienda. Oaxaca tiene fuentes que se contradicen ($2,365 fijo contra 15 UMA en la permanente); falta su Ley Estatal de Derechos. Chiapas quedó sin refrendo 2026, porque solo hay una ficha oficial de hace más de 5 años.
+
+**Tablas por JavaScript:** los catálogos de SLP, Aguascalientes y Chiapas se leen con el navegador integrado (`get_page_text`), no con WebFetch.
 
 **Coahuila vence pronto:** sus estímulos de refrendo terminan el 31/12/2026; en enero de 2027 hay que revisar cuotas y estímulos nuevos en `pagafacil.gob.mx`. Ese portal devuelve 403 a `curl`, pero abre normal en el navegador integrado (el PDF de estímulos es imagen: se lee con captura).
 
