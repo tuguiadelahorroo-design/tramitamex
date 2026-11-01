@@ -191,6 +191,59 @@ export const DATOS_ESTADO: Record<string, DatosEstado> = {
       { nombre: 'Actas del Registro Civil', url: 'https://www.gob.mx/actas' },
     ],
   },
+  coahuila: {
+    intro:
+      'En Coahuila la licencia de auto particular es la Tipo A, de chofer particular. La primera vez se tramita en un módulo; para renovar en Paga Fácil, la licencia debe estar vencida o a 30 días o menos de vencer. La ley fija aparte el examen teórico, el médico y la fotografía. El refrendo baja con la edad del auto, y adultos mayores y personas pensionadas tienen un estímulo de 25 % (modelos 2021 a 2026) o 50 % (modelos anteriores) en un vehículo. Estos estímulos vencen el 31 de diciembre de 2026.',
+    costos: [
+      { tramite: 'Licencia Tipo A, chofer particular', detalle: '≈ $684 (2 años) · $972 (4 años)' },
+      { tramite: 'Licencia Tipo C, motociclista', detalle: '≈ $187 (2 años) · $265 (4 años)' },
+      { tramite: 'Exámenes y fotografía de la licencia', detalle: '≈ $84 (teórico) · $73 (médico) · $70 (fotografía)' },
+      { tramite: 'Reposición por robo o extravío', detalle: '≈ $485 (Tipo A) · $133 (motociclista)' },
+      { tramite: 'Refrendo anual 2026', detalle: '≈ $2,441 de cuota de ley. Con estímulo: $1,792 (auto de más de 10 y hasta 20 años) · $1,320 (más de 20 años) · $410 (moto). Se suman fomentos' },
+    ],
+    portales: [
+      { nombre: 'Control vehicular — Paga Fácil', url: 'https://www.pagafacil.gob.mx/pagafacilV2/epago/cv/cv.php' },
+      { nombre: 'Requisitos para renovar licencia — Paga Fácil', url: 'https://www.pagafacil.gob.mx/pagafacilv2/epago/licencias/requisitos.html' },
+      { nombre: 'Estímulos fiscales 2026 de control vehicular', url: 'https://www.pagafacil.gob.mx/pagafacilv2/Estimulos%20Fiscales%202026.pdf' },
+      { nombre: 'Ley de Hacienda de Coahuila: cuotas', url: 'https://www.congresocoahuila.gob.mx/transparencia/03/Leyes_Coahuila/coa25.pdf' },
+      { nombre: 'Actas del Registro Civil', url: 'https://www.gob.mx/actas' },
+    ],
+  },
+  michoacan: {
+    intro:
+      'En Michoacán la licencia se tramita en las Oficinas de Rentas y pide examen médico, examen de manejo y el Certificado de No Inscripción del RNOA, que es gratuito. Además de 2, 4 y 5 años hay licencia permanente para automovilistas y motociclistas. El refrendo se paga en los primeros cuatro meses del año; después se cobra multa. Puedes pagarlo en línea con tarjeta.',
+    costos: [
+      { tramite: 'Licencia de automovilista', detalle: '≈ $1,216 (2 años) · $1,780 (4 años) · $2,059 (5 años) · $2,887 (permanente)' },
+      { tramite: 'Licencia de motociclista', detalle: '≈ $735 (2 años) · $966 (4 años) · $1,291 (5 años) · $2,138 (permanente)' },
+      { tramite: 'Refrendo anual 2026', detalle: '≈ $1,256 (auto) · $626 (vehículo adaptado para persona con discapacidad) · $401 (moto)' },
+      { tramite: 'Juego de placas de auto', detalle: '≈ $2,260, con tarjeta de circulación' },
+    ],
+    portales: [
+      { nombre: 'Licencias de conducir — SATMICH', url: 'https://satmich.michoacan.gob.mx/tramites/vehicular/licencias' },
+      { nombre: 'Refrendo digital — Gobierno de Michoacán', url: 'https://refrendodigital.michoacan.gob.mx/' },
+      { nombre: 'Refrendo anual: cuotas y plazo', url: 'https://michoacan.gob.mx/tramites/refrendo-anual/' },
+      { nombre: 'Directorio de recaudadoras — SATMICH', url: 'https://satmich.michoacan.gob.mx/directorio/recaudadoras' },
+      { nombre: 'Certificado de No Inscripción — RNOA', url: 'https://rnoa.dif.gob.mx/' },
+      { nombre: 'Actas del Registro Civil', url: 'https://www.gob.mx/actas' },
+    ],
+  },
+  yucatan: {
+    intro:
+      'En Yucatán la licencia se saca en el Centro de Servicios Yucatán, en Mérida, o en Valladolid, con cita y tres exámenes: conocimientos, pericia y médico. Antes de pagar revisa el trámite de descuentos: baja 50 % la licencia de 2 años a personas trabajadoras, jubiladas o pensionadas con ingreso diario promedio de hasta 4.5 salarios mínimos, y exenta a amas de casa sin remuneración, estudiantes con beca y personas desempleadas que buscan trabajo. La renovación tiene ficha en línea, pero la propia página avisa que por ahora no está disponible.',
+    costos: [
+      { tramite: 'Licencia de automovilista (nueva o renovación)', detalle: '≈ $845 (2 años) · $1,267 (3 años) · $2,252 (5 años)' },
+      { tramite: 'Licencia de motociclista', detalle: '≈ $422 (2 años) · $607 (3 años) · $1,010 (5 años)' },
+      { tramite: 'Duplicado de licencia de automovilista', detalle: '≈ $422 (2 años) · $634 (3 años) · $1,126 (5 años)' },
+      { tramite: 'Placas de auto particular (vehículo nuevo)', detalle: '≈ $3,027, con engomado y tarjeta de circulación' },
+    ],
+    portales: [
+      { nombre: 'Licencia de conducir — Trámites Yucatán', url: 'https://tramites.yucatan.gob.mx/tramite/2c75119d' },
+      { nombre: 'Renovación de licencia', url: 'https://tramites.yucatan.gob.mx/tramite/5c419b4a' },
+      { nombre: 'Descuentos de licencias de conducir', url: 'https://tramites.yucatan.gob.mx/tramite/20f4297a' },
+      { nombre: 'Agenda de citas para licencia', url: 'https://agendapolicia.yucatan.gob.mx' },
+      { nombre: 'Actas del Registro Civil', url: 'https://www.gob.mx/actas' },
+    ],
+  },
 };
 
 export function getDatosEstado(slug: string): DatosEstado | undefined {

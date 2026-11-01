@@ -150,9 +150,11 @@ export const DATOS_ESTADO: Record<string, DatosEstado> = { ... };
 
 Cada entrada: un `intro`, 3–4 `costos` con `≈`, y 3–4 `portales` oficiales. Copiar la forma de `cdmx` / `jalisco`.
 
-**Ya tienen datos (11):** `cdmx`, `estado-de-mexico`, `jalisco`, `nuevo-leon`, `guanajuato`, `queretaro`, `puebla`, `veracruz`, `baja-california`, `sonora`, `chihuahua`.
+**Ya tienen datos (14):** `cdmx`, `estado-de-mexico`, `jalisco`, `nuevo-leon`, `guanajuato`, `queretaro`, `puebla`, `veracruz`, `baja-california`, `sonora`, `chihuahua`, `coahuila`, `michoacan`, `yucatan`.
 
-**Faltan (21):** aguascalientes, baja-california-sur, campeche, chiapas, coahuila, colima, durango, guerrero, hidalgo, michoacan, morelos, nayarit, oaxaca, quintana-roo, san-luis-potosi, sinaloa, tabasco, tamaulipas, tlaxcala, yucatan, zacatecas.
+**Faltan (18):** aguascalientes, baja-california-sur, campeche, chiapas, colima, durango, guerrero, hidalgo, morelos, nayarit, oaxaca, quintana-roo, san-luis-potosi, sinaloa, tabasco, tamaulipas, tlaxcala, zacatecas.
+
+**Coahuila vence pronto:** sus estímulos de refrendo terminan el 31/12/2026; en enero de 2027 hay que revisar cuotas y estímulos nuevos en `pagafacil.gob.mx`. Ese portal devuelve 403 a `curl`, pero abre normal en el navegador integrado (el PDF de estímulos es imagen: se lee con captura).
 
 ### ✅ Método que funciona (01/11/2026)
 
