@@ -150,9 +150,18 @@ export const DATOS_ESTADO: Record<string, DatosEstado> = { ... };
 
 Cada entrada: un `intro`, 3–4 `costos` con `≈`, y 3–4 `portales` oficiales. Copiar la forma de `cdmx` / `jalisco`.
 
-**Ya tienen datos (8):** `cdmx`, `estado-de-mexico`, `jalisco`, `nuevo-leon`, `guanajuato`, `queretaro`, `puebla`, `veracruz`.
+**Ya tienen datos (11):** `cdmx`, `estado-de-mexico`, `jalisco`, `nuevo-leon`, `guanajuato`, `queretaro`, `puebla`, `veracruz`, `baja-california`, `sonora`, `chihuahua`.
 
-**Faltan (24):** aguascalientes, baja-california, baja-california-sur, campeche, chiapas, chihuahua, coahuila, colima, durango, guerrero, hidalgo, michoacan, morelos, nayarit, oaxaca, quintana-roo, san-luis-potosi, sinaloa, sonora, tabasco, tamaulipas, tlaxcala, yucatan, zacatecas.
+**Faltan (21):** aguascalientes, baja-california-sur, campeche, chiapas, coahuila, colima, durango, guerrero, hidalgo, michoacan, morelos, nayarit, oaxaca, quintana-roo, san-luis-potosi, sinaloa, tabasco, tamaulipas, tlaxcala, yucatan, zacatecas.
+
+### ✅ Método que funciona (01/11/2026)
+
+1. Buscar la **Ley de Ingresos 2026** o Ley de Hacienda del estado limitando la búsqueda a sus dominios (`allowed_domains`, modo `extended`).
+2. Bajar el PDF con `curl` y agente de navegador, pasarlo por `pdftotext -layout` y `iconv -f latin1 -t utf-8`, y buscar `licencia`, `refrendo`, `tarjeta de circulaci`.
+3. Contrastar con el portal de trámites del estado: en Baja California la ley da la base ($1,095.62) y el portal la cifra del mes ($1,127.38 en noviembre), porque actualiza cuotas mensualmente.
+4. Probar cada URL con `curl -L` antes de publicarla (`citas.sspe.chihuahua.gob.mx` estaba caída; la buena es `citassspe.chihuahua.gob.mx`).
+5. Si la cifra oficial no es de 2026, publicarla con su fecha a la vista o dejarla fuera.
+6. **Pendiente en Chihuahua:** confirmar la tarifa 2026 de licencia; la de $550/$1,401/$1,881 es de octubre de 2025. Sus cuotas 2026 de licencia no aparecieron en la Ley de Ingresos.
 
 ### ⚠️ Aprendizaje importante: NO sirve la búsqueda web general
 
@@ -189,7 +198,7 @@ Portales de Chihuahua que sí se confirmaron: `ipagos.chihuahua.gob.mx` (pagos) 
 - [x] ~~Cita en consulado mexicano~~ — publicado (73). El backlog original quedó **vacío**.
 - [ ] Ideas para el siguiente lote: sin pendientes en la lista. Buscar huecos con volumen comparando contra los 90 slugs (cuidar canibalización, p. ej. la CURP biométrica ya está dentro de `curp.md`).
 - [ ] **Registro de celular:** quitar `registro-linea-celular` de `TRAMITES_DESTACADOS` (`navigation.ts`) en enero de 2027, cuando pase el último plazo, y reescribir el artículo en pasado (cómo reactivar una línea). Si la CRT cambia fechas, actualizar la tabla.
-- [ ] **Revisar Search Console** (no se pudo el 31/10: Chrome desconectado, Ahrefs sin plan, navegador integrado sin sesión): ¿entraron las 8 solicitudes del 24 y 25/10? ¿cómo van las 3 validaciones? ¿ya subieron clics e impresiones?
+- [ ] **Revisar Search Console** (no se pudo el 31/10 ni el 01/11: hace falta el perfil de Chrome con `haciaelexitott@gmail.com`; `traxalts` y `tuguiadelahorroo` no tienen acceso, Ahrefs no tiene plan y el navegador integrado no tiene sesión): ¿entraron las 8 solicitudes del 24 y 25/10? ¿cómo van las 3 validaciones? ¿ya subieron clics e impresiones?
 - [ ] **Jornada de 40 horas:** cuando la Secretaría del Trabajo publique las disposiciones del registro electrónico (entran en vigor el 1/01/2027), agregarlas a `jornada-laboral-40-horas.md`. Actualizar cada enero la tabla de `dias-de-descanso-obligatorio.md`.
 - [ ] **ETIAS:** revisar cada mes si la UE ya anunció fecha de inicio; al 25/10/2026 no había. Actualizar `etias-viajar-a-europa.md` en cuanto la haya.
 - [ ] **Refresh anual de `aguinaldo`** cada octubre: actualizar salario mínimo, UMA (vigente desde febrero), el día de la semana del 20 de diciembre y el estado de las iniciativas de 30 días.

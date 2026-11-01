@@ -144,6 +144,53 @@ export const DATOS_ESTADO: Record<string, DatosEstado> = {
       { nombre: 'Actas del Registro Civil', url: 'https://www.gob.mx/actas' },
     ],
   },
+  'baja-california': {
+    intro:
+      'En Baja California la licencia se tramita en la Recaudación de Rentas de tu municipio, con examen teórico y práctico, y eliges 3 o 5 años de vigencia. El estado ajusta sus cuotas cada mes, así que el importe cambia un poco según cuándo pagues; tu fecha de cumpleaños también puede moverlo.',
+    costos: [
+      { tramite: 'Licencia de automovilista (primera vez)', detalle: '≈ $1,127 (3 años) · ≈ $1,503 (5 años), cuota de noviembre de 2026' },
+      { tramite: 'Revalidación de licencia', detalle: '≈ $1,000 (3 años) · ≈ $1,335 (5 años)' },
+      { tramite: 'Reposición de licencia', detalle: '≈ $837 de base en la Ley de Ingresos 2026 (se actualiza)' },
+      { tramite: 'Refrendo de tarjeta de circulación (auto particular)', detalle: '≈ $1,167 de base en la Ley de Ingresos 2026 (se actualiza)' },
+    ],
+    portales: [
+      { nombre: 'Licencia de conducir: requisitos y costo del mes', url: 'https://retys.bajacalifornia.gob.mx/Portal/TyS/661' },
+      { nombre: 'Citas en línea — Gobierno de Baja California', url: 'https://citas.ebajacalifornia.gob.mx/' },
+      { nombre: 'Pagos digitales — Secretaría de Hacienda', url: 'https://www.bajacalifornia.gob.mx/hacienda/pagosdigitales' },
+      { nombre: 'Actas del Registro Civil', url: 'https://www.gob.mx/actas' },
+    ],
+  },
+  sonora: {
+    intro:
+      'En Sonora la licencia se saca en cualquier Agencia o Subagencia Fiscal de la Secretaría de Hacienda, y puedes elegir de 1 a 5 años. Primero necesitas aprobar el examen teórico y práctico de tu municipio y una valoración médica. Las personas de 60 años o más, jubiladas, pensionadas o con discapacidad pagan bastante menos.',
+    costos: [
+      { tramite: 'Licencia de automovilista', detalle: '≈ $765 (1 año) · $1,573 (3 años) · $2,763 (5 años)' },
+      { tramite: 'Licencia con descuento (1 año)', detalle: '≈ $377 (60 años o más, jubilados y pensionados) · $225 (personas con discapacidad)' },
+      { tramite: 'Revalidación de placas 2026 (auto)', detalle: '≈ $1,909 · $897 (jubilados y pensionados) · $750 (personas con discapacidad)' },
+    ],
+    portales: [
+      { nombre: 'Expedición de licencia de automovilista', url: 'https://www.sonora.gob.mx/servicios-y-tramites/121.146-expedicion-de-licencia-de-automovilista' },
+      { nombre: 'Requisitos de licencia — Secretaría de Hacienda', url: 'https://hacienda.sonora.gob.mx/expedicion-licencia-conducir' },
+      { nombre: 'Padrón vehicular — Secretaría de Hacienda', url: 'https://hacienda.sonora.gob.mx/contribuyentes/padron-vehicular' },
+      { nombre: 'Pagos en línea — Secretaría de Hacienda', url: 'https://pagos.sonora.gob.mx/pagos-hacienda/' },
+      { nombre: 'Actas del Registro Civil', url: 'https://www.gob.mx/actas' },
+    ],
+  },
+  chihuahua: {
+    intro:
+      'En Chihuahua las licencias las atiende la Secretaría de Seguridad Pública del Estado (SSPE); la primera vez lleva curso y evaluaciones, y hay que sacar cita. La revalidación vehicular se paga en línea o en Recaudación de Rentas, y a principios de año suele tener descuento por pronto pago.',
+    costos: [
+      { tramite: 'Licencia de conducir (tarifa publicada en octubre de 2025)', detalle: '≈ $550 (1 año) · $1,401 (3 años) · $1,881 (6 años). Confirma la de 2026' },
+      { tramite: 'Revalidación vehicular 2026', detalle: '≈ $1,507 a $2,529, según el modelo y el mes de pago' },
+      { tramite: 'Programa preventivo de placas', detalle: '≈ $500, si vendiste el auto sin cambio de propietario o ya no circula' },
+    ],
+    portales: [
+      { nombre: 'Licencias — Secretaría de Seguridad Pública del Estado', url: 'https://sspe.chihuahua.gob.mx/licencias/' },
+      { nombre: 'Citas de licencias — SSPE', url: 'https://citassspe.chihuahua.gob.mx/' },
+      { nombre: 'Pagos en línea — Gobierno de Chihuahua', url: 'https://ipagos.chihuahua.gob.mx/' },
+      { nombre: 'Actas del Registro Civil', url: 'https://www.gob.mx/actas' },
+    ],
+  },
 };
 
 export function getDatosEstado(slug: string): DatosEstado | undefined {
