@@ -244,6 +244,57 @@ export const DATOS_ESTADO: Record<string, DatosEstado> = {
       { nombre: 'Actas del Registro Civil', url: 'https://www.gob.mx/actas' },
     ],
   },
+  tamaulipas: {
+    intro:
+      'En Tamaulipas la licencia se tramita en las Oficinas Fiscales y hay dos vigencias: 2 años o permanente. La permanente sigue pidiendo una visita: cada 5 años toca un examen de valoración integral en la Oficina Fiscal, pagando solo el costo de reposición. Las personas adultas mayores, jubiladas o pensionadas con domicilio en el estado pagan 50 % en la licencia, y también en refrendo y placas una vez al año. Finanzas suele publicar descuentos por acuerdo durante el año, así que revísalos antes de pagar.',
+    costos: [
+      { tramite: 'Licencia de automovilista', detalle: '≈ $938 (2 años) · $1,642 (permanente)' },
+      { tramite: 'Licencia de chofer particular', detalle: '≈ $1,173 (2 años) · $1,994 (permanente)' },
+      { tramite: 'Licencia de motociclista', detalle: '≈ $938 (2 años) · $1,642 (permanente), calculado con la UMA de 2026' },
+      { tramite: 'Refrendo anual del vehículo', detalle: '≈ $2,346 de base (20 UMA); pueden sumarse otros conceptos' },
+      { tramite: 'Placas (expedición, reposición o canje)', detalle: '≈ $587 de base (5 UMA)' },
+    ],
+    portales: [
+      { nombre: 'Secretaría de Finanzas de Tamaulipas', url: 'https://finanzas.tamaulipas.gob.mx/' },
+      { nombre: 'Costos de licencia: comunicado de octubre de 2026', url: 'https://tamaulipas.gob.mx/2026/10/aprovechan-conductores-50-de-descuento-en-licencias-durante-la-feria-tamaulipas-2026/' },
+      { nombre: 'Ley de Hacienda de Tamaulipas', url: 'https://po.tamaulipas.gob.mx/wp-content/uploads/2026/01/Ley_Hacienda.pdf' },
+      { nombre: 'Actas del Registro Civil', url: 'https://www.gob.mx/actas' },
+    ],
+  },
+  hidalgo: {
+    intro:
+      'En Hidalgo la licencia la expide la Secretaría de Seguridad Pública, de forma presencial, en Pachuca y en delegaciones como Tula, Tulancingo, Huejutla e Ixmiquilpan. Se paga en banco con el formato F-7. La primera vez pide certificado médico de una institución pública de salud de Hidalgo y examen teórico-práctico; el canje sale más barato que una licencia nueva. Si el subtotal de la factura de tu auto es menor de $200,000 no pagas tenencia, siempre que esté inscrito en el estado y cubras el refrendo.',
+    costos: [
+      { tramite: 'Licencia de automovilista (tipo B), nueva', detalle: '≈ $610 (2 años) · $1,197 (4 años)' },
+      { tramite: 'Canje de licencia de automovilista', detalle: '≈ $458 (2 años) · $880 (4 años)' },
+      { tramite: 'Licencia de motociclista (tipo C), nueva', detalle: '≈ $458 (2 años) · $880 (4 años)' },
+      { tramite: 'Reposición por robo o extravío', detalle: '≈ $305 (2 años) · $587 (4 años)' },
+      { tramite: 'Refrendo 2026 con Circula Seguro', detalle: '≈ $1,177 · $1,050 con verificación del primer semestre · $821 (moto). Programa vigente hasta el 30 de junio; confirma el monto actual' },
+    ],
+    portales: [
+      { nombre: 'Licencia para conducir — RUTS Hidalgo', url: 'https://ruts.hidalgo.gob.mx/ver/10614' },
+      { nombre: 'Tenencia y refrendo 2026 — Portal Tributario', url: 'https://portaltributario.hidalgo.gob.mx/informacion-sobre-tenencia-y-refrendo-2026.html' },
+      { nombre: 'Portal Tributario de Hidalgo', url: 'https://portaltributario.hidalgo.gob.mx/' },
+      { nombre: 'Actas del Registro Civil', url: 'https://www.gob.mx/actas' },
+    ],
+  },
+  'san-luis-potosi': {
+    intro:
+      'En San Luis Potosí la licencia de servicio particular es gratuita y permanente para automovilistas, choferes particulares y motociclistas. Se tramita en persona en las Oficinas Recaudadoras; la primera vez pide carta compromiso de Finanzas, identificación y dos comprobantes de domicilio en el estado, uno de hace un año y otro de los últimos 3 meses. Antes de salir, valida tu licencia en el sitio de Finanzas. En 2026 no se cobra tarjeta de circulación: la de 2025 dura tres años.',
+    costos: [
+      { tramite: 'Licencia de servicio particular', detalle: 'Gratis y permanente' },
+      { tramite: 'Permiso para menores (primera vez)', detalle: '≈ $824' },
+      { tramite: 'Reposición de licencia', detalle: 'Tiene costo; la página de Finanzas muestra cifras distintas, así que confírmalo en la Oficina Recaudadora' },
+      { tramite: 'Control vehicular 2026', detalle: '≈ $1,400 anunciados en enero · $1,451 en el catálogo estatal, actualizado en junio' },
+    ],
+    portales: [
+      { nombre: 'Licencia de conducir — Secretaría de Finanzas', url: 'https://finanzas.slp.gob.mx/licencia-de-conducir/' },
+      { nombre: 'Licencia por primera vez — Catálogo estatal', url: 'https://tramites.slp.gob.mx/detalles/SF-2022-8404-001-A' },
+      { nombre: 'Refrendo anual — Catálogo estatal', url: 'https://tramites.slp.gob.mx/detalles/SF-2024-8404-006-A' },
+      { nombre: 'Requisitos de control vehicular — Enlace SIPEL', url: 'https://enlacesipel.slp.gob.mx/RequisitosCV' },
+      { nombre: 'Actas del Registro Civil', url: 'https://www.gob.mx/actas' },
+    ],
+  },
 };
 
 export function getDatosEstado(slug: string): DatosEstado | undefined {
