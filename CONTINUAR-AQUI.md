@@ -150,11 +150,11 @@ export const DATOS_ESTADO: Record<string, DatosEstado> = { ... };
 
 Cada entrada: un `intro`, 3–4 `costos` con `≈`, y 3–4 `portales` oficiales. Copiar la forma de `cdmx` / `jalisco`.
 
-**Ya tienen datos (20):** `cdmx`, `estado-de-mexico`, `jalisco`, `nuevo-leon`, `guanajuato`, `queretaro`, `puebla`, `veracruz`, `baja-california`, `sonora`, `chihuahua`, `coahuila`, `michoacan`, `yucatan`, `tamaulipas`, `hidalgo`, `san-luis-potosi`, `quintana-roo`, `chiapas`, `aguascalientes`.
+**Ya tienen datos (23):** `cdmx`, `estado-de-mexico`, `jalisco`, `nuevo-leon`, `guanajuato`, `queretaro`, `puebla`, `veracruz`, `baja-california`, `sonora`, `chihuahua`, `coahuila`, `michoacan`, `yucatan`, `tamaulipas`, `hidalgo`, `san-luis-potosi`, `quintana-roo`, `chiapas`, `aguascalientes`, `durango`, `zacatecas`, `baja-california-sur`.
 
-**Faltan (12):** baja-california-sur, campeche, colima, durango, guerrero, morelos, nayarit, oaxaca, sinaloa, tabasco, tlaxcala, zacatecas.
+**Faltan (9):** campeche, colima, guerrero, morelos, nayarit, oaxaca, sinaloa, tabasco, tlaxcala.
 
-**Casos difíciles:** Sinaloa solo publica cifras viejas (RETYS de 2022) y su licencia permanente de $2,323 terminó el 30/06/2026; falta su Ley de Hacienda. Oaxaca tiene fuentes que se contradicen ($2,365 fijo contra 15 UMA en la permanente); falta su Ley Estatal de Derechos. Chiapas quedó sin refrendo 2026, porque solo hay una ficha oficial de hace más de 5 años.
+**Casos difíciles:** Sinaloa solo publica cifras viejas (RETYS de 2022) y su licencia permanente de $2,323 terminó el 30/06/2026; falta su Ley de Hacienda. Oaxaca tiene fuentes que se contradicen ($2,365 fijo contra 15 UMA en la permanente); falta su Ley Estatal de Derechos. Chiapas y Baja California Sur quedaron sin refrendo 2026 por falta de fuente oficial vigente. Colima tiene cifras que se contradicen entre `col.gob.mx` y `semov.col.gob.mx`. Morelos y Tabasco solo muestran fichas viejas: revisar sus leyes de 2026.
 
 **Tablas por JavaScript:** los catálogos de SLP, Aguascalientes y Chiapas se leen con el navegador integrado (`get_page_text`), no con WebFetch.
 

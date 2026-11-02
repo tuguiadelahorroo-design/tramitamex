@@ -350,6 +350,56 @@ export const DATOS_ESTADO: Record<string, DatosEstado> = {
       { nombre: 'Actas del Registro Civil', url: 'https://www.gob.mx/actas' },
     ],
   },
+  durango: {
+    intro:
+      'En Durango la licencia de automovilista o motociclista dura 3 años. Antes de pagarla hay que cubrir en cajas municipales la constancia de no infracción y el derecho a examen, cuyo monto fija la Dirección Municipal de Vialidad. En el refrendo, las personas con discapacidad, jubiladas, pensionadas o de la tercera edad tienen 50 % de subsidio en un vehículo durante 2026, si están al corriente y registradas en el padrón. Las placas se cambian cada seis años.',
+    costos: [
+      { tramite: 'Licencia de automovilista (3 años)', detalle: '≈ $985' },
+      { tramite: 'Licencia de motociclista (3 años)', detalle: '≈ $657' },
+      { tramite: 'Refrendo de auto particular', detalle: '≈ $1,877 de base (16 UMA); pueden sumarse otros conceptos' },
+      { tramite: 'Refrendo de moto', detalle: '≈ $704 de base (6 UMA); pueden sumarse otros conceptos' },
+      { tramite: 'Canje o replaqueo de auto particular', detalle: '≈ $938 de base (8 UMA), cada seis años' },
+    ],
+    portales: [
+      { nombre: 'Trámites de la Secretaría de Finanzas y de Administración', url: 'https://www.durango.gob.mx/tramites-y-servicios/secretarias/secretaria_de_finanzas__y_de_administracion' },
+      { nombre: 'Ley de Hacienda de Durango', url: 'https://congresodurango.gob.mx/Archivos/legislacion/LEY%20DE%20HACIENDA%20DEL%20ESTADO%20DE%20DURANGO.pdf' },
+      { nombre: 'Ley de Ingresos de Durango 2026: subsidios', url: 'https://congresodurango.gob.mx/Archivos/LXX/LEYES-INGRESOS/2026/INGRESOS%20ESTADO%20DE%20DURANGO%202026.pdf' },
+      { nombre: 'Actas del Registro Civil', url: 'https://www.gob.mx/actas' },
+    ],
+  },
+  zacatecas: {
+    intro:
+      'En Zacatecas la licencia se paga en los módulos de Recaudación de Rentas, en efectivo o con tarjeta. Necesitas 18 años cumplidos, y la primera vez toca un examen de 10 preguntas con al menos 60 % de aciertos. El control vehicular debe pagarse en los primeros tres meses del año, pero la Ley de Ingresos mantiene un estímulo hasta diciembre para autos modelo 2021 y anteriores. El porcentaje depende del modelo y del mes de pago.',
+    costos: [
+      { tramite: 'Licencia de automovilista', detalle: '≈ $452 (2 años) · $821 (4) · $986 (6) en la ley; el catálogo estatal marca ≈ $497, $903 y $1,085' },
+      { tramite: 'Licencia de motociclista', detalle: '≈ $300 (2 años) · $500 (4) · $660 (6) en la ley' },
+      { tramite: 'Reposición de licencia', detalle: '≈ $183' },
+      { tramite: 'Control vehicular 2026', detalle: '≈ $2,350 de cuota de ley; pueden sumarse otros conceptos' },
+      { tramite: 'Estímulo de abril a diciembre', detalle: '≈ 15 % (modelos 2017 a 2021) · 30 % más 10 % (2016 y anteriores) · 55 % (motos)' },
+    ],
+    portales: [
+      { nombre: 'Licencia de automovilista — Catálogo estatal', url: 'https://catalogoestatal.zacatecas.gob.mx/tramites/152' },
+      { nombre: 'Secretaría de Finanzas de Zacatecas', url: 'https://sefin.zacatecas.gob.mx/' },
+      { nombre: 'Ley de Ingresos de Zacatecas 2026: estímulos', url: 'https://www.congresozac.gob.mx/65/ley&cual=337&tipo=pdf' },
+      { nombre: 'Ley de Hacienda de Zacatecas', url: 'https://www.congresozac.gob.mx/65/ley&cual=57' },
+      { nombre: 'Actas del Registro Civil', url: 'https://www.gob.mx/actas' },
+    ],
+  },
+  'baja-california-sur': {
+    intro:
+      'En Baja California Sur las licencias cambiaron de costo y vigencia con una reforma publicada el 14 de mayo de 2026: ahora hay opciones de 1, 3 y 6 años. Se pagan en el portal del gobierno estatal, en kioscos de servicios o en las 25 oficinas de recaudación de los cinco municipios. Si te roban o pierdes una licencia de 3 o 6 años, la reposición tiene 50 % de descuento al inicio de la vigencia y 30 % después. La de 1 año no tiene reposición.',
+    costos: [
+      { tramite: 'Licencia de automovilista', detalle: '≈ $500 (1 año) · $901 (3 años) · $1,622 (6 años)' },
+      { tramite: 'Licencia de motociclista', detalle: '≈ $300 (1 año) · $732 (3 años) · $1,318 (6 años)' },
+      { tramite: 'Licencia de chofer', detalle: '≈ $700 (1 año) · $1,502 (3 años) · $2,702 (6 años)' },
+    ],
+    portales: [
+      { nombre: 'Costos y vigencias de licencias — Secretaría de Finanzas', url: 'https://finanzas.bcs.gob.mx/actualiza-gobierno-del-estado-costos-y-vigencias-de-licencias-de-conducir-en-bcs/' },
+      { nombre: 'Trámites del Gobierno de Baja California Sur', url: 'https://tramites.bcs.gob.mx/' },
+      { nombre: 'Dotación y reposición de placas', url: 'https://tramites.bcs.gob.mx/catX/la-dotacion-y-o-reposicion-de-placas-de-identificacion-del-servicio-de-control-vehicular/' },
+      { nombre: 'Actas del Registro Civil', url: 'https://www.gob.mx/actas' },
+    ],
+  },
 };
 
 export function getDatosEstado(slug: string): DatosEstado | undefined {
