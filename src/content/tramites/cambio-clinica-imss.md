@@ -155,6 +155,8 @@ El asegurado o pensionado puede registrar también a sus **beneficiarios** para 
 
 Si un familiar aparece adscrito a una clínica distinta a la del resto, el **cambio parcial** permite moverlo sin afectar al resto del grupo.
 
+Para el caso más común, la guía de **[alta de un hijo en el IMSS](/registrar-hijo-imss/)** trae los requisitos, los documentos y hasta qué edad conserva el derecho.
+
 ## Tiempo de respuesta y qué sigue
 
 El trámite en línea se **concluye al momento** y genera tu comprobante de inmediato. El cambio suele verse reflejado en todos los sistemas del Instituto en un plazo breve, comúnmente **uno o dos días hábiles**. A partir de entonces puedes:

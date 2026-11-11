@@ -108,7 +108,7 @@ La inscripción al RFC es **gratis**, ya sea en línea o de forma presencial en 
 
 ## Cómo sacar cita
 
-La cita para acudir a una oficina del SAT se agenda **gratis** en el portal oficial de citas; no uses gestores ni intermediarios.
+La cita para acudir a una oficina del SAT se agenda **gratis** en el portal oficial de citas; no uses gestores ni intermediarios. Si no encuentras horarios, la guía de la **[cita SAT](/cita-sat/)** explica cómo funciona la Fila Virtual.
 
 1. Entra a **citas.sat.gob.mx** y elige *Registrar cita*.
 2. Selecciona tu entidad federativa, el módulo más cercano y el servicio *Inscripción al RFC personas físicas*.

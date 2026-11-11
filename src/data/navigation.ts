@@ -39,6 +39,7 @@ export const CATEGORIAS: TramiteCategoria[] = [
       { nombre: 'Visa canadiense o eTA', slug: 'visa-canadiense', live: true },
       { nombre: 'ETIAS y viajar a Europa', slug: 'etias-viajar-a-europa', live: true },
       { nombre: 'Registro de línea celular (CURP)', slug: 'registro-linea-celular', live: true },
+      { nombre: 'Reposición del INE', slug: 'reposicion-ine', live: true },
     ],
   },
   {
@@ -73,6 +74,7 @@ export const CATEGORIAS: TramiteCategoria[] = [
       { nombre: 'Cambio de domicilio fiscal', slug: 'cambio-de-domicilio-fiscal-sat', live: true },
       { nombre: 'Suspensión de actividades', slug: 'suspension-de-actividades-sat', live: true },
       { nombre: 'Contraseña del SAT', slug: 'contrasena-sat', live: true },
+      { nombre: 'Cita SAT', slug: 'cita-sat', live: true },
     ],
   },
   {
@@ -94,6 +96,7 @@ export const CATEGORIAS: TramiteCategoria[] = [
       { nombre: 'Modalidad 40 (continuación voluntaria)', slug: 'modalidad-40-imss', live: true },
       { nombre: 'Seguro de Salud para la Familia', slug: 'seguro-de-salud-para-la-familia', live: true },
       { nombre: 'IMSS-Bienestar (sin seguridad social)', slug: 'imss-bienestar', live: true },
+      { nombre: 'Alta de un hijo en el IMSS', slug: 'registrar-hijo-imss', live: true },
     ],
   },
   {

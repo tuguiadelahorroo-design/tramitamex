@@ -19,7 +19,7 @@ export const INSTITUCIONES: Institucion[] = [
     descripcion:
       'Autoridad fiscal de México. Administra el RFC, la facturación electrónica, la e.firma y las declaraciones de impuestos.',
     sitioOficial: 'https://www.sat.gob.mx/',
-    tramites: ['rfc', 'constancia-de-situacion-fiscal', 'firma-electronica', 'opinion-de-cumplimiento', 'declaracion-anual', 'buzon-tributario', 'devolucion-impuestos-sat', 'facturar-cfdi', 'resico-sat', 'rfc-menores-de-edad', 'cfdi-nomina', 'cambio-de-domicilio-fiscal-sat', 'suspension-de-actividades-sat', 'contrasena-sat'],
+    tramites: ['rfc', 'constancia-de-situacion-fiscal', 'firma-electronica', 'opinion-de-cumplimiento', 'declaracion-anual', 'buzon-tributario', 'devolucion-impuestos-sat', 'facturar-cfdi', 'resico-sat', 'rfc-menores-de-edad', 'cfdi-nomina', 'cambio-de-domicilio-fiscal-sat', 'suspension-de-actividades-sat', 'contrasena-sat', 'cita-sat'],
   },
   {
     slug: 'imss',
@@ -28,7 +28,7 @@ export const INSTITUCIONES: Institucion[] = [
     descripcion:
       'Brinda seguridad social a los trabajadores: NSS, atención médica, semanas cotizadas, pensiones e incapacidades.',
     sitioOficial: 'https://www.imss.gob.mx/',
-    tramites: ['nss', 'semanas-cotizadas-imss', 'vigencia-de-derechos-imss', 'cita-medica-imss', 'pension-imss', 'incapacidad-imss', 'alta-patronal-imss', 'cambio-clinica-imss', 'pension-viudez-orfandad-imss', 'seguro-de-salud-para-la-familia', 'modalidad-40-imss'],
+    tramites: ['nss', 'semanas-cotizadas-imss', 'vigencia-de-derechos-imss', 'cita-medica-imss', 'pension-imss', 'incapacidad-imss', 'alta-patronal-imss', 'cambio-clinica-imss', 'pension-viudez-orfandad-imss', 'seguro-de-salud-para-la-familia', 'modalidad-40-imss', 'registrar-hijo-imss'],
   },
   {
     slug: 'renapo',
@@ -53,7 +53,7 @@ export const INSTITUCIONES: Institucion[] = [
     nombreCompleto: 'Instituto Nacional Electoral',
     descripcion: 'Emite la credencial para votar (INE), la identificación oficial más usada en México.',
     sitioOficial: 'https://www.ine.mx/',
-    tramites: ['ine'],
+    tramites: ['ine', 'reposicion-ine'],
   },
   {
     slug: 'sep',

@@ -126,6 +126,8 @@ La cita se agenda en línea de forma gratuita:
 
 También puedes agendar por teléfono en INETEL: **800 433 2000**.
 
+Si perdiste tu credencial o te la robaron, sigue la guía de **[reposición del INE](/reposicion-ine/)**: primero se reporta y luego tienes 30 días para ir al módulo.
+
 ## Tiempo de respuesta
 
 La credencial **no se entrega el mismo día**: se imprime de forma centralizada y se envía al módulo donde la tramitaste. El plazo estimado es de aproximadamente **5 a 30 días naturales**; la fecha exacta aparece en tu comprobante. Conviene verificar el estatus en línea antes de acudir.
