@@ -176,3 +176,5 @@ Se han documentado casos de personas que **venden citas** del consulado.
 - **Confiar en la tarifa de otro país:** cada consulado publica la suya.
 - **Pagar a un gestor por la cita:** es reventa, y te arriesgas a que la cancelen.
 - **Datos que no coinciden** entre tu acta y tu identificación: corrige primero con una **[corrección de actas](/correccion-de-actas/)**.
+
+Si vives fuera de México y necesitas una identificación, revisa la guía de la **[matrícula consular](/matricula-consular/)**: cuesta 41 dólares y dura cinco años.

@@ -1,6 +1,6 @@
 # TramitaMex — Punto de continuación
 
-> **Actualizado:** 2026-11-14 · 105 trámites
+> **Actualizado:** 2026-11-14 · 108 trámites
 >
 > **Para retomar en un chat nuevo:** abre Claude Code en la carpeta del proyecto y escribe:
 > `lee CONTINUAR-AQUI.md y continuemos`
@@ -42,7 +42,7 @@ Los CNAME de raíz y www apuntaban por error a `tramitamex-pasaporte.pages.dev` 
 
 ## 3. Estado actual
 
-**105 trámites · 190 páginas · 35 instituciones · sitemap con 187 URLs.**
+**108 trámites · 193 páginas · 35 instituciones · sitemap con 190 URLs.**
 
 ### Estructura clave
 
@@ -141,6 +141,9 @@ La cuenta de Google con la propiedad `tramitamex.com.mx` está en el **Chrome "B
 | `/imss-trabajadores-independientes/` | ⏳ Nueva (14/11) |
 | `/unificacion-de-cuentas-afore/` | ⏳ Nueva (14/11) |
 | `/importacion-temporal-de-vehiculos/` | ⏳ Nueva (14/11) |
+| `/forma-migratoria-multiple/` | ⏳ Nueva (14/11) |
+| `/matricula-consular/` | ⏳ Nueva (14/11) |
+| `/prestamos-issste/` | ⏳ Nueva (14/11) |
 
 ---
 
@@ -223,6 +226,8 @@ Portales de Chihuahua que sí se confirmaron: `ipagos.chihuahua.gob.mx` (pagos) 
 - [ ] **Categoría nueva pendiente:** `recibo-de-luz-cfe` quedó en "Patrimonio y legal" por ahora. Cuando haya 4 o 5 temas de hogar (agua, gas, internet), crear la categoría "Hogar y servicios" y rediseñar el menú; lo mismo para migración y visas.
 - [ ] **Formato SAM:** el INM lo cobra desde 2026 ($294, ficha del 30/07/2026). Revisar el monto cada enero, porque los derechos se actualizan.
 - [ ] **Importación temporal de vehículos:** las tarifas son de la página de Banjercito al 30/10/2026 (45/51 USD más IVA; depósito 200/300/400 USD). Revisar su tarifario al actualizar. Falta fuente oficial para las zonas donde no se exige el permiso (el portal del SAT rechazó la conexión).
+- [ ] **Tarifas migratorias 2026 (fuente para los artículos de migración que faltan):** la tabla oficial es una imagen en `gob.mx/inm/articulos/tarifas-de-derechos-migratorios-2026`. Leída el 14/11/2026: visitante sin permiso de trabajo $983 · SAM $294 · permiso para trabajar $4,341 · permiso para salir y regresar $591 · visa por oferta de empleo o unidad familiar $248 · cambio de condición o regularización $1,847 · residente temporal $11,141 (1 año), $16,693 (2), $21,143 (3), $25,058 (4) · residente permanente $13,579 · reposición de tarjeta de residente $1,780. Cambian cada 1 de enero.
+- [ ] **Préstamos ISSSTE:** el artículo no trae montos ni tasas porque el catálogo oficial es de hace más de 4 años. Agregarlos cuando el ISSSTE publique los del programa vigente.
 - [ ] **ETIAS:** revisar cada mes si la UE ya anunció fecha de inicio; al 25/10/2026 no había. Actualizar `etias-viajar-a-europa.md` en cuanto la haya.
 - [ ] **Refresh anual de `aguinaldo`** cada octubre: actualizar salario mínimo, UMA (vigente desde febrero), el día de la semana del 20 de diciembre y el estado de las iniciativas de 30 días.
 - [x] ~~Duplicado de tarjeta de circulación~~ — **descartado a propósito** para no canibalizar `tarjeta-de-circulacion.md`.

@@ -41,6 +41,8 @@ export const CATEGORIAS: TramiteCategoria[] = [
       { nombre: 'Registro de línea celular (CURP)', slug: 'registro-linea-celular', live: true },
       { nombre: 'Reposición del INE', slug: 'reposicion-ine', live: true },
       { nombre: 'Permiso de salida de menores (SAM)', slug: 'permiso-salida-de-menores', live: true },
+      { nombre: 'Forma Migratoria Múltiple (FMM)', slug: 'forma-migratoria-multiple', live: true },
+      { nombre: 'Matrícula consular', slug: 'matricula-consular', live: true },
     ],
   },
   {
@@ -100,6 +102,7 @@ export const CATEGORIAS: TramiteCategoria[] = [
       { nombre: 'Alta de un hijo en el IMSS', slug: 'registrar-hijo-imss', live: true },
       { nombre: 'Guarderías del IMSS', slug: 'guarderias-imss', live: true },
       { nombre: 'IMSS para trabajadores independientes', slug: 'imss-trabajadores-independientes', live: true },
+      { nombre: 'Préstamos personales ISSSTE', slug: 'prestamos-issste', live: true },
     ],
   },
   {

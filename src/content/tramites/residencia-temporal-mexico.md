@@ -172,3 +172,5 @@ Ambos son gratuitos y federales. También te servirán para contratar telefonía
 - **Trabajar sin permiso de trabajo:** la residencia temporal por sí sola no autoriza recibir ingresos de fuente mexicana; hacerlo puede costarte la condición migratoria.
 - **Documentos extranjeros sin apostilla o sin traducción:** actas de nacimiento o matrimonio emitidas fuera de México deben legalizarse o apostillarse y traducirse.
 - **Confiar en gestores no autorizados:** los trámites solo se resuelven en consulados y oficinas del INM; nadie puede "garantizar" una visa ni acelerar el canje por un pago.
+
+Si solo vienes de visita por menos de 180 días, lo que necesitas es la **[Forma Migratoria Múltiple (FMM)](/forma-migratoria-multiple/)**.

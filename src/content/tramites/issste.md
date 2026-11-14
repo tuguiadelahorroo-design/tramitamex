@@ -125,3 +125,5 @@ La **constancia de derechohabiencia** es válida por **60 días naturales**. La 
 
 > [!CONSEJO]
 > Instala la app **ASISSSTE Móvil**: te deja agendar citas y consultar tu información sin entrar a la computadora, igual que la app del IMSS para los derechohabientes del Seguro Social.
+
+¿Necesitas dinero? El Instituto asigna cada lunes **[préstamos personales del ISSSTE](/prestamos-issste/)** entre quienes se registran en línea.

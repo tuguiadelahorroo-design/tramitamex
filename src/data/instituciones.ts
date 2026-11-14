@@ -45,7 +45,7 @@ export const INSTITUCIONES: Institucion[] = [
     nombreCompleto: 'Secretaría de Relaciones Exteriores',
     descripcion: 'Emite el pasaporte mexicano y atiende trámites para mexicanos en el extranjero.',
     sitioOficial: 'https://www.gob.mx/sre',
-    tramites: ['pasaporte', 'pasaporte-menores', 'doble-nacionalidad', 'cita-consulado-mexicano'],
+    tramites: ['pasaporte', 'pasaporte-menores', 'doble-nacionalidad', 'cita-consulado-mexicano', 'matricula-consular'],
   },
   {
     slug: 'ine',
@@ -169,7 +169,7 @@ export const INSTITUCIONES: Institucion[] = [
     descripcion:
       'Brinda seguridad social a los trabajadores del Estado: atención médica, citas, derechohabiencia y pensiones.',
     sitioOficial: 'https://www.gob.mx/issste',
-    tramites: ['issste'],
+    tramites: ['issste', 'prestamos-issste'],
   },
   {
     slug: 'salud',
@@ -196,7 +196,7 @@ export const INSTITUCIONES: Institucion[] = [
     descripcion:
       'Autoridad migratoria de México. Emite las tarjetas de residente temporal y permanente, y atiende los trámites migratorios de las personas extranjeras en el país.',
     sitioOficial: 'https://www.gob.mx/inm',
-    tramites: ['residencia-temporal-mexico', 'permiso-salida-de-menores'],
+    tramites: ['residencia-temporal-mexico', 'permiso-salida-de-menores', 'forma-migratoria-multiple'],
   },
   {
     slug: 'dif',
