@@ -43,6 +43,7 @@ export const CATEGORIAS: TramiteCategoria[] = [
       { nombre: 'Permiso de salida de menores (SAM)', slug: 'permiso-salida-de-menores', live: true },
       { nombre: 'Forma Migratoria Múltiple (FMM)', slug: 'forma-migratoria-multiple', live: true },
       { nombre: 'Matrícula consular', slug: 'matricula-consular', live: true },
+      { nombre: 'Residencia permanente en México', slug: 'residencia-permanente-mexico', live: true },
     ],
   },
   {
@@ -151,6 +152,7 @@ export const CATEGORIAS: TramiteCategoria[] = [
       { nombre: 'Jornada de 40 horas', slug: 'jornada-laboral-40-horas', live: true },
       { nombre: 'Días de descanso obligatorio', slug: 'dias-de-descanso-obligatorio', live: true },
       { nombre: 'Unificación de cuentas Afore', slug: 'unificacion-de-cuentas-afore', live: true },
+      { nombre: 'Visa de trabajo para México', slug: 'visa-de-trabajo-mexico', live: true },
     ],
   },
   {

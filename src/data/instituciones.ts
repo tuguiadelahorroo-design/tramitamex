@@ -196,7 +196,7 @@ export const INSTITUCIONES: Institucion[] = [
     descripcion:
       'Autoridad migratoria de México. Emite las tarjetas de residente temporal y permanente, y atiende los trámites migratorios de las personas extranjeras en el país.',
     sitioOficial: 'https://www.gob.mx/inm',
-    tramites: ['residencia-temporal-mexico', 'permiso-salida-de-menores', 'forma-migratoria-multiple'],
+    tramites: ['residencia-temporal-mexico', 'permiso-salida-de-menores', 'forma-migratoria-multiple', 'visa-de-trabajo-mexico', 'residencia-permanente-mexico'],
   },
   {
     slug: 'dif',

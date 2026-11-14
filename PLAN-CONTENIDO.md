@@ -59,7 +59,7 @@ Tema en el respaldo (slug) y tamaño de referencia. Marcar con [x] al publicar.
 - [x] `permiso-importacion-temporal-en-mexico` → publicado como `/importacion-temporal-de-vehiculos/` (14/11/2026) — Permiso de Importación Temporal (2106 palabras)
 - [ ] `permiso-repatriacion-mexico` — Repatriación de Mexicanos (1232 palabras)
 - [x] `permiso-salida-menores-mexico` → publicado como `/permiso-salida-de-menores/` (14/11/2026) — Permiso de Salida para Menores de Edad en México (1724 palabras)
-- [ ] `permiso-trabajo-extranjero-mexico` — Permiso de Trabajo para Extranjeros (1155 palabras)
+- [x] `permiso-trabajo-extranjero-mexico` → publicado como `/visa-de-trabajo-mexico/` (14/11/2026) — Permiso de Trabajo para Extranjeros (1155 palabras)
 - [ ] `permiso-visitante-regional-mexico` — Tarjeta de Visitante Regional (1238 palabras)
 - [ ] `permiso-visitante-trabajador-fronterizo-mexico` — Tarjeta de Visitante Trabajador Fronterizo (1185 palabras)
 - [ ] `poder-notarial-en-mexico` — Poder Notarial en México (3083 palabras)
@@ -85,9 +85,9 @@ Tema en el respaldo (slug) y tamaño de referencia. Marcar con [x] al publicar.
 - [ ] `tramites-migratorios-en-mexico` — Trámites Migratorios en México (3173 palabras)
 - [x] `unificacion-afore-mexico` → publicado como `/unificacion-de-cuentas-afore/` (14/11/2026) — Unificación de Cuentas AFORE (1509 palabras)
 - [ ] `visa-estudiante-mexico` — Visa de Estudiante en México (1420 palabras)
-- [ ] `visa-residente-permanente-mexico` — Visa Residente Permanente en México (1929 palabras)
+- [x] `visa-residente-permanente-mexico` → publicado como `/residencia-permanente-mexico/` (14/11/2026) — Visa Residente Permanente en México (1929 palabras)
 - [ ] `visa-schengen-mexico` — Visa Europa para Mexicanos (1772 palabras)
-- [ ] `visa-trabajo-mexico` — Visa de Trabajo en México (1182 palabras)
+- [x] `visa-trabajo-mexico` → publicado como `/visa-de-trabajo-mexico/` (14/11/2026) — Visa de Trabajo en México (1182 palabras)
 - [ ] `visa-turista-mexico` — Visa de Turista México (1543 palabras)
 
 ## Fase B — 64 guías cortas del clúster SAT/IMSS y otras

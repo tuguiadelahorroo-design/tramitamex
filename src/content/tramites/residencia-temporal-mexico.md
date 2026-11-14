@@ -174,3 +174,5 @@ Ambos son gratuitos y federales. También te servirán para contratar telefonía
 - **Confiar en gestores no autorizados:** los trámites solo se resuelven en consulados y oficinas del INM; nadie puede "garantizar" una visa ni acelerar el canje por un pago.
 
 Si solo vienes de visita por menos de 180 días, lo que necesitas es la **[Forma Migratoria Múltiple (FMM)](/forma-migratoria-multiple/)**.
+
+Cuando cumplas cuatro años, el siguiente paso es la **[residencia permanente](/residencia-permanente-mexico/)**. Y si una empresa te va a contratar desde el extranjero, revisa la **[visa de trabajo por oferta de empleo](/visa-de-trabajo-mexico/)**.
