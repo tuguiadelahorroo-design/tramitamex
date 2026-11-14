@@ -30,6 +30,25 @@ try {
 }
 const lastmodGlobal = new Date(`${fechaMasReciente}T00:00:00Z`).toISOString();
 
+// Imagen principal de una página ya generada (la foto del encabezado), para
+// declararla en el sitemap con su texto alternativo.
+const DIST = fileURLToPath(new URL('./dist', import.meta.url));
+const ENTIDADES = { '&amp;': '&', '&quot;': '"', '&#34;': '"', '&#39;': "'", '&lt;': '<', '&gt;': '>' };
+function imagenPrincipal(pathname) {
+  try {
+    const html = readFileSync(`${DIST}${pathname}index.html`, 'utf8');
+    const figura = html.match(/class="hero-figure"[^>]*>\s*<img[^>]*>/);
+    if (!figura) return undefined;
+    const src = figura[0].match(/\ssrc="([^"]+)"/);
+    const alt = figura[0].match(/\salt="([^"]*)"/);
+    if (!src) return undefined;
+    const texto = (alt?.[1] ?? '').replace(/&(amp|quot|lt|gt|#34|#39);/g, (e) => ENTIDADES[e]);
+    return { url: new URL(src[1], SITE_URL).href, caption: texto || undefined };
+  } catch {
+    return undefined;
+  }
+}
+
 // Páginas sin valor de búsqueda: fuera del sitemap.
 const EXCLUIR_DEL_SITEMAP = ['/aviso-legal/', '/privacidad/'];
 
@@ -44,6 +63,8 @@ export default defineConfig({
       serialize(item) {
         const { pathname } = new URL(item.url);
         item.lastmod = lastmodPorRuta.get(pathname) ?? lastmodGlobal;
+        const imagen = lastmodPorRuta.has(pathname) ? imagenPrincipal(pathname) : undefined;
+        if (imagen) item.img = [imagen];
         return item;
       },
     }),

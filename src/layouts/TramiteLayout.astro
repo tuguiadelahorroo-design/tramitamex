@@ -7,7 +7,7 @@ import Pasos from '../components/Pasos.astro';
 import Relacionados from '../components/Relacionados.astro';
 import TablaContenido from '../components/TablaContenido.astro';
 import { getInstitucion } from '../data/instituciones';
-import { getCardImage } from '../data/card-images';
+import { getCardAlt, getCardImage } from '../data/card-images';
 
 interface Heading {
   depth: number;
@@ -60,6 +60,7 @@ const guias = p.guias ?? [];
 
 // Imagen temática del trámite (la misma foto de la ficha): encabezado + og:image.
 const heroImage = getCardImage(p.slug);
+const heroAlt = getCardAlt(p.slug, h1);
 const OG_WIDTH = 1200;
 const ogHeight = Math.round((OG_WIDTH * heroImage.height) / heroImage.width);
 // Versión JPG para redes sociales (mejor compatibilidad que WebP en scrapers).
@@ -127,6 +128,7 @@ const articleSchema = {
     url: ogImageUrl,
     width: OG_WIDTH,
     height: ogHeight,
+    caption: heroAlt,
   },
   author: {
     '@type': 'Organization',
@@ -212,7 +214,7 @@ const jsonLd = [articleSchema, govServiceSchema, ...(howToSchema ? [howToSchema]
   ogType="article"
   jsonLd={jsonLd}
   ogImage={ogImageUrl}
-  ogImageAlt={h1}
+  ogImageAlt={heroAlt}
   ogImageWidth={OG_WIDTH}
   ogImageHeight={ogHeight}
 >
@@ -274,7 +276,7 @@ const jsonLd = [articleSchema, govServiceSchema, ...(howToSchema ? [howToSchema]
         <figure class="hero-figure">
           <Image
             src={heroImage}
-            alt=""
+            alt={heroAlt}
             widths={[400, 700, 900]}
             sizes="(max-width: 920px) 92vw, 45vw"
             format="webp"

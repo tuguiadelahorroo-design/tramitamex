@@ -204,6 +204,10 @@ Portales de Chihuahua que sí se confirmaron: `ipagos.chihuahua.gob.mx` (pagos) 
 
 ### Contenido
 
+- [ ] **Meta de ~1,000 páginas (pedido del 14/11/2026):** el plan está en `PLAN-CONTENIDO.md`. Usa el respaldo de tramitaseguro.com (otro sitio del usuario, en línea) solo como **mapa de temas**: 76 guías nuevas, 64 guías cortas y las páginas trámite × estado. **No copiar texto**: sería contenido duplicado entre dos dominios vivos.
+- [x] ~~Metadatos de imagen~~ — hecho el 14/11/2026: cada foto tiene su texto alternativo en `src/data/card-alts.json` (se usa en el encabezado, `og:image:alt`, el schema y el sitemap de imágenes). **Toda foto nueva lleva su alt ahí.**
+- [ ] **Fotos por cambiar** (muestran texto en otro idioma o una marca; detectadas el 14/11/2026): `placas` (placa de Estados Unidos), `baja-de-placas`, `licencia-digital`, `visa-americana`, `residencia-temporal-mexico`, `devolucion-saldo-infonavit`, `acta-de-divorcio`, `apostilla-de-documentos`, `cedula-profesional`, `cita-medica-imss`, `constancia-de-no-inhabilitacion`, `constancia-de-situacion-fiscal`, `cambio-de-domicilio-fiscal-sat`, `doble-nacionalidad`, `etias-viajar-a-europa`, `facturar-cfdi`, `finiquito-liquidacion`, `ine`, `licencia-de-conducir`, `opinion-de-cumplimiento`, `precalificacion-infonavit`, `rfc`, `suspension-de-actividades-sat`. Revisar cada una antes de cambiarla: en varias el texto es apenas visible.
+
 - [x] ~~Cita en consulado mexicano~~ — publicado (73). El backlog original quedó **vacío**.
 - [ ] Ideas para el siguiente lote: sin pendientes en la lista. Buscar huecos con volumen comparando contra los 90 slugs (cuidar canibalización, p. ej. la CURP biométrica ya está dentro de `curp.md`).
 - [ ] **Registro de celular:** quitar `registro-linea-celular` de `TRAMITES_DESTACADOS` (`navigation.ts`) en enero de 2027, cuando pase el último plazo, y reescribir el artículo en pasado (cómo reactivar una línea). Si la CRT cambia fechas, actualizar la tabla.

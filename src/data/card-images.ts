@@ -4,6 +4,7 @@
 // que aún no tengan foto propia.
 
 import type { ImageMetadata } from 'astro';
+import ALTS from './card-alts.json';
 
 const mods = import.meta.glob<{ default: ImageMetadata }>('../assets/cards/*.jpg', {
   eager: true,
@@ -18,4 +19,9 @@ for (const [path, mod] of Object.entries(mods)) {
 /** Foto de la tarjeta de un trámite; si no existe una propia, usa la genérica. */
 export function getCardImage(slug: string): ImageMetadata {
   return BY_SLUG[slug] ?? BY_SLUG['default'];
+}
+
+/** Texto alternativo de la foto (describe lo que se ve); sin uno propio, usa el respaldo. */
+export function getCardAlt(slug: string, respaldo: string): string {
+  return (ALTS as Record<string, string>)[slug] ?? respaldo;
 }
