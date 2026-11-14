@@ -1,6 +1,6 @@
 # TramitaMex — Punto de continuación
 
-> **Actualizado:** 2026-11-11 · 99 trámites
+> **Actualizado:** 2026-11-14 · 102 trámites
 >
 > **Para retomar en un chat nuevo:** abre Claude Code en la carpeta del proyecto y escribe:
 > `lee CONTINUAR-AQUI.md y continuemos`
@@ -42,7 +42,7 @@ Los CNAME de raíz y www apuntaban por error a `tramitamex-pasaporte.pages.dev` 
 
 ## 3. Estado actual
 
-**99 trámites · 182 páginas · 33 instituciones · sitemap con 179 URLs.**
+**102 trámites · 186 páginas · 34 instituciones · sitemap con 183 URLs.**
 
 ### Estructura clave
 
@@ -135,6 +135,9 @@ La cuenta de Google con la propiedad `tramitamex.com.mx` está en el **Chrome "B
 | `/reposicion-ine/` | ⏳ Nueva (11/11) |
 | `/cita-sat/` | ⏳ Nueva (11/11) |
 | `/registrar-hijo-imss/` | ⏳ Nueva (11/11) |
+| `/permiso-salida-de-menores/` | ⏳ Nueva (14/11) |
+| `/guarderias-imss/` | ⏳ Nueva (14/11) |
+| `/recibo-de-luz-cfe/` | ⏳ Nueva (14/11) |
 
 ---
 
@@ -214,6 +217,8 @@ Portales de Chihuahua que sí se confirmaron: `ipagos.chihuahua.gob.mx` (pagos) 
 - [ ] **Revisar Search Console** (no se pudo el 31/10 ni el 01/11: hace falta el perfil de Chrome con `haciaelexitott@gmail.com`; `traxalts` y `tuguiadelahorroo` no tienen acceso, Ahrefs no tiene plan y el navegador integrado no tiene sesión): ¿entraron las 8 solicitudes del 24 y 25/10? ¿cómo van las 3 validaciones? ¿ya subieron clics e impresiones?
 - [ ] **Jornada de 40 horas:** cuando la Secretaría del Trabajo publique las disposiciones del registro electrónico (entran en vigor el 1/01/2027), agregarlas a `jornada-laboral-40-horas.md`. Actualizar cada enero la tabla de `dias-de-descanso-obligatorio.md`.
 - [ ] **Reposición del INE:** el plazo de entrega (9 días naturales desde el 24/08/2026) cambió tres veces en 2026; revisarlo en `centralelectoral.ine.mx` al actualizar.
+- [ ] **Categoría nueva pendiente:** `recibo-de-luz-cfe` quedó en "Patrimonio y legal" por ahora. Cuando haya 4 o 5 temas de hogar (agua, gas, internet), crear la categoría "Hogar y servicios" y rediseñar el menú; lo mismo para migración y visas.
+- [ ] **Formato SAM:** el INM lo cobra desde 2026 ($294, ficha del 30/07/2026). Revisar el monto cada enero, porque los derechos se actualizan.
 - [ ] **ETIAS:** revisar cada mes si la UE ya anunció fecha de inicio; al 25/10/2026 no había. Actualizar `etias-viajar-a-europa.md` en cuanto la haya.
 - [ ] **Refresh anual de `aguinaldo`** cada octubre: actualizar salario mínimo, UMA (vigente desde febrero), el día de la semana del 20 de diciembre y el estado de las iniciativas de 30 días.
 - [x] ~~Duplicado de tarjeta de circulación~~ — **descartado a propósito** para no canibalizar `tarjeta-de-circulacion.md`.

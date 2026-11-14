@@ -28,7 +28,7 @@ export const INSTITUCIONES: Institucion[] = [
     descripcion:
       'Brinda seguridad social a los trabajadores: NSS, atención médica, semanas cotizadas, pensiones e incapacidades.',
     sitioOficial: 'https://www.imss.gob.mx/',
-    tramites: ['nss', 'semanas-cotizadas-imss', 'vigencia-de-derechos-imss', 'cita-medica-imss', 'pension-imss', 'incapacidad-imss', 'alta-patronal-imss', 'cambio-clinica-imss', 'pension-viudez-orfandad-imss', 'seguro-de-salud-para-la-familia', 'modalidad-40-imss', 'registrar-hijo-imss'],
+    tramites: ['nss', 'semanas-cotizadas-imss', 'vigencia-de-derechos-imss', 'cita-medica-imss', 'pension-imss', 'incapacidad-imss', 'alta-patronal-imss', 'cambio-clinica-imss', 'pension-viudez-orfandad-imss', 'seguro-de-salud-para-la-familia', 'modalidad-40-imss', 'registrar-hijo-imss', 'guarderias-imss'],
   },
   {
     slug: 'renapo',
@@ -196,7 +196,7 @@ export const INSTITUCIONES: Institucion[] = [
     descripcion:
       'Autoridad migratoria de México. Emite las tarjetas de residente temporal y permanente, y atiende los trámites migratorios de las personas extranjeras en el país.',
     sitioOficial: 'https://www.gob.mx/inm',
-    tramites: ['residencia-temporal-mexico'],
+    tramites: ['residencia-temporal-mexico', 'permiso-salida-de-menores'],
   },
   {
     slug: 'dif',
@@ -305,6 +305,15 @@ export const INSTITUCIONES: Institucion[] = [
       'Orienta y defiende a los usuarios de bancos, aseguradoras y otras instituciones financieras, y alerta sobre fraudes.',
     sitioOficial: 'https://www.gob.mx/condusef',
     tramites: ['reporte-buro-de-credito'],
+  },
+  {
+    slug: 'cfe',
+    nombre: 'CFE',
+    nombreCompleto: 'Comisión Federal de Electricidad',
+    descripcion:
+      'Suministra la energía eléctrica en el país. En su portal y en su app se consulta y se paga el recibo de luz.',
+    sitioOficial: 'https://www.cfe.mx/',
+    tramites: ['recibo-de-luz-cfe'],
   },
 ];
 

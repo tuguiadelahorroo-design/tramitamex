@@ -149,3 +149,5 @@ En general el pasaporte se entrega **el mismo día de la cita**. Se expide con v
 - **Acta con errores o registro extemporáneo:** obtén una **copia certificada reciente** antes de la cita.
 - **Discrepancia de datos** entre el acta, la CURP y la identificación de los padres: corrígelos antes de acudir.
 - **Gestores o sitios falsos** que cobran por la cita: la cita siempre es gratuita y solo se agenda en citas.sre.gob.mx.
+
+¿Va a viajar sin ti, solo o con otro adulto? Además del pasaporte necesita el **[permiso de salida de menores](/permiso-salida-de-menores/)**, el formato SAM del INM.

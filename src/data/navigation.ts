@@ -40,6 +40,7 @@ export const CATEGORIAS: TramiteCategoria[] = [
       { nombre: 'ETIAS y viajar a Europa', slug: 'etias-viajar-a-europa', live: true },
       { nombre: 'Registro de línea celular (CURP)', slug: 'registro-linea-celular', live: true },
       { nombre: 'Reposición del INE', slug: 'reposicion-ine', live: true },
+      { nombre: 'Permiso de salida de menores (SAM)', slug: 'permiso-salida-de-menores', live: true },
     ],
   },
   {
@@ -97,6 +98,7 @@ export const CATEGORIAS: TramiteCategoria[] = [
       { nombre: 'Seguro de Salud para la Familia', slug: 'seguro-de-salud-para-la-familia', live: true },
       { nombre: 'IMSS-Bienestar (sin seguridad social)', slug: 'imss-bienestar', live: true },
       { nombre: 'Alta de un hijo en el IMSS', slug: 'registrar-hijo-imss', live: true },
+      { nombre: 'Guarderías del IMSS', slug: 'guarderias-imss', live: true },
     ],
   },
   {
@@ -173,6 +175,7 @@ export const CATEGORIAS: TramiteCategoria[] = [
       { nombre: 'Registro de marca (IMPI)', slug: 'registro-de-marca-impi', live: true },
       { nombre: 'Queja en Profeco', slug: 'queja-profeco', live: true },
       { nombre: 'Reporte de Buró de Crédito', slug: 'reporte-buro-de-credito', live: true },
+      { nombre: 'Recibo de luz CFE', slug: 'recibo-de-luz-cfe', live: true },
     ],
   },
 ];

@@ -115,6 +115,8 @@ Tu hija o hijo queda asignado a una clínica y puede recibir ahí la atención m
 
 No hay que confundir este trámite con el **[cambio de clínica](/cambio-clinica-imss/)**. Uno suma a tu hijo al seguro; el otro solo mueve el lugar donde los atienden.
 
+Si además trabajas y necesitas quién lo cuide, revisa cómo inscribirlo en una **[guardería del IMSS](/guarderias-imss/)**: es gratis desde los 43 días de nacido.
+
 ## Si pierdes tu trabajo
 
 El derecho de tu hijo depende del tuyo. Si te quedas sin empleo, la ley conserva la atención médica para ti y tus beneficiarios durante **8 semanas**, siempre que hayas cotizado al menos ocho semanas seguidas justo antes (artículo 109). Después, una opción para no quedarse sin cobertura es el **[Seguro de Salud para la Familia](/seguro-de-salud-para-la-familia/)**.
