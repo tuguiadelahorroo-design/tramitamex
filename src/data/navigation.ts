@@ -99,6 +99,7 @@ export const CATEGORIAS: TramiteCategoria[] = [
       { nombre: 'IMSS-Bienestar (sin seguridad social)', slug: 'imss-bienestar', live: true },
       { nombre: 'Alta de un hijo en el IMSS', slug: 'registrar-hijo-imss', live: true },
       { nombre: 'Guarderías del IMSS', slug: 'guarderias-imss', live: true },
+      { nombre: 'IMSS para trabajadores independientes', slug: 'imss-trabajadores-independientes', live: true },
     ],
   },
   {
@@ -118,6 +119,7 @@ export const CATEGORIAS: TramiteCategoria[] = [
       { nombre: 'Baja de placas', slug: 'baja-de-placas', live: true },
       { nombre: 'Cambio de propietario', slug: 'cambio-de-propietario-vehicular', live: true },
       { nombre: 'Licencia federal de conducir', slug: 'licencia-federal-de-conducir', live: true },
+      { nombre: 'Importación temporal de vehículos', slug: 'importacion-temporal-de-vehiculos', live: true },
     ],
   },
   {
@@ -145,6 +147,7 @@ export const CATEGORIAS: TramiteCategoria[] = [
       { nombre: 'Vacaciones por ley', slug: 'vacaciones-por-ley', live: true },
       { nombre: 'Jornada de 40 horas', slug: 'jornada-laboral-40-horas', live: true },
       { nombre: 'Días de descanso obligatorio', slug: 'dias-de-descanso-obligatorio', live: true },
+      { nombre: 'Unificación de cuentas Afore', slug: 'unificacion-de-cuentas-afore', live: true },
     ],
   },
   {

@@ -28,7 +28,7 @@ export const INSTITUCIONES: Institucion[] = [
     descripcion:
       'Brinda seguridad social a los trabajadores: NSS, atención médica, semanas cotizadas, pensiones e incapacidades.',
     sitioOficial: 'https://www.imss.gob.mx/',
-    tramites: ['nss', 'semanas-cotizadas-imss', 'vigencia-de-derechos-imss', 'cita-medica-imss', 'pension-imss', 'incapacidad-imss', 'alta-patronal-imss', 'cambio-clinica-imss', 'pension-viudez-orfandad-imss', 'seguro-de-salud-para-la-familia', 'modalidad-40-imss', 'registrar-hijo-imss', 'guarderias-imss'],
+    tramites: ['nss', 'semanas-cotizadas-imss', 'vigencia-de-derechos-imss', 'cita-medica-imss', 'pension-imss', 'incapacidad-imss', 'alta-patronal-imss', 'cambio-clinica-imss', 'pension-viudez-orfandad-imss', 'seguro-de-salud-para-la-familia', 'modalidad-40-imss', 'registrar-hijo-imss', 'guarderias-imss', 'imss-trabajadores-independientes'],
   },
   {
     slug: 'renapo',
@@ -70,7 +70,7 @@ export const INSTITUCIONES: Institucion[] = [
     descripcion:
       'Regula el sistema de ahorro para el retiro (Afores). Permite localizar tu Afore y consultar tu cuenta individual.',
     sitioOficial: 'https://www.gob.mx/consar',
-    tramites: ['afore', 'retiro-afore-desempleo', 'retiro-afore-por-matrimonio', 'cambio-de-afore'],
+    tramites: ['afore', 'retiro-afore-desempleo', 'retiro-afore-por-matrimonio', 'cambio-de-afore', 'unificacion-de-cuentas-afore'],
   },
   {
     slug: 'infonavit',
@@ -314,6 +314,15 @@ export const INSTITUCIONES: Institucion[] = [
       'Suministra la energía eléctrica en el país. En su portal y en su app se consulta y se paga el recibo de luz.',
     sitioOficial: 'https://www.cfe.mx/',
     tramites: ['recibo-de-luz-cfe'],
+  },
+  {
+    slug: 'banjercito',
+    nombre: 'Banjercito',
+    nombreCompleto: 'Banco Nacional del Ejército, Fuerza Aérea y Armada',
+    descripcion:
+      'Expide los permisos de importación temporal para vehículos, casas rodantes y embarcaciones con placas extranjeras.',
+    sitioOficial: 'https://www.gob.mx/banjercito',
+    tramites: ['importacion-temporal-de-vehiculos'],
   },
 ];
 

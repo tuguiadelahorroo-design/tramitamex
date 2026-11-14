@@ -174,3 +174,5 @@ Además, **algunos padecimientos tienen tiempos de espera**: no se atienden desd
 - **Dejar vencer la anualidad:** la renovación tardía solo procede en casos específicos.
 
 Una vez inscrito, ya puedes **[sacar cita en tu clínica del IMSS](/cita-medica-imss/)** como cualquier derechohabiente.
+
+Si trabajas por tu cuenta, compara antes con el esquema de **[IMSS para trabajadores independientes](/imss-trabajadores-independientes/)**: además de la atención médica, incluye incapacidades, pensión y ahorro para el retiro.
