@@ -104,6 +104,9 @@ export const CATEGORIAS: TramiteCategoria[] = [
       { nombre: 'Guarderías del IMSS', slug: 'guarderias-imss', live: true },
       { nombre: 'IMSS para trabajadores independientes', slug: 'imss-trabajadores-independientes', live: true },
       { nombre: 'Préstamos personales ISSSTE', slug: 'prestamos-issste', live: true },
+      { nombre: 'Alta de esposa o esposo en el IMSS', slug: 'registrar-conyuge-imss', live: true },
+      { nombre: 'Alta de padres en el IMSS', slug: 'registrar-padres-imss', live: true },
+      { nombre: 'Prórroga del IMSS por estudios', slug: 'prorroga-estudios-imss', live: true },
     ],
   },
   {

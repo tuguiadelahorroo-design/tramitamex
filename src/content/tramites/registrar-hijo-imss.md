@@ -78,7 +78,7 @@ Lo marca el artículo 84 de la Ley del Seguro Social:
 | Si estudian en planteles del sistema educativo nacional | **25 años** |
 | Si no pueden mantenerse por una enfermedad crónica o una discapacidad | Mientras dure esa condición |
 
-Para pasar de los 16 años por estudios, el IMSS pide comprobarlo con una constancia de la escuela. Pregunta en tu clínica cada cuándo hay que renovarla.
+Para pasar de los 16 años por estudios, el IMSS pide comprobarlo con una constancia de la escuela; lo explicamos en la guía de la **[prórroga del IMSS por estudios](/prorroga-estudios-imss/)**.
 
 ## Alta en línea con CURP
 
@@ -128,3 +128,5 @@ El más frecuente es que la CURP del menor no coincida con su acta. Se corrige p
 También pasa que el sistema no encuentra tu NSS o marca que no tienes vigencia. En ese caso, pregunta en tu trabajo si ya te dieron de alta ante el IMSS.
 
 Si nada funciona, llama al Centro de Contacto del IMSS, al 800 623 2323, o acude a tu clínica con los documentos.
+
+¿Quieres registrar también a tu pareja o a tus padres? Revisa **[alta de esposa o esposo en el IMSS](/registrar-conyuge-imss/)** y **[alta de padres en el IMSS](/registrar-padres-imss/)**.
